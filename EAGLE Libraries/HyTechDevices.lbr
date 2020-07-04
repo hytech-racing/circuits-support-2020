@@ -25021,7 +25021,7 @@ Dimensions: 5 mm x 20 mm
 </devices>
 </deviceset>
 <deviceset name="UCC21520A">
-<description>UCC212520A &lt;a href="http://www.ti.com/lit/ds/symlink/ucc21520-q1.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<description>UCC21520A &lt;a href="http://www.ti.com/lit/ds/symlink/ucc21520-q1.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="UCC21520A" x="-10.16" y="-10.16"/>
 </gates>
