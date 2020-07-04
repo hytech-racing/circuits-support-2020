@@ -12,7 +12,7 @@
 - [ ] Did you assign the right people for review (on the right)?
 
 ## Part Description
-*Describe the contents of the pull request. List all the devices you added. Also list any footprints or symbosl you modified.*
+*Describe the contents of the pull request. List all the devices you added. Also list any footprints or symbols you modified. If changing other supporting files, please give details on what those changes are.*
 
 ## Additional Information
-*Put any additional datasheets, information and/or useful links here.*
+*Put any datasheets per new device, information and/or useful links here.*
