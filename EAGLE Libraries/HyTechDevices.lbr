@@ -4779,8 +4779,8 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.6096" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-0.889" y="-1.016" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
@@ -5275,7 +5275,6 @@ Updated for XBee Pro based off &lt;a href="https://www.sparkfun.com/datasheets/W
 <wire x1="5.08" y1="35.56" x2="5.08" y2="30.48" width="0.127" layer="21"/>
 <wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="21"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="21"/>
-<text x="8.89" y="33.3375" size="2.54" layer="21" align="center">3.2</text>
 </package>
 <package name="RASPBERRY_PI_ZERO-V1.2">
 <description>Raspberry Pi Zero, full outline with position of big connectors &amp;amp; drill holes</description>
@@ -5506,6 +5505,7 @@ Updated for XBee Pro based off &lt;a href="https://www.sparkfun.com/datasheets/W
 <wire x1="-6.35" y1="-2.75" x2="6.35" y2="-2.75" width="0.1524" layer="21"/>
 <wire x1="-6.35" y1="-2.75" x2="-6.35" y2="2.75" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-2.75" x2="6.35" y2="2.75" width="0.1524" layer="21"/>
+<text x="0" y="0" size="1.016" layer="21" align="center">LTC6804</text>
 </package>
 <package name="MSOP-16">
 <smd name="1" x="-0.1" y="-0.5" dx="0.305" dy="0.889" layer="1" rot="R180"/>
@@ -6504,7 +6504,6 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pad name="GND_2" x="8.89" y="13.97" drill="0.8" shape="long" rot="R90"/>
 <pad name="PROG" x="11.43" y="13.97" drill="0.8" shape="long" rot="R90"/>
 <pad name="RST" x="13.97" y="13.97" drill="0.8" shape="long" rot="R90"/>
-<text x="8.89" y="58.7375" size="2.54" layer="21" align="center">3.5</text>
 </package>
 <package name="CR-2450/G1AN">
 <circle x="0" y="0" radius="12.446" width="0.254" layer="21"/>
@@ -7736,7 +7735,6 @@ MX150L™ Vertical PCB Header</description>
 <pad name="GND2" x="8.89" y="1.27" drill="0.8" shape="long" rot="R90"/>
 <pad name="PGRM" x="11.43" y="1.27" drill="0.8" shape="long" rot="R90"/>
 <pad name="A12" x="13.97" y="1.27" drill="0.8" shape="long" rot="R90"/>
-<text x="9.2075" y="33.3375" size="2.54" layer="21" align="center">LC</text>
 </package>
 <package name="LED_RGB_5MM">
 <circle x="0" y="0" radius="2.9464" width="0.127" layer="21"/>
@@ -8305,7 +8303,6 @@ MX150L™ Vertical PCB Header</description>
 <pad name="GND2" x="8.89" y="1.27" drill="0.8" shape="long" rot="R90"/>
 <pad name="PGRM" x="11.43" y="1.27" drill="0.8" shape="long" rot="R90"/>
 <pad name="DAC" x="13.97" y="1.27" drill="0.8" shape="long" rot="R90"/>
-<text x="8.89" y="33.3375" size="2.54" layer="21" align="center">3.2</text>
 </package>
 <package name="1X15">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.1524" layer="21"/>
@@ -9014,7 +9011,6 @@ Source: transistor-fet.lbr</description>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="21"/>
 <pad name="A10" x="13.97" y="24.13" drill="0.8" diameter="1.778" rot="R90"/>
 <pad name="A11" x="13.97" y="21.59" drill="0.8" diameter="1.778" rot="R90"/>
-<text x="8.89" y="33.3375" size="2.54" layer="21" align="center">3.2</text>
 </package>
 <package name="DCDC-CONVERTER">
 <wire x1="10.4394" y1="-5.08" x2="-11.43" y2="-5.08" width="0.127" layer="21"/>
@@ -11581,6 +11577,12 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 </package>
 <package name="KEYSTONE5222">
 <smd name="P$1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
+</package>
+<package name="CONTACT_SPRING">
+<pad name="P$1" x="0" y="0" drill="0.51" diameter="1.83" rot="R90"/>
+<circle x="0" y="0" radius="1.395" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -24930,6 +24932,14 @@ Dimensions: 5 mm x 20 mm
 </technologies>
 </device>
 <device name="" package="KEYSTONE5203">
+<connects>
+<connect gate="G$1" pin="S" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SPRING_CONTACT" package="CONTACT_SPRING">
 <connects>
 <connect gate="G$1" pin="S" pad="P$1"/>
 </connects>
