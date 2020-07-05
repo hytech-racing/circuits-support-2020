@@ -25048,6 +25048,17 @@ Dimensions: 5 mm x 20 mm
 </device>
 </devices>
 </deviceset>
+<deviceset name="ASDFASDF">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
