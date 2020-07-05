@@ -14136,7 +14136,8 @@ DC/DC</text>
 <pin name="EN" x="-12.7" y="-5.08" length="middle"/>
 <pin name="WDI" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="5.08" length="middle" rot="R180"/>
-<text x="-7.62" y="10.16" size="1.778" layer="95">STWD100</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
