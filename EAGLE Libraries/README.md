@@ -1,4 +1,4 @@
-# Helpful information for modifying libraries
+# Helpful Information for Modifying Libraries
 
 ## Schematic symbols without requiring an EAGLE package
 Add the attribute <code>\_EXTERNAL\_</code> to the device. EAGLE will no longer complain when you try to add the device to your schematic.
