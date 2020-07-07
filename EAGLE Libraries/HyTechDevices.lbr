@@ -25623,7 +25623,7 @@ Dimensions: 5 mm x 20 mm
 </devices>
 </deviceset>
 <deviceset name="STWD100NYWY3F">
-<description>STWD100 Watchdog Timer (open-drain configuration)</description>
+<description>STWD100 Watchdog Timer (open-drain configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
 </gates>
@@ -25643,7 +25643,7 @@ Dimensions: 5 mm x 20 mm
 </devices>
 </deviceset>
 <deviceset name="STWD100PYW83F">
-<description>STWD100 Watchdog Timer (push-pull configuration)</description>
+<description>STWD100 Watchdog Timer (push-pull configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
 </gates>
