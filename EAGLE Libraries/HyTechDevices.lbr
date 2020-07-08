@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11830,6 +11830,17 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-5.461" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="SOT323-5">
+<smd name="WDO" x="-2.1082" y="1.2954" dx="0.6096" dy="0.254" layer="1" rot="R180"/>
+<smd name="GND" x="-2.1082" y="0.635" dx="0.6096" dy="0.254" layer="1" rot="R180"/>
+<smd name="EN" x="-2.1082" y="0" dx="0.6096" dy="0.254" layer="1" rot="R180"/>
+<smd name="WDI" x="0" y="0" dx="0.6096" dy="0.254" layer="1" rot="R180"/>
+<smd name="VCC" x="0" y="1.2954" dx="0.6096" dy="0.254" layer="1"/>
+<wire x1="-1.8542" y1="1.651" x2="-1.8542" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="-0.381" x2="-0.254" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.381" x2="-0.254" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="1.651" x2="-1.8542" y2="1.651" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -14125,7 +14136,8 @@ DC/DC</text>
 <pin name="EN" x="-12.7" y="-5.08" length="middle"/>
 <pin name="WDI" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="5.08" length="middle" rot="R180"/>
-<text x="-7.62" y="10.16" size="1.778" layer="95">STWD100</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
@@ -21542,26 +21554,6 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="STWD100">
-<description>STWD100 Watchdog timer</description>
-<gates>
-<gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="EN" pad="EN"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="WDI" pad="WDI"/>
-<connect gate="G$1" pin="WDO" pad="WDO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JUMPER" prefix="J">
 <description>Jumper for changing operation of a device</description>
 <gates>
@@ -25596,6 +25588,9 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
 </device>
 </devices>
 </deviceset>
@@ -25620,6 +25615,46 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="VCCI2" pad="8"/>
 <connect gate="G$1" pin="VSSA" pad="14"/>
 <connect gate="G$1" pin="VSSB" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STWD100NYWY3F">
+<description>STWD100 Watchdog Timer (open-drain configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WDI" pad="WDI"/>
+<connect gate="G$1" pin="WDO" pad="WDO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STWD100PYW83F">
+<description>STWD100 Watchdog Timer (push-pull configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SOT323-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WDI" pad="WDI"/>
+<connect gate="G$1" pin="WDO" pad="WDO"/>
 </connects>
 <technologies>
 <technology name=""/>
