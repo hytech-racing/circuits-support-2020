@@ -23874,7 +23874,7 @@ Leakage Inductance: 0.50 uH max
 <deviceset name="L01Z150S05">
 <description>Tamura Hall Effect Current Sensors L01Z***S05 Series
 &lt;br&gt;
-&lt;br&gt; Refer to 
+&lt;br&gt; Refer to
 &lt;a href="http://www.tamuracorp.com/clientuploads/pdfs/engineeringdocs/L01ZXXXS05.pdf "&gt;datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="L01Z150S05" x="0" y="0"/>
@@ -25740,7 +25740,7 @@ Dimensions: 5 mm x 20 mm
 </devices>
 </deviceset>
 <deviceset name="ABM3B" uservalue="yes">
-<description>ABM3B ceramic SMD crystal. 
+<description>ABM3B ceramic SMD crystal.
 &lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="Q-SHIELD2" x="2.54" y="0"/>
@@ -25843,7 +25843,7 @@ Dimensions: 5 mm x 20 mm
 <gate name="H" symbol="RESISTOR-1" x="5.08" y="-53.34"/>
 </gates>
 <devices>
-<device name="YAG_YC248-M" package="YAG_YC248-M">
+<device name="" package="YAG_YC248-M">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="16"/>
