@@ -2602,7 +2602,7 @@
 <text x="95.25" y="22.86" locked="yes" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 <text x="148.59" y="2.54" locked="yes" size="2.54" layer="94">&gt;SHEET</text>
 <text x="19.05" y="22.86" locked="yes" size="2.54" layer="94">&gt;ENGINEER</text>
-<text x="66.04" y="10.16" size="2.54" layer="94">&gt;DESCRIPTION</text>
+<text x="66.04" y="10.16" size="2.54" layer="94">&gt;FRAME_DESCRIPTION</text>
 </symbol>
 <symbol name="FRAME_11X8.5">
 <frame x1="0" y1="0" x2="279.4" y2="215.9" columns="11" rows="8" layer="94" border-bottom="no"/>
@@ -2623,7 +2623,7 @@ Prints on US Letter Landscape 8.5" by 11"</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="Default" constant="no"/>
+<attribute name="FRAME_DESCRIPTION" value="Default" constant="no"/>
 <attribute name="ORIENTATION" value="LANDSCAPE"/>
 <attribute name="SIZE" value="A"/>
 </technology>
@@ -2642,7 +2642,7 @@ Prints on US Tabloid Landscape 11" by 17"</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="Default" constant="no"/>
+<attribute name="FRAME_DESCRIPTION" value="Default" constant="no"/>
 <attribute name="ORIENTATION" value="LANDSCAPE"/>
 <attribute name="SIZE" value="B"/>
 </technology>
