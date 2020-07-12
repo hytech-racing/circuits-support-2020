@@ -2605,10 +2605,10 @@
 <text x="86.36" y="15.24" locked="yes" size="2.54" layer="94">Default</text>
 </symbol>
 <symbol name="FRAME_11X8.5">
-<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="11" rows="8" layer="94" border-right="no" border-bottom="no"/>
+<frame x1="0" y1="0" x2="279.4" y2="215.9" locked="yes" columns="11" rows="8" layer="94" border-bottom="no"/>
 </symbol>
 <symbol name="FRAME_17X11">
-<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="17" rows="11" layer="94" border-right="no" border-bottom="no"/>
+<frame x1="0" y1="0" x2="431.8" y2="279.4" locked="yes" columns="17" rows="11" layer="94" border-bottom="no"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2617,7 +2617,7 @@
 Prints on US Letter Landscape 8.5" by 11"</description>
 <gates>
 <gate name="G$1" symbol="FRAME_11X8.5" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="114.3" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="110.49" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
@@ -2635,7 +2635,7 @@ Prints on US Letter Landscape 8.5" by 11"</description>
 Prints on US Tabloid Landscape 11" by 17"</description>
 <gates>
 <gate name="G$1" symbol="FRAME_17X11" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="266.7" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="262.89" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
