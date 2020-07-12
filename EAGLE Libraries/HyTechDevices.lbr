@@ -25617,6 +25617,8 @@ Dimensions: 5 mm x 20 mm
 <description>&lt;p&gt;Bourns CAT16 series 8x 1% or 5% resistor array size 2506&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;b&gt; Replaced by Yageo YC248 for HyTech use due to end of lifecycle&lt;p&gt;
+
 &lt;p&gt;Options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CAT16-F8: 1% tolerance&lt;/li&gt;
@@ -25688,6 +25690,7 @@ Dimensions: 5 mm x 20 mm
 <description>&lt;p&gt;Bourns CAT16 series 4x 1% or 5% resistor array size 1206&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 
+
 &lt;p&gt;Options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CAT16-F4: 1% tolerance&lt;/li&gt;
@@ -25699,7 +25702,10 @@ Dimensions: 5 mm x 20 mm
 &lt;li&gt;CTS Resistor Products 742C083 series - &lt;a href="https://www.ctscorp.com/wp-content/uploads/74x.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Panasonic EXBV8 series - &lt;a href="https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Yageo TC164 series - &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+
+
+&lt;p&gt; Replaced by Yageo YC248 &lt;p&gt;</description>
 <gates>
 <gate name="_1" symbol="RESISTOR-1" x="0" y="0"/>
 <gate name="_2" symbol="RESISTOR-1" x="0" y="-7.62"/>
