@@ -2613,8 +2613,9 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_LETTER">
-<description>HyTech Racing Frame Size A, US Letter Landscape.</description>
+<deviceset name="FRAME_A">
+<description>HyTech Racing Frame (ISO Size A)
+Prints on US Letter Landscape 8.5" by 11"</description>
 <gates>
 <gate name="G$1" symbol="FRAME_11X8.5" x="0" y="0"/>
 <gate name="G$2" symbol="DOCFIELD" x="114.3" y="0" addlevel="always"/>
@@ -2632,8 +2633,9 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_TABLOID">
-<description>HyTech Racing Frame Size B, US Tabloid Landscape.</description>
+<deviceset name="FRAME_B">
+<description>HyTech Racing Frame (ISO Size B)
+Prints on US Tabloid Landscape 11" by 17"</description>
 <gates>
 <gate name="G$1" symbol="FRAME_17X11" x="0" y="0"/>
 <gate name="G$2" symbol="DOCFIELD" x="266.7" y="0" addlevel="always"/>
