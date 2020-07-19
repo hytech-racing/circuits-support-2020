@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -82,31 +82,30 @@
 <symbols>
 <symbol name="DOCFIELD">
 <description>Standard document field for HyTech Schematics.</description>
-<wire x1="63.5" y1="0" x2="134.62" y2="0" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="0" x2="63.5" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="5.08" x2="134.62" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="5.08" x2="63.5" y2="20.32" width="0.1016" layer="94"/>
-<wire x1="134.62" y1="5.08" x2="134.62" y2="0" width="0.1016" layer="94"/>
-<wire x1="134.62" y1="5.08" x2="165.1" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="134.62" y1="0" x2="165.1" y2="0" width="0.1016" layer="94"/>
-<wire x1="165.1" y1="20.32" x2="63.5" y2="20.32" width="0.1016" layer="94"/>
-<wire x1="165.1" y1="5.08" x2="165.1" y2="0" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="20.32" x2="63.5" y2="27.94" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="27.94" x2="165.1" y2="27.94" width="0.1016" layer="94"/>
-<wire x1="165.1" y1="27.94" x2="165.1" y2="20.32" width="0.1016" layer="94"/>
-<text x="64.77" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="76.2" y="1.27" size="2.54" layer="97">&gt;LAST_DATE_TIME</text>
-<text x="135.89" y="1.27" size="2.54" layer="94">Sheet:</text>
-<text x="149.86" y="1.27" size="2.54" layer="97">&gt;SHEET</text>
-<text x="0.762" y="22.86" size="2.54" layer="94">Engineer:</text>
-<text x="64.262" y="22.86" size="2.54" layer="94">Document Name:</text>
-<text x="64.262" y="15.24" size="2.54" layer="94">Description:</text>
-<wire x1="165.1" y1="20.32" x2="165.1" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="63.5" y1="20.32" x2="0" y2="20.32" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="63.5" y2="0" width="0.1016" layer="94"/>
-<wire x1="0" y1="27.94" x2="63.5" y2="27.94" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="20.32" width="0.1016" layer="94"/>
-<wire x1="0" y1="20.32" x2="0" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="63.5" y1="0" x2="134.62" y2="0" width="0.127" layer="94"/>
+<wire x1="63.5" y1="0" x2="63.5" y2="7.62" width="0.127" layer="94"/>
+<wire x1="63.5" y1="7.62" x2="134.62" y2="7.62" width="0.127" layer="94"/>
+<wire x1="63.5" y1="7.62" x2="63.5" y2="20.32" width="0.127" layer="94"/>
+<wire x1="134.62" y1="7.62" x2="134.62" y2="0" width="0.127" layer="94"/>
+<wire x1="134.62" y1="7.62" x2="165.1" y2="7.62" width="0.127" layer="94"/>
+<wire x1="134.62" y1="0" x2="165.1" y2="0" width="0.127" layer="94"/>
+<wire x1="165.1" y1="20.32" x2="63.5" y2="20.32" width="0.127" layer="94"/>
+<wire x1="165.1" y1="7.62" x2="165.1" y2="0" width="0.127" layer="94"/>
+<wire x1="63.5" y1="20.32" x2="63.5" y2="27.94" width="0.127" layer="94"/>
+<wire x1="63.5" y1="27.94" x2="165.1" y2="27.94" width="0.127" layer="94"/>
+<wire x1="165.1" y1="27.94" x2="165.1" y2="20.32" width="0.127" layer="94"/>
+<text x="66.04" y="2.54" locked="yes" size="2.54" layer="94">Date: </text>
+<text x="76.2" y="2.54" locked="yes" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="137.16" y="2.54" locked="yes" size="2.54" layer="94">Sheet: </text>
+<text x="2.54" y="22.86" locked="yes" size="2.54" layer="94">Engineer:</text>
+<text x="66.04" y="22.86" locked="yes" size="2.54" layer="94">Document Name:</text>
+<text x="66.04" y="15.24" locked="yes" size="2.54" layer="94">Description:</text>
+<wire x1="165.1" y1="20.32" x2="165.1" y2="7.62" width="0.127" layer="94"/>
+<wire x1="63.5" y1="20.32" x2="0" y2="20.32" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="63.5" y2="0" width="0.127" layer="94"/>
+<wire x1="0" y1="27.94" x2="63.5" y2="27.94" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="20.32" width="0.127" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="27.94" width="0.127" layer="94"/>
 <rectangle x1="35.28695" y1="1.68275" x2="36.17595" y2="1.74625" layer="94"/>
 <rectangle x1="53.63845" y1="1.68275" x2="54.52745" y2="1.74625" layer="94"/>
 <rectangle x1="34.90595" y1="1.74625" x2="36.55695" y2="1.80975" layer="94"/>
@@ -2600,26 +2599,42 @@
 <rectangle x1="61.32195" y1="18.25625" x2="62.78245" y2="18.31975" layer="94"/>
 <rectangle x1="50.52695" y1="18.31975" x2="52.24145" y2="18.38325" layer="94"/>
 <rectangle x1="50.84445" y1="18.38325" x2="51.92395" y2="18.44675" layer="94"/>
-<text x="93.98" y="22.86" size="2.54" layer="97">&gt;DRAWING_NAME</text>
+<text x="95.25" y="22.86" locked="yes" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="148.59" y="2.54" locked="yes" size="2.54" layer="94">&gt;SHEET</text>
 </symbol>
-<symbol name="FRAME_A_L">
-<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+<symbol name="FRAME_11X8.5">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="11" rows="8" layer="94" border-bottom="no"/>
 </symbol>
-<symbol name="FRAME_B_L">
-<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="9" rows="6" layer="94" border-bottom="no"/>
+<symbol name="FRAME_17X11">
+<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="17" rows="11" layer="94" border-bottom="no"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_A_L">
-<description>HyTech frame size A, landscape.</description>
+<deviceset name="FRAME_A">
+<description>HyTech Racing Frame (ANSI Size A)
+&lt;br&gt;
+Prints on US Letter Landscape 8.5" by 11"
+&lt;br&gt;&lt;br&gt;
+Fill Engineer/Description Fields with Text using the following settings:
+&lt;br&gt;
+Size: 0.1
+&lt;br&gt;
+Ratio: 8%
+&lt;br&gt;
+Line Distance: 50%
+&lt;br&gt;
+Font: Proportional
+&lt;br&gt;
+Layer: 94 Symbol</description>
 <gates>
-<gate name="G$1" symbol="FRAME_A_L" x="0" y="0"/>
+<gate name="G$1" symbol="FRAME_11X8.5" x="0" y="0"/>
 <gate name="G$2" symbol="DOCFIELD" x="110.49" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="FRAME_DESCRIPTION" value="Default" constant="no"/>
 <attribute name="ORIENTATION" value="LANDSCAPE"/>
 <attribute name="SIZE" value="A"/>
 </technology>
@@ -2627,16 +2642,31 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_B_L">
-<description>HyTech frame size B, landscape.</description>
+<deviceset name="FRAME_B">
+<description>HyTech Racing Frame (ANSI Size B)
+&lt;br&gt;
+Prints on US Tabloid Landscape 11" by 17"
+&lt;br&gt;&lt;br&gt;
+Fill Engineer/Description Fields with Text using the following settings:
+&lt;br&gt;
+Size: 0.1
+&lt;br&gt;
+Ratio: 8%
+&lt;br&gt;
+Line Distance: 50%
+&lt;br&gt;
+Font: Proportional
+&lt;br&gt;
+Layer: 94 Symbol</description>
 <gates>
-<gate name="G$1" symbol="FRAME_B_L" x="0" y="0"/>
+<gate name="G$1" symbol="FRAME_17X11" x="0" y="0"/>
 <gate name="G$2" symbol="DOCFIELD" x="262.89" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="FRAME_DESCRIPTION" value="Default" constant="no"/>
 <attribute name="ORIENTATION" value="LANDSCAPE"/>
 <attribute name="SIZE" value="B"/>
 </technology>
