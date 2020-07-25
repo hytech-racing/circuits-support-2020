@@ -12006,6 +12006,9 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <wire x1="0.8128" y1="-1.5748" x2="0.8128" y2="-1.4224" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="MICRO_MINIATURE">
+<smd name="P$1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -21773,6 +21776,14 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 </gates>
 <devices>
 <device name="" package="TEST_POINT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MICRO_MINIATURE" package="MICRO_MINIATURE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
