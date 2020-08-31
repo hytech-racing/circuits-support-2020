@@ -26069,21 +26069,26 @@ Dimensions: 5 mm x 20 mm
 </devices>
 </deviceset>
 <deviceset name="MTK3339">
+<description>MTK3339
+&lt;br&gt;&lt;br&gt;
+66 channel, 10 Hz GPS breakout board
+&lt;br&gt;&lt;br&gt;
+&lt;a href="https://www.adafruit.com/product/746"&gt;Adafruit Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MTK3339" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="1X09">
 <connects>
-<connect gate="G$1" pin="3V3" pad="1"/>
-<connect gate="G$1" pin="EN" pad="2"/>
-<connect gate="G$1" pin="FIX" pad="4"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="PPS" pad="9"/>
-<connect gate="G$1" pin="RX" pad="6"/>
+<connect gate="G$1" pin="3V3" pad="9"/>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="FIX" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="PPS" pad="1"/>
+<connect gate="G$1" pin="RX" pad="4"/>
 <connect gate="G$1" pin="TX" pad="5"/>
-<connect gate="G$1" pin="VBAT" pad="3"/>
-<connect gate="G$1" pin="VIN" pad="8"/>
+<connect gate="G$1" pin="VBAT" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
