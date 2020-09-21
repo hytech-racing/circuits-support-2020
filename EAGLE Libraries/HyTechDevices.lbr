@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25921,6 +25921,32 @@ Dimensions: 5 mm x 20 mm
 <attribute name="MANUFACTURER_PART_NUMBER" value="YC248-JR-0710KL" constant="no"/>
 <attribute name="VENDOR" value="Yageo" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS26600">
+<gates>
+<gate name="G$1" symbol="TPS26600" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HTSSOP-16">
+<connects>
+<connect gate="G$1" pin="DVDT" pad="12"/>
+<connect gate="G$1" pin="FLT" pad="14"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="ILIM" pad="11"/>
+<connect gate="G$1" pin="IMON" pad="10"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="MODE" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="16"/>
+<connect gate="G$1" pin="OVP" pad="5"/>
+<connect gate="G$1" pin="RTN" pad="8"/>
+<connect gate="G$1" pin="SHDN" pad="7"/>
+<connect gate="G$1" pin="UVLO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
