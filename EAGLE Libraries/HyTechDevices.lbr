@@ -25937,11 +25937,11 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="GND" pad="9"/>
 <connect gate="G$1" pin="ILIM" pad="11"/>
 <connect gate="G$1" pin="IMON" pad="10"/>
-<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="IN" pad="1 2"/>
 <connect gate="G$1" pin="MODE" pad="6"/>
-<connect gate="G$1" pin="OUT" pad="16"/>
+<connect gate="G$1" pin="OUT" pad="15 16"/>
 <connect gate="G$1" pin="OVP" pad="5"/>
-<connect gate="G$1" pin="RTN" pad="8"/>
+<connect gate="G$1" pin="RTN" pad="8 PAD"/>
 <connect gate="G$1" pin="SHDN" pad="7"/>
 <connect gate="G$1" pin="UVLO" pad="3"/>
 </connects>
