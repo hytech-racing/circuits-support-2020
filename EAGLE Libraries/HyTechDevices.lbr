@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -84,7 +84,7 @@
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
@@ -12006,7 +12006,7 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <wire x1="0.8128" y1="-1.5748" x2="0.8128" y2="-1.4224" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="HSSOP-16">
+<package name="HTSSOP-16">
 <smd name="4" x="-2.8956" y="0.3302" dx="1.4986" dy="0.4572" layer="1"/>
 <smd name="5" x="-2.8956" y="-0.3302" dx="1.4986" dy="0.4572" layer="1"/>
 <smd name="3" x="-2.8956" y="0.9906" dx="1.4986" dy="0.4572" layer="1"/>
@@ -16795,6 +16795,26 @@ Demo Board</text>
 <pin name="VCCA" x="25.4" y="20.32" length="middle" rot="R180"/>
 <text x="0" y="23.368" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-2.032" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="TPS26600">
+<pin name="IN" x="-15.24" y="7.62" length="middle"/>
+<pin name="UVLO" x="-15.24" y="2.54" length="middle"/>
+<pin name="OVP" x="-15.24" y="0" length="middle"/>
+<pin name="DVDT" x="-15.24" y="-2.54" length="middle"/>
+<pin name="MODE" x="-15.24" y="-5.08" length="middle"/>
+<pin name="RTN" x="-15.24" y="-7.62" length="middle"/>
+<pin name="OUT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SHDN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="IMON" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="ILIM" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="FLT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="105"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="105"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="105"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="105"/>
+<text x="-10.414" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.414" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
