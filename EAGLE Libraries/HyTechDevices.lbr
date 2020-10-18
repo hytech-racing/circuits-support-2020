@@ -11579,7 +11579,7 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <smd name="P$1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
 </package>
 <package name="CONTACT_SPRING">
-<pad name="P$1" x="0" y="0" drill="0.635" diameter="1.8288" rot="R90"/>
+<pad name="P$1" x="0" y="0" drill="0.7366" diameter="1.8288" rot="R90"/>
 <circle x="0" y="0" radius="1.1938" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="1.3208" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="1.3208" width="0.127" layer="39"/>
