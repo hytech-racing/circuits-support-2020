@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11579,10 +11579,10 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <smd name="P$1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
 </package>
 <package name="CONTACT_SPRING">
-<pad name="P$1" x="0" y="0" drill="0.51" diameter="1.83" rot="R90"/>
-<circle x="0" y="0" radius="1.395" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.5" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
+<pad name="P$1" x="0" y="0" drill="0.7366" diameter="1.8288" rot="R90"/>
+<circle x="0" y="0" radius="1.1938" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.3208" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="1.3208" width="0.127" layer="39"/>
 </package>
 <package name="QFP80P900X900X120-32N">
 <wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.1524" layer="21"/>
@@ -12005,6 +12005,20 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <wire x1="0.8128" y1="-1.0668" x2="0.8128" y2="-0.9398" width="0.1524" layer="51" curve="-180"/>
 <wire x1="0.8128" y1="-1.5748" x2="0.8128" y2="-1.4224" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="M3_MOUNTING">
+<hole x="0" y="0" drill="3.4"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="42"/>
+</package>
+<package name="M4_MOUNTING">
+<hole x="0" y="0" drill="4.5"/>
+<circle x="0" y="0" radius="3.75" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="3.75" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="3.75" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="3.75" width="0.127" layer="42"/>
 </package>
 </packages>
 <packages3d>
@@ -25494,7 +25508,11 @@ Dimensions: 5 mm x 20 mm
 <deviceset name="BATTERY_SPRING">
 <description>&lt;b&gt; Keystone Electronics Battery Spring Contact &lt;/b&gt;
 &lt;br&gt;
-&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt; 
+&lt;b&gt; Mill-Max Pogo Pins &lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://www.mill-max.com/catalog/download/2019-08%3A019.6M.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
 </gates>
