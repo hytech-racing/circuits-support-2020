@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16832,81 +16832,81 @@ Demo Board</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
 </symbol>
-<symbol name="AD5721">
-<pin name="ALERT" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="CLEAR" x="-15.24" y="-10.16" length="middle" direction="pas"/>
-<pin name="RESET" x="-15.24" y="-12.7" length="middle" direction="pas"/>
-<pin name="VREFIN" x="-15.24" y="10.16" length="middle" direction="pas"/>
-<pin name="AGND" x="15.24" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="VSS" x="-15.24" y="2.54" length="middle" direction="pas"/>
-<pin name="VOUT" x="15.24" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pas"/>
-<pin name="SDO" x="15.24" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="LDAC" x="-15.24" y="-7.62" length="middle" direction="pas"/>
-<pin name="SDI" x="-15.24" y="-2.54" length="middle" direction="pas"/>
-<pin name="SYNC" x="-15.24" y="-5.08" length="middle" direction="pas"/>
-<pin name="SCLK" x="-15.24" y="0" length="middle" direction="pas"/>
-<pin name="DVCC" x="-15.24" y="7.62" length="middle" direction="pas"/>
-<pin name="DGND" x="15.24" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<symbol name="AD5721R">
+<pin name="ALERT" x="20.32" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="CLEAR" x="-15.24" y="-2.54" length="middle" direction="pas"/>
+<pin name="RESET" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="VREFIN/OUT" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="AGND" x="-15.24" y="-12.7" length="middle" direction="pas"/>
+<pin name="VSS" x="-15.24" y="-10.16" length="middle" direction="pas"/>
+<pin name="VOUT" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VDD" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="LDAC" x="-15.24" y="0" length="middle" direction="pas"/>
+<pin name="SDI" x="-15.24" y="7.62" length="middle" direction="pas"/>
+<pin name="SYNC" x="-15.24" y="5.08" length="middle" direction="pas"/>
+<pin name="SCLK" x="-15.24" y="10.16" length="middle" direction="pas"/>
+<pin name="DVCC" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="DGND" x="-15.24" y="-15.24" length="middle" direction="pas"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 <text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="AD5684">
-<pin name="VREF" x="-15.24" y="7.62" length="middle" direction="pas"/>
-<pin name="VOUT_B" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="VOUT_A" x="17.78" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="VDD" x="-15.24" y="10.16" length="middle" direction="pas"/>
-<pin name="VOUT_C" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="VOUT_D" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="SDO" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="LDAC" x="-15.24" y="-10.16" length="middle" direction="pas"/>
-<pin name="GAIN" x="-15.24" y="0" length="middle" direction="pas"/>
-<pin name="VLOGIC" x="-15.24" y="5.08" length="middle" direction="pas"/>
-<pin name="SCLK" x="-15.24" y="-2.54" length="middle" direction="pas"/>
-<pin name="SYNC" x="-15.24" y="-7.62" length="middle" direction="pas"/>
-<pin name="SDIN" x="-15.24" y="-5.08" length="middle" direction="pas"/>
-<pin name="RESET" x="-15.24" y="-12.7" length="middle" direction="pas"/>
-<pin name="RSTSEL" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<symbol name="AD5684R">
+<pin name="VREFIN/OUT" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_B" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_A" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle" direction="pas"/>
+<pin name="VDD" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_C" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_D" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="LDAC" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="GAIN" x="-15.24" y="-2.54" length="middle" direction="pas"/>
+<pin name="VLOGIC" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SCLK" x="-15.24" y="10.16" length="middle" direction="pas"/>
+<pin name="SYNC" x="-15.24" y="5.08" length="middle" direction="pas"/>
+<pin name="SDIN" x="-15.24" y="7.62" length="middle" direction="pas"/>
+<pin name="RESET" x="-15.24" y="-7.62" length="middle" direction="pas"/>
+<pin name="RSTSEL" x="-15.24" y="0" length="middle" direction="pas"/>
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 <text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="AD5263">
-<pin name="VSS" x="-17.78" y="10.16" length="middle" direction="pas"/>
-<pin name="VDD" x="-17.78" y="12.7" length="middle" direction="pas"/>
-<pin name="VLOGIC" x="-17.78" y="7.62" length="middle" direction="pas"/>
-<pin name="SCLK" x="-17.78" y="-5.08" length="middle" direction="pas"/>
-<pin name="SDI" x="-17.78" y="-7.62" length="middle" direction="pas"/>
-<pin name="CS" x="-17.78" y="-10.16" length="middle" direction="pas"/>
-<pin name="RESET" x="-17.78" y="-12.7" length="middle" direction="pas"/>
-<pin name="SHDN" x="-17.78" y="-15.24" length="middle" direction="pas"/>
-<pin name="DIS" x="-17.78" y="-17.78" length="middle" direction="pas"/>
-<pin name="A1" x="-17.78" y="5.08" length="middle" direction="pas"/>
-<pin name="A2" x="-17.78" y="2.54" length="middle" direction="pas"/>
-<pin name="A3" x="-17.78" y="0" length="middle" direction="pas"/>
-<pin name="A4" x="-17.78" y="-2.54" length="middle" direction="pas"/>
-<pin name="W1" x="15.24" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="B1" x="15.24" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="W2" x="15.24" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="B2" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="W3" x="15.24" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="B3" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="W4" x="15.24" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="B4" x="15.24" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="SDO" x="15.24" y="-15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="GND" x="15.24" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<pin name="VSS" x="15.24" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="VDD" x="15.24" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VLOGIC" x="15.24" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SCLK" x="-17.78" y="12.7" length="middle" direction="pas"/>
+<pin name="SDI" x="-17.78" y="10.16" length="middle" direction="pas"/>
+<pin name="CS" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="RESET" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="SHDN" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="DIS" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="A1" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="A2" x="15.24" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="A3" x="15.24" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="A4" x="15.24" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="W1" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="B1" x="15.24" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="W2" x="15.24" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="B2" x="15.24" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="W3" x="15.24" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="B3" x="15.24" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="W4" x="15.24" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="B4" x="15.24" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="GND" x="-17.78" y="-22.86" length="middle" direction="pas"/>
+<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -26043,12 +26043,12 @@ Dimensions: 5 mm x 20 mm
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5721">
+<deviceset name="AD5721R">
 <description>AD5721 Digital to Analog Converter &lt;br&gt;
 12-bit resolution &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761_5721.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="AD5721" x="0" y="0"/>
+<gate name="G$1" symbol="AD5721R" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TSSOP-16">
@@ -26066,7 +26066,7 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="SYNC" pad="13"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VOUT" pad="7"/>
-<connect gate="G$1" pin="VREFIN" pad="4"/>
+<connect gate="G$1" pin="VREFIN/OUT" pad="4"/>
 <connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
@@ -26075,12 +26075,12 @@ Dimensions: 5 mm x 20 mm
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5684">
+<deviceset name="AD5684R">
 <description>AD5684 4-channel DAC &lt;br&gt;
 5V, 12-bit resolution &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5686_5684.pdf"&gt;Datasheet &lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="AD5684" x="-2.54" y="7.62"/>
+<gate name="G$1" symbol="AD5684R" x="-2.54" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="TSSOP-16">
@@ -26100,7 +26100,7 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="VOUT_B" pad="2"/>
 <connect gate="G$1" pin="VOUT_C" pad="6"/>
 <connect gate="G$1" pin="VOUT_D" pad="7"/>
-<connect gate="G$1" pin="VREF" pad="1"/>
+<connect gate="G$1" pin="VREFIN/OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
