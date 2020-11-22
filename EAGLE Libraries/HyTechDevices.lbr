@@ -12024,6 +12024,41 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <circle x="0" y="0" radius="3.75" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="3.75" width="0.127" layer="42"/>
 </package>
+<package name="TSSOP-24">
+<description>&lt;b&gt;20-Lead Thin Shrink Small Outline Package TSSOP&lt;/b&gt; &lt;br&gt;&lt;br&gt;
+Source: https://www.analog.com/media/en/package-pcb-resources/package/380523655245964505593671154107510036154ru24.pdf&lt;br&gt;</description>
+<smd name="1" x="-2.9" y="3.575" dx="1.1" dy="0.45" layer="1"/>
+<smd name="2" x="-2.9" y="2.925" dx="1.1" dy="0.45" layer="1"/>
+<smd name="3" x="-2.9" y="2.275" dx="1.1" dy="0.45" layer="1"/>
+<smd name="4" x="-2.9" y="1.625" dx="1.1" dy="0.45" layer="1"/>
+<smd name="5" x="-2.9" y="0.975" dx="1.1" dy="0.45" layer="1"/>
+<smd name="6" x="-2.9" y="0.325" dx="1.1" dy="0.45" layer="1"/>
+<smd name="7" x="-2.9" y="-0.325" dx="1.1" dy="0.45" layer="1"/>
+<smd name="8" x="-2.9" y="-0.975" dx="1.1" dy="0.45" layer="1"/>
+<smd name="9" x="-2.9" y="-1.625" dx="1.1" dy="0.45" layer="1"/>
+<smd name="10" x="-2.9" y="-2.275" dx="1.1" dy="0.45" layer="1"/>
+<smd name="12" x="-2.9" y="-3.575" dx="1.1" dy="0.45" layer="1"/>
+<smd name="11" x="-2.9" y="-2.925" dx="1.1" dy="0.45" layer="1"/>
+<smd name="24" x="2.9" y="3.575" dx="1.1" dy="0.45" layer="1"/>
+<smd name="23" x="2.9" y="2.925" dx="1.1" dy="0.45" layer="1"/>
+<smd name="22" x="2.9" y="2.275" dx="1.1" dy="0.45" layer="1"/>
+<smd name="21" x="2.9" y="1.625" dx="1.1" dy="0.45" layer="1"/>
+<smd name="20" x="2.9" y="0.975" dx="1.1" dy="0.45" layer="1"/>
+<smd name="19" x="2.9" y="0.325" dx="1.1" dy="0.45" layer="1"/>
+<smd name="18" x="2.9" y="-0.325" dx="1.1" dy="0.45" layer="1"/>
+<smd name="17" x="2.9" y="-0.975" dx="1.1" dy="0.45" layer="1"/>
+<smd name="16" x="2.9" y="-1.625" dx="1.1" dy="0.45" layer="1"/>
+<smd name="15" x="2.9" y="-2.275" dx="1.1" dy="0.45" layer="1"/>
+<smd name="14" x="2.9" y="-2.925" dx="1.1" dy="0.45" layer="1"/>
+<smd name="13" x="2.9" y="-3.575" dx="1.1" dy="0.45" layer="1"/>
+<wire x1="-2.2" y1="-3.9" x2="-2.2" y2="3.9" width="0.254" layer="21"/>
+<wire x1="-2.2" y1="3.9" x2="2.2" y2="3.9" width="0.254" layer="21"/>
+<wire x1="2.2" y1="3.9" x2="2.2" y2="-3.9" width="0.254" layer="21"/>
+<wire x1="2.2" y1="-3.9" x2="-2.2" y2="-3.9" width="0.254" layer="21"/>
+<text x="-2.54" y="4.191" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.413" y="-4.191" size="0.8128" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-1.524" y="3.175" radius="0.283978125" width="0.1524" layer="21"/>
+</package>
 <package name="0603-JUMP">
 <smd name="1" x="-0.85" y="0" dx="1.2" dy="1.1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.2" dy="1.1" layer="1"/>
@@ -17133,6 +17168,84 @@ Demo Board</text>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+</symbol>
+<symbol name="AD5721R">
+<pin name="ALERT" x="20.32" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="CLEAR" x="-15.24" y="-2.54" length="middle" direction="pas"/>
+<pin name="RESET" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="VREFIN/OUT" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="AGND" x="-15.24" y="-12.7" length="middle" direction="pas"/>
+<pin name="VSS" x="-15.24" y="-10.16" length="middle" direction="pas"/>
+<pin name="VOUT" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VDD" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="LDAC" x="-15.24" y="0" length="middle" direction="pas"/>
+<pin name="SDI" x="-15.24" y="7.62" length="middle" direction="pas"/>
+<pin name="SYNC" x="-15.24" y="5.08" length="middle" direction="pas"/>
+<pin name="SCLK" x="-15.24" y="10.16" length="middle" direction="pas"/>
+<pin name="DVCC" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="DGND" x="-15.24" y="-15.24" length="middle" direction="pas"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="AD5684R">
+<pin name="VREFIN/OUT" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_B" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_A" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle" direction="pas"/>
+<pin name="VDD" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_C" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT_D" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="LDAC" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="GAIN" x="-15.24" y="-2.54" length="middle" direction="pas"/>
+<pin name="VLOGIC" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SCLK" x="-15.24" y="10.16" length="middle" direction="pas"/>
+<pin name="SYNC" x="-15.24" y="5.08" length="middle" direction="pas"/>
+<pin name="SDIN" x="-15.24" y="7.62" length="middle" direction="pas"/>
+<pin name="RESET" x="-15.24" y="-7.62" length="middle" direction="pas"/>
+<pin name="RSTSEL" x="-15.24" y="0" length="middle" direction="pas"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="AD5263">
+<pin name="VSS" x="-17.78" y="10.16" length="middle" direction="pas"/>
+<pin name="VDD" x="-17.78" y="12.7" length="middle" direction="pas"/>
+<pin name="VLOGIC" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="SCLK" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="SDI" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="CS" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="RESET" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="SHDN" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+<pin name="DIS" x="-17.78" y="-10.16" length="middle" direction="pas"/>
+<pin name="A1" x="15.24" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="A2" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="A3" x="15.24" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="A4" x="15.24" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="W1" x="15.24" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="B1" x="15.24" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="W2" x="15.24" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="B2" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="W3" x="15.24" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="B3" x="15.24" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="W4" x="15.24" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="B4" x="15.24" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="GND" x="-17.78" y="-15.24" length="middle" direction="pas"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RELAY_SPST_NO">
 <circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
@@ -26497,6 +26610,38 @@ Dimensions: 5 mm x 20 mm
 </device>
 </devices>
 </deviceset>
+<deviceset name="AD5721R" prefix="U">
+<description>AD5721 Digital to Analog Converter &lt;br&gt;
+12-bit resolution &lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761_5721.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AD5721R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16">
+<connects>
+<connect gate="G$1" pin="AGND" pad="5"/>
+<connect gate="G$1" pin="ALERT" pad="1"/>
+<connect gate="G$1" pin="CLEAR" pad="2"/>
+<connect gate="G$1" pin="DGND" pad="16"/>
+<connect gate="G$1" pin="DVCC" pad="15"/>
+<connect gate="G$1" pin="LDAC" pad="11"/>
+<connect gate="G$1" pin="RESET" pad="3"/>
+<connect gate="G$1" pin="SCLK" pad="14"/>
+<connect gate="G$1" pin="SDI" pad="12"/>
+<connect gate="G$1" pin="SDO" pad="10"/>
+<connect gate="G$1" pin="SYNC" pad="13"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="7"/>
+<connect gate="G$1" pin="VREFIN/OUT" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="DIODE_ZENER" prefix="D">
 <description>&lt;B&gt;ZENER DIODE&lt;/B&gt;&lt;p&gt;</description>
 <gates>
@@ -26594,6 +26739,39 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
+<deviceset name="AD5684R" prefix="U">
+<description>AD5684 4-channel DAC &lt;br&gt;
+5V, 12-bit resolution &lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5686_5684.pdf"&gt;Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AD5684R" x="-2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16">
+<connects>
+<connect gate="G$1" pin="GAIN" pad="10"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="LDAC" pad="9"/>
+<connect gate="G$1" pin="RESET" pad="15"/>
+<connect gate="G$1" pin="RSTSEL" pad="16"/>
+<connect gate="G$1" pin="SCLK" pad="12"/>
+<connect gate="G$1" pin="SDIN" pad="14"/>
+<connect gate="G$1" pin="SDO" pad="8"/>
+<connect gate="G$1" pin="SYNC" pad="13"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VLOGIC" pad="11"/>
+<connect gate="G$1" pin="VOUT_A" pad="3"/>
+<connect gate="G$1" pin="VOUT_B" pad="2"/>
+<connect gate="G$1" pin="VOUT_C" pad="6"/>
+<connect gate="G$1" pin="VOUT_D" pad="7"/>
+<connect gate="G$1" pin="VREFIN/OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TVS_DIODE">
 <gates>
 <gate name="G$1" symbol="TVS_DIODE" x="0" y="0"/>
@@ -26603,6 +26781,45 @@ Coil voltage: 75% - 170% of nominal voltage
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD5263" prefix="U">
+<description>AD5263 Digital Potentiometer &lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5263.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AD5263" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-24">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="5"/>
+<connect gate="G$1" pin="A4" pad="20"/>
+<connect gate="G$1" pin="B1" pad="1"/>
+<connect gate="G$1" pin="B2" pad="24"/>
+<connect gate="G$1" pin="B3" pad="4"/>
+<connect gate="G$1" pin="B4" pad="21"/>
+<connect gate="G$1" pin="CS" pad="13"/>
+<connect gate="G$1" pin="DIS" pad="9"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="14"/>
+<connect gate="G$1" pin="SCLK" pad="12"/>
+<connect gate="G$1" pin="SDI" pad="11"/>
+<connect gate="G$1" pin="SDO" pad="16"/>
+<connect gate="G$1" pin="SHDN" pad="15"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VLOGIC" pad="10"/>
+<connect gate="G$1" pin="VSS" pad="18"/>
+<connect gate="G$1" pin="W1" pad="3"/>
+<connect gate="G$1" pin="W2" pad="22"/>
+<connect gate="G$1" pin="W3" pad="6"/>
+<connect gate="G$1" pin="W4" pad="19"/>
 </connects>
 <technologies>
 <technology name=""/>
