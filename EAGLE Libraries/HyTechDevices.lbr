@@ -12081,6 +12081,18 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <text x="22.86" y="1.27" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-0.635" y="1.27" size="1.778" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="RELAY_DPST">
+<wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="10.16" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<pad name="3" x="5.0038" y="0" drill="1.5" shape="square"/>
+<pad name="4" x="0" y="0" drill="1.5" shape="square"/>
+<pad name="5" x="0" y="7.493" drill="1.5" shape="square"/>
+<pad name="6" x="5.0038" y="7.493" drill="1.5" shape="square"/>
+<pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
+<pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -17028,6 +17040,52 @@ Demo Board</text>
 <wire x1="20.32" y1="7.62" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RELAY_DPST_NO">
+<circle x="0" y="-15.24" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-17.78" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-12.7" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-25.4" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-27.94" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-22.86" radius="0.635" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-0.762" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="5.842" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-14.9225" x2="4.445" y2="-13.0175" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-25.4" x2="-0.762" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-27.94" x2="5.842" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-25.0825" x2="4.445" y2="-23.1775" width="0.254" layer="94"/>
+<pin name="3" x="-5.08" y="-15.24" visible="off" length="point" swaplevel="3" rot="R270"/>
+<pin name="4" x="10.16" y="-17.78" visible="off" length="point" swaplevel="4" rot="R270"/>
+<pin name="5" x="10.16" y="-27.94" visible="off" length="point" swaplevel="5" rot="R270"/>
+<pin name="6" x="-5.08" y="-25.4" visible="off" length="point" swaplevel="6" rot="R270"/>
+<pin name="COIL+" x="10.16" y="-5.08" visible="off" length="point" swaplevel="1" rot="R90"/>
+<pin name="COIL-" x="-5.08" y="-5.08" visible="off" length="point" swaplevel="8" rot="R90"/>
+<polygon width="0.0254" layer="94">
+<vertex x="3.556" y="-12.954"/>
+<vertex x="4.064" y="-13.716"/>
+<vertex x="4.572" y="-12.954"/>
+</polygon>
+<polygon width="0.0254" layer="94">
+<vertex x="3.556" y="-23.114"/>
+<vertex x="4.064" y="-23.876"/>
+<vertex x="4.572" y="-23.114"/>
+</polygon>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-30.48" x2="-2.54" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-30.48" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<text x="2.54" y="-33.02" size="1.778" layer="94" align="bottom-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -26300,6 +26358,36 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="COIL-" pad="2"/>
 <connect gate="G$1" pin="P" pad="P"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RTE44009">
+<description>TE/Schrack Double Pull Single hrow Relay 9VDC
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/usa-en/product-3-1393243-1.html?q=rte44009&amp;source=headerl"&gt;Product Page&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/RTE44009/1128653?s=N4IgTCBcDaIE4BcCmAWFAGdBOEBdAvkA"&gt;Digikey&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPST_NO" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="RELAY_DPST">
+<connects>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
