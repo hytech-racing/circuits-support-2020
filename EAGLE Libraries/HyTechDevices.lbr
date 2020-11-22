@@ -26366,10 +26366,8 @@ Coil voltage: 75% - 170% of nominal voltage
 </devices>
 </deviceset>
 <deviceset name="RTE44009">
-<description>TE/Schrack Double Pull Single hrow Relay 9VDC
+<description>TE/Schrack Double Pull Single Throw Relay 9VDC
 &lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
