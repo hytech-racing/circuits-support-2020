@@ -17518,6 +17518,30 @@ Demo Board</text>
 <text x="7.62" y="6.35" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="7.62" y="-41.91" size="2.1844" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="LTC4353">
+<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
+<pin name="VIN1" x="-15.24" y="7.62" length="middle"/>
+<pin name="VIN2" x="-15.24" y="5.08" length="middle"/>
+<pin name="GATE1" x="-15.24" y="2.54" length="middle"/>
+<pin name="GATE2" x="-15.24" y="0" length="middle"/>
+<pin name="CPO1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="CPO2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="NC1" x="-15.24" y="-7.62" length="middle"/>
+<pin name="NC2" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="ONST1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="ONST2" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT1" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="EN1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="EN2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-9.906" y="12.954" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -27042,6 +27066,39 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="A" pin="VDDIO" pad="28"/>
 <connect gate="A" pin="XIN32" pad="27"/>
 <connect gate="A" pin="XOUT32" pad="26"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4353">
+<description>Linear Technology LTC4353
+
+&lt;a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwjB2Mq3r6PtAhUuw1kKHS63AOIQFjAAegQIAhAC&amp;url=https%3A%2F%2Fwww.analog.com%2Fmedia%2Fen%2Ftechnical-documentation%2Fdata-sheets%2F4353f.pdf&amp;usg=AOvVaw3V7d_oBxXMIf61WbbZKYEB"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC4353" x="-0.254" y="-1.524"/>
+</gates>
+<devices>
+<device name="" package="MSOP-16">
+<connects>
+<connect gate="G$1" pin="CPO1" pad="11"/>
+<connect gate="G$1" pin="CPO2" pad="6"/>
+<connect gate="G$1" pin="EN1" pad="16"/>
+<connect gate="G$1" pin="EN2" pad="1"/>
+<connect gate="G$1" pin="GATE1" pad="12"/>
+<connect gate="G$1" pin="GATE2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="15"/>
+<connect gate="G$1" pin="NC1" pad="2"/>
+<connect gate="G$1" pin="NC2" pad="3"/>
+<connect gate="G$1" pin="ONST1" pad="9"/>
+<connect gate="G$1" pin="ONST2" pad="8"/>
+<connect gate="G$1" pin="OUT1" pad="10"/>
+<connect gate="G$1" pin="OUT2" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+<connect gate="G$1" pin="VIN1" pad="13"/>
+<connect gate="G$1" pin="VIN2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
