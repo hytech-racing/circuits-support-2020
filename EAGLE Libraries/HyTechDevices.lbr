@@ -12353,6 +12353,25 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <text x="-2.54" y="2.159" size="0.4572" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-0.635" y="-2.54" size="0.4572" layer="27" align="bottom-right">&gt;Value</text>
 </package>
+<package name="SOT89">
+<description>&lt;b&gt;SOT-89&lt;/b&gt;
+&lt;br&gt;</description>
+<smd name="2" x="0" y="-1.27" dx="0.9" dy="1.475" layer="1"/>
+<smd name="1" x="-1.5" y="-1.3575" dx="0.9" dy="1.3" layer="1"/>
+<smd name="3" x="1.5" y="-1.3575" dx="0.9" dy="1.3" layer="1"/>
+<smd name="PAD" x="0" y="1.03" dx="1.733" dy="3.125" layer="1"/>
+<rectangle x1="1.2714" y1="-1.524" x2="1.7286" y2="-0.508" layer="51"/>
+<rectangle x1="-0.2286" y1="-1.524" x2="0.2286" y2="-0.508" layer="51"/>
+<rectangle x1="-1.7286" y1="-1.524" x2="-1.2714" y2="-0.508" layer="51"/>
+<wire x1="2.5" y1="2.03" x2="2.5" y2="-0.37" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-0.37" x2="-2.5" y2="-0.37" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-0.37" x2="-2.5" y2="2.03" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="2.03" x2="2.5" y2="2.03" width="0.2032" layer="21"/>
+<rectangle x1="-0.2286" y1="-1.524" x2="0.2286" y2="-0.508" layer="51"/>
+<rectangle x1="-0.762" y1="2.032" x2="0.762" y2="2.54" layer="51"/>
+<text x="-1.905" y="3.175" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="0.8128" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -15802,41 +15821,6 @@ Demo Board</text>
 <text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-14.24" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="DBT71210">
-<description>Reed Relay Standard Form B (Normally Closed)</description>
-<wire x1="-15.24" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="25.4" y1="5.08" x2="25.4" y2="0" width="0.1524" layer="94"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="-6.92" width="0.1524" layer="94"/>
-<wire x1="25.4" y1="-6.92" x2="-15.24" y2="-6.92" width="0.1524" layer="94"/>
-<pin name="CONTACT1" x="-18.796" y="0" visible="off" length="middle"/>
-<pin name="CONTACT2" x="28.94" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="COIL-" x="5.08" y="10.7" visible="off" length="middle" rot="R270"/>
-<pin name="COIL+" x="5.08" y="-11.3" visible="off" length="middle" rot="R90"/>
-<wire x1="10.714" y1="2.456" x2="10.968" y2="1.186" width="0.1524" layer="94" curve="-180"/>
-<wire x1="10.714" y1="1.186" x2="10.968" y2="-0.084" width="0.1524" layer="94" curve="-180"/>
-<wire x1="10.714" y1="-0.084" x2="10.968" y2="-1.354" width="0.1524" layer="94" curve="-180"/>
-<wire x1="10.714" y1="-1.354" x2="10.968" y2="-2.624" width="0.1524" layer="94" curve="-180"/>
-<wire x1="10.714" y1="-2.624" x2="10.968" y2="-3.894" width="0.1524" layer="94" curve="-180"/>
-<text x="-12.016" y="-6.624" size="1.4224" layer="94">DBT71210 NC</text>
-<text x="4.302" y="6.604" size="1.4224" layer="94">-</text>
-<text x="3.802" y="-10.252" size="1.4224" layer="94">+</text>
-<wire x1="-15.24" y1="5.08" x2="-15.24" y2="0" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="0" x2="-15.24" y2="-6.92" width="0.1524" layer="94"/>
-<wire x1="29.08" y1="0" x2="25.4" y2="0" width="0.1524" layer="94"/>
-<wire x1="10.7" y1="2.4" x2="10.7" y2="3.3" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="0" x2="3" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="5.6" x2="5.08" y2="3.3" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="3.3" x2="10.7" y2="3.3" width="0.1524" layer="94"/>
-<wire x1="10.9" y1="-4" x2="10.9" y2="-5.7" width="0.1524" layer="94"/>
-<wire x1="10.9" y1="-5.7" x2="5.08" y2="-5.7" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.7" x2="5.08" y2="-6.3" width="0.1524" layer="94"/>
-<wire x1="29" y1="0" x2="9.4" y2="0" width="0.1524" layer="94"/>
-<text x="-14.7" y="0.254" size="1.4224" layer="96">CONTACT1</text>
-<text x="3.81" y="-5.08" size="1.4224" layer="96">COIL+</text>
-<text x="-1.27" y="2.54" size="1.4224" layer="96">COIL-</text>
-<text x="14.74" y="0.254" size="1.4224" layer="96">CONTACT2</text>
-<wire x1="3.04" y1="0" x2="9.5" y2="1.77" width="0.1524" layer="94"/>
-</symbol>
 <symbol name="ADIS16209">
 <description>&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
 <wire x1="0" y1="22.86" x2="0" y2="0" width="0.254" layer="94"/>
@@ -18471,6 +18455,16 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <connect gate="G$1" pin="ADJ" pad="3"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="2(TAB)"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SOT89">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="3"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="2 PAD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24575,15 +24569,15 @@ Source: http://www.molex.com</description>
 <deviceset name="DBT71210" uservalue="yes">
 <description>DBT71210 Reed Relay Form B (Standard normally closed), switch 12V</description>
 <gates>
-<gate name="G$1" symbol="DBT71210" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_SPST_NC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DBT71210">
 <connects>
 <connect gate="G$1" pin="COIL+" pad="COIL+"/>
 <connect gate="G$1" pin="COIL-" pad="COIL-"/>
-<connect gate="G$1" pin="CONTACT1" pad="CONTACT1"/>
-<connect gate="G$1" pin="CONTACT2" pad="CONTACT2"/>
+<connect gate="G$1" pin="O" pad="CONTACT2"/>
+<connect gate="G$1" pin="P" pad="CONTACT1"/>
 </connects>
 <technologies>
 <technology name=""/>
