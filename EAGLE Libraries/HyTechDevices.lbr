@@ -9625,7 +9625,7 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <pad name="CONTACT2" x="4.6" y="-7.9" drill="1" diameter="1.778" shape="square" rot="R180"/>
 <pad name="COIL-" x="30" y="-2.8" drill="1" diameter="1.778" shape="square" rot="R180"/>
 <pad name="COIL+" x="30" y="-13" drill="1" diameter="1.778" shape="square" rot="R180"/>
-<text x="25" y="-10" size="1.4224" layer="21">DBT71210</text>
+<text x="30" y="-7.9" size="2.032" layer="21" align="center">DBT71210</text>
 </package>
 <package name="HM2102NLT">
 <description>SMD Transformer</description>
