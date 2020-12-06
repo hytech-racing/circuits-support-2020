@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15504,7 +15504,7 @@ Demo Board</text>
 <pin name="A0" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="SO" x="-10.16" y="-15.24" length="short"/>
 </symbol>
-<symbol name="MAX7480">
+<symbol name="MAX74XX">
 <description>8th-Order Lowpass Butterworth Filter</description>
 <wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
 <wire x1="15.24" y1="0" x2="15.24" y2="-12.7" width="0.1524" layer="94"/>
@@ -17033,6 +17033,23 @@ Demo Board</text>
 <wire x1="10.16" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
 <text x="-13.208" y="16.002" size="1.778" layer="95">&gt;NAME</text>
 <text x="-13.462" y="-19.304" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX7400">
+<description>8th-order lowpass elliptic filter</description>
+<pin name="VDD" x="27.94" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="IN" x="2.54" y="2.54" length="middle" direction="pas"/>
+<pin name="CLK" x="2.54" y="0" length="middle" direction="pas"/>
+<pin name="SHDN" x="2.54" y="-2.54" length="middle" direction="pas"/>
+<pin name="OUT" x="27.94" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="COM" x="27.94" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="OS" x="27.94" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="2.54" y="-5.08" length="middle" direction="pas"/>
+<wire x1="7.62" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="22.86" y1="5.08" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-7.62" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -24050,7 +24067,7 @@ Source: http://www.molex.com</description>
 <deviceset name="MAX7480" uservalue="yes">
 <description>8th-order lowpass butterworth filter</description>
 <gates>
-<gate name="G$1" symbol="MAX7480" x="0" y="0"/>
+<gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC-08">
@@ -26375,6 +26392,30 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="W2" pad="22"/>
 <connect gate="G$1" pin="W3" pad="6"/>
 <connect gate="G$1" pin="W4" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX7400">
+<description>MAX7400 Elliptic Filter&lt;br&gt;
+&lt;a href="https://datasheets.maximintegrated.com/en/ds/MAX7400-MAX7407.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX74XX" x="-7.62" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SOP8">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="8"/>
+<connect gate="G$1" pin="COM" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OS" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
