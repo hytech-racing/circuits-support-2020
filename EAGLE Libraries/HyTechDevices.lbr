@@ -26319,17 +26319,19 @@ Dimensions: 5 mm x 20 mm
 
 &lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/115/ds30184-1382386.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="ZENER_ARRAY_3" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE_ZENER" x="5.08" y="0"/>
+<gate name="G$2" symbol="DIODE_ZENER" x="5.08" y="-7.62"/>
+<gate name="G$3" symbol="DIODE_ZENER" x="5.08" y="-17.78"/>
 </gates>
 <devices>
 <device name="" package="SOT363">
 <connects>
-<connect gate="G$1" pin="A1" pad="P$1"/>
-<connect gate="G$1" pin="A2" pad="P$2"/>
-<connect gate="G$1" pin="A3" pad="P$3"/>
-<connect gate="G$1" pin="C1" pad="P$4"/>
-<connect gate="G$1" pin="C2" pad="P$5"/>
-<connect gate="G$1" pin="C3" pad="P$6"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$4"/>
+<connect gate="G$2" pin="A" pad="P$2"/>
+<connect gate="G$2" pin="C" pad="P$5"/>
+<connect gate="G$3" pin="A" pad="P$3"/>
+<connect gate="G$3" pin="C" pad="P$6"/>
 </connects>
 <technologies>
 <technology name="">
