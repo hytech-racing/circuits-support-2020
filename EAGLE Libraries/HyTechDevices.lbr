@@ -16834,11 +16834,11 @@ Demo Board</text>
 <pin name="MODE" x="-15.24" y="-5.08" length="middle"/>
 <pin name="RTN" x="-15.24" y="-7.62" length="middle"/>
 <pin name="OUT" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="SHDN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="!SHDN!" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="IMON" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="ILIM" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="FLT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="!FLT!" x="15.24" y="2.54" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -25986,8 +25986,9 @@ Dimensions: 5 mm x 20 mm
 <devices>
 <device name="" package="HTSSOP-16">
 <connects>
+<connect gate="G$1" pin="!FLT!" pad="14"/>
+<connect gate="G$1" pin="!SHDN!" pad="7"/>
 <connect gate="G$1" pin="DVDT" pad="12"/>
-<connect gate="G$1" pin="FLT" pad="14"/>
 <connect gate="G$1" pin="GND" pad="9"/>
 <connect gate="G$1" pin="ILIM" pad="11"/>
 <connect gate="G$1" pin="IMON" pad="10"/>
@@ -25996,7 +25997,6 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="OUT" pad="15 16"/>
 <connect gate="G$1" pin="OVP" pad="5"/>
 <connect gate="G$1" pin="RTN" pad="8 PAD"/>
-<connect gate="G$1" pin="SHDN" pad="7"/>
 <connect gate="G$1" pin="UVLO" pad="3"/>
 </connects>
 <technologies>
