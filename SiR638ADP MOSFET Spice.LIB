@@ -1,0 +1,38 @@
+********************************
+* Copyright:                   *
+* Vishay Intertechnology, Inc. *
+********************************
+*Nov 27, 2017
+*ECN S17-1762, Rev. A
+*File Name: SiR638ADP_PS.txt and SiR638ADP_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product datasheet. Designers should refer to the
+*appropriate datasheet of the same number for guaranteed specification
+*limits.
+.SUBCKT SiR638ADP D G S 
+M1 3 GX S S NMOS W= 19640000u L= 0.30u 
+M2 S GX S D PMOS W= 19640000u L= 0.10u 
+R1 D 3 6.390e-04 TC=4.310e-03,1.176e-05
+CGS GX S 5.524e-09 
+CGD GX D 1.000e-13 
+RG G GY 0.88
+RTCV 100 S 1e6 TC=1.112e-05,-1.415e-07
+ETCV GX GY 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD S D DBD 19640000u 
+************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 5e-8 
++ RS = 0 KP = 1.975e-05 NSUB = 9.891e+16 
++ KAPPA = 3.777e-02 NFS = 1.050e+11 
++ LD = 0 IS = 0 TPG = 1    )
+************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 5e-8 
++NSUB = 2.204e+16 IS = 0 TPG = -1    )
+************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 9.799e-08 T_measured = 25 BV = 41
++RS = 1.281e-02 N = 1.085e+00 IS = 2.915e-12 
++EG = 1.079e+00 XTI = 3.395e+00 TRS1 = 1.000e-05
++CJO = 3.689e-10 VJ = 5.570e+00 M = 1.000e+00 ) 
+.ENDS 
