@@ -16887,6 +16887,32 @@ Demo Board</text>
 <pin name="GND3" x="25.4" y="33.02" visible="pin" length="short" rot="R180"/>
 <text x="10.16" y="6.35" size="1.778" layer="95" align="bottom-center">Teensy 4.1</text>
 </symbol>
+<symbol name="MCP2562">
+<wire x1="0" y1="11.43" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="15.24" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-1.27" x2="15.24" y2="11.43" width="0.254" layer="94"/>
+<wire x1="15.24" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="11.43" x2="5.08" y2="11.43" width="0.254" layer="94"/>
+<wire x1="5.08" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94" curve="180"/>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="17.78" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="17.78" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="17.78" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="17.78" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="3.175" y="12.065" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="7.62" size="1.27" layer="94">TXD</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
+<text x="1.27" y="2.54" size="1.27" layer="94">VDD</text>
+<text x="1.27" y="0" size="1.27" layer="94">RXD</text>
+<text x="13.97" y="1.27" size="1.27" layer="94" rot="R180">VIO</text>
+<text x="13.97" y="3.81" size="1.27" layer="94" rot="R180">CANL</text>
+<text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">STBY</text>
+<text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -26052,6 +26078,47 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="GND2" pad="GND2"/>
 <connect gate="G$1" pin="GND3" pad="GND3"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2562FD">
+<description>MCP2562FD High-speed CAN Transceiver
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://ww1.microchip.com/downloads/en/devicedoc/20005167c.pdf"&gt;Datatsheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP2562" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DIL08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOIC-08" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
