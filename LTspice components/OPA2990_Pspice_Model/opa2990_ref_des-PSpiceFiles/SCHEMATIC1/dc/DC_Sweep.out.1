@@ -1,0 +1,52 @@
+
+**** 06/28/20 21:03:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Schematics-DC_Sweep"  [ c:\users\a0270536\documents\pspice-ti\opa2990_ref_des-pspicefiles\schematics\dc_sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC_Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VIN2 -3 3 .01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Schematics.net" 
+
+
+
+**** INCLUDING Schematics.net ****
+* source OPA2990_REF_DES
+V_V1         VCC 0 18
+R_R2         0 N00895  1k TC=0,0 
+R_R1         N00895 N00909  4k TC=0,0 
+V_V2         0 VEE 18
+V_VIN         N01057 0  
++SIN 0 3 10k 0 0 0
+X_U1         N01057 N00895 VCC VEE N00909 OPA2990
+V_V3         VCC 0 18
+R_R3         0 N01784  1k TC=0,0 
+R_R4         N01784 N01798  4k TC=0,0 
+V_V4         0 VEE 18
+X_U2         N01946 N01784 VCC VEE N01798 OPA2990
+V_VIN2         N01946 0 1
+
+**** RESUMING DC_Sweep.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V3. You may break the loop by adding a series resistance
+
