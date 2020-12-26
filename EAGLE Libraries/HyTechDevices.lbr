@@ -17202,7 +17202,7 @@ Demo Board</text>
 <wire x1="-2.54" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 <text x="2.54" y="-33.02" size="1.778" layer="94" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="TVS_DIODE">
+<symbol name="DIODE_TVS">
 <wire x1="0" y1="1.27" x2="0" y2="-1.016" width="0.1524" layer="94"/>
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
@@ -23041,7 +23041,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </deviceset>
 <deviceset name="TVS_DIODE">
 <gates>
-<gate name="G$1" symbol="TVS_DIODE" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE_TVS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="U-DFN1608-2">
