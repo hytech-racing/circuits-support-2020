@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1219,57 +1219,6 @@ Precharger</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRITIUM_WAVESCULPTOR200">
-<description>Tritium Wavesculptor200 Motor Inverter
-&lt;br&gt;
-&lt;a href="http://tritium.com.au/products/wavesculptor200-motor-inverter/"&gt;Product Page&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://tritium.com.au/wp-content/uploads/2015/08/TRI74.015v4-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TRITIUM_WAVESCULPTOR200" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ORION_BMS">
-<description>Orion Battery Management System
-&lt;br&gt;
-&lt;a href="http://www.orionbms.com/products"&gt;Product Page&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ORION_BMS" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MOTOR_DC">
-<description>Generic DC electric motor</description>
-<gates>
-<gate name="G$1" symbol="MOTOR_DC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MOTOR_AC">
 <description>Generic three-phase AC electric motor</description>
 <gates>
@@ -1291,21 +1240,6 @@ Precharger</text>
 &lt;a href="http://www.zeva.com.au/Products/datasheets/SmartPrechargerV1-3.pdf"&gt;http://www.zeva.com.au/Products/datasheets/SmartPrechargerV1-3.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="SMART_PRECHARGER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="EV_DRIVER_CONTROLS">
-<description>EV Driver Controls from Tritium. This is a vehicle controller that can handle driver and sensor input.</description>
-<gates>
-<gate name="G$1" symbol="EV_DRIVER_CONTROLS" x="0" y="35.56"/>
 </gates>
 <devices>
 <device name="">
