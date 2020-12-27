@@ -5825,19 +5825,19 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <symbol name="MAX74XX">
 <description>8th-Order Lowpass Butterworth Filter</description>
 <wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1524" layer="94"/>
-<pin name="COM" x="-5.08" y="-2.54" length="middle"/>
-<pin name="IN" x="-5.08" y="-5.08" length="middle"/>
-<pin name="GND" x="-5.08" y="-7.62" length="middle"/>
-<pin name="VDD" x="-5.08" y="-10.16" length="middle"/>
-<pin name="OUT" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="OS" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="!SHDN" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="CLK" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="COM" x="-5.08" y="-7.62" length="middle"/>
+<pin name="IN" x="-5.08" y="-2.54" length="middle"/>
+<pin name="GND" x="-5.08" y="-15.24" length="middle"/>
+<pin name="VDD" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="OUT" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="OS" x="-5.08" y="-10.16" length="middle"/>
+<pin name="!SHDN" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="CLK" x="-5.08" y="-5.08" length="middle"/>
 <text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-14.24" size="1.27" layer="96">&gt;VALUE</text>
+<text x="0" y="-17.78" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="ADIS16209">
 <description>&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
@@ -6983,6 +6983,16 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <wire x1="0.508" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0.762" y1="2.794" x2="0.762" y2="2.286" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="PWR_GND">
+<pin name="VCC" x="2.54" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="2.54" y="-7.62" length="short" direction="pwr" swaplevel="1" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<text x="-7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="95" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
