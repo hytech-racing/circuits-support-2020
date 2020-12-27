@@ -329,12 +329,13 @@ Part of the DO-204 family of packages for lead-mounted axial devices with round 
 <wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" rot="R90"/>
+<text x="0" y="1.397" size="1.27" layer="25" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<circle x="-2.54" y="1.27" radius="0.254" width="0" layer="21"/>
 </package>
 <package name="1X03">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -17383,108 +17384,24 @@ Demo Board</text>
 <wire x1="9.398" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="6.35" y1="0" x2="6.858" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="OPAMP_NOPWR">
+<text x="3.175" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.175" y="-2.54" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="VIN-" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="3"/>
+<pin name="VIN+" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="2"/>
+<pin name="VOUT" x="7.62" y="0" visible="pad" length="point" direction="out" swaplevel="4" rot="R180"/>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.286" x2="6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="2.54" y2="2.286" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.286" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0.508" y1="2.54" x2="1.016" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.794" x2="0.762" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="THERMISTOR" prefix="R">
-<description>&lt;b&gt;THERMISTOR&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="THERMISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_DIRECT-MOUNT" package="DO-35">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_WIRED" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLID_STATE_RELAY">
-<gates>
-<gate name="G$1" symbol="PHOTOMOS-DC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_G3VM-41AY" package="DIL04">
-<connects>
-<connect gate="G$1" pin="IO1" pad="4"/>
-<connect gate="G$1" pin="IO2" pad="3"/>
-<connect gate="G$1" pin="LED+" pad="1"/>
-<connect gate="G$1" pin="LED-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_VO14642AT" package="DIL06">
-<connects>
-<connect gate="G$1" pin="IO1" pad="6"/>
-<connect gate="G$1" pin="IO2" pad="5"/>
-<connect gate="G$1" pin="LED+" pad="1"/>
-<connect gate="G$1" pin="LED-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VI-J71-CZ">
-<description>Vicor-Corporation VI-J71-CZ
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.digikey.com/product-detail/en/vicor-corporation/VI-J71-CZ/1102-1486-ND/2996194"&gt;Product Page&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://cdn.vicorpower.com/documents/datasheets/ds_vi-j00.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="HV_DCDC_VI-J71-CZ" x="-17.78" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="HV_DCDC_VI-J71-CZ">
-<connects>
-<connect gate="G$1" pin="1VIN+" pad="1VIN+"/>
-<connect gate="G$1" pin="2GATEIN" pad="2GATEIN"/>
-<connect gate="G$1" pin="3GATEOUT" pad="3GATEOUT"/>
-<connect gate="G$1" pin="4VIN-" pad="4VIN-"/>
-<connect gate="G$1" pin="5VOUT+" pad="5VOUT+"/>
-<connect gate="G$1" pin="6SENSE+" pad="6SENSE+"/>
-<connect gate="G$1" pin="7TRIM" pad="7TRIM"/>
-<connect gate="G$1" pin="8SENSE-" pad="8SENSE-"/>
-<connect gate="G$1" pin="9VOUT-" pad="9VOUT-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDER_PAD">
-<description>Solder pad used to attach wires directly to PCB</description>
-<gates>
-<gate name="G$1" symbol="SOLDER_PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOLDER_PAD_XSMALL">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LR8">
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR_ADJ" x="0" y="0"/>
@@ -17529,25 +17446,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <gate name="G$1" symbol="M02" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="LOCK_LONGPADS" package="1X02_LOCK_LONGPADS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SLIM" package="1X02_SLIM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -17575,29 +17474,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <gate name="G$1" symbol="M04" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="LOCK_LONGPADS" package="1X04_LOCK_LONGPADS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="1X04">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SLIM" package="1X04_SLIM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -17627,19 +17504,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <gate name="G$1" symbol="M06" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="LOCK_LONGPADS" package="1X06_LOCK_LONGPADS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="1X06">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -17672,21 +17536,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <gate name="G$1" symbol="M08" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="LOCK_LONGPADS" package="1X08_LOCK_LONGPADS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="1X08">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -18096,38 +17945,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MULTIPLEXER_CD74HC4051E">
-<description>&lt;B&gt; Texas Instruments   CD74HC4051E &lt;/b&gt;
-&lt;br&gt; HIGH-SPEED CMOS LOGIC ANALOG 8 CHANNEL MULTIPLEXER/DEMULTIPLEXER</description>
-<gates>
-<gate name="G$1" symbol="MULTIPLEXER_CD74HC4051E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL16">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="A0" pad="13"/>
-<connect gate="G$1" pin="A1" pad="14"/>
-<connect gate="G$1" pin="A2" pad="15"/>
-<connect gate="G$1" pin="A3" pad="12"/>
-<connect gate="G$1" pin="A4" pad="1"/>
-<connect gate="G$1" pin="A5" pad="5"/>
-<connect gate="G$1" pin="A6" pad="2"/>
-<connect gate="G$1" pin="A7" pad="4"/>
-<connect gate="G$1" pin="GND" pad="8"/>
-<connect gate="G$1" pin="S0" pad="11"/>
-<connect gate="G$1" pin="S1" pad="10"/>
-<connect gate="G$1" pin="S2" pad="9"/>
-<connect gate="G$1" pin="VCC" pad="16"/>
-<connect gate="G$1" pin="VEE" pad="7"/>
-<connect gate="G$1" pin="~E" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP2515">
 <description>MCP2515 CAN Controller with SPI Interface
 &lt;br&gt;
@@ -18331,36 +18148,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL_BLOCK_DG301-02P">
-<description>&lt;h2&gt;DG301-02P Terminal block&lt;/h2&gt;
-&lt;br&gt;
-&lt;a href="http://www.taydaelectronics.com/connectors-sockets/terminal-blocks/dg301-screw-terminal-block-2-positions-5mm.html"&gt;Tayda Electronics Store&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.tme.eu/en/Document/72ad9f371bb0c16572574ac47903b3a1/DG301-5.0.pdf"&gt;Datasheet&lt;/a&gt;
-
-&lt;p&gt;&lt;b&gt;Specs:&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Positions: 2&lt;/li&gt;
-&lt;li&gt;Pitch: 5.00mm&lt;/li&gt;
-&lt;li&gt;Wire: 12-24 AWG&lt;/li&gt;
-&lt;li&gt;Max Current: 15A&lt;/li&gt;
-&lt;li&gt;Max Voltage: 300V&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="M02" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="DG301-02P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED" prefix="LED" uservalue="yes">
 <description>Light Emitting Diode (LED)
 &lt;br&gt;
@@ -18542,61 +18329,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RASPBERRY_PI_ZERO-V1.2">
-<description>Based on source: &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?f=63&amp;t=127228"&gt;peter6960 on raspberrypi.org&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RASPBERRY_PI_HEADER_40" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RASPBERRY_PI_ZERO-V1.2">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="1"/>
-<connect gate="G$1" pin="3.3V1" pad="17"/>
-<connect gate="G$1" pin="5V" pad="2"/>
-<connect gate="G$1" pin="5V1" pad="4"/>
-<connect gate="G$1" pin="GEN4/GPIO_23" pad="16"/>
-<connect gate="G$1" pin="GEN5/GPIO_24" pad="18"/>
-<connect gate="G$1" pin="GEN6/GPIO_25" pad="22"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="GND1" pad="25"/>
-<connect gate="G$1" pin="GND2" pad="39"/>
-<connect gate="G$1" pin="GND3" pad="6"/>
-<connect gate="G$1" pin="GND4" pad="14"/>
-<connect gate="G$1" pin="GND5" pad="20"/>
-<connect gate="G$1" pin="GND6" pad="30"/>
-<connect gate="G$1" pin="GND7" pad="34"/>
-<connect gate="G$1" pin="GPIO_02/SDA1" pad="3"/>
-<connect gate="G$1" pin="GPIO_03/SCL1" pad="5"/>
-<connect gate="G$1" pin="GPIO_04/GCKL" pad="7"/>
-<connect gate="G$1" pin="GPIO_05" pad="29"/>
-<connect gate="G$1" pin="GPIO_06" pad="31"/>
-<connect gate="G$1" pin="GPIO_09/MISO" pad="21"/>
-<connect gate="G$1" pin="GPIO_10/MOSI" pad="19"/>
-<connect gate="G$1" pin="GPIO_11/SCLK" pad="23"/>
-<connect gate="G$1" pin="GPIO_12" pad="32"/>
-<connect gate="G$1" pin="GPIO_13" pad="33"/>
-<connect gate="G$1" pin="GPIO_16" pad="36"/>
-<connect gate="G$1" pin="GPIO_17/GEN0" pad="11"/>
-<connect gate="G$1" pin="GPIO_18" pad="12"/>
-<connect gate="G$1" pin="GPIO_19" pad="35"/>
-<connect gate="G$1" pin="GPIO_20" pad="38"/>
-<connect gate="G$1" pin="GPIO_21" pad="40"/>
-<connect gate="G$1" pin="GPIO_22/GEN3" pad="15"/>
-<connect gate="G$1" pin="GPIO_26" pad="37"/>
-<connect gate="G$1" pin="GPIO_27/GEN2" pad="13"/>
-<connect gate="G$1" pin="ID_SC" pad="28"/>
-<connect gate="G$1" pin="ID_SD" pad="27"/>
-<connect gate="G$1" pin="RXD0/GPIO_15" pad="10"/>
-<connect gate="G$1" pin="SPI_CE0_N/GPIO_08" pad="24"/>
-<connect gate="G$1" pin="SPI_CE1_N/GPIO_07" pad="26"/>
-<connect gate="G$1" pin="TXD0/GPIO_14" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="THERMISTOR_NCP21">
 <description>&lt;strong&gt;Murata NCP Thermistor&lt;/strong&gt;
 &lt;br&gt;
@@ -18618,37 +18350,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TLP291-4">
-<description>&lt;b&gt;Toshiba Quad Channel Optocoupler TLP291-4 DC&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="TLP291-4" x="5.08" y="12.7"/>
-</gates>
-<devices>
-<device name="" package="11-11F1">
-<connects>
-<connect gate="G$1" pin="C1" pad="16"/>
-<connect gate="G$1" pin="C2" pad="14"/>
-<connect gate="G$1" pin="C3" pad="12"/>
-<connect gate="G$1" pin="C4" pad="10"/>
-<connect gate="G$1" pin="EM1" pad="15"/>
-<connect gate="G$1" pin="EM2" pad="13"/>
-<connect gate="G$1" pin="EM3" pad="11"/>
-<connect gate="G$1" pin="EM4" pad="9"/>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="4"/>
-<connect gate="G$1" pin="GND3" pad="6"/>
-<connect gate="G$1" pin="GND4" pad="8"/>
-<connect gate="G$1" pin="VCC1" pad="1"/>
-<connect gate="G$1" pin="VCC2" pad="3"/>
-<connect gate="G$1" pin="VCC3" pad="5"/>
-<connect gate="G$1" pin="VCC4" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18806,43 +18507,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-CHANNEL_MOSFET">
-<gates>
-<gate name="G$1" symbol="P-CHANNEL_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="1" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MC34161DG" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;ON Semiconductor MC34161 Dual Channel Voltage Monitor&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="MC34161DG" x="5.08" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="IN1" pad="2"/>
-<connect gate="G$1" pin="IN2" pad="3"/>
-<connect gate="G$1" pin="MODE" pad="7"/>
-<connect gate="G$1" pin="OUT1" pad="6"/>
-<connect gate="G$1" pin="OUT2" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VREF" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRIMPOT_3296" prefix="R" uservalue="yes">
 <description>&lt;b&gt;3296 Series&lt;/b&gt;&lt;p&gt;
 3/8" Square Trimmer
@@ -18857,25 +18521,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NPN_BCP56T1">
-<description>&lt;B&gt; ON Semiconductor BCP56 Series NPN Silicon Epitaxial Transistor &lt;/B&gt;
-&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/308/BCP56T1-D-104805.pdf"&gt;Datasheet</description>
-<gates>
-<gate name="G$1" symbol="NPN_BJT" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2 4"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18914,125 +18559,6 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MDS1656">
-<description>Single N-Channel Trench MOSFET 30V, 7.2A, 28mΩ</description>
-<gates>
-<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="D" pad="5 6 7 8"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TLC5940">
-<description>16-Channel LED Driver With DOT Correction and Grayscale PWM Control</description>
-<gates>
-<gate name="G$1" symbol="TLC5940" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL28-3">
-<connects>
-<connect gate="G$1" pin="BLANK" pad="23"/>
-<connect gate="G$1" pin="DCPRG" pad="19"/>
-<connect gate="G$1" pin="GND" pad="22"/>
-<connect gate="G$1" pin="GSCLK" pad="18"/>
-<connect gate="G$1" pin="IREF" pad="20"/>
-<connect gate="G$1" pin="OUT0" pad="28"/>
-<connect gate="G$1" pin="OUT1" pad="1"/>
-<connect gate="G$1" pin="OUT10" pad="10"/>
-<connect gate="G$1" pin="OUT11" pad="11"/>
-<connect gate="G$1" pin="OUT12" pad="12"/>
-<connect gate="G$1" pin="OUT13" pad="13"/>
-<connect gate="G$1" pin="OUT14" pad="14"/>
-<connect gate="G$1" pin="OUT15" pad="15"/>
-<connect gate="G$1" pin="OUT2" pad="2"/>
-<connect gate="G$1" pin="OUT3" pad="3"/>
-<connect gate="G$1" pin="OUT4" pad="4"/>
-<connect gate="G$1" pin="OUT5" pad="5"/>
-<connect gate="G$1" pin="OUT6" pad="6"/>
-<connect gate="G$1" pin="OUT7" pad="7"/>
-<connect gate="G$1" pin="OUT8" pad="8"/>
-<connect gate="G$1" pin="OUT9" pad="9"/>
-<connect gate="G$1" pin="SCLK" pad="25"/>
-<connect gate="G$1" pin="SIN" pad="26"/>
-<connect gate="G$1" pin="SOUT" pad="17"/>
-<connect gate="G$1" pin="VCC" pad="21"/>
-<connect gate="G$1" pin="VPRG" pad="27"/>
-<connect gate="G$1" pin="XERR" pad="16"/>
-<connect gate="G$1" pin="XLAT" pad="24"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PSMN075_MOSFET">
-<description>&lt;B&gt; NXP - PSMN075-100MSE &lt;/B&gt;
-
-&lt;P&gt; Link to data sheet: http://www.mouser.com/ds/2/302/PSMN075-100MSE-842937.pdf</description>
-<gates>
-<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LFPAK33">
-<connects>
-<connect gate="G$1" pin="D" pad="MB MB1 MB2 MB3 MB4"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SPRING_CONTACT">
-<description>&lt;B&gt; Harwin Surface Mount Spring Contact &lt;/B&gt;
-
-&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/181/S1791-42R-351038.pdf"&gt;Datasheet</description>
-<gates>
-<gate name="G$1" symbol="MV" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="S1791-42R">
-<connects>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PSMN011_MOSFET">
-<description>&lt;B&gt; PSMN011_MOSFET &lt;/B&gt;
-
-&lt;P&gt; &lt;a href="http://www.nxp.com/documents/data_sheet/PSMN011-30YLC.pdf"&gt; Datasheet</description>
-<gates>
-<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="-12.7" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="SOT669">
-<connects>
-<connect gate="G$1" pin="D" pad="MB MB2"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19092,33 +18618,6 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <gate name="G$1" symbol="M20" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LOCK_LONGPADS" package="1X20_LOCK_LONGPADS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="15" pad="15"/>
-<connect gate="G$1" pin="16" pad="16"/>
-<connect gate="G$1" pin="17" pad="17"/>
-<connect gate="G$1" pin="18" pad="18"/>
-<connect gate="G$1" pin="19" pad="19"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="20" pad="20"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="1X20">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -19141,115 +18640,6 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="WS2812B" prefix="LED">
-<description>4 Pin RBG LED individually addressable.
-&lt;br&gt;
-Source: Adafruit</description>
-<gates>
-<gate name="G$1" symbol="WS2812B" x="0" y="0"/>
-</gates>
-<devices>
-<device name="5050" package="RGBLED5050">
-<connects>
-<connect gate="G$1" pin="DIN" pad="3"/>
-<connect gate="G$1" pin="DOUT" pad="6"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ORWH-SH-112D1F">
-<description>TE SPST relay</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SPDT" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="G5LE-14">
-<connects>
-<connect gate="G$1" pin="COIL+" pad="1"/>
-<connect gate="G$1" pin="COIL-" pad="2"/>
-<connect gate="G$1" pin="O" pad="O"/>
-<connect gate="G$1" pin="P" pad="P"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.5_EXT">
-<description>Simple version of the Teensy 3.5 board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.5_SIMPLE_RTC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.5_EXT">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V_1" pad="3.3V_1"/>
-<connect gate="G$1" pin="3.3V_2" pad="3.3V_2"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A12" pad="A12"/>
-<connect gate="G$1" pin="A13" pad="A13"/>
-<connect gate="G$1" pin="A14" pad="A14"/>
-<connect gate="G$1" pin="A15" pad="A15"/>
-<connect gate="G$1" pin="A16" pad="A16"/>
-<connect gate="G$1" pin="A17" pad="A17"/>
-<connect gate="G$1" pin="A18" pad="A18"/>
-<connect gate="G$1" pin="A19" pad="A19"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A20" pad="A20"/>
-<connect gate="G$1" pin="A21" pad="A21"/>
-<connect gate="G$1" pin="A22" pad="A22"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D24" pad="D24"/>
-<connect gate="G$1" pin="D25" pad="D25"/>
-<connect gate="G$1" pin="D26" pad="D26"/>
-<connect gate="G$1" pin="D27" pad="D27"/>
-<connect gate="G$1" pin="D28" pad="D28"/>
-<connect gate="G$1" pin="D29" pad="D29"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D30" pad="D30"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
-<connect gate="G$1" pin="GND_2" pad="GND_2"/>
-<connect gate="G$1" pin="PROG" pad="PROG"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="VBAT" pad="VBAT"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19287,44 +18677,6 @@ Source: Adafruit</description>
 <connect gate="G$1" pin="X_OUT" pad="X_OUT"/>
 <connect gate="G$1" pin="Y_OUT" pad="Y_OUT"/>
 <connect gate="G$1" pin="Z_OUT" pad="Z_OUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP6002">
-<description>Microchip MCP6002 Dual Channel Op Amp</description>
-<gates>
-<gate name="G$1" symbol="OPAMP_2_CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PDIP" package="DIL08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19413,52 +18765,6 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 <connects>
 <connect gate="G$1" pin="1" pad="L1 L2"/>
 <connect gate="G$1" pin="2" pad="R1 R2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74LVC1G06">
-<description>TI SN74LVC1G06 Single Inverter Buffer/Driver With Open-Drain Output
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN74LVC1G06" x="0" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74LVC1G07">
-<description>TI SN74LVC1G07 Single Buffer/Driver With Open-Drain Output
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN74LVC1G07" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19619,77 +18925,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_LC">
-<description>Version of the Teensy LC board that uses the 2 main rows of pins and the pins opposite the usb port.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_LC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_LC">
-<connects>
-<connect gate="G$1" pin="17VIN" pad="17VIN"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A12" pad="A12"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3(RX1)" pad="D3(RX1)"/>
-<connect gate="G$1" pin="D4(TX1)" pad="D4(TX1)"/>
-<connect gate="G$1" pin="D5(TX1)" pad="D5(TX1)"/>
-<connect gate="G$1" pin="D6(RX3)" pad="D6(RX3)"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="PGRM" pad="PGRM"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74LV1T34">
-<description>TI SN74LV1T34 Single Power Supply Single Buffer GATE CMOS Logic Level Shifter
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN74LV1T34" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SN74AHC1G09">
 <description>TI SN74AHC1G09  Single 2–Input Positive-AND Gate With Open-Drain Output
 &lt;br&gt;
@@ -19748,234 +18983,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </device>
 </devices>
 </deviceset>
-<deviceset name="OPA2172">
-<description>TI OPA2172 Dual Channel Op Amp</description>
-<gates>
-<gate name="G$1" symbol="OPAMP_2_CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PDIP" package="DIL08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74AHC74" prefix="IC">
-<description>TI SN74AHC74 Dual positive edge triggered D-type &lt;B&gt;FLIP FLOP&lt;/B&gt;</description>
-<gates>
-<gate name="A" symbol="D_FLIP-FLOP" x="20.32" y="15.24" swaplevel="1"/>
-<gate name="B" symbol="D_FLIP-FLOP" x="20.32" y="-12.7" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="DIL14">
-<connects>
-<connect gate="A" pin="!Q" pad="6"/>
-<connect gate="A" pin="CL" pad="1"/>
-<connect gate="A" pin="CLK" pad="3"/>
-<connect gate="A" pin="D" pad="2"/>
-<connect gate="A" pin="PR" pad="4"/>
-<connect gate="A" pin="Q" pad="5"/>
-<connect gate="B" pin="!Q" pad="8"/>
-<connect gate="B" pin="CL" pad="13"/>
-<connect gate="B" pin="CLK" pad="11"/>
-<connect gate="B" pin="D" pad="12"/>
-<connect gate="B" pin="PR" pad="10"/>
-<connect gate="B" pin="Q" pad="9"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="SOIC-14">
-<connects>
-<connect gate="A" pin="!Q" pad="6"/>
-<connect gate="A" pin="CL" pad="1"/>
-<connect gate="A" pin="CLK" pad="3"/>
-<connect gate="A" pin="D" pad="2"/>
-<connect gate="A" pin="PR" pad="4"/>
-<connect gate="A" pin="Q" pad="5"/>
-<connect gate="B" pin="!Q" pad="8"/>
-<connect gate="B" pin="CL" pad="13"/>
-<connect gate="B" pin="CLK" pad="11"/>
-<connect gate="B" pin="D" pad="12"/>
-<connect gate="B" pin="PR" pad="10"/>
-<connect gate="B" pin="Q" pad="9"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74AHC00" prefix="IC">
-<description>TI SN74AHC00 Quadruple 2-input &lt;B&gt;NAND&lt;/B&gt;</description>
-<gates>
-<gate name="A" symbol="NAND_2" x="0" y="7.62" swaplevel="1"/>
-<gate name="B" symbol="NAND_2" x="0" y="-5.08" swaplevel="1"/>
-<gate name="C" symbol="NAND_2" x="17.78" y="7.62" swaplevel="1"/>
-<gate name="D" symbol="NAND_2" x="17.78" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="35.56" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL14">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="4"/>
-<connect gate="B" pin="I1" pad="5"/>
-<connect gate="B" pin="O" pad="6"/>
-<connect gate="C" pin="I0" pad="10"/>
-<connect gate="C" pin="I1" pad="9"/>
-<connect gate="C" pin="O" pad="8"/>
-<connect gate="D" pin="I0" pad="13"/>
-<connect gate="D" pin="I1" pad="12"/>
-<connect gate="D" pin="O" pad="11"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="SOIC-14">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="4"/>
-<connect gate="B" pin="I1" pad="5"/>
-<connect gate="B" pin="O" pad="6"/>
-<connect gate="C" pin="I0" pad="10"/>
-<connect gate="C" pin="I1" pad="9"/>
-<connect gate="C" pin="O" pad="8"/>
-<connect gate="D" pin="I0" pad="13"/>
-<connect gate="D" pin="I1" pad="12"/>
-<connect gate="D" pin="O" pad="11"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-4PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-4PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-4">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-6PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-6PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-6">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-8PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-8PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-8">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-10PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-10PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-10">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP3208">
 <description>Analog to Digital Converter</description>
 <gates>
@@ -20000,78 +19007,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <connect gate="G$1" pin="DOUT" pad="12"/>
 <connect gate="G$1" pin="VDD" pad="16"/>
 <connect gate="G$1" pin="VREF" pad="15"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-12PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-12PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-12">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$11" pad="11"/>
-<connect gate="G$1" pin="P$12" pad="12"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-16PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-16PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L-VERTICAL-16">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$11" pad="11"/>
-<connect gate="G$1" pin="P$12" pad="12"/>
-<connect gate="G$1" pin="P$13" pad="13"/>
-<connect gate="G$1" pin="P$14" pad="14"/>
-<connect gate="G$1" pin="P$15" pad="15"/>
-<connect gate="G$1" pin="P$16" pad="16"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MX150L-2PINS">
-<gates>
-<gate name="G$1" symbol="MX150L-2PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MX150L_VERTICAL-2">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20104,210 +19039,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </device>
 </devices>
 </deviceset>
-<deviceset name="SM51589PEL">
-<description>&lt;b&gt; Bourns High Isolation LAN Transformer Module &lt;/b&gt;
-&lt;br&gt;
-5000 VAC Isolation
-&lt;br&gt;
-Turns Ratio: 1CT:1CT
-&lt;br&gt;
-Inductance: 350 uH
-&lt;br&gt;
-Leakage Inductance: 0.5 uH
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/54/m51589pel-778121.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TRANSFORMER" x="0" y="0"/>
-<gate name="G$2" symbol="TRANSFORMER" x="0" y="-27.94"/>
-<gate name="G$3" symbol="TRANSFORMER" x="0" y="-55.88"/>
-<gate name="G$4" symbol="TRANSFORMER" x="0" y="-83.82"/>
-</gates>
-<devices>
-<device name="" package="SM51589PEL">
-<connects>
-<connect gate="G$1" pin="MCT" pad="1"/>
-<connect gate="G$1" pin="MX+" pad="2"/>
-<connect gate="G$1" pin="MX-" pad="3"/>
-<connect gate="G$1" pin="TCT" pad="24"/>
-<connect gate="G$1" pin="TD+" pad="23"/>
-<connect gate="G$1" pin="TD-" pad="22"/>
-<connect gate="G$2" pin="MCT" pad="4"/>
-<connect gate="G$2" pin="MX+" pad="5"/>
-<connect gate="G$2" pin="MX-" pad="6"/>
-<connect gate="G$2" pin="TCT" pad="21"/>
-<connect gate="G$2" pin="TD+" pad="20"/>
-<connect gate="G$2" pin="TD-" pad="19"/>
-<connect gate="G$3" pin="MCT" pad="7"/>
-<connect gate="G$3" pin="MX+" pad="8"/>
-<connect gate="G$3" pin="MX-" pad="9"/>
-<connect gate="G$3" pin="TCT" pad="18"/>
-<connect gate="G$3" pin="TD+" pad="17"/>
-<connect gate="G$3" pin="TD-" pad="16"/>
-<connect gate="G$4" pin="MCT" pad="10"/>
-<connect gate="G$4" pin="MX+" pad="11"/>
-<connect gate="G$4" pin="MX-" pad="12"/>
-<connect gate="G$4" pin="TCT" pad="15"/>
-<connect gate="G$4" pin="TD+" pad="14"/>
-<connect gate="G$4" pin="TD-" pad="13"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SRU1048" uservalue="yes">
-<description>&lt;b&gt; Bourns SRU1048 Series Shielded SMD Power Inductor &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/54/RU1048-778161.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SRU1048">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP6542">
-<description>Microchip MCP6542 Dual Channel Push-Pull Comparator</description>
-<gates>
-<gate name="G$1" symbol="OPAMP_2_CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PDIP" package="DIL08">
-<connects>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VINA+" pad="3"/>
-<connect gate="G$1" pin="VINA-" pad="2"/>
-<connect gate="G$1" pin="VINB+" pad="5"/>
-<connect gate="G$1" pin="VINB-" pad="6"/>
-<connect gate="G$1" pin="VOUTA" pad="1"/>
-<connect gate="G$1" pin="VOUTB" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SS-14D0839-VG5PA">
-<gates>
-<gate name="G$1" symbol="SS-14D0839-VG5PA" x="33.02" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="SS-14D0839-VG5PA">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="COM" pad="COM"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOT223">
-<gates>
-<gate name="G$1" symbol="SOT223" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOIC16">
-<gates>
-<gate name="G$1" symbol="SOIC16" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-16">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$11" pad="11"/>
-<connect gate="G$1" pin="P$12" pad="12"/>
-<connect gate="G$1" pin="P$13" pad="13"/>
-<connect gate="G$1" pin="P$14" pad="14"/>
-<connect gate="G$1" pin="P$15" pad="15"/>
-<connect gate="G$1" pin="P$16" pad="16"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SCA3100-D04">
-<description>&lt;b&gt;Murata SCA3100-D04 3-axis accelerometer &lt;/b&gt;&lt;br&gt;
-&lt;a href="http://www.mouser.com/pdfdocs/SCA3300-D01Industrial3-axisaccelerometerDatasheet_A1.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SCA3100-D04" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SCA3100-D04">
-<connects>
-<connect gate="G$1" pin="AVSS" pad="AVSS"/>
-<connect gate="G$1" pin="A_EXTC" pad="A_EXTC"/>
-<connect gate="G$1" pin="CSB" pad="CSB"/>
-<connect gate="G$1" pin="DVIO" pad="DVIO"/>
-<connect gate="G$1" pin="DVSS" pad="DVSS"/>
-<connect gate="G$1" pin="D_EXTC" pad="D_EXTC"/>
-<connect gate="G$1" pin="EMC_GND" pad="EMC_GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RSVD" pad="RESERVED"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="OKI-78SR-5">
 <description>Murata OKI-78SR 5V 1.5A Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -20329,61 +19060,6 @@ Leakage Inductance: 0.5 uH
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RASPBERRY_PI_HEADER">
-<description>Based on source: &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?f=63&amp;t=127228"&gt;peter6960 on raspberrypi.org&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RASPBERRY_PI_HEADER_40" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RASPBERRY_PI_HEADER">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="1"/>
-<connect gate="G$1" pin="3.3V1" pad="17"/>
-<connect gate="G$1" pin="5V" pad="2"/>
-<connect gate="G$1" pin="5V1" pad="4"/>
-<connect gate="G$1" pin="GEN4/GPIO_23" pad="16"/>
-<connect gate="G$1" pin="GEN5/GPIO_24" pad="18"/>
-<connect gate="G$1" pin="GEN6/GPIO_25" pad="22"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="GND1" pad="25"/>
-<connect gate="G$1" pin="GND2" pad="39"/>
-<connect gate="G$1" pin="GND3" pad="6"/>
-<connect gate="G$1" pin="GND4" pad="14"/>
-<connect gate="G$1" pin="GND5" pad="20"/>
-<connect gate="G$1" pin="GND6" pad="30"/>
-<connect gate="G$1" pin="GND7" pad="34"/>
-<connect gate="G$1" pin="GPIO_02/SDA1" pad="3"/>
-<connect gate="G$1" pin="GPIO_03/SCL1" pad="5"/>
-<connect gate="G$1" pin="GPIO_04/GCKL" pad="7"/>
-<connect gate="G$1" pin="GPIO_05" pad="29"/>
-<connect gate="G$1" pin="GPIO_06" pad="31"/>
-<connect gate="G$1" pin="GPIO_09/MISO" pad="21"/>
-<connect gate="G$1" pin="GPIO_10/MOSI" pad="19"/>
-<connect gate="G$1" pin="GPIO_11/SCLK" pad="23"/>
-<connect gate="G$1" pin="GPIO_12" pad="32"/>
-<connect gate="G$1" pin="GPIO_13" pad="33"/>
-<connect gate="G$1" pin="GPIO_16" pad="36"/>
-<connect gate="G$1" pin="GPIO_17/GEN0" pad="11"/>
-<connect gate="G$1" pin="GPIO_18" pad="12"/>
-<connect gate="G$1" pin="GPIO_19" pad="35"/>
-<connect gate="G$1" pin="GPIO_20" pad="38"/>
-<connect gate="G$1" pin="GPIO_21" pad="40"/>
-<connect gate="G$1" pin="GPIO_22/GEN3" pad="15"/>
-<connect gate="G$1" pin="GPIO_26" pad="37"/>
-<connect gate="G$1" pin="GPIO_27/GEN2" pad="13"/>
-<connect gate="G$1" pin="ID_SC" pad="28"/>
-<connect gate="G$1" pin="ID_SD" pad="27"/>
-<connect gate="G$1" pin="RXD0/GPIO_15" pad="10"/>
-<connect gate="G$1" pin="SPI_CE0_N/GPIO_08" pad="24"/>
-<connect gate="G$1" pin="SPI_CE1_N/GPIO_07" pad="26"/>
-<connect gate="G$1" pin="TXD0/GPIO_14" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20430,54 +19106,6 @@ Leakage Inductance: 0.5 uH
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_3.2_EXT">
-<description>Version of the Teensy LC board that uses the 2 main rows of pins and the pins opposite the usb port.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.2_EXT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.2_EXT">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="DAC" pad="DAC"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="PGRM" pad="PGRM"/>
-<connect gate="G$1" pin="VBAT" pad="VBAT"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="M15" prefix="J" uservalue="yes">
 <description>1x15 .1" header&lt;br&gt;
 &lt;br&gt;
@@ -20511,44 +19139,6 @@ Leakage Inductance: 0.5 uH
 </device>
 </devices>
 </deviceset>
-<deviceset name="PRECHARGER_BREAKOUT">
-<gates>
-<gate name="G$1" symbol="PRECHARGER_BREAKOUT" x="10.16" y="0"/>
-</gates>
-<devices>
-<device name="" package="PRECHARGER_BREAKOUT">
-<connects>
-<connect gate="G$1" pin="!Q" pad="15"/>
-<connect gate="G$1" pin="C1" pad="32"/>
-<connect gate="G$1" pin="C2" pad="30"/>
-<connect gate="G$1" pin="C3" pad="28"/>
-<connect gate="G$1" pin="C4" pad="26"/>
-<connect gate="G$1" pin="CL" pad="10"/>
-<connect gate="G$1" pin="CLK" pad="12"/>
-<connect gate="G$1" pin="D" pad="11"/>
-<connect gate="G$1" pin="EM1" pad="31"/>
-<connect gate="G$1" pin="EM2" pad="29"/>
-<connect gate="G$1" pin="EM3" pad="27"/>
-<connect gate="G$1" pin="EM4" pad="25"/>
-<connect gate="G$1" pin="GND" pad="16"/>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="4"/>
-<connect gate="G$1" pin="GND3" pad="6"/>
-<connect gate="G$1" pin="GND4" pad="8"/>
-<connect gate="G$1" pin="PR" pad="13"/>
-<connect gate="G$1" pin="Q" pad="14"/>
-<connect gate="G$1" pin="VCC" pad="23"/>
-<connect gate="G$1" pin="VCC1" pad="1"/>
-<connect gate="G$1" pin="VCC2" pad="3"/>
-<connect gate="G$1" pin="VCC3" pad="5"/>
-<connect gate="G$1" pin="VCC4" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="NSV1C201MZ4" uservalue="yes">
 <description>&lt;b&gt;NPN Transistor&lt;/b&gt;
 
@@ -20567,69 +19157,6 @@ MAX voltage: 100V</description>
 <connect gate="G$1" pin="BASE" pad="1"/>
 <connect gate="G$1" pin="COLLECTOR" pad="2 4"/>
 <connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.2_12ANALOG">
-<gates>
-<gate name="G$1" symbol="TEENSY_3.2_12ANALOG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.2_12ANALOG">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A10" pad="A10"/>
-<connect gate="G$1" pin="A11" pad="A11"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NCS1S1205SC-12V-5VCONVERTER">
-<gates>
-<gate name="G$1" symbol="DCDC-CONVERTER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCDC-CONVERTER">
-<connects>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="CONTROL" pad="CONTROL"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20664,57 +19191,6 @@ MAX voltage: 100V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SDCARD_INTERFACE">
-<gates>
-<gate name="G$1" symbol="SDCARD_INTERFACE" x="-10.16" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="SDCARD_INTERFACE">
-<connects>
-<connect gate="G$1" pin="CD" pad="CD"/>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="DI" pad="DI"/>
-<connect gate="G$1" pin="DO" pad="DO"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MURATA_POWER_SUPPLY">
-<gates>
-<gate name="G$1" symbol="MURATA_POWER_SUPPLY" x="-48.26" y="-10.16"/>
-</gates>
-<devices>
-<device name="" package="MURATA_POWER_SUPPLY_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="ACOK" pad="E4"/>
-<connect gate="G$1" pin="APS" pad="A3"/>
-<connect gate="G$1" pin="ISHARE" pad="B5"/>
-<connect gate="G$1" pin="PGND" pad="P$1A P$1B P$1C P$1D P$1E P$1F P$2A P$2B P$2C P$2D P$2E P$2F P$3A P$3B P$3C P$3D P$3E P$3F P$4A P$4B P$4C P$4D P$4E P$4F P$5A P$5B P$5C P$5D P$5E P$5F"/>
-<connect gate="G$1" pin="PRESENT_L" pad="E5"/>
-<connect gate="G$1" pin="PSKILL" pad="A5"/>
-<connect gate="G$1" pin="PS_ON" pad="B4"/>
-<connect gate="G$1" pin="PWOK" pad="C5"/>
-<connect gate="G$1" pin="SCL" pad="A4"/>
-<connect gate="G$1" pin="SDA" pad="C3"/>
-<connect gate="G$1" pin="SMB_ALERT" pad="C4"/>
-<connect gate="G$1" pin="V1" pad="P$6A P$6B P$6C P$6D P$6E P$6F P$7A P$7B P$7C P$7D P$7E P$7F P$8A P$8B P$8C P$8D P$8E P$8F P$9A P$9B P$9C P$9D P$9E P$9F P$10A P$10B P$10C P$10D P$10E P$10F"/>
-<connect gate="G$1" pin="VSB" pad="A1 B1 C1 D1 E1"/>
-<connect gate="G$1" pin="VSB_RETURN" pad="A2 B2"/>
-<connect gate="G$1" pin="VSENSE+" pad="E3"/>
-<connect gate="G$1" pin="VSENSE-" pad="D3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HIH6121-021">
 <description>Honeywell HIH6100 Series Humidity and Temperature Sensor</description>
 <gates>
@@ -20727,67 +19203,6 @@ MAX voltage: 100V</description>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VSS" pad="VSS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TLP290-4">
-<description>&lt;b&gt;Toshiba Quad Channel Optocoupler TLP290-4 AC/DC&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="TLP290-4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="11-11F1">
-<connects>
-<connect gate="G$1" pin="AC1" pad="2"/>
-<connect gate="G$1" pin="AC2" pad="4"/>
-<connect gate="G$1" pin="AC3" pad="6"/>
-<connect gate="G$1" pin="AC4" pad="8"/>
-<connect gate="G$1" pin="C1" pad="16"/>
-<connect gate="G$1" pin="C2" pad="14"/>
-<connect gate="G$1" pin="C3" pad="12"/>
-<connect gate="G$1" pin="C4" pad="10"/>
-<connect gate="G$1" pin="CA1" pad="1"/>
-<connect gate="G$1" pin="CA2" pad="3"/>
-<connect gate="G$1" pin="CA3" pad="5"/>
-<connect gate="G$1" pin="CA4" pad="7"/>
-<connect gate="G$1" pin="EM1" pad="15"/>
-<connect gate="G$1" pin="EM2" pad="13"/>
-<connect gate="G$1" pin="EM3" pad="11"/>
-<connect gate="G$1" pin="EM4" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TB6612FNG_BREAKOUT">
-<gates>
-<gate name="G$1" symbol="TB6612FNG_BREAKOUT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TB6612FNG_BREAKOUT">
-<connects>
-<connect gate="G$1" pin="A01" pad="4"/>
-<connect gate="G$1" pin="A02" pad="5"/>
-<connect gate="G$1" pin="AIN1" pad="14"/>
-<connect gate="G$1" pin="AIN2" pad="15"/>
-<connect gate="G$1" pin="B01" pad="7"/>
-<connect gate="G$1" pin="B02" pad="6"/>
-<connect gate="G$1" pin="BIN1" pad="12"/>
-<connect gate="G$1" pin="BIN2" pad="11"/>
-<connect gate="G$1" pin="GND1" pad="3"/>
-<connect gate="G$1" pin="GND2" pad="8"/>
-<connect gate="G$1" pin="GND3" pad="9"/>
-<connect gate="G$1" pin="PWMA" pad="16"/>
-<connect gate="G$1" pin="PWMB" pad="10"/>
-<connect gate="G$1" pin="STBY" pad="13"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VM" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20837,35 +19252,6 @@ Standard character type LCDs, available in sizes from 8x1 to 40x4!</description>
 <connect gate="G$1" pin="VDD" pad="2"/>
 <connect gate="G$1" pin="VO" pad="3"/>
 <connect gate="G$1" pin="VSS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TRIMPOT" prefix="TM" uservalue="yes">
-<description>SMT trimmer potentiometer part number TC33X
-&lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="TC33X" package="TC33X">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3386" package="TRIM-3386">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21317,34 +19703,6 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RT424005">
-<description>TE/Schrack Double Pull Double Throw Relay 5VDC
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.te.com/usa-en/product-5-1393243-9.html"&gt;Product Page&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RELAY_DPDT">
-<connects>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="COIL+" pad="COIL+"/>
-<connect gate="G$1" pin="COIL-" pad="COIL-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RT424009">
 <description>TE/Schrack Double Pull Double Throw Relay 9VDC
 &lt;br&gt;
@@ -21352,34 +19710,6 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 &lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.te.com/usa-en/product-6-1393243-2.html"&gt;Product Page&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RELAY_DPDT">
-<connects>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="COIL+" pad="COIL+"/>
-<connect gate="G$1" pin="COIL-" pad="COIL-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RT424012">
-<description>TE/Schrack Double Pull Double Throw Relay 12VDC
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.te.com/usa-en/product-6-1393243-3.html"&gt;Product Page&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
@@ -21584,112 +19914,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_LC_SIMPLE">
-<description>Simple version of the Teensy LC board that only uses the 2 main rows of pins, with no perpendicular row with VBat or inner pins.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_LC_SIMPLE" x="0" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_LC_SIMPLE">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3" pad="D3"/>
-<connect gate="G$1" pin="D4" pad="D4"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.6_SIMPLE">
-<description>Simple version of the Teensy 3.6 board that only uses the 2 main rows of pins, with no perpendicular row with VBat or inner pins.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.6_SIMPLE" x="0" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.6_SIMPLE">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A12" pad="A12"/>
-<connect gate="G$1" pin="A13" pad="A13"/>
-<connect gate="G$1" pin="A14" pad="A14"/>
-<connect gate="G$1" pin="A15" pad="A15"/>
-<connect gate="G$1" pin="A16" pad="A16"/>
-<connect gate="G$1" pin="A17" pad="A17"/>
-<connect gate="G$1" pin="A18" pad="A18"/>
-<connect gate="G$1" pin="A19" pad="A19"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A20" pad="A20"/>
-<connect gate="G$1" pin="A21" pad="A21"/>
-<connect gate="G$1" pin="A22" pad="A22"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D24" pad="D24"/>
-<connect gate="G$1" pin="D25" pad="D25"/>
-<connect gate="G$1" pin="D26" pad="D26"/>
-<connect gate="G$1" pin="D27" pad="D27"/>
-<connect gate="G$1" pin="D28" pad="D28"/>
-<connect gate="G$1" pin="D29" pad="D29"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D30" pad="D30"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LM555">
 <description>Texas Instruments NA555 timer. &lt;a href="http://www.ti.com/lit/ds/symlink/se555.pdf"&gt;Data sheet&lt;/a&gt;</description>
 <gates>
@@ -21721,54 +19945,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 <connect gate="G$1" pin="THRESHOLD" pad="6"/>
 <connect gate="G$1" pin="TRIGGER" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_4.0_EXT">
-<description>Extended version of the Teensy 4.0 board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_4.0_EXT" x="-10.16" y="-20.32"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_4.0_EXT">
-<connects>
-<connect gate="G$1" pin="(CANRX)A9" pad="(CANRX)A9"/>
-<connect gate="G$1" pin="(CANTX)A8" pad="(CANTX)A8"/>
-<connect gate="G$1" pin="(RX3)A1" pad="(RX3)A1"/>
-<connect gate="G$1" pin="(TX3)A0" pad="(TX3)A0"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10" pad="D10"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3" pad="D3"/>
-<connect gate="G$1" pin="D4" pad="D4"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX2)" pad="D7(RX2)"/>
-<connect gate="G$1" pin="D8(TX2\)" pad="D8(TX2)"/>
-<connect gate="G$1" pin="D9" pad="D9"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="GND3" pad="GND3"/>
-<connect gate="G$1" pin="ON/OFF" pad="ON/OFF"/>
-<connect gate="G$1" pin="PGRM" pad="PGRM"/>
-<connect gate="G$1" pin="VBAT" pad="VBAT"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21811,74 +19987,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 <technology name="">
 <attribute name="PINS" value="22" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.6_EXT_RTC">
-<description>Extended version of the Teensy 3.6 board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.6_EXT_RTC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.6_EXT_RTC">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="3.3V3" pad="3.3V3"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A12" pad="A12"/>
-<connect gate="G$1" pin="A13" pad="A13"/>
-<connect gate="G$1" pin="A14" pad="A14"/>
-<connect gate="G$1" pin="A15" pad="A15"/>
-<connect gate="G$1" pin="A16" pad="A16"/>
-<connect gate="G$1" pin="A17" pad="A17"/>
-<connect gate="G$1" pin="A18" pad="A18"/>
-<connect gate="G$1" pin="A19" pad="A19"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A20" pad="A20"/>
-<connect gate="G$1" pin="A21" pad="A21"/>
-<connect gate="G$1" pin="A22" pad="A22"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D24" pad="D24"/>
-<connect gate="G$1" pin="D25" pad="D25"/>
-<connect gate="G$1" pin="D26" pad="D26"/>
-<connect gate="G$1" pin="D27" pad="D27"/>
-<connect gate="G$1" pin="D28" pad="D28"/>
-<connect gate="G$1" pin="D29" pad="D29"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D30" pad="D30"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="GND3" pad="GND3"/>
-<connect gate="G$1" pin="PRGM" pad="PRGM"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="VBAT" pad="VBAT"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -22164,60 +20272,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_LC_EXT">
-<description>Extended version of the Teensy LC board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_LC_EXT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_LC_EXT">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D17" pad="D17"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3" pad="D3"/>
-<connect gate="G$1" pin="D4" pad="D4"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="DAC" pad="DAC"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="PGRM" pad="PGRM"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAX31855KASA+" prefix="U">
 <gates>
 <gate name="A" symbol="MAX31855KASA+" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="21-0041B_8">
+<device name="" package="SOIC-08">
 <connects>
 <connect gate="A" pin="!CS" pad="6"/>
 <connect gate="A" pin="DNC" pad="8"/>
@@ -22229,46 +20289,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 <connect gate="A" pin="VCC" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="MAX31855KASA+" constant="no"/>
-<attribute name="VENDOR" value="Maxim Integrated Products" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="21-0041B_8-M" package="21-0041B_8-M">
-<connects>
-<connect gate="A" pin="!CS" pad="6"/>
-<connect gate="A" pin="DNC" pad="8"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="SCK" pad="5"/>
-<connect gate="A" pin="SO" pad="7"/>
-<connect gate="A" pin="T+" pad="3"/>
-<connect gate="A" pin="T-" pad="2"/>
-<connect gate="A" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="MAX31855KASA+" constant="no"/>
-<attribute name="VENDOR" value="Maxim Integrated Products" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="21-0041B_8-L" package="21-0041B_8-L">
-<connects>
-<connect gate="A" pin="!CS" pad="6"/>
-<connect gate="A" pin="DNC" pad="8"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="SCK" pad="5"/>
-<connect gate="A" pin="SO" pad="7"/>
-<connect gate="A" pin="T+" pad="3"/>
-<connect gate="A" pin="T-" pad="2"/>
-<connect gate="A" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="MAX31855KASA+" constant="no"/>
-<attribute name="VENDOR" value="Maxim Integrated Products" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -22616,54 +20637,6 @@ Dimensions: 5 mm x 20 mm
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="UCC21520A">
-<description>UCC21520A &lt;a href="http://www.ti.com/lit/ds/symlink/ucc21520-q1.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="UCC21520A" x="-10.16" y="-10.16"/>
-</gates>
-<devices>
-<device name="" package="SO16-DW">
-<connects>
-<connect gate="G$1" pin="DISABLE" pad="5"/>
-<connect gate="G$1" pin="DT" pad="6"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="INA" pad="1"/>
-<connect gate="G$1" pin="INB" pad="2"/>
-<connect gate="G$1" pin="OUTA" pad="15"/>
-<connect gate="G$1" pin="OUTB" pad="10"/>
-<connect gate="G$1" pin="VCCA" pad="16"/>
-<connect gate="G$1" pin="VCCB" pad="11"/>
-<connect gate="G$1" pin="VCCI" pad="3"/>
-<connect gate="G$1" pin="VCCI2" pad="8"/>
-<connect gate="G$1" pin="VSSA" pad="14"/>
-<connect gate="G$1" pin="VSSB" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="STWD100NYWY3F">
-<description>STWD100 Watchdog Timer (open-drain configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-<connect gate="G$1" pin="WDO" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23113,22 +21086,6 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="TVS_DIODE">
-<gates>
-<gate name="G$1" symbol="DIODE_TVS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="U-DFN1608-2">
-<connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="AD5263" prefix="U">
 <description>AD5263 Digital Potentiometer &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5263.pdf"&gt; Datasheet &lt;/a&gt;</description>
@@ -23203,41 +21160,6 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="A" pin="VDDIO" pad="28"/>
 <connect gate="A" pin="XIN32" pad="27"/>
 <connect gate="A" pin="XOUT32" pad="26"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPA172">
-<description>TI OPA172 36V Op-Amp
-
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;&lt;a href=https://www.ti.com/lit/ds/symlink/opa172.pdf&gt;Datasheet&lt;\b&gt;</description>
-<gates>
-<gate name="G$1" symbol="OPAMP_1_CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VIN+" pad="3"/>
-<connect gate="G$1" pin="VIN-" pad="4"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT-323-5" package="SOT323-5">
-<connects>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VIN+" pad="3"/>
-<connect gate="G$1" pin="VIN-" pad="4"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23351,6 +21273,31 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6002_TEST">
+<description>Microchip MCP6002 Dual Channel Op Amp</description>
+<gates>
+<gate name="G$1" symbol="PWRN" x="-10.16" y="0" addlevel="always"/>
+<gate name="G$2" symbol="OPAMP_NOPWR" x="0" y="0" swaplevel="1"/>
+<gate name="G$3" symbol="OPAMP_NOPWR" x="15.24" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="SOIC" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$2" pin="VIN+" pad="4"/>
+<connect gate="G$2" pin="VIN-" pad="3"/>
+<connect gate="G$2" pin="VOUT" pad="2"/>
+<connect gate="G$3" pin="VIN+" pad="5"/>
+<connect gate="G$3" pin="VIN-" pad="6"/>
+<connect gate="G$3" pin="VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
