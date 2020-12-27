@@ -5946,38 +5946,6 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="KT12-1A-40L-THT">
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="7.62" width="0.254" layer="94"/>
-<wire x1="20.32" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="C1" x="5.08" y="10.16" length="short" rot="R270"/>
-<pin name="C2" x="15.24" y="10.16" length="short" rot="R270"/>
-<pin name="S1" x="2.54" y="-2.54" length="short" rot="R90"/>
-<pin name="S2" x="17.78" y="-2.54" length="short" rot="R90"/>
-<wire x1="8.382" y1="4.064" x2="12.7" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="6.096" x2="6.096" y2="6.096" width="0.254" layer="94"/>
-<wire x1="15.24" y1="6.096" x2="13.208" y2="6.096" width="0.254" layer="94"/>
-<wire x1="6.096" y1="6.096" x2="7.112" y2="5.08" width="0.254" layer="94" curve="90"/>
-<wire x1="7.112" y1="5.08" x2="7.366" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.366" y1="5.08" x2="8.382" y2="6.096" width="0.254" layer="94" curve="90"/>
-<wire x1="8.382" y1="6.096" x2="9.398" y2="5.08" width="0.254" layer="94" curve="90"/>
-<wire x1="9.398" y1="5.08" x2="9.652" y2="5.08" width="0.254" layer="94"/>
-<wire x1="9.652" y1="5.08" x2="10.668" y2="6.096" width="0.254" layer="94" curve="90"/>
-<wire x1="10.668" y1="6.096" x2="11.684" y2="5.08" width="0.254" layer="94" curve="90"/>
-<wire x1="11.684" y1="5.08" x2="12.192" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.192" y1="5.08" x2="13.208" y2="6.096" width="0.254" layer="94" curve="90"/>
-<wire x1="5.08" y1="6.096" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="6.096" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="17.78" y2="2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="Q-SHIELD2">
 <wire x1="2.286" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
@@ -6769,7 +6737,7 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <wire x1="-5.08" y1="-15.24" x2="-0.762" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="5.842" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="0.635" y1="-14.9225" x2="4.445" y2="-13.0175" width="0.254" layer="94"/>
-<pin name="O" x="10.16" y="-12.7" visible="off" length="point" swaplevel="2" rot="R270"/>
+<pin name="O" x="10.16" y="-12.7" visible="off" length="point" swaplevel="1" rot="R270"/>
 <pin name="P" x="-5.08" y="-15.24" visible="off" length="point" swaplevel="1" rot="R270"/>
 <pin name="COIL+" x="10.16" y="-5.08" visible="off" length="point" rot="R90"/>
 <pin name="COIL-" x="-5.08" y="-5.08" visible="off" length="point" rot="R90"/>
@@ -9355,15 +9323,15 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 </deviceset>
 <deviceset name="KT12-1A-40L-THT">
 <gates>
-<gate name="G$1" symbol="KT12-1A-40L-THT" x="-10.16" y="-2.54"/>
+<gate name="G$1" symbol="RELAY_SPST_NO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="KT12-1A-40L-THT">
 <connects>
-<connect gate="G$1" pin="C1" pad="C1"/>
-<connect gate="G$1" pin="C2" pad="C2"/>
-<connect gate="G$1" pin="S1" pad="S1"/>
-<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G$1" pin="COIL+" pad="C2"/>
+<connect gate="G$1" pin="COIL-" pad="C1"/>
+<connect gate="G$1" pin="P" pad="S1"/>
+<connect gate="G$1" pin="S" pad="S2"/>
 </connects>
 <technologies>
 <technology name=""/>
