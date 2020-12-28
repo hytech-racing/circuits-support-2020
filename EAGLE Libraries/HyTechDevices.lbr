@@ -12370,6 +12370,22 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <hole x="21.3106" y="-8.89" drill="3.81"/>
 <hole x="50.5206" y="-8.89" drill="3.81"/>
 </package>
+<package name="ALF70">
+<pad name="P$1" x="0" y="-11.249659375" drill="1.6129" diameter="1.91261875"/>
+<pad name="P$2" x="0" y="11.249659375" drill="1.6129" diameter="1.91261875"/>
+<pad name="P$3" x="-9.742425" y="5.62483125" drill="1.6129" diameter="1.91261875"/>
+<pad name="P$4" x="9.742425" y="5.62483125" drill="1.6129" diameter="1.91261875"/>
+<circle x="0" y="0" radius="19.999959375" width="0.508" layer="21"/>
+<rectangle x1="-5.08" y1="12.7" x2="-3.81" y2="16.51" layer="21"/>
+<rectangle x1="-6.35" y1="13.97" x2="-2.54" y2="15.24" layer="21"/>
+<rectangle x1="-6.35" y1="-15.24" x2="-2.54" y2="-13.97" layer="21"/>
+<rectangle x1="-5.08" y1="11.43" x2="-3.81" y2="12.7" layer="21"/>
+<rectangle x1="-5.08" y1="16.51" x2="-3.81" y2="17.78" layer="21"/>
+<rectangle x1="-2.54" y1="13.97" x2="-1.27" y2="15.24" layer="21"/>
+<rectangle x1="-7.62" y1="13.97" x2="-6.35" y2="15.24" layer="21"/>
+<rectangle x1="-7.62" y1="-15.24" x2="-6.35" y2="-13.97" layer="21"/>
+<rectangle x1="-2.54" y1="-15.24" x2="-1.27" y2="-13.97" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -17556,6 +17572,19 @@ Demo Board</text>
 <wire x1="-5.08" y1="-5.08" x2="-27.94" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="-5.08" x2="-27.94" y2="15.24" width="0.254" layer="94"/>
 <text x="-27.94" y="-5.334" size="1.778" layer="94" font="vector" align="top-left">DCM3714</text>
+</symbol>
+<symbol name="PCAP">
+<pin name="P$1" x="0" y="2.54" length="middle" rot="R90"/>
+<pin name="P$2" x="0" y="-2.54" length="middle" rot="R270"/>
+<rectangle x1="-3.81" y1="-2.54" x2="4.064" y2="-1.27" layer="94"/>
+<wire x1="0" y1="2.54" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="4.064" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="1.27" x2="4.064" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="2.032" x2="5.588" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="-2.032" x2="5.588" y2="-2.032" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -27104,6 +27133,22 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="EN" pad="P$6"/>
 <connect gate="G$1" pin="TR" pad="P$7"/>
 <connect gate="G$1" pin="VDDE" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALF70">
+<gates>
+<gate name="G$1" symbol="PCAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALF70">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
