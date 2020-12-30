@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7229,26 +7229,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADXL335">
-<description>ADXL335 3-axis accelerometer breakout board</description>
-<gates>
-<gate name="G$1" symbol="ADXL335" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADXL335">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="X_OUT" pad="X_OUT"/>
-<connect gate="G$1" pin="Y_OUT" pad="Y_OUT"/>
-<connect gate="G$1" pin="Z_OUT" pad="Z_OUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="G5LE-14">
 <description>Omron G5LE SPDT Relay
 &lt;br&gt;
@@ -7644,22 +7624,6 @@ MAX voltage: 100V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="XT60">
-<gates>
-<gate name="G$1" symbol="M02" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="XT60">
-<connects>
-<connect gate="G$1" pin="1" pad="-"/>
-<connect gate="G$1" pin="2" pad="+"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HD44780LCD" prefix="X">
 <description>&lt;b&gt;HD44780 LCD&lt;/b&gt;
 &lt;p&gt;
@@ -7970,7 +7934,8 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="ADIS16209">
-<description>Analog Devices ADIS16209 High Accuracy, Dual-Axis Digital Inclinometer and Accelerometer</description>
+<description>ADIS16209 Inclinometer
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/ADIS16209_Anomaly-1503040.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADIS16209" x="0" y="0"/>
 </gates>
@@ -7995,7 +7960,10 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$1" pin="~RST" pad="P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="ADIS16209CCCZ-ND"/>
+<attribute name="MOPN" value="584-ADIS16209CCCZ"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -8628,7 +8596,9 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="ACHS-7121">
+<deviceset name="ACHS-7121-000E">
+<description>10A SMD Current Sensor
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/678/ACHS_712x_DS101_2018_02_28-1386725.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ACHS-7121" x="0" y="0"/>
 </gates>
@@ -8643,13 +8613,21 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 <connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DKPN" value="516-4080-ND"/>
+<attribute name="LINEARITY" value="0.18%"/>
+<attribute name="MOPN" value="630-ACHS-7121-000E"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10118192-0001LF" prefix="J">
-<description>Single Port 5 Contact Horizontal Right Angle Shielded Micro B USB 2.0 Connector</description>
+<deviceset name="10118192-0002LF" prefix="J">
+<description>USB Micro B SMD Connector
+&lt;br&gt;&lt;a href="https://www.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf"&gt;Datasheet&lt;/a&gt;
+
+Fix Footprint</description>
 <gates>
 <gate name="G$1" symbol="10118192-0001LF" x="0" y="0"/>
 </gates>
@@ -8665,12 +8643,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" USB - micro B USB 2.0 Receptacle Connector 5 Position Surface Mount, Right Angle "/>
-<attribute name="MF" value="Amphenol ICC"/>
-<attribute name="MP" value="10118192-0001LF"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="None"/>
+<attribute name="DKPN" value="609-5379-1-ND"/>
+<attribute name="MOPN" value="649-10118192-0002LF"/>
+<attribute name="USB" value="Micro B"/>
+<attribute name="VOLTAGE" value="100 VAC"/>
 </technology>
 </technologies>
 </device>
@@ -8774,9 +8750,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </devices>
 </deviceset>
 <deviceset name="0001.2704.11" prefix="F" uservalue="yes">
-<description>&lt;b&gt; Ceramic Surface Mount Fuse &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<description>Ceramic Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -8790,7 +8765,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name="">
 <attribute name="DKPN" value="486-2487-ND"/>
 <attribute name="I2T" value="1.1"/>
-<attribute name="MPN" value="693-0001.2704.11"/>
+<attribute name="MOPN" value="693-0001.2704.11"/>
 <attribute name="VALUE" value="1A"/>
 <attribute name="VOLTAGE" value="300VDC"/>
 </technology>
@@ -8931,8 +8906,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </devices>
 </deviceset>
 <deviceset name="ABM3B-16.000MHZ-10-1-U" prefix="X" uservalue="yes">
-<description>ABM3B ceramic SMD crystal.
-&lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<description>ABM3B Ceramic SMD Crystal.
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -9264,9 +9239,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </devices>
 </deviceset>
 <deviceset name="AD5721R" prefix="U">
-<description>AD5721 Digital to Analog Converter &lt;br&gt;
-12-bit resolution &lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761_5721.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<description>1-Channel 12V 12-Bit DAC
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/ad5761r_5721r-1501754.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="AD5721R" x="0" y="0"/>
 </gates>
@@ -9290,7 +9264,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CHANNELS" value="1"/>
+<attribute name="DKPN" value="AD5721RBRUZ-ND"/>
+<attribute name="MOPN" value="584-AD5721RBRUZ"/>
+<attribute name="RESOLUTION" value="12-Bit"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9365,10 +9344,9 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5684R" prefix="U">
-<description>AD5684 4-channel DAC &lt;br&gt;
-5V, 12-bit resolution &lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5686_5684.pdf"&gt;Datasheet &lt;/a&gt;</description>
+<deviceset name="AD5684RB" prefix="U">
+<description>4-Channel 5V 12-Bit DAC
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/AD5686R_5685R_5684R-1501714.pdf"&gt;Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="AD5684R" x="-2.54" y="7.62"/>
 </gates>
@@ -9393,14 +9371,19 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="VREFIN/OUT" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CHANNELS" value="4"/>
+<attribute name="DKPN" value="AD5684RBRUZ-ND"/>
+<attribute name="MOPN" value="584-AD5684RBRUZ"/>
+<attribute name="RESOLUTION" value="12-Bit"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5263" prefix="U">
-<description>AD5263 Digital Potentiometer &lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD5263.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<deviceset name="AD5263BRUZ20-REEL7" prefix="U">
+<description>AD5263 20 kΩ Digital Potentiometer
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/AD5263-1501493.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="AD5263" x="0" y="0"/>
 </gates>
@@ -9432,7 +9415,12 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="W4" pad="19"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="AD5263BRUZ20-REEL7CT-ND"/>
+<attribute name="MOPN" value="584-AD5263BRUZ20-R7"/>
+<attribute name="RESISTANCE" value="20kΩ"/>
+<attribute name="TOLERANCE" value="30%"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9635,6 +9623,58 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VALUE" value="5Ω"/>
 <attribute name="VOLTAGE" value="2000V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="08851.25DR" prefix="F" uservalue="yes">
+<description>Ceramic SMD Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
+
+Fix Footprint</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5X20MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="I2T" value="1.25"/>
+<attribute name="MOPN" value="576-08851.25DR"/>
+<attribute name="VALUE" value="1.25A"/>
+<attribute name="VOLTAGE" value="500VDC"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="7B-16.000MEEQ-T" prefix="X" uservalue="yes">
+<description>7B Ceramic SMD Crystal.
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/417/7b-5226.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4 GND"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CAPACITANCE" value="10 pF"/>
+<attribute name="DKPN" value="887-1298-1-ND"/>
+<attribute name="MOPN" value="717-7B-16.000MEEQ-T"/>
+<attribute name="STABILITY" value="10 ppm"/>
+<attribute name="TOLERANCE" value="10 ppm"/>
+<attribute name="VALUE" value="16 MHz"/>
 </technology>
 </technologies>
 </device>
