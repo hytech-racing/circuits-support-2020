@@ -1,0 +1,21 @@
+** Profile: "TLV7021-tlv7021test"  [ C:\Users\a0226796\Desktop\TLV7021_PFTI-2020-10-30T17-10\tlv7021_pfti-pspicefiles\tlv7021\tlv7021test.sim ] 
+
+** Creating circuit file "tlv7021test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tlv7021.lib" 
+* From [PSPICE NETLIST] section of C:\Users\a0226796\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50u 0 
+.OPTIONS ADVCONV
+.PROBE64 N([N00315])
+.INC "..\TLV7021.net" 
+
+
+.END
