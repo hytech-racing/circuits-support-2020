@@ -8745,6 +8745,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </connects>
 <technologies>
 <technology name="">
+<attribute name="BREAKINGCURRENT" value="1500A"/>
 <attribute name="DKPN" value="486-2487-ND"/>
 <attribute name="I2T" value="1.1"/>
 <attribute name="MOPN" value="693-0001.2704.11"/>
@@ -9610,25 +9611,19 @@ Coil voltage: 75% - 170% of nominal voltage
 </deviceset>
 <deviceset name="08851.25DR" prefix="F" uservalue="yes">
 <description>Ceramic SMD Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
-
-Fix Footprint</description>
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5X20MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
+<device name="">
 <technologies>
 <technology name="">
+<attribute name="BREAKINGCURRENT" value="100A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
 <attribute name="I2T" value="1.25"/>
 <attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="VALUE" value="1.25A"/>
-<attribute name="VOLTAGE" value="500VDC"/>
 </technology>
 </technologies>
 </device>
