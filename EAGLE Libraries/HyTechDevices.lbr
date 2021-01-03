@@ -1627,7 +1627,7 @@ visible on the PCB.</text>
 visible on the PCB.</text>
 <rectangle x1="-8.89" y1="-19.43" x2="8.89" y2="3.81" layer="39"/>
 </package>
-<package name="MOLEX_NANOFIT_02_PTH">
+<package name="MOLEX_NANOFIT_PTH_02">
 <description>2 Pin Nano-Fit Vertical Header, Through Hole, Single Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053091202"&gt;Part&lt;\a&gt;
@@ -1649,7 +1649,7 @@ visible on the PCB.</text>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 <rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="39"/>
 </package>
-<package name="MOLEX_NANOFIT_04_PTH">
+<package name="MOLEX_NANOFIT_PTH_04">
 <description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
@@ -1673,7 +1673,12 @@ visible on the PCB.</text>
 <rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="40"/>
 <rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="39"/>
 </package>
-<package name="1053101206">
+<package name="MOLEX_NANOFIT_PTH_06">
+<description>6 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101206"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101206_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
 <pad name="2" x="0" y="0" drill="1.2"/>
 <pad name="5" x="0" y="2.5" drill="1.2"/>
 <pad name="6" x="2.5" y="2.5" drill="1.2"/>
@@ -1691,16 +1696,23 @@ visible on the PCB.</text>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-4.445" y1="-1.905" x2="4.445" y2="4.445" layer="40"/>
+<rectangle x1="-4.445" y1="-1.905" x2="4.445" y2="4.445" layer="39"/>
 </package>
-<package name="1053101208">
-<pad name="P$3" x="1.25" y="0" drill="1.2"/>
-<pad name="P$2" x="-1.25" y="0" drill="1.2"/>
-<pad name="P$6" x="-1.25" y="2.5" drill="1.2"/>
-<pad name="P$7" x="1.25" y="2.5" drill="1.2"/>
-<pad name="P$8" x="3.75" y="2.5" drill="1.2"/>
-<pad name="P$4" x="3.75" y="0" drill="1.2"/>
-<pad name="P$1" x="-3.75" y="0" drill="1.2"/>
-<pad name="P$5" x="-3.75" y="2.5" drill="1.2"/>
+<package name="MOLEX_NANOFIT_PTH_08">
+<description>8 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101208"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101208_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="3" x="1.25" y="0" drill="1.2"/>
+<pad name="2" x="-1.25" y="0" drill="1.2"/>
+<pad name="6" x="-1.25" y="2.5" drill="1.2"/>
+<pad name="7" x="1.25" y="2.5" drill="1.2"/>
+<pad name="8" x="3.75" y="2.5" drill="1.2"/>
+<pad name="4" x="3.75" y="0" drill="1.2"/>
+<pad name="1" x="-3.75" y="0" drill="1.2"/>
+<pad name="5" x="-3.75" y="2.5" drill="1.2"/>
 <wire x1="-5.5" y1="4.25" x2="5.5" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-5.5" y1="4.25" x2="-5.5" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-5.5" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
@@ -1712,18 +1724,25 @@ visible on the PCB.</text>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <hole x="0" y="-1.34" drill="1.3"/>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-5.715" y1="-1.905" x2="5.715" y2="4.445" layer="40"/>
+<rectangle x1="-5.715" y1="-1.905" x2="5.715" y2="4.445" layer="39"/>
 </package>
-<package name="1053101210">
-<pad name="P$3" x="0" y="0" drill="1.2"/>
-<pad name="P$8" x="0" y="2.5" drill="1.2"/>
-<pad name="P$9" x="2.5" y="2.5" drill="1.2"/>
-<pad name="P$4" x="2.5" y="0" drill="1.2"/>
-<pad name="P$5" x="5" y="0" drill="1.2"/>
-<pad name="P$10" x="5" y="2.5" drill="1.2"/>
-<pad name="P$7" x="-2.5" y="2.5" drill="1.2"/>
-<pad name="P$2" x="-2.5" y="0" drill="1.2"/>
-<pad name="P$1" x="-5" y="0" drill="1.2"/>
-<pad name="P$6" x="-5" y="2.5" drill="1.2"/>
+<package name="MOLEX_NANOFIT_PTH_10">
+<description>10 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101210"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101210_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="3" x="0" y="0" drill="1.2"/>
+<pad name="8" x="0" y="2.5" drill="1.2"/>
+<pad name="9" x="2.5" y="2.5" drill="1.2"/>
+<pad name="4" x="2.5" y="0" drill="1.2"/>
+<pad name="5" x="5" y="0" drill="1.2"/>
+<pad name="10" x="5" y="2.5" drill="1.2"/>
+<pad name="7" x="-2.5" y="2.5" drill="1.2"/>
+<pad name="2" x="-2.5" y="0" drill="1.2"/>
+<pad name="1" x="-5" y="0" drill="1.2"/>
+<pad name="6" x="-5" y="2.5" drill="1.2"/>
 <wire x1="-6.75" y1="4.25" x2="6.75" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-6.75" y1="4.25" x2="-6.75" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-6.75" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
@@ -1735,20 +1754,27 @@ visible on the PCB.</text>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <hole x="-1.27" y="-1.34" drill="1.3"/>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-6.985" y1="-1.905" x2="6.985" y2="4.445" layer="40"/>
+<rectangle x1="-6.985" y1="-1.905" x2="6.985" y2="4.445" layer="39"/>
 </package>
-<package name="1053101212">
-<pad name="P$4" x="1.25" y="0" drill="1.2"/>
-<pad name="P$10" x="1.25" y="2.5" drill="1.2"/>
-<pad name="P$11" x="3.75" y="2.5" drill="1.2"/>
-<pad name="P$12" x="6.25" y="2.5" drill="1.2"/>
-<pad name="P$9" x="-1.25" y="2.5" drill="1.2"/>
-<pad name="P$8" x="-3.75" y="2.5" drill="1.2"/>
-<pad name="P$7" x="-6.25" y="2.5" drill="1.2"/>
-<pad name="P$5" x="3.75" y="0" drill="1.2"/>
-<pad name="P$6" x="6.25" y="0" drill="1.2"/>
-<pad name="P$3" x="-1.25" y="0" drill="1.2"/>
-<pad name="P$2" x="-3.75" y="0" drill="1.2"/>
-<pad name="P$1" x="-6.25" y="0" drill="1.2"/>
+<package name="MOLEX_NANOFIT_PTH_12">
+<description>12 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101212"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101212_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="4" x="1.25" y="0" drill="1.2"/>
+<pad name="10" x="1.25" y="2.5" drill="1.2"/>
+<pad name="11" x="3.75" y="2.5" drill="1.2"/>
+<pad name="12" x="6.25" y="2.5" drill="1.2"/>
+<pad name="9" x="-1.25" y="2.5" drill="1.2"/>
+<pad name="8" x="-3.75" y="2.5" drill="1.2"/>
+<pad name="7" x="-6.25" y="2.5" drill="1.2"/>
+<pad name="5" x="3.75" y="0" drill="1.2"/>
+<pad name="6" x="6.25" y="0" drill="1.2"/>
+<pad name="3" x="-1.25" y="0" drill="1.2"/>
+<pad name="2" x="-3.75" y="0" drill="1.2"/>
+<pad name="1" x="-6.25" y="0" drill="1.2"/>
 <wire x1="-8" y1="4.25" x2="8" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-8" y1="4.25" x2="-8" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-8" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
@@ -1760,6 +1786,8 @@ visible on the PCB.</text>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-8.255" y1="-1.905" x2="8.255" y2="4.445" layer="40"/>
+<rectangle x1="-8.255" y1="-1.905" x2="8.255" y2="4.445" layer="39"/>
 </package>
 <package name="LLS2V181MELA">
 <description>350V 180uF 25mm diameter by 25mm tall capacitor</description>
@@ -2518,16 +2546,21 @@ Source: http://www.molex.com</description>
 <pad name="1" x="12.6" y="-2.75" drill="1.4" shape="square"/>
 <pad name="8" x="12.6" y="2.75" drill="1.4" shape="square"/>
 </package>
-<package name="1053101214">
-<pad name="P$4" x="0" y="0" drill="1.2"/>
+<package name="MOLEX_NANOFIT_PTH_14">
+<description>14 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101214"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101214_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="4" x="0" y="0" drill="1.2"/>
 <pad name="P$11" x="0" y="2.5" drill="1.2"/>
 <pad name="P$12" x="2.5" y="2.5" drill="1.2"/>
-<pad name="P$5" x="2.5" y="0" drill="1.2"/>
-<pad name="P$6" x="5" y="0" drill="1.2"/>
+<pad name="5" x="2.5" y="0" drill="1.2"/>
+<pad name="6" x="5" y="0" drill="1.2"/>
 <pad name="P$13" x="5" y="2.5" drill="1.2"/>
 <pad name="P$10" x="-2.5" y="2.5" drill="1.2"/>
-<pad name="P$3" x="-2.5" y="0" drill="1.2"/>
-<pad name="P$2" x="-5" y="0" drill="1.2"/>
+<pad name="3" x="-2.5" y="0" drill="1.2"/>
+<pad name="2" x="-5" y="0" drill="1.2"/>
 <pad name="P$9" x="-5" y="2.5" drill="1.2"/>
 <wire x1="-9.25" y1="4.25" x2="9.25" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-9.25" y1="4.25" x2="-9.25" y2="-1.75" width="0.127" layer="21"/>
@@ -2539,11 +2572,13 @@ Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <hole x="-1.27" y="-1.34" drill="1.3"/>
-<pad name="P$8" x="-7.5" y="2.5" drill="1.2"/>
-<pad name="P$1" x="-7.5" y="0" drill="1.2"/>
-<pad name="P$7" x="7.5" y="0" drill="1.2"/>
+<pad name="8" x="-7.5" y="2.5" drill="1.2"/>
+<pad name="1" x="-7.5" y="0" drill="1.2"/>
+<pad name="7" x="7.5" y="0" drill="1.2"/>
 <pad name="P$14" x="7.5" y="2.5" drill="1.2"/>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-9.525" y1="-1.905" x2="9.525" y2="4.445" layer="40"/>
+<rectangle x1="-9.525" y1="-1.905" x2="9.525" y2="4.445" layer="39"/>
 </package>
 <package name="TSSOP-16">
 <description>&lt;b&gt;16-Lead Thin Shrink Small Outline Package TSSOP&lt;/b&gt;</description>
@@ -4136,6 +4171,7 @@ visible on the PCB.</text>
 <rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<text x="-1.27" y="-4.445" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="DIODE_LED">
 <wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
@@ -6077,6 +6113,7 @@ visible on the PCB.</text>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
+<text x="-1.27" y="-4.445" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="DIODE_SHOTTKY">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -6504,7 +6541,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-2" package="MOLEX_NANOFIT_02_PTH">
+<device name="NANO-FIT_VERTICAL-2" package="MOLEX_NANOFIT_PTH_02">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6552,7 +6589,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT-VERTICAL-4" package="MOLEX_NANOFIT_04_PTH">
+<device name="NANO-FIT-VERTICAL-4" package="MOLEX_NANOFIT_PTH_04">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6619,7 +6656,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-6" package="1053101206">
+<device name="NANO-FIT_VERTICAL-6" package="MOLEX_NANOFIT_PTH_06">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6713,20 +6750,20 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-12" package="1053101212">
+<device name="NANO-FIT_VERTICAL-12" package="MOLEX_NANOFIT_PTH_12">
 <connects>
-<connect gate="-1" pin="S" pad="P$1"/>
-<connect gate="-10" pin="S" pad="P$10"/>
-<connect gate="-11" pin="S" pad="P$11"/>
-<connect gate="-12" pin="S" pad="P$12"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-<connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-4" pin="S" pad="P$4"/>
-<connect gate="-5" pin="S" pad="P$5"/>
-<connect gate="-6" pin="S" pad="P$6"/>
-<connect gate="-7" pin="S" pad="P$7"/>
-<connect gate="-8" pin="S" pad="P$8"/>
-<connect gate="-9" pin="S" pad="P$9"/>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6783,16 +6820,16 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-8" package="1053101208">
+<device name="NANO-FIT_VERTICAL-8" package="MOLEX_NANOFIT_PTH_08">
 <connects>
-<connect gate="-1" pin="S" pad="P$1"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-<connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-4" pin="S" pad="P$4"/>
-<connect gate="-5" pin="S" pad="P$5"/>
-<connect gate="-6" pin="S" pad="P$6"/>
-<connect gate="-7" pin="S" pad="P$7"/>
-<connect gate="-8" pin="S" pad="P$8"/>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6855,18 +6892,18 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-10" package="1053101210">
+<device name="NANO-FIT_VERTICAL-10" package="MOLEX_NANOFIT_PTH_10">
 <connects>
-<connect gate="-1" pin="S" pad="P$1"/>
-<connect gate="-10" pin="S" pad="P$10"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-<connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-4" pin="S" pad="P$4"/>
-<connect gate="-5" pin="S" pad="P$5"/>
-<connect gate="-6" pin="S" pad="P$6"/>
-<connect gate="-7" pin="S" pad="P$7"/>
-<connect gate="-8" pin="S" pad="P$8"/>
-<connect gate="-9" pin="S" pad="P$9"/>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8185,21 +8222,21 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-14" package="1053101214">
+<device name="NANO-FIT_VERTICAL-14" package="MOLEX_NANOFIT_PTH_14">
 <connects>
-<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="P$10"/>
 <connect gate="-11" pin="S" pad="P$11"/>
 <connect gate="-12" pin="S" pad="P$12"/>
 <connect gate="-13" pin="S" pad="P$13"/>
 <connect gate="-14" pin="S" pad="P$14"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-<connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-4" pin="S" pad="P$4"/>
-<connect gate="-5" pin="S" pad="P$5"/>
-<connect gate="-6" pin="S" pad="P$6"/>
-<connect gate="-7" pin="S" pad="P$7"/>
-<connect gate="-8" pin="S" pad="P$8"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
 <connect gate="-9" pin="S" pad="P$9"/>
 </connects>
 <technologies>
