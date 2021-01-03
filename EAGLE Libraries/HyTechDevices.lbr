@@ -513,7 +513,7 @@ package type P</description>
 <text x="-11.8618" y="-2.54" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-10.16" y="-0.889" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-2">
+<package name="39288020">
 <description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
@@ -530,7 +530,7 @@ Source: http://www.molex.com</description>
 <wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
 <wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
 </package>
-<package name="MINIFIT_5566-4">
+<package name="39281043">
 <description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
@@ -549,7 +549,7 @@ Source: http://www.molex.com</description>
 <text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
 <text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-6">
+<package name="39281063">
 <description>&lt;b&gt;Mini-Fit Junior connector 6 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-6.8" y1="4.5" x2="6.8" y2="4.5" width="0.254" layer="21"/>
@@ -570,7 +570,7 @@ Source: http://www.molex.com</description>
 <text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
 <text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-12">
+<package name="39288120">
 <description>&lt;b&gt;Mini-Fit Junior connector 12 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-13.1" y1="4.5" x2="13.1" y2="4.5" width="0.254" layer="21"/>
@@ -597,7 +597,7 @@ Source: http://www.molex.com</description>
 <text x="8.255" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
 <text x="-8.89" y="-5.08" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-8">
+<package name="39288080">
 <description>&lt;b&gt;Mini-Fit Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-8.9" y1="4.5" x2="8.9" y2="4.5" width="0.254" layer="21"/>
@@ -620,7 +620,7 @@ Source: http://www.molex.com</description>
 <text x="8.89" y="-5.08" size="1.27" layer="25" align="top-right">&gt;NAME</text>
 <text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-10">
+<package name="39288100">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-11" y1="4.5" x2="11" y2="4.5" width="0.254" layer="21"/>
@@ -1482,9 +1482,9 @@ FUSE</text>
 <circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-8-SURFACE">
-<smd name="2" x="1.25" y="0.04" dx="1.24" dy="2.5" layer="1"/>
-<smd name="1" x="3.75" y="0.04" dx="1.24" dy="2.5" layer="1"/>
+<package name="1054051208">
+<smd name="2" x="1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
 <smd name="5" x="3.75" y="3.34" dx="1.24" dy="2.5" layer="1"/>
 <smd name="6" x="1.25" y="3.34" dx="1.24" dy="2.5" layer="1"/>
 <smd name="7" x="-1.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
@@ -1505,9 +1505,8 @@ FUSE</text>
 <wire x1="7" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
 <wire x1="5" y1="0" x2="5" y2="5" width="0.127" layer="21"/>
 <wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="21"/>
-<smd name="P$11" x="-3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-4-SURFACE">
+<package name="1054051204">
 <smd name="4" x="-1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
 <smd name="1" x="1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
 <smd name="3" x="1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
@@ -1527,7 +1526,7 @@ FUSE</text>
 <wire x1="-3" y1="0" x2="-3" y2="5" width="0.127" layer="21"/>
 <wire x1="-2" y1="-10" x2="-2" y2="-11" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-12-SURFACE">
+<package name="1054051212">
 <smd name="3" x="1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
 <smd name="2" x="3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
 <smd name="1" x="6.25" y="0" dx="1.24" dy="2.5" layer="1"/>
@@ -1555,7 +1554,7 @@ FUSE</text>
 <wire x1="-10.16" y1="0" x2="-7.62" y2="0" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="0" x2="-7.62" y2="5.08" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-6-SURFACE">
+<package name="1054051206">
 <smd name="2" x="0" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
 <smd name="5" x="0" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
 <smd name="4" x="2.5" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
@@ -1577,7 +1576,7 @@ FUSE</text>
 <wire x1="-6" y1="-10" x2="-3" y2="-10" width="0.127" layer="21"/>
 <wire x1="-3" y1="-10" x2="-3" y2="-11" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-10-SURFACE">
+<package name="1054051210">
 <smd name="3" x="0" y="0" dx="1.24" dy="2.5" layer="1"/>
 <smd name="2" x="2.5" y="0" dx="1.24" dy="2.5" layer="1"/>
 <smd name="1" x="5" y="0" dx="1.24" dy="2.5" layer="1"/>
@@ -1603,11 +1602,13 @@ FUSE</text>
 <wire x1="-9" y1="0" x2="-7" y2="0" width="0.127" layer="21"/>
 <wire x1="-7" y1="0" x2="-7" y2="5" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_VERTICAL-2">
-<description>105309-1202
-
-Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
-<pad name="1" x="-1.25" y="0" drill="1.2"/>
+<package name="1053091202">
+<description>2 Pin Nano-Fit™ Vertical Header, Through Hole, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053091202"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053091202_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="1" x="-1.25" y="0" drill="1.2" first="yes"/>
 <pad name="2" x="1.25" y="0" drill="1.2"/>
 <wire x1="-3" y1="1.74" x2="3" y2="1.74" width="0.127" layer="21"/>
 <wire x1="3" y1="1.74" x2="3" y2="-1.74" width="0.127" layer="21"/>
@@ -1619,26 +1620,35 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="2.6" y1="-1.74" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
 <hole x="0" y="-1.34" drill="1.3"/>
 <wire x1="-2.6" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="40"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="39"/>
 </package>
-<package name="NANO-FIT_VERTICAL-4">
-<description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
-<pad name="1" x="-1.25" y="0" drill="1.2"/>
+<package name="1053101204">
+<description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="1" x="-1.25" y="0" drill="1.2" first="yes"/>
 <pad name="2" x="1.25" y="0" drill="1.2"/>
 <pad name="3" x="-1.25" y="2.5" drill="1.2"/>
 <pad name="4" x="1.25" y="2.5" drill="1.2"/>
-<wire x1="-3" y1="4.25" x2="3" y2="4.25" width="0.127" layer="21"/>
-<wire x1="3" y1="4.25" x2="3" y2="2.32" width="0.127" layer="21"/>
-<wire x1="-3" y1="4.25" x2="-3" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-1.75" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.75" x2="3" y2="2.3" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-1.75" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="4.24" x2="2.97" y2="4.24" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="4.24" x2="-2.97" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="-1.74" x2="-2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.74" x2="2.97" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.97" y1="-1.74" x2="2.97" y2="4.24" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.74" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
 <wire x1="-2.6" y1="-4.6" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
 <hole x="0" y="-1.34" drill="1.3"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="40"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="39"/>
 </package>
-<package name="NANO-FIT_VERTICAL-6">
+<package name="1053101206">
 <pad name="2" x="0" y="0" drill="1.2"/>
 <pad name="5" x="0" y="2.5" drill="1.2"/>
 <pad name="6" x="2.5" y="2.5" drill="1.2"/>
@@ -1655,8 +1665,9 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 </package>
-<package name="NANO-FIT_VERTICAL-8">
+<package name="1053101208">
 <pad name="P$3" x="1.25" y="0" drill="1.2"/>
 <pad name="P$2" x="-1.25" y="0" drill="1.2"/>
 <pad name="P$6" x="-1.25" y="2.5" drill="1.2"/>
@@ -1675,8 +1686,9 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <hole x="0" y="-1.34" drill="1.3"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 </package>
-<package name="NANO-FIT_VERTICAL-10">
+<package name="1053101210">
 <pad name="P$3" x="0" y="0" drill="1.2"/>
 <pad name="P$8" x="0" y="2.5" drill="1.2"/>
 <pad name="P$9" x="2.5" y="2.5" drill="1.2"/>
@@ -1697,8 +1709,9 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
 <hole x="-1.27" y="-1.34" drill="1.3"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 </package>
-<package name="NANO-FIT_VERTICAL-12">
+<package name="1053101212">
 <pad name="P$4" x="1.25" y="0" drill="1.2"/>
 <pad name="P$10" x="1.25" y="2.5" drill="1.2"/>
 <pad name="P$11" x="3.75" y="2.5" drill="1.2"/>
@@ -1721,6 +1734,7 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
 <wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 </package>
 <package name="LLS2V181MELA">
 <description>350V 180uF 25mm diameter by 25mm tall capacitor</description>
@@ -2449,7 +2463,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <text x="-21.59" y="-8.89" size="1.778" layer="25">&gt;NAME</text>
 <text x="-21.59" y="-12.7" size="1.778" layer="27">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-14">
+<package name="39288140">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-15.2" y1="4.5" x2="15.2" y2="4.5" width="0.254" layer="21"/>
@@ -2478,7 +2492,7 @@ Source: http://www.molex.com</description>
 <pad name="1" x="12.6" y="-2.75" drill="1.4" shape="square"/>
 <pad name="8" x="12.6" y="2.75" drill="1.4" shape="square"/>
 </package>
-<package name="NANO-FIT_VERTICAL-14">
+<package name="1053101214">
 <pad name="P$4" x="0" y="0" drill="1.2"/>
 <pad name="P$11" x="0" y="2.5" drill="1.2"/>
 <pad name="P$12" x="2.5" y="2.5" drill="1.2"/>
@@ -2503,6 +2517,7 @@ Source: http://www.molex.com</description>
 <pad name="P$1" x="-7.5" y="0" drill="1.2"/>
 <pad name="P$7" x="7.5" y="0" drill="1.2"/>
 <pad name="P$14" x="7.5" y="2.5" drill="1.2"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 </package>
 <package name="TSSOP-16">
 <description>&lt;b&gt;16-Lead Thin Shrink Small Outline Package TSSOP&lt;/b&gt;</description>
@@ -6391,7 +6406,7 @@ Source: http://www.molex.com</description>
 <gate name="G$1" symbol="CONNECTOR_02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-2">
+<device name="" package="39288020">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6405,7 +6420,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-2" package="NANO-FIT_VERTICAL-2">
+<device name="NANO-FIT_VERTICAL-2" package="1053091202">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6426,7 +6441,7 @@ Source: http://www.molex.com</description>
 <gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-4">
+<device name="" package="39281043">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6442,7 +6457,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-4-SURFACE" package="NANO-FIT_RIGHT_ANGLE-4-SURFACE">
+<device name="NANO-FIT_RIGHT_ANGLE-4-SURFACE" package="1054051204">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6453,7 +6468,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT-VERTICAL-4" package="NANO-FIT_VERTICAL-4">
+<device name="NANO-FIT-VERTICAL-4" package="1053101204">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6489,7 +6504,7 @@ Source: http://www.molex.com</description>
 <gate name="-6" symbol="M" x="0" y="-7.62" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-6">
+<device name="" package="39281063">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6507,7 +6522,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="NANO-FIT_RIGHT_ANGLE-6-SURFACE">
+<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="1054051206">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6520,7 +6535,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-6" package="NANO-FIT_VERTICAL-6">
+<device name="NANO-FIT_VERTICAL-6" package="1053101206">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6571,7 +6586,7 @@ Source: http://www.molex.com</description>
 <gate name="-12" symbol="M" x="0" y="-15.24" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-12">
+<device name="" package="39288120">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -6595,7 +6610,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="NANO-FIT_RIGHT_ANGLE-12-SURFACE">
+<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="1054051212">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -6614,7 +6629,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-12" package="NANO-FIT_VERTICAL-12">
+<device name="NANO-FIT_VERTICAL-12" package="1053101212">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-10" pin="S" pad="P$10"/>
@@ -6649,7 +6664,7 @@ Source: http://www.molex.com</description>
 <gate name="-8" symbol="M" x="0" y="-10.16" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-8">
+<device name="" package="39288080">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6669,7 +6684,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="NANO-FIT_RIGHT_ANGLE-8-SURFACE">
+<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="1054051208">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6684,7 +6699,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-8" package="NANO-FIT_VERTICAL-8">
+<device name="NANO-FIT_VERTICAL-8" package="1053101208">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-2" pin="S" pad="P$2"/>
@@ -6717,7 +6732,7 @@ Source: http://www.molex.com</description>
 <gate name="-10" symbol="M" x="0" y="-12.7" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-10">
+<device name="" package="39288100">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -6739,7 +6754,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="NANO-FIT_RIGHT_ANGLE-10-SURFACE">
+<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="1054051210">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -6756,7 +6771,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-10" package="NANO-FIT_VERTICAL-10">
+<device name="NANO-FIT_VERTICAL-10" package="1053101210">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-10" pin="S" pad="P$10"/>
@@ -8155,7 +8170,7 @@ Source: http://www.molex.com</description>
 <gate name="-14" symbol="M" x="0" y="-20.32" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-14">
+<device name="" package="39288140">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -8176,7 +8191,7 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-14" package="NANO-FIT_VERTICAL-14">
+<device name="NANO-FIT_VERTICAL-14" package="1053101214">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-10" pin="S" pad="P$10"/>
