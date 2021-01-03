@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="11.4905" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2395,20 +2395,33 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <hole x="77.46" y="2.54" drill="2.8"/>
 </package>
 <package name="AUTOSPORT_12-04">
-<description>&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
+<description>Autosport 4 Pin
+&lt;br&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
 <circle x="0" y="0" radius="8.72" width="0.127" layer="21"/>
 <pad name="1" x="0" y="3.81" drill="2"/>
 <pad name="2" x="3.7084" y="0.889" drill="2"/>
 <pad name="3" x="0" y="-2.1082" drill="2"/>
 <pad name="4" x="-3.7084" y="0.889" drill="2"/>
-<hole x="-10.2884" y="-10.2884" drill="3.3"/>
-<hole x="10.2884" y="10.2884" drill="3.3"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="13" width="0.127" layer="21"/>
+<hole x="10.2884" y="10.2884" drill="3.4"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="39"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="41"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="42"/>
+<hole x="-10.2884" y="-10.2884" drill="3.4"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="39"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="41"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="42"/>
+<circle x="0" y="0" radius="13" width="0.1524" layer="39"/>
+<circle x="0" y="0" radius="8.72" width="0.127" layer="40"/>
 </package>
 <package name="AUTOSPORT_14-35">
-<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
+<description>Autosport 37 PIN
+&lt;br&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
+<circle x="0" y="0" radius="10.3" width="0.127" layer="40"/>
 <pad name="P$1" x="1.143" y="6.6548" drill="1"/>
 <pad name="P$2" x="3.1242" y="5.5118" drill="1"/>
 <pad name="P$3" x="5.3594" y="4.064" drill="1"/>
@@ -2446,11 +2459,19 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <pad name="P$35" x="-2.286" y="-0.1016" drill="1"/>
 <pad name="P$36" x="-1.143" y="1.8796" drill="1"/>
 <pad name="P$37" x="0" y="-0.1016" drill="1"/>
-<hole x="-11.4905" y="-11.4905" drill="3.3"/>
-<hole x="11.4905" y="11.4905" drill="3.3"/>
-<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="40"/>
-<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="14.5" width="0.127" layer="21"/>
+<hole x="-11.4905" y="-11.4905" drill="3.4"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="39"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="40"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="41"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="42"/>
+<hole x="11.4905" y="11.4905" drill="3.4"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="39"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="40"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="41"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="42"/>
+<circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="14.5" width="0.127" layer="39"/>
 </package>
 <package name="DBT71210">
 <wire x1="60" y1="-15.8" x2="0" y2="-15.8" width="0.1524" layer="21"/>
@@ -2920,6 +2941,9 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <text x="8.89" y="33.3375" size="2.54" layer="21" align="center">4.0</text>
 </package>
 <package name="AUTOSPORT_12-35">
+<description>Autosport 22 PIN
+&lt;br&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
 <pad name="1" x="1.143" y="5.0038" drill="1"/>
 <pad name="2" x="3.2004" y="4.0132" drill="1"/>
 <pad name="3" x="4.6228" y="2.2352" drill="1"/>
@@ -2943,11 +2967,19 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <pad name="18" x="0" y="-3.048" drill="1"/>
 <pad name="12" x="-4.6228" y="2.2352" drill="1"/>
 <circle x="0" y="0" radius="8.725" width="0.127" layer="21"/>
-<hole x="-10.2884" y="-10.2884" drill="3.3"/>
-<hole x="10.2884" y="10.2884" drill="3.3"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="13" width="0.127" layer="21"/>
+<hole x="-10.2884" y="-10.2884" drill="3.4"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="39"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="41"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="42"/>
+<hole x="10.2884" y="10.2884" drill="3.4"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="39"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="41"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="42"/>
+<circle x="0" y="0" radius="13" width="0.1524" layer="39"/>
+<circle x="0" y="0" radius="8.72" width="0.127" layer="40"/>
 </package>
 <package name="XP-E2">
 <description>&lt;b&gt;Cree® XLamp® XP-E2 LEDs&lt;/b&gt;&lt;p&gt;
