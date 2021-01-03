@@ -1482,128 +1482,153 @@ FUSE</text>
 <circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
 </package>
-<package name="1054051208">
-<smd name="2" x="1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="1" x="3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="5" x="3.75" y="3.34" dx="1.24" dy="2.5" layer="1"/>
-<smd name="6" x="1.25" y="3.34" dx="1.24" dy="2.5" layer="1"/>
-<smd name="7" x="-1.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="8" x="-3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="3" x="-1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="4" x="-3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="P$9" x="-6.02" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
-<smd name="P$10" x="6.02" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
-<wire x1="-5" y1="5" x2="-5" y2="0" width="0.127" layer="21"/>
-<wire x1="-5" y1="0" x2="-7" y2="0" width="0.127" layer="21"/>
-<wire x1="-7" y1="0" x2="-7" y2="-10" width="0.127" layer="21"/>
-<wire x1="-7" y1="-10" x2="-3" y2="-10" width="0.127" layer="21"/>
-<wire x1="-3" y1="-10" x2="-3" y2="-11" width="0.127" layer="21"/>
-<wire x1="-3" y1="-11" x2="3" y2="-11" width="0.127" layer="21"/>
-<wire x1="3" y1="-11" x2="3" y2="-10" width="0.127" layer="21"/>
-<wire x1="3" y1="-10" x2="7" y2="-10" width="0.127" layer="21"/>
-<wire x1="7" y1="-10" x2="7" y2="0" width="0.127" layer="21"/>
-<wire x1="7" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
-<wire x1="5" y1="0" x2="5" y2="5" width="0.127" layer="21"/>
-<wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="21"/>
+<package name="MOLEX_NANOFIT_SMD_08">
+<description>8 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051208"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051208_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="1.25" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="3.75" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="5" x="3.75" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="6" x="1.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="7" x="-1.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="8" x="-3.75" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="3" x="-1.25" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="4" x="-3.75" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="PAD" x="-6.02" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@1" x="6.02" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-3.77" y1="2.6" x2="3.77" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.77" y1="2.6" x2="3.77" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="3.77" y1="-1.99" x2="6.87" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="6.87" y1="-1.99" x2="6.87" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="6.87" y1="-10.68" x2="-6.87" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-6.87" y1="-10.68" x2="-6.87" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-6.87" y1="-1.99" x2="-3.77" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-3.77" y1="-1.99" x2="-3.77" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-6.87" y1="-19.48" x2="6.87" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-7.62" y1="-19.43" x2="7.62" y2="3.81" layer="39"/>
 </package>
-<package name="1054051204">
-<smd name="4" x="-1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="1" x="1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="3" x="1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="2" x="-1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="PAD" x="-3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<smd name="PAD@2" x="3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
-<wire x1="3" y1="5" x2="3" y2="0" width="0.127" layer="21"/>
-<wire x1="3" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
-<wire x1="5" y1="0" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="5" y1="-10" x2="2" y2="-10" width="0.127" layer="21"/>
-<wire x1="2" y1="-10" x2="2" y2="-11" width="0.127" layer="21"/>
-<wire x1="2" y1="-11" x2="-2" y2="-11" width="0.127" layer="21"/>
-<wire x1="-2" y1="-10" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="-5" y2="0" width="0.127" layer="21"/>
-<wire x1="-5" y1="0" x2="-3" y2="0" width="0.127" layer="21"/>
-<wire x1="-3" y1="0" x2="-3" y2="5" width="0.127" layer="21"/>
-<wire x1="-2" y1="-10" x2="-2" y2="-11" width="0.127" layer="21"/>
+<package name="MOLEX_NANOFIT_SMD_04">
+<description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="-1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="4" x="-1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD1" x="-3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@1" x="3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-1.27" y1="2.6" x2="1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.6" x2="1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.99" x2="4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-1.99" x2="4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-10.68" x2="-4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
 </package>
-<package name="1054051212">
-<smd name="3" x="1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="2" x="3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="1" x="6.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="7" x="6.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="8" x="3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="9" x="1.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="10" x="-1.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="11" x="-3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="12" x="-6.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="6" x="-6.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="5" x="-3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="4" x="-1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="P$13" x="-8.52" y="-4.93" dx="1.1" dy="8.2" layer="1" rot="R180"/>
-<smd name="P$14" x="8.52" y="-4.93" dx="1.1" dy="8.2" layer="1" rot="R180"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.127" layer="21"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.127" layer="21"/>
-<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.127" layer="21"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-10.16" x2="5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-10.16" x2="5.08" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-11.43" x2="-5.08" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-11.43" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="0" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="0" x2="-7.62" y2="0" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="5.08" width="0.127" layer="21"/>
+<package name="MOLEX_NANOFIT_SMD_12">
+<description>12 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051212"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051212_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="3" x="1.25" y="1.64" dx="1.24" dy="2.5" layer="1"/>
+<smd name="2" x="3.75" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="6.25" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="7" x="6.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="8" x="3.75" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="9" x="1.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="10" x="-1.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="11" x="-3.75" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="12" x="-6.25" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="6" x="-6.25" y="1.64" dx="1.24" dy="2.5" layer="1"/>
+<smd name="5" x="-3.75" y="1.64" dx="1.24" dy="2.5" layer="1"/>
+<smd name="4" x="-1.25" y="1.64" dx="1.24" dy="2.5" layer="1"/>
+<smd name="PAD" x="-8.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@1" x="8.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-6.27" y1="2.6" x2="6.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="6.27" y1="2.6" x2="6.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="6.27" y1="-1.99" x2="9.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="9.37" y1="-1.99" x2="9.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="9.37" y1="-10.68" x2="-9.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-9.37" y1="-10.68" x2="-9.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-9.37" y1="-1.99" x2="-6.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-6.27" y1="-1.99" x2="-6.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-9.37" y1="-19.48" x2="9.37" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-10.16" y1="-19.43" x2="10.16" y2="3.81" layer="39"/>
 </package>
-<package name="1054051206">
-<smd name="2" x="0" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="5" x="0" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="4" x="2.5" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="1" x="2.5" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="3" x="-2.5" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="6" x="-2.5" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="PAD" x="-4.77" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<smd name="PAD2" x="4.77" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<wire x1="-4" y1="5" x2="4" y2="5" width="0.127" layer="21"/>
-<wire x1="4" y1="5" x2="4" y2="0" width="0.127" layer="21"/>
-<wire x1="4" y1="0" x2="6" y2="0" width="0.127" layer="21"/>
-<wire x1="6" y1="0" x2="6" y2="-10" width="0.127" layer="21"/>
-<wire x1="6" y1="-10" x2="3" y2="-10" width="0.127" layer="21"/>
-<wire x1="3" y1="-10" x2="3" y2="-11" width="0.127" layer="21"/>
-<wire x1="3" y1="-11" x2="-3" y2="-11" width="0.127" layer="21"/>
-<wire x1="-6" y1="-10" x2="-6" y2="0" width="0.127" layer="21"/>
-<wire x1="-6" y1="0" x2="-4" y2="0" width="0.127" layer="21"/>
-<wire x1="-4" y1="0" x2="-4" y2="5" width="0.127" layer="21"/>
-<wire x1="-6" y1="-10" x2="-3" y2="-10" width="0.127" layer="21"/>
-<wire x1="-3" y1="-10" x2="-3" y2="-11" width="0.127" layer="21"/>
+<package name="MOLEX_NANOFIT_SMD_06">
+<description>6 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051206"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051206_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="0" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="4" x="2.5" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="2.5" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="-2.5" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="6" x="-2.5" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD" x="-4.7" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@2" x="4.7" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-2.52" y1="2.6" x2="2.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="2.52" y1="2.6" x2="2.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="2.52" y1="-1.99" x2="5.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="5.62" y1="-1.99" x2="5.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="5.62" y1="-10.68" x2="-5.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-10.68" x2="-5.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-1.99" x2="-2.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-2.52" y1="-1.99" x2="-2.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-19.48" x2="5.62" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
 </package>
-<package name="1054051210">
-<smd name="3" x="0" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="2" x="2.5" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="1" x="5" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="6" x="5" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="7" x="2.5" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="8" x="0" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="9" x="-2.5" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="10" x="-5" y="3.3" dx="1.24" dy="2.5" layer="1"/>
-<smd name="5" x="-5" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="4" x="-2.5" y="0" dx="1.24" dy="2.5" layer="1"/>
-<smd name="P$11" x="-7.27" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
-<smd name="P$12" x="7.27" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
-<wire x1="-7" y1="5" x2="7" y2="5" width="0.127" layer="21"/>
-<wire x1="7" y1="5" x2="7" y2="0" width="0.127" layer="21"/>
-<wire x1="7" y1="0" x2="9" y2="0" width="0.127" layer="21"/>
-<wire x1="9" y1="0" x2="9" y2="-10" width="0.127" layer="21"/>
-<wire x1="9" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="5" y1="-10" x2="5" y2="-11" width="0.127" layer="21"/>
-<wire x1="5" y1="-11" x2="-5" y2="-11" width="0.127" layer="21"/>
-<wire x1="-5" y1="-11" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="-9" y2="-10" width="0.127" layer="21"/>
-<wire x1="-9" y1="-10" x2="-9" y2="0" width="0.127" layer="21"/>
-<wire x1="-9" y1="0" x2="-7" y2="0" width="0.127" layer="21"/>
-<wire x1="-7" y1="0" x2="-7" y2="5" width="0.127" layer="21"/>
+<package name="MOLEX_NANOFIT_SMD_10">
+<description>10 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051210"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051210_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="3" x="0" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="2" x="2.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="6" x="5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="7" x="2.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="8" x="0" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="9" x="-2.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="10" x="-5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="5" x="-5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="4" x="-2.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="PAD" x="-7.27" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@2" x="7.27" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-5.02" y1="2.6" x2="5.02" y2="2.6" width="0.127" layer="21"/>
+<wire x1="5.02" y1="2.6" x2="5.02" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="5.02" y1="-1.99" x2="8.12" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="8.12" y1="-1.99" x2="8.12" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="8.12" y1="-10.68" x2="-8.12" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-8.12" y1="-10.68" x2="-8.12" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-8.12" y1="-1.99" x2="-5.02" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-5.02" y1="-1.99" x2="-5.02" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-8.12" y1="-19.48" x2="8.12" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-8.89" y1="-19.43" x2="8.89" y2="3.81" layer="39"/>
 </package>
-<package name="1053091202">
-<description>2 Pin Nano-Fit™ Vertical Header, Through Hole, Single Row
+<package name="MOLEX_NANOFIT_02_PTH">
+<description>2 Pin Nano-Fit Vertical Header, Through Hole, Single Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053091202"&gt;Part&lt;\a&gt;
 &lt;br&gt;
@@ -1624,7 +1649,7 @@ FUSE</text>
 <rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
 <rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="39"/>
 </package>
-<package name="1053101204">
+<package name="MOLEX_NANOFIT_04_PTH">
 <description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
@@ -2266,6 +2291,7 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <hole x="77.46" y="2.54" drill="2.8"/>
 </package>
 <package name="AUTOSPORT_12-04">
+<description>&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
 <circle x="0" y="0" radius="8.72" width="0.127" layer="21"/>
 <pad name="1" x="0" y="3.81" drill="2"/>
 <pad name="2" x="3.7084" y="0.889" drill="2"/>
@@ -3795,6 +3821,64 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <rectangle x1="2.3368" y1="-0.381" x2="3.1496" y2="6.858" layer="21"/>
 <rectangle x1="3.7084" y1="2.159" x2="4.5212" y2="6.858" layer="21"/>
 <rectangle x1="5.08" y1="-0.381" x2="5.8928" y2="6.858" layer="21"/>
+</package>
+<package name="MOLEX_NANOFIT_SMD_02">
+<description>2 Pin Nano-Fit Vertical Header, PCB Mount, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054301202"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054301202_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="1" x="1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="2" x="-1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD" x="-3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@2" x="3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-1.27" y1="0.95" x2="1.27" y2="0.95" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.95" x2="1.27" y2="-0.34" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.34" x2="4.37" y2="-0.34" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-0.34" x2="4.37" y2="-9.03" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-9.03" x2="-4.37" y2="-9.03" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-9.03" x2="-4.37" y2="-0.34" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-0.34" x2="-1.27" y2="-0.34" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.34" x2="-1.27" y2="0.95" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-17.83" x2="4.37" y2="-17.83" width="0.1524" layer="21"/>
+<rectangle x1="-5.08" y1="-17.78" x2="5.08" y2="1.905" layer="39"/>
+<text x="0" y="-18.415" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+</package>
+<package name="MOLEX_NANOFIT_SMD_14">
+<description>14 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051214"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051214_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="3" x="2.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="2" x="5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="7.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="6" x="-5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="7" x="-7.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="8" x="7.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="9" x="5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="10" x="2.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="5" x="-2.5" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="4" x="0" y="1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="PAD" x="-9.77" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@2" x="9.77" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-7.52" y1="2.6" x2="7.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="7.52" y1="2.6" x2="7.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="7.52" y1="-1.99" x2="10.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="10.62" y1="-1.99" x2="10.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="10.62" y1="-10.68" x2="-10.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-10.62" y1="-10.68" x2="-10.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-10.62" y1="-1.99" x2="-7.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-7.52" y1="-1.99" x2="-7.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-10.62" y1="-19.48" x2="10.62" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-11.43" y1="-19.43" x2="11.43" y2="3.81" layer="39"/>
+<smd name="11" x="0" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="12" x="-2.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="13" x="-5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
+<smd name="14" x="-7.5" y="-1.65" dx="1.24" dy="2.5" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -6420,7 +6504,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-2" package="1053091202">
+<device name="NANO-FIT_VERTICAL-2" package="MOLEX_NANOFIT_02_PTH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6457,18 +6541,18 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-4-SURFACE" package="1054051204">
+<device name="NANO-FIT_RIGHT_ANGLE-4-SURFACE" package="MOLEX_NANOFIT_SMD_04">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-1" pin="S" pad="3"/>
+<connect gate="-2" pin="S" pad="4"/>
+<connect gate="-3" pin="S" pad="1"/>
+<connect gate="-4" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT-VERTICAL-4" package="1053101204">
+<device name="NANO-FIT-VERTICAL-4" package="MOLEX_NANOFIT_04_PTH">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6522,7 +6606,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="1054051206">
+<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="MOLEX_NANOFIT_SMD_06">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6610,7 +6694,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="1054051212">
+<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="MOLEX_NANOFIT_SMD_12">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -6684,7 +6768,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="1054051208">
+<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="MOLEX_NANOFIT_SMD_08">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -6754,7 +6838,7 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="1054051210">
+<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="MOLEX_NANOFIT_SMD_10">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
