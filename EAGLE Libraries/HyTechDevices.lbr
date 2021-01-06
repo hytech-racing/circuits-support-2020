@@ -5804,7 +5804,7 @@ visible on the PCB.</text>
 <pin name="PC3(ADC3)" x="-2.54" y="-33.02" length="short"/>
 <pin name="PC4(ADC4)" x="-2.54" y="-35.56" length="short"/>
 <pin name="PC5(ADC5)" x="-2.54" y="-38.1" length="short"/>
-<pin name="PC6(ADC6/!RESET!)" x="-2.54" y="-40.64" length="short"/>
+<pin name="PC6(!RESET!)" x="-2.54" y="-40.64" length="short"/>
 <pin name="PD0" x="25.4" y="-10.16" length="short" rot="R180"/>
 <pin name="PD1" x="25.4" y="-12.7" length="short" rot="R180"/>
 <pin name="PD2" x="25.4" y="-15.24" length="short" rot="R180"/>
@@ -6685,7 +6685,7 @@ I2C Mode
 <description>ADM823 Watchdog
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="!RESET!" x="20.32" y="-12.7" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="!RESET!" x="20.32" y="-10.16" length="short" direction="out" function="dot" rot="R180"/>
 <pin name="!MR!" x="-2.54" y="-5.08" length="short" direction="in" function="dot"/>
 <pin name="GND" x="-2.54" y="-12.7" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
@@ -9309,7 +9309,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
 <connect gate="G$1" pin="PC4(ADC4)" pad="27"/>
 <connect gate="G$1" pin="PC5(ADC5)" pad="28"/>
-<connect gate="G$1" pin="PC6(ADC6/!RESET!)" pad="29"/>
+<connect gate="G$1" pin="PC6(!RESET!)" pad="29"/>
 <connect gate="G$1" pin="PD0" pad="30"/>
 <connect gate="G$1" pin="PD1" pad="31"/>
 <connect gate="G$1" pin="PD2" pad="32"/>
