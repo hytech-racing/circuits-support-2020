@@ -3,6 +3,8 @@
 # Unnecessary Files
 *.scr
 *.ulp
+*.sch
+*.brd
 
 # Backup files
 *.s#?
