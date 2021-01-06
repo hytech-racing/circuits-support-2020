@@ -361,12 +361,6 @@
                     "name": "Bill of Materials",
                     "output_format": "csv",
                     "type": "bom"
-                },
-                {
-                    "filename_format": "%ASSEMBLYPREFIX/PnP_%N_%BOARDSIDE",
-                    "name": "Pick and Place",
-                    "output_format": "txt",
-                    "type": "pick_and_place"
                 }
             ]
         },
