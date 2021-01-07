@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-ac"  [ C:\Users\a0868764\Documents\PSpice_Proj\opa2990_ref_des-2020-06-29T02-24\opa2990_ref_des-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+** Creating circuit file "ac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../opa2990.lib" 
+* From [PSPICE NETLIST] section of C:\Users\a0868764\Documents\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 100 100MEG
+.OPTIONS LIBRARY
+.OPTIONS ADVCONV
+.OPTIONS RELTOL= 0.0001
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

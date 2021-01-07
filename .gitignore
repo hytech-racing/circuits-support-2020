@@ -70,7 +70,20 @@
 # CAMOutput Folder
 **/CAMOutput
 
+# LTspice
+
+# Logfile
+*.log
+
+# Simulation Outputs
+*.raw
+*.fft
+
+# Netlist
+*.net
+
 # MacOS
+
 # General
 *.DS_Store
 *.AppleDouble
