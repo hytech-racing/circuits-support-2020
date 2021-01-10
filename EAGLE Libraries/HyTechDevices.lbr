@@ -3796,6 +3796,52 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <rectangle x1="3.7084" y1="2.159" x2="4.5212" y2="6.858" layer="21"/>
 <rectangle x1="5.08" y1="-0.381" x2="5.8928" y2="6.858" layer="21"/>
 </package>
+<package name="TSSOP-36">
+<description>&lt;b&gt;36-Lead Thin Shrink Small Outline Package TSSOP&lt;/b&gt; &lt;br&gt;&lt;br&gt;
+Source: https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_36_05-08-1640.pdf</description>
+<smd name="4" x="-3.4036" y="3.57631875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="5" x="-3.4036" y="2.92608125" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="6" x="-3.4036" y="2.275840625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="7" x="-3.4036" y="1.6256" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="8" x="-3.4036" y="0.975359375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="9" x="-3.4036" y="0.32511875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="10" x="-3.4036" y="-0.32511875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="11" x="-3.4036" y="-0.975359375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="12" x="-3.4036" y="-1.6256" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="13" x="-3.4036" y="-2.275840625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="14" x="-3.4036" y="-2.92608125" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="15" x="-3.4036" y="-3.57631875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="2" x="-3.4036" y="4.8768" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="16" x="-3.4036" y="-4.226559375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="17" x="-3.4036" y="-4.8768" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="3" x="-3.4036" y="4.226559375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="33" x="3.4036" y="3.57631875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="32" x="3.4036" y="2.92608125" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="31" x="3.4036" y="2.275840625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="30" x="3.4036" y="1.6256" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="29" x="3.4036" y="0.975359375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="28" x="3.4036" y="0.32511875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="27" x="3.4036" y="-0.32511875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="26" x="3.4036" y="-0.975359375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="25" x="3.4036" y="-1.6256" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="24" x="3.4036" y="-2.275840625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="23" x="3.4036" y="-2.92608125" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="22" x="3.4036" y="-3.57631875" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="35" x="3.4036" y="4.8768" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="21" x="3.4036" y="-4.226559375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="20" x="3.4036" y="-4.8768" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="34" x="3.4036" y="4.226559375" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="1" x="-3.4036" y="5.527040625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="18" x="-3.4036" y="-5.527040625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="19" x="3.4036" y="-5.527040625" dx="1.27" dy="0.4318" layer="1"/>
+<smd name="36" x="3.4036" y="5.527040625" dx="1.27" dy="0.4318" layer="1"/>
+<wire x1="-2.6416" y1="6.4516" x2="2.6416" y2="6.4516" width="0.1524" layer="25"/>
+<wire x1="-2.6416" y1="6.4008" x2="-2.6416" y2="-6.4008" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="6.4008" x2="2.6416" y2="-6.4008" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-6.4008" x2="2.6416" y2="-6.4008" width="0.1524" layer="25"/>
+<text x="-2.667" y="6.604" size="0.762" layer="25">&gt;NAME</text>
+<text x="-2.667" y="-6.604" size="0.762" layer="27" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -6305,6 +6351,50 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">STBY</text>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
 <text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
+</symbol>
+<symbol name="LTC4421">
+<pin name="CPO" x="-20.32" y="22.86" length="middle" direction="pas"/>
+<pin name="CPOREF" x="-20.32" y="20.32" length="middle" direction="pas"/>
+<pin name="OUT1" x="-20.32" y="17.78" length="middle" direction="pas"/>
+<pin name="SENSE1" x="-20.32" y="15.24" length="middle" direction="pas"/>
+<pin name="SOURCE1" x="-20.32" y="12.7" length="middle" direction="pas"/>
+<pin name="GATE1" x="-20.32" y="10.16" length="middle" direction="pas"/>
+<pin name="V1" x="-20.32" y="7.62" length="middle" direction="pas"/>
+<pin name="UVF1" x="-20.32" y="5.08" length="middle" direction="pas"/>
+<pin name="UVR1" x="-20.32" y="2.54" length="middle" direction="pas"/>
+<pin name="OV1" x="-20.32" y="0" length="middle" direction="pas"/>
+<pin name="TMR1" x="-20.32" y="-2.54" length="middle" direction="pas"/>
+<pin name="!DISABLE1" x="-20.32" y="-5.08" length="middle" direction="pas"/>
+<pin name="!CH1" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="!VALID1" x="-20.32" y="-10.16" length="middle" direction="pas"/>
+<pin name="!FAULT1" x="-20.32" y="-12.7" length="middle" direction="pas"/>
+<pin name="CASIN" x="-20.32" y="-15.24" length="middle" direction="pas"/>
+<pin name="INTVCC" x="-20.32" y="-17.78" length="middle" direction="pas"/>
+<pin name="CASOUT" x="-20.32" y="-20.32" length="middle" direction="pas"/>
+<pin name="EXTVCC" x="17.78" y="22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="17.78" y="20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="OUT2" x="17.78" y="17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="SENSE2" x="17.78" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="SOURCE2" x="17.78" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="GATE2" x="17.78" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="V2" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="UVF2" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="UVR2" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="OV2" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="TMR2" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="!DISABLE2" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="!CH2" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="!VALID2" x="17.78" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="!FAULT2" x="17.78" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="!SHDN" x="17.78" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="RETRY" x="17.78" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="QUAL" x="17.78" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<wire x1="-15.24" y1="25.4" x2="-15.24" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="12.7" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="25.4" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="-15.24" y2="25.4" width="0.1524" layer="94"/>
+<text x="-15.24" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<text x="-14.986" y="-22.86" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9767,6 +9857,58 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4421">
+<description>LTC4421 High Power Prioritized PowerPath Controller 
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4421.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC4421" x="1.016" y="-1.016"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-36">
+<connects>
+<connect gate="G$1" pin="!CH1" pad="13"/>
+<connect gate="G$1" pin="!CH2" pad="24"/>
+<connect gate="G$1" pin="!DISABLE1" pad="12"/>
+<connect gate="G$1" pin="!DISABLE2" pad="25"/>
+<connect gate="G$1" pin="!FAULT1" pad="15"/>
+<connect gate="G$1" pin="!FAULT2" pad="22"/>
+<connect gate="G$1" pin="!SHDN" pad="21"/>
+<connect gate="G$1" pin="!VALID1" pad="14"/>
+<connect gate="G$1" pin="!VALID2" pad="23"/>
+<connect gate="G$1" pin="CASIN" pad="16"/>
+<connect gate="G$1" pin="CASOUT" pad="18"/>
+<connect gate="G$1" pin="CPO" pad="1"/>
+<connect gate="G$1" pin="CPOREF" pad="2"/>
+<connect gate="G$1" pin="EXTVCC" pad="36"/>
+<connect gate="G$1" pin="GATE1" pad="6"/>
+<connect gate="G$1" pin="GATE2" pad="31"/>
+<connect gate="G$1" pin="GND" pad="35"/>
+<connect gate="G$1" pin="INTVCC" pad="17"/>
+<connect gate="G$1" pin="OUT1" pad="3"/>
+<connect gate="G$1" pin="OUT2" pad="34"/>
+<connect gate="G$1" pin="OV1" pad="10"/>
+<connect gate="G$1" pin="OV2" pad="27"/>
+<connect gate="G$1" pin="QUAL" pad="19"/>
+<connect gate="G$1" pin="RETRY" pad="20"/>
+<connect gate="G$1" pin="SENSE1" pad="4"/>
+<connect gate="G$1" pin="SENSE2" pad="33"/>
+<connect gate="G$1" pin="SOURCE1" pad="5"/>
+<connect gate="G$1" pin="SOURCE2" pad="32"/>
+<connect gate="G$1" pin="TMR1" pad="11"/>
+<connect gate="G$1" pin="TMR2" pad="26"/>
+<connect gate="G$1" pin="UVF1" pad="8"/>
+<connect gate="G$1" pin="UVF2" pad="29"/>
+<connect gate="G$1" pin="UVR1" pad="9"/>
+<connect gate="G$1" pin="UVR2" pad="28"/>
+<connect gate="G$1" pin="V1" pad="7"/>
+<connect gate="G$1" pin="V2" pad="30"/>
 </connects>
 <technologies>
 <technology name=""/>
