@@ -5109,80 +5109,60 @@ Pins tied to GND: SLOW
 <pin name="5" x="10.16" y="-12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0" y="-15.875" size="1.778" layer="96" align="top-left">&gt;MODEL</text>
 </symbol>
-<symbol name="SN74AHC1G09">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.35" x2="12.7" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-6.35" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="15.24" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="15.24" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="0.635" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.762" y="-5.715" size="1.27" layer="94">GND</text>
-<text x="11.43" y="0.635" size="1.27" layer="94" rot="R180">VCC</text>
-<wire x1="10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="7.874" y1="-3.81" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-2.794" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-3.81" x2="8.89" y2="-4.826" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-3.81" x2="10.16" y2="-2.286" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-2.286" x2="10.16" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="9.398" y1="-1.778" x2="10.16" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-1.778" x2="10.922" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="9.652" y1="-1.397" x2="10.668" y2="-1.397" width="0.127" layer="94"/>
-<wire x1="9.906" y1="-1.016" x2="10.414" y2="-1.016" width="0.127" layer="94"/>
-<polygon width="0.0762" layer="94">
-<vertex x="9.144" y="-2.921"/>
-<vertex x="9.652" y="-3.429"/>
-<vertex x="9.652" y="-2.921"/>
-</polygon>
-<text x="0.635" y="-9.525" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="2.032" y2="0" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="2.032" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.032" y1="-2.54" x2="2.032" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.032" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="3.048" y2="0.254" width="0.127" layer="94"/>
-<wire x1="3.048" y1="0.254" x2="4.572" y2="-1.27" width="0.127" layer="94" curve="-90"/>
-<wire x1="4.572" y1="-1.27" x2="3.048" y2="-2.794" width="0.127" layer="94" curve="-90"/>
-<wire x1="3.048" y1="-2.794" x2="2.032" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-1.27" x2="5.334" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="5.334" y1="-1.27" x2="7.874" y2="-3.81" width="0.127" layer="94"/>
+<symbol name="LOGICGATE_AND_OPENDRAIN">
+<description>AND Gate, Open Drain</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="12.7" y="0" visible="pad" length="short" direction="oc" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R180"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="7.62" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="7.62" y1="0" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+<wire x1="10.16" y1="0.3175" x2="10.16" y2="-0.3175" width="0.254" layer="94"/>
+<wire x1="11.4935" y1="-0.635" x2="10.668" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="11.4935" y1="-1.905" x2="10.668" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-1.27" x2="10.668" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="10.668" y1="-1.27" x2="11.938" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="11.938" y1="-1.27" x2="11.938" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="11.938" y1="-2.54" x2="11.938" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="9.398" y1="0" x2="9.398" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.2225" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-2.8575" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-0.9525" x2="10.16" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-1.27" x2="10.16" y2="-1.5875" width="0.254" layer="94"/>
+<wire x1="11.938" y1="-2.54" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="9.398" y2="0" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-4.318" x2="11.938" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="11.938" y1="-4.318" x2="11.176" y2="-4.318" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="SN74LVC1G08">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.35" x2="12.7" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-6.35" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="15.24" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="15.24" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="0.635" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.762" y="-5.715" size="1.27" layer="94">GND</text>
-<text x="11.43" y="0.635" size="1.27" layer="94" rot="R180">VCC</text>
-<wire x1="10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<text x="0.635" y="-9.525" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="2.032" y2="0" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="2.032" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.032" y1="-2.54" x2="2.032" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.032" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="3.048" y2="0.254" width="0.127" layer="94"/>
-<wire x1="3.048" y1="0.254" x2="4.572" y2="-1.27" width="0.127" layer="94" curve="-90"/>
-<wire x1="4.572" y1="-1.27" x2="3.048" y2="-2.794" width="0.127" layer="94" curve="-90"/>
-<wire x1="3.048" y1="-2.794" x2="2.032" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-1.27" x2="5.334" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="5.334" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-1.27" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
+<symbol name="LOGICGATE_AND">
+<description>AND Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R270"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
 </symbol>
 <symbol name="MCP3208">
 <pin name="CH0" x="-5.08" y="-2.54" length="middle"/>
@@ -5934,33 +5914,26 @@ Pins tied to GND: SLOW
 <wire x1="4.572" y1="-1.27" x2="6.604" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="6.604" y1="-1.27" x2="10.414" y2="-5.08" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="SN74LVC1G32">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.35" x2="12.7" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-6.35" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<pin name="A" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="B" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="GND" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="Y" x="15.24" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VCC" x="15.24" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="0.635" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.762" y="-5.715" size="1.27" layer="94">GND</text>
-<text x="11.43" y="0.635" size="1.27" layer="94" rot="R180">VCC</text>
-<wire x1="10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.127" layer="94"/>
-<text x="0.635" y="-9.525" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="2.2225" y2="0" width="0.127" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.2225" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="3.048" y2="0.254" width="0.127" layer="94"/>
-<wire x1="3.048" y1="0.254" x2="4.572" y2="-1.27" width="0.127" layer="94" curve="-90"/>
-<wire x1="4.572" y1="-1.27" x2="3.048" y2="-2.794" width="0.127" layer="94" curve="-90"/>
-<wire x1="3.048" y1="-2.794" x2="2.032" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-1.27" x2="10.16" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="2.032" y1="0.254" x2="2.032" y2="-2.794" width="0.127" layer="94" curve="-90"/>
+<symbol name="LOGICGATE_OR">
+<description>OR Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R180"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.889" y2="2.54" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="MCP3204">
 <pin name="CH0" x="-5.08" y="-2.54" length="middle"/>
@@ -6889,6 +6862,139 @@ I2C Mode
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="LTC4421">
+<description>LTC4421 Dual Supply Prioritizer
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC4421-1716308.pdf"&gt;Datasshet&lt;/a&gt;
+&lt;br&gt;
+Designed for using a single sense resistor (pg 15)</description>
+<wire x1="0" y1="0" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="96.52" y2="0" width="0.254" layer="94"/>
+<pin name="UVF1" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="UVR1" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="OV1" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="UVF2" x="-2.54" y="-27.94" length="short" direction="in"/>
+<pin name="UVR2" x="-2.54" y="-35.56" length="short" direction="in"/>
+<pin name="OV2" x="-2.54" y="-43.18" length="short" direction="in"/>
+<pin name="V1" x="10.16" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE1" x="17.78" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SOURCE1" x="25.4" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="V2" x="35.56" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GATE2" x="43.18" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SOURCE2" x="50.8" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SENSE1" x="60.96" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="SENSE2" x="63.5" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="OUT1" x="68.58" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="OUT2" x="71.12" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="CPOREF" x="76.2" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="CPO" x="83.82" y="2.54" length="short" direction="in" rot="R270"/>
+<pin name="GND" x="10.16" y="-50.8" length="short" direction="pwr" rot="R90"/>
+<pin name="EXTVDD" x="99.06" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="-48.26" x2="96.52" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="96.52" y1="-48.26" x2="96.52" y2="0" width="0.254" layer="94"/>
+<pin name="!VALID1" x="99.06" y="-10.16" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!CH1" x="99.06" y="-15.24" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!FAULT1" x="99.06" y="-20.32" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!VALID2" x="99.06" y="-12.7" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!CH2" x="99.06" y="-17.78" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="!FAULT2" x="99.06" y="-22.86" length="short" direction="oc" function="dot" rot="R180"/>
+<pin name="CASOUT" x="99.06" y="-25.4" length="short" direction="out" rot="R180"/>
+<pin name="RETRY" x="99.06" y="-30.48" length="short" direction="in" rot="R180"/>
+<pin name="!DISABLE1" x="99.06" y="-33.02" length="short" direction="in" rot="R180"/>
+<pin name="!DISABLE2" x="99.06" y="-35.56" length="short" direction="in" rot="R180"/>
+<pin name="!SHDN" x="99.06" y="-38.1" length="short" direction="in" rot="R180"/>
+<pin name="CASIN" x="99.06" y="-40.64" length="short" direction="in" rot="R180"/>
+<pin name="QUAL" x="25.4" y="-50.8" length="short" rot="R90"/>
+<pin name="TMR1" x="40.64" y="-50.8" length="short" rot="R90"/>
+<pin name="TMR2" x="55.88" y="-50.8" length="short" rot="R90"/>
+<pin name="INTVDD" x="71.12" y="-50.8" length="short" direction="pwr" rot="R90"/>
+<text x="35.56" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="35.56" y="-20.32" size="1.778" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="LOGICGATE_NAND">
+<description>NAND Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R270"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+</symbol>
+<symbol name="LOGICGATE_NOR">
+<description>NOR Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R180"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.889" y2="2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="LOGICGATE_XOR">
+<description>XOR Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R180"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.889" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="-1.016" y2="-3.81" width="0.1524" layer="94" curve="-90"/>
+</symbol>
+<symbol name="LOGICGATE_XNOR">
+<description>XOR Gate</description>
+<pin name="IN1" x="-2.54" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN2" x="-2.54" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="point" direction="pwr" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="VDD" x="2.54" y="5.08" visible="pad" length="point" direction="pwr" rot="R180"/>
+<text x="5.08" y="4.445" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-4.445" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.1524" layer="94"/>
+<text x="3.429" y="4.826" size="1.778" layer="94" rot="R90" align="center">+</text>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.889" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="-1.016" y2="-3.81" width="0.1524" layer="94" curve="-90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8021,16 +8127,16 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 &lt;br&gt;
 &lt;a href="http://www.ti.com/lit/ds/symlink/sn74ahc1g09.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="SN74AHC1G09" x="0" y="0"/>
+<gate name="G$1" symbol="LOGICGATE_AND_OPENDRAIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-23-5">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8044,16 +8150,16 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="SN74LVC1G08" x="0" y="0"/>
+<gate name="G$1" symbol="LOGICGATE_AND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-23-5">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8061,11 +8167,11 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 <device name="SOT-323-5" package="SOT323-5">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9641,16 +9747,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 &lt;br&gt;&lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf?ts=1594782477606&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;Datasheet&lt;\a&gt;</description>
 <gates>
-<gate name="G$1" symbol="SN74LVC1G32" x="0" y="0"/>
+<gate name="G$1" symbol="LOGICGATE_OR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="&quot;" package="SOT-23-5">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
 <connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
-<connect gate="G$1" pin="Y" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
