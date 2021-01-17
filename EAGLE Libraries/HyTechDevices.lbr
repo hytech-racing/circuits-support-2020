@@ -12386,6 +12386,14 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <rectangle x1="-7.62" y1="-15.24" x2="-6.35" y2="-13.97" layer="21"/>
 <rectangle x1="-2.54" y1="-15.24" x2="-1.27" y2="-13.97" layer="21"/>
 </package>
+<package name="EKYC250E__622MM25S">
+<circle x="0" y="0" radius="9" width="0.1524" layer="21"/>
+<pad name="P$1" x="0" y="3.75" drill="1.016"/>
+<pad name="P$2" x="0" y="-3.75" drill="1.016"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="4.445" x2="4.445" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-4.445" x2="4.445" y2="-4.445" width="0.1524" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
@@ -17572,6 +17580,21 @@ Demo Board</text>
 <wire x1="-5.08" y1="-5.08" x2="-27.94" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="-5.08" x2="-27.94" y2="15.24" width="0.254" layer="94"/>
 <text x="-27.94" y="-5.334" size="1.778" layer="94" font="vector" align="top-left">DCM3714</text>
+</symbol>
+<symbol name="PCAP">
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="2.032" y1="2.032" x2="-2.032" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="1.524" x2="2.032" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.524" x2="2.032" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="3.048" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="2.032" x2="2.794" y2="1.524" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -27120,6 +27143,38 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="EN" pad="P$6"/>
 <connect gate="G$1" pin="TR" pad="P$7"/>
 <connect gate="G$1" pin="VDDE" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALF70">
+<gates>
+<gate name="G$1" symbol="PCAP" x="0" y="-1.27"/>
+</gates>
+<devices>
+<device name="" package="ALF70">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EKYC250E__622MM25S">
+<gates>
+<gate name="G$1" symbol="PCAP" x="0" y="-1.27"/>
+</gates>
+<devices>
+<device name="" package="EKYC250E__622MM25S">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
