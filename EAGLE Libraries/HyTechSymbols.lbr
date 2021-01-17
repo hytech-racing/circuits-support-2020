@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,6 +57,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -123,6 +125,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="HIGH_CURRENT_PATH" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="HIGH_VOLTAGE_WIRES" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
@@ -168,6 +172,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -294,8 +300,8 @@
 <pin name="COIL-" x="35.56" y="12.7" length="middle" rot="R180"/>
 <pin name="CTCS-" x="35.56" y="5.08" length="middle" rot="R180"/>
 <pin name="CTCS+" x="35.56" y="2.54" length="middle" rot="R180"/>
-<pin name="12V" x="-5.08" y="10.16" length="middle"/>
-<pin name="GND" x="-5.08" y="7.62" length="middle"/>
+<pin name="12V" x="-5.08" y="7.62" length="middle"/>
+<pin name="GND" x="-5.08" y="10.16" length="middle"/>
 <text x="15.24" y="8.89" size="2.032" layer="95" align="center">Smart
 Precharger</text>
 </symbol>
@@ -361,9 +367,9 @@ Precharger</text>
 </symbol>
 <symbol name="BENDER_IR155-3204">
 <pin name="P1-GND" x="53.34" y="20.32" length="middle" rot="R180"/>
-<pin name="P2-VIN" x="53.34" y="17.78" length="middle" rot="R180"/>
-<pin name="P3-GND" x="53.34" y="15.24" length="middle" rot="R180"/>
-<pin name="P4-GND" x="53.34" y="12.7" length="middle" rot="R180"/>
+<pin name="P2-VIN" x="53.34" y="12.7" length="middle" rot="R180"/>
+<pin name="P3-GND" x="53.34" y="17.78" length="middle" rot="R180"/>
+<pin name="P4-GND" x="53.34" y="15.24" length="middle" rot="R180"/>
 <pin name="P5-PWM-HIGH" x="53.34" y="10.16" length="middle" rot="R180"/>
 <pin name="P6-PWM-LOW" x="53.34" y="7.62" length="middle" rot="R180"/>
 <pin name="P7-N.C." x="53.34" y="5.08" length="middle" rot="R180"/>
@@ -1165,6 +1171,31 @@ Precharger</text>
 <text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="POWER_SWITCHING_BOARD">
+<wire x1="-25.4" y1="-17.78" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="-25.4" y2="-17.78" width="0.254" layer="94"/>
+<pin name="VOUT" x="2.54" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="-15.24" length="short" rot="R180"/>
+<pin name="!SHDN" x="2.54" y="-12.7" length="short" rot="R180"/>
+<pin name="V1" x="-27.94" y="-15.24" length="short"/>
+<pin name="V2" x="-27.94" y="-2.54" length="short"/>
+<text x="-12.7" y="-8.89" size="2.032" layer="95" align="center">Power Switching 
+Circuit</text>
+</symbol>
+<symbol name="DC-DC_CONVERTER">
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-12.7" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="+IN" x="-22.86" y="-2.54" length="short"/>
+<pin name="-IN" x="-22.86" y="-10.16" length="short"/>
+<pin name="+OUT" x="2.54" y="-2.54" length="short" rot="R180"/>
+<pin name="-OUT" x="2.54" y="-10.16" length="short" rot="R180"/>
+<text x="-14.986" y="-8.382" size="1.778" layer="95">DC-DC 
+Converter</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VIN" prefix="SUPPLY">
@@ -1871,6 +1902,34 @@ Source: Sonnenschein</description>
 <description>Generic 1-pin connector</description>
 <gates>
 <gate name="G$1" symbol="M01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER_SWITCHING_BOARD">
+<gates>
+<gate name="G$1" symbol="POWER_SWITCHING_BOARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-DC_CONVERTER">
+<gates>
+<gate name="G$1" symbol="DC-DC_CONVERTER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
