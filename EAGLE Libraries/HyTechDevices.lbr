@@ -3744,6 +3744,8 @@ visible on the PCB.</text>
 <pad name="PLUS" x="7.6" y="0" drill="0.8"/>
 <circle x="-1.3" y="0" radius="8.75" width="0.127" layer="21"/>
 </package>
+<package name="LGG2G181MELA25">
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
