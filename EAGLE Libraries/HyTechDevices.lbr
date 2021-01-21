@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1632,16 +1632,6 @@ Source: transistor-fet.lbr</description>
 <wire x1="9.525" y1="1.27" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="8.89" y1="-0.635" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
-</package>
-<package name="XT60">
-<wire x1="4.06" y1="-7.85" x2="-4.06" y2="-7.85" width="0.127" layer="21"/>
-<wire x1="-4.06" y1="-7.85" x2="-4.06" y2="5.15" width="0.127" layer="21"/>
-<wire x1="-4.06" y1="5.15" x2="-1.575" y2="7.825" width="0.127" layer="21"/>
-<wire x1="-1.575" y1="7.825" x2="1.575" y2="7.825" width="0.127" layer="21"/>
-<wire x1="1.575" y1="7.825" x2="4.06" y2="5.15" width="0.127" layer="21"/>
-<wire x1="4.06" y1="5.15" x2="4.06" y2="-7.85" width="0.127" layer="21"/>
-<pad name="-" x="0" y="3.6" drill="4.4" diameter="6.5"/>
-<pad name="+" x="0" y="-3.6" drill="4.4" diameter="6.5"/>
 </package>
 <package name="SOURIAU_12-04">
 <description>SOURIAU 4 Pin
@@ -3672,6 +3662,26 @@ visible on the PCB.</text>
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <text x="-1.905" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+</package>
+<package name="SOT-23-8">
+<description>SOT-23-8
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_8_05-08-1637.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.975" y="-1.31" dx="0.4" dy="1.22" layer="1"/>
+<smd name="2" x="-0.325" y="-1.31" dx="0.4" dy="1.22" layer="1"/>
+<smd name="3" x="0.325" y="-1.31" dx="0.4" dy="1.22" layer="1"/>
+<smd name="4" x="0.975" y="-1.31" dx="0.4" dy="1.22" layer="1"/>
+<smd name="5" x="0.975" y="1.31" dx="0.4" dy="1.22" layer="1" rot="R180"/>
+<smd name="6" x="0.325" y="1.31" dx="0.4" dy="1.22" layer="1" rot="R180"/>
+<smd name="7" x="-0.325" y="1.31" dx="0.4" dy="1.22" layer="1" rot="R180"/>
+<smd name="8" x="-0.975" y="1.31" dx="0.4" dy="1.22" layer="1" rot="R180"/>
+<wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.875" x2="-1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.875" x2="-1.45" y2="0.875" width="0.127" layer="21"/>
+<text x="-1.905" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-1.651" y="-1.27" radius="0.1524" width="0" layer="21"/>
+<rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -8921,14 +8931,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <gate name="G$1" symbol="ADM823" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="!MR!" pad="3"/>
-<connect gate="G$1" pin="!RESET!" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="WDI" pad="5"/>
-</connects>
+<device name="" package="SC-70-5">
 <technologies>
 <technology name=""/>
 </technologies>
