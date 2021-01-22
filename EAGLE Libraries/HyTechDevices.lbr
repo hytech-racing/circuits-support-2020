@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10052,13 +10052,13 @@ Coil voltage: 75% - 170% of nominal voltage
 <gate name="G$1" symbol="ADM823" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-5">
+<device name="" package="SOT323-5">
 <connects>
 <connect gate="G$1" pin="!MR!" pad="3"/>
 <connect gate="G$1" pin="!RESET!" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-<connect gate="G$1" pin="WDI" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="WDI" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
