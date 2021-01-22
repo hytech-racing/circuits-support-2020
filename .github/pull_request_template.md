@@ -6,7 +6,7 @@
 *Describe the contents of the pull request. List all the devices you added. Also list any footprints or symbols you modified. If changing other supporting files, please give details on what those changes are.*
 
 ## Additional Information
-*Put any datasheets per new device, information, and/or useful links here.*
+*All datasheets, information, and/or useful links should be included in the Description within EAGLE.*
 
 ## Checklist
 - [ ] Did you create any new schematics or boards?
@@ -16,3 +16,4 @@
 - - [ ] Did you *resolve* any that occurred? ***If you are having trouble or are confused, contact a lead!***
 - [ ] Did you fill out the above template?
 - [ ] Did you assign the right people for review (on the right)?
+- [ ] Did you comply with the library style guidelines?
