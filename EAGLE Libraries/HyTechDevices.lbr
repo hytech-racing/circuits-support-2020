@@ -12394,16 +12394,146 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <wire x1="3.175" y1="4.445" x2="4.445" y2="4.445" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-4.445" x2="4.445" y2="-4.445" width="0.1524" layer="21"/>
 </package>
-<package name="EKYC250E__822MM30S">
-<circle x="0" y="0" radius="9.00000625" width="0.1524" layer="21"/>
-<pad name="P$1" x="0" y="3.75000625" drill="0.799996875"/>
-<pad name="P$2" x="0" y="-3.75000625" drill="0.799996875"/>
-<wire x1="3.81" y1="4.572" x2="3.81" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="3.81" x2="4.445" y2="3.81" width="0.1524" layer="21"/>
-</package>
 <package name="885_FUSE">
 <smd name="P$1" x="-5.249925" y="0" dx="5.5999375" dy="7.230109375" layer="1"/>
 <smd name="P$2" x="5.249925" y="0" dx="5.5999375" dy="7.230109375" layer="1"/>
+</package>
+<package name="3714DCM_VIA">
+<description>DCM3714 Isolated DC-DC Converter in VIA Package
+&lt;br&gt;
+&lt;a href="http://www.vicorpower.com/documents/datasheets/DCM3714xD2K13E0yzz_ds.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="2" x="0" y="12.0269" drill="3.048" diameter="4.572"/>
+<pad name="1" x="0" y="-12.0269" drill="3.048" diameter="4.572"/>
+<pad name="11" x="36.5506" y="14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="10" x="36.5506" y="-14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="13" x="65.7606" y="14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="12" x="65.7606" y="-14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="4" x="85.09" y="10.9093" drill="4.826" diameter="6.35"/>
+<pad name="3" x="85.09" y="-10.9093" drill="4.826" diameter="6.35"/>
+<pad name="9" x="91.7702" y="3.3909" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="5" x="91.7702" y="-3.4163" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="6" x="91.7702" y="-1.7145" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="7" x="91.7702" y="-0.0127" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="8" x="91.7702" y="1.6891" drill="1.016" diameter="1.4224" stop="no"/>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-0.5842"/>
+<vertex x="91.205075" y="-0.5842" curve="-91.927451"/>
+<vertex x="91.205075" y="0.5842"/>
+<vertex x="92.335325" y="0.5842" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="1.1176"/>
+<vertex x="91.205075" y="1.1176" curve="-91.927451"/>
+<vertex x="91.205075" y="2.286"/>
+<vertex x="92.335325" y="2.286" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-2.286"/>
+<vertex x="91.205075" y="-2.286" curve="-91.927451"/>
+<vertex x="91.205075" y="-1.1176"/>
+<vertex x="92.335325" y="-1.1176" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="1.1176"/>
+<vertex x="91.205075" y="1.1176" curve="-91.927451"/>
+<vertex x="91.205075" y="2.286"/>
+<vertex x="92.335325" y="2.286" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-0.5842"/>
+<vertex x="91.205075" y="-0.5842" curve="-91.927451"/>
+<vertex x="91.205075" y="0.5842"/>
+<vertex x="92.335325" y="0.5842" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-2.286"/>
+<vertex x="91.205075" y="-2.286" curve="-91.927451"/>
+<vertex x="91.205075" y="-1.1176"/>
+<vertex x="92.335325" y="-1.1176" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="2.8194"/>
+<vertex x="91.205075" y="2.8194" curve="-91.927451"/>
+<vertex x="91.205075" y="3.9878"/>
+<vertex x="92.335325" y="3.9878" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-3.9878"/>
+<vertex x="91.205075" y="-3.9878" curve="-91.927451"/>
+<vertex x="91.205075" y="-2.8194"/>
+<vertex x="92.335325" y="-2.8194" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="2.8194"/>
+<vertex x="91.205075" y="2.8194" curve="-91.927451"/>
+<vertex x="91.205075" y="3.9878"/>
+<vertex x="92.335325" y="3.9878" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-3.9878"/>
+<vertex x="91.205075" y="-3.9878" curve="-91.927451"/>
+<vertex x="91.205075" y="-2.8194"/>
+<vertex x="92.335325" y="-2.8194" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="91.205075" y="3.9878" curve="-88.072549"/>
+<vertex x="92.335325" y="3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="91.205075" y="3.9878" curve="-88.072549"/>
+<vertex x="92.335325" y="3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="91.205075" y="-3.9878" curve="88.072549"/>
+<vertex x="92.335325" y="-3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="91.205075" y="-3.9878" curve="88.072549"/>
+<vertex x="92.335325" y="-3.9878"/>
+</polygon>
+<wire x1="-4.3434" y1="17.78" x2="-4.3434" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="-4.3434" y1="-17.78" x2="92.9386" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="92.9386" y1="-17.78" x2="92.9386" y2="17.78" width="0.127" layer="21"/>
+<wire x1="92.9386" y1="17.78" x2="-4.3434" y2="17.78" width="0.127" layer="21"/>
+<rectangle x1="-5.842" y1="-19.812" x2="93.98" y2="19.812" layer="39"/>
+<circle x="0" y="12.0269" radius="3.048" width="0" layer="40"/>
+<circle x="0" y="-12.0269" radius="3.048" width="0" layer="40"/>
+<circle x="36.5506" y="14.8717" radius="5.08" width="0" layer="40"/>
+<circle x="36.5506" y="-14.8717" radius="5.08" width="0" layer="40"/>
+<circle x="65.7606" y="14.8717" radius="5.08" width="0" layer="40"/>
+<circle x="65.7606" y="-14.8717" radius="5.08" width="0" layer="40"/>
+<circle x="85.09" y="-10.9093" radius="4.064" width="0" layer="40"/>
+<circle x="85.09" y="10.9093" radius="4.064" width="0" layer="40"/>
+<rectangle x1="90.5764" y1="-4.5847" x2="92.964" y2="4.5847" layer="40"/>
+<text x="-5.08" y="20.32" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="L*A">
+<description>L*A Capacitor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/293/e-lgg-1512875.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="-" x="-5" y="0" drill="2"/>
+<pad name="+" x="5" y="0" drill="2"/>
+<circle x="0" y="0" radius="12.500396875" width="0.1524" layer="21"/>
+<text x="13.97" y="0" size="1.778" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-13.97" y="0" size="1.778" layer="21" font="vector" align="center">-</text>
+<text x="0" y="13" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="12.954" width="0" layer="39"/>
+<circle x="-5" y="0" radius="2.032" width="0" layer="40"/>
+<circle x="5" y="0" radius="2.032" width="0" layer="40"/>
+</package>
+<package name="EKYC*MM">
+<description>EKYC*MM 18mm Capacitor
+&lt;br&gt;
+&lt;a href="http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyc"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="-" x="-3.75" y="0" drill="0.8"/>
+<pad name="+" x="3.75" y="0" drill="0.8"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<text x="10.16" y="0" size="1.778" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-10.16" y="0" size="1.778" layer="21" font="vector" align="center">-</text>
+<text x="0" y="9.6" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-3.75" y="0" radius="1" width="0" layer="40"/>
+<circle x="3.75" y="0" radius="1" width="0" layer="40"/>
+<circle x="0" y="0" radius="9.5" width="0" layer="39"/>
 </package>
 </packages>
 <packages3d>
@@ -17606,6 +17736,43 @@ Demo Board</text>
 <wire x1="2.032" y1="1.524" x2="2.032" y2="2.032" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="1.778" x2="3.048" y2="1.778" width="0.1524" layer="94"/>
 <wire x1="2.794" y1="2.032" x2="2.794" y2="1.524" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="DCM3714">
+<description>DCM Isolated DC-DC Converter
+&lt;br&gt;
+&lt;a href="http://www.vicorpower.com/documents/datasheets/DCM3714xD2K13E0yzz_ds.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="IN+" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="IN-" x="-2.54" y="-17.78" length="short" direction="pwr"/>
+<pin name="OUT+" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="SENSE+" x="27.94" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="VDDE" x="27.94" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="EN" x="27.94" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="SENSE-" x="27.94" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="TR" x="27.94" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="OUT-" x="27.94" y="-17.78" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-20.32" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-21.082" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="CAPACITOR_POLARIZED">
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
+<rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
+<pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -27138,29 +27305,6 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCM3714BD2K13E0C09">
-<gates>
-<gate name="G$1" symbol="DCM3714BD2K13E0C09" x="15.24" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="DCM3714BD2K13E0C09">
-<connects>
-<connect gate="G$1" pin="+IN" pad="P$3"/>
-<connect gate="G$1" pin="+OUT" pad="P$1"/>
-<connect gate="G$1" pin="+SENSE" pad="P$9"/>
-<connect gate="G$1" pin="-IN" pad="P$4"/>
-<connect gate="G$1" pin="-OUT" pad="P$2"/>
-<connect gate="G$1" pin="-SENSE" pad="P$8"/>
-<connect gate="G$1" pin="EN" pad="P$6"/>
-<connect gate="G$1" pin="TR" pad="P$7"/>
-<connect gate="G$1" pin="VDDE" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ALF70">
 <gates>
 <gate name="G$1" symbol="PCAP" x="0" y="-1.27"/>
@@ -27177,15 +27321,15 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="EKYC250E__622MM25S">
+<deviceset name="EKYC250E__622MM25S" prefix="C" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="PCAP" x="0" y="-1.27"/>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EKYC250E__622MM25S">
+<device name="" package="EKYC*MM">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="MINUS" pad="-"/>
+<connect gate="G$1" pin="PLUS" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -27202,6 +27346,45 @@ Coil voltage: 75% - 170% of nominal voltage
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCM3714BD2K13E0C09">
+<gates>
+<gate name="G$1" symbol="DCM3714" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3714DCM_VIA">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT+" pad="3"/>
+<connect gate="G$1" pin="OUT-" pad="4"/>
+<connect gate="G$1" pin="SENSE+" pad="9"/>
+<connect gate="G$1" pin="SENSE-" pad="8"/>
+<connect gate="G$1" pin="TR" pad="7"/>
+<connect gate="G$1" pin="VDDE" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LGG2G181MELA25" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L*A">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="-"/>
+<connect gate="G$1" pin="PLUS" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
