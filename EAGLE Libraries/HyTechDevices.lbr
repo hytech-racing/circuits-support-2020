@@ -1695,46 +1695,6 @@ visible on the PCB.</text>
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.255" y1="-8.255" x2="8.255" y2="8.255" layer="39"/>
 </package>
-<package name="SSOP-28" urn="urn:adsk.eagle:footprint:3793/1" locally_modified="yes">
-<description>SSOP 28
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_28_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="2" x="-3.575" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="3" x="-2.925" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="4" x="-2.275" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="5" x="-1.625" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="6" x="-0.975" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="7" x="-0.325" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="8" x="0.325" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="9" x="0.975" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="10" x="1.625" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="11" x="2.275" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="12" x="2.925" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="13" x="3.575" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="14" x="4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="15" x="4.225" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="16" x="3.575" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="17" x="2.925" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="18" x="2.275" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="19" x="1.625" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="20" x="0.975" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="21" x="0.325" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="22" x="-0.325" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="23" x="-0.975" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="24" x="-1.625" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="25" x="-2.275" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="26" x="-2.925" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="27" x="-3.575" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<smd name="28" x="-4.225" y="3.375" dx="0.42" dy="1.25" layer="1"/>
-<circle x="-5" y="-3.5" radius="0.127" width="0.254" layer="21"/>
-<wire x1="-5.25" y1="2.8" x2="5.25" y2="2.8" width="0.1524" layer="21"/>
-<wire x1="-5.25" y1="-2.8" x2="5.25" y2="-2.8" width="0.1524" layer="21"/>
-<wire x1="-5.25" y1="-2.8" x2="-5.25" y2="2.8" width="0.1524" layer="21"/>
-<wire x1="5.25" y1="-2.8" x2="5.25" y2="2.8" width="0.1524" layer="21"/>
-<text x="-6" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
-<rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="4.445" layer="39"/>
-</package>
 <package name="CC-16-2">
 <description>CC-16-2 16-Terminal Stacked Land Grid Array
 &lt;br&gt;
@@ -3243,19 +3203,19 @@ visible on the PCB.</text>
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="39"/>
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="40"/>
 </package>
-<package name="LGG*A">
-<description>LGG*A Capacitor
+<package name="L*A">
+<description>L*A Capacitor
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/293/e-lgg-1512875.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="MINUS" x="-5" y="0" drill="2"/>
-<pad name="PLUS" x="5" y="0" drill="2"/>
+<pad name="-" x="-5" y="0" drill="2"/>
+<pad name="+" x="5" y="0" drill="2"/>
 <circle x="0" y="0" radius="12.500396875" width="0.1524" layer="21"/>
 <text x="13.97" y="0" size="1.778" layer="21" font="vector" rot="R180" align="center">+</text>
 <text x="-13.97" y="0" size="1.778" layer="21" font="vector" align="center">-</text>
 <text x="0" y="13" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="0" y="0" radius="12.954" width="0.1524" layer="39"/>
-<circle x="-5" y="0" radius="2.032" width="0.1524" layer="40"/>
-<circle x="5" y="0" radius="2.032" width="0.1524" layer="40"/>
+<circle x="0" y="0" radius="12.954" width="0" layer="39"/>
+<circle x="-5" y="0" radius="2.032" width="0" layer="40"/>
+<circle x="5" y="0" radius="2.032" width="0" layer="40"/>
 </package>
 <package name="MTK3339">
 <description>MTK3339 Breakout
@@ -3815,6 +3775,188 @@ Note: Based on Page 88.</description>
 <wire x1="2.85" y1="2.5" x2="2.85" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="2.85" y1="-2.5" x2="-2.85" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-2.85" y1="-2.5" x2="-2.85" y2="2.5" width="0.127" layer="21"/>
+</package>
+<package name="J115F11A*6*">
+<description>J11F51 No Pin 6 Normally Open Relay
+&lt;br&gt;
+&lt;a href="https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J115F1.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="COIL1" x="-5.1" y="0" drill="1.1"/>
+<pad name="COIL2" x="5.1" y="0" drill="1.1"/>
+<pad name="CONTACT1" x="8.9" y="15.3" drill="2.1"/>
+<pad name="CONTACT2" x="-8.9" y="12.8" drill="2.1"/>
+<wire x1="-11.7" y1="27.7" x2="-11.7" y2="10.2" width="0.127" layer="21"/>
+<wire x1="-11.7" y1="10.2" x2="-9.7" y2="10.2" width="0.127" layer="21"/>
+<wire x1="-9.7" y1="10.2" x2="-9.7" y2="-4" width="0.127" layer="21"/>
+<wire x1="-9.7" y1="-4" x2="9.7" y2="-4" width="0.127" layer="21"/>
+<wire x1="9.7" y1="-4" x2="9.7" y2="12" width="0.127" layer="21"/>
+<wire x1="9.7" y1="12" x2="15.2" y2="12" width="0.127" layer="21"/>
+<wire x1="15.2" y1="12" x2="15.2" y2="27.7" width="0.127" layer="21"/>
+<wire x1="15.2" y1="27.7" x2="-11.7" y2="27.7" width="0.127" layer="21"/>
+<rectangle x1="-12.7" y1="-5.08" x2="16.51" y2="29.21" layer="39"/>
+<text x="-12.7" y="29.21" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+</package>
+<package name="3714DCM_VIA">
+<description>DCM3714 Isolated DC-DC Converter in VIA Package
+&lt;br&gt;
+&lt;a href="http://www.vicorpower.com/documents/datasheets/DCM3714xD2K13E0yzz_ds.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="2" x="0" y="12.0269" drill="3.048" diameter="4.572"/>
+<pad name="1" x="0" y="-12.0269" drill="3.048" diameter="4.572"/>
+<pad name="11" x="36.5506" y="14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="10" x="36.5506" y="-14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="13" x="65.7606" y="14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="12" x="65.7606" y="-14.8717" drill="4.3688" diameter="7.62"/>
+<pad name="4" x="85.09" y="10.9093" drill="4.826" diameter="6.35"/>
+<pad name="3" x="85.09" y="-10.9093" drill="4.826" diameter="6.35"/>
+<pad name="9" x="91.7702" y="3.3909" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="5" x="91.7702" y="-3.4163" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="6" x="91.7702" y="-1.7145" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="7" x="91.7702" y="-0.0127" drill="1.016" diameter="1.4224" stop="no"/>
+<pad name="8" x="91.7702" y="1.6891" drill="1.016" diameter="1.4224" stop="no"/>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-0.5842"/>
+<vertex x="91.205075" y="-0.5842" curve="-91.927451"/>
+<vertex x="91.205075" y="0.5842"/>
+<vertex x="92.335325" y="0.5842" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="1.1176"/>
+<vertex x="91.205075" y="1.1176" curve="-91.927451"/>
+<vertex x="91.205075" y="2.286"/>
+<vertex x="92.335325" y="2.286" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-2.286"/>
+<vertex x="91.205075" y="-2.286" curve="-91.927451"/>
+<vertex x="91.205075" y="-1.1176"/>
+<vertex x="92.335325" y="-1.1176" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="1.1176"/>
+<vertex x="91.205075" y="1.1176" curve="-91.927451"/>
+<vertex x="91.205075" y="2.286"/>
+<vertex x="92.335325" y="2.286" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-0.5842"/>
+<vertex x="91.205075" y="-0.5842" curve="-91.927451"/>
+<vertex x="91.205075" y="0.5842"/>
+<vertex x="92.335325" y="0.5842" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-2.286"/>
+<vertex x="91.205075" y="-2.286" curve="-91.927451"/>
+<vertex x="91.205075" y="-1.1176"/>
+<vertex x="92.335325" y="-1.1176" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="2.8194"/>
+<vertex x="91.205075" y="2.8194" curve="-91.927451"/>
+<vertex x="91.205075" y="3.9878"/>
+<vertex x="92.335325" y="3.9878" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="92.335325" y="-3.9878"/>
+<vertex x="91.205075" y="-3.9878" curve="-91.927451"/>
+<vertex x="91.205075" y="-2.8194"/>
+<vertex x="92.335325" y="-2.8194" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="2.8194"/>
+<vertex x="91.205075" y="2.8194" curve="-91.927451"/>
+<vertex x="91.205075" y="3.9878"/>
+<vertex x="92.335325" y="3.9878" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="92.335325" y="-3.9878"/>
+<vertex x="91.205075" y="-3.9878" curve="-91.927451"/>
+<vertex x="91.205075" y="-2.8194"/>
+<vertex x="92.335325" y="-2.8194" curve="-91.927451"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="91.205075" y="3.9878" curve="-88.072549"/>
+<vertex x="92.335325" y="3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="91.205075" y="3.9878" curve="-88.072549"/>
+<vertex x="92.335325" y="3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="91.205075" y="-3.9878" curve="88.072549"/>
+<vertex x="92.335325" y="-3.9878"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="91.205075" y="-3.9878" curve="88.072549"/>
+<vertex x="92.335325" y="-3.9878"/>
+</polygon>
+<wire x1="-4.3434" y1="17.78" x2="-4.3434" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="-4.3434" y1="-17.78" x2="92.9386" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="92.9386" y1="-17.78" x2="92.9386" y2="17.78" width="0.127" layer="21"/>
+<wire x1="92.9386" y1="17.78" x2="-4.3434" y2="17.78" width="0.127" layer="21"/>
+<rectangle x1="-5.842" y1="-19.812" x2="93.98" y2="19.812" layer="39"/>
+<circle x="0" y="12.0269" radius="3.048" width="0.127" layer="40"/>
+<circle x="0" y="-12.1031" radius="3.048" width="0.127" layer="40"/>
+<circle x="36.5506" y="14.8717" radius="5.08" width="0.127" layer="40"/>
+<circle x="36.5506" y="-14.8717" radius="5.08" width="0.127" layer="40"/>
+<circle x="65.7606" y="14.8717" radius="5.08" width="0.127" layer="40"/>
+<circle x="65.7606" y="-14.8717" radius="5.08" width="0.127" layer="40"/>
+<circle x="85.09" y="-10.9093" radius="4.064" width="0.127" layer="40"/>
+<circle x="85.09" y="10.9093" radius="4.064" width="0.127" layer="40"/>
+<rectangle x1="90.5764" y1="-4.5847" x2="92.964" y2="4.5847" layer="40"/>
+<text x="-5.08" y="20.32" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="SSOP-28">
+<description>SSOP 28
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/SSOP_28_05-08-1640.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="2" x="-3.575" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="3" x="-2.925" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="4" x="-2.275" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="5" x="-1.625" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="6" x="-0.975" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="7" x="-0.325" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="8" x="0.325" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="9" x="0.975" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="10" x="1.625" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="11" x="2.275" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="12" x="2.925" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="13" x="3.575" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="14" x="4.225" y="-3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="15" x="4.225" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="16" x="3.575" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="17" x="2.925" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="18" x="2.275" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="19" x="1.625" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="20" x="0.975" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="21" x="0.325" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="22" x="-0.325" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="23" x="-0.975" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="24" x="-1.625" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="25" x="-2.275" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="26" x="-2.925" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="27" x="-3.575" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<smd name="28" x="-4.225" y="3.375" dx="0.42" dy="1.25" layer="1"/>
+<circle x="-5" y="-3.5" radius="0.127" width="0.254" layer="21"/>
+<wire x1="-5.25" y1="2.8" x2="5.25" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="-5.25" y1="-2.8" x2="5.25" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="-5.25" y1="-2.8" x2="-5.25" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="5.25" y2="2.8" width="0.1524" layer="21"/>
+<text x="-6" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="4.445" layer="39"/>
+</package>
+<package name="EKYC*MM">
+<description>EKYC*MM 18mm Capacitor
+&lt;br&gt;
+&lt;a href="http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyc"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="-" x="-3.75" y="0" drill="0.8"/>
+<pad name="+" x="3.75" y="0" drill="0.8"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<text x="10.16" y="0" size="1.778" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-10.16" y="0" size="1.778" layer="21" font="vector" align="center">-</text>
+<text x="0" y="9.6" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-3.75" y="0" radius="1" width="0" layer="40"/>
+<circle x="3.75" y="0" radius="1" width="0" layer="40"/>
+<circle x="0" y="0" radius="9.5" width="0" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -6231,8 +6373,8 @@ Designed for using a single sense resistor (pg 15)</description>
 <pin name="TMR1" x="40.64" y="-50.8" length="short" rot="R90"/>
 <pin name="TMR2" x="55.88" y="-50.8" length="short" rot="R90"/>
 <pin name="INTVDD" x="71.12" y="-50.8" length="short" direction="pwr" rot="R90"/>
-<text x="35.56" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
-<text x="35.56" y="-20.32" size="1.778" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="76.2" y="-49.022" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="LOGICGATE_NAND">
 <description>NAND Gate</description>
@@ -6695,6 +6837,32 @@ Pins tied to VREG: ISOMD, DTEN
 <pin name="GPI09" x="20.32" y="-66.04" length="short" swaplevel="1" rot="R180"/>
 <pin name="IPB" x="20.32" y="-10.16" length="short" rot="R180"/>
 <pin name="IMB" x="20.32" y="-12.7" length="short" rot="R180"/>
+</symbol>
+<symbol name="DCM3714">
+<description>DCM Isolated DC-DC Converter
+&lt;br&gt;
+&lt;a href="http://www.vicorpower.com/documents/datasheets/DCM3714xD2K13E0yzz_ds.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="IN+" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="IN-" x="-2.54" y="-17.78" length="short" direction="pwr"/>
+<pin name="OUT+" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="SENSE+" x="27.94" y="-5.08" length="short" rot="R180"/>
+<pin name="VDDE" x="27.94" y="-7.62" length="short" rot="R180"/>
+<pin name="EN" x="27.94" y="-10.16" length="short" rot="R180"/>
+<pin name="SENSE-" x="27.94" y="-15.24" length="short" rot="R180"/>
+<pin name="TR" x="27.94" y="-12.7" length="short" rot="R180"/>
+<pin name="OUT-" x="27.94" y="-17.78" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-20.32" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="-21.082" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7743,41 +7911,6 @@ MAX voltage: 100V</description>
 </gates>
 <devices>
 <device name="SOIC_WIDE" package="SOIC-28W">
-<connects>
-<connect gate="G$1" pin="!CS" pad="11"/>
-<connect gate="G$1" pin="!RESET" pad="18"/>
-<connect gate="G$1" pin="A0" pad="15"/>
-<connect gate="G$1" pin="A1" pad="16"/>
-<connect gate="G$1" pin="A2" pad="17"/>
-<connect gate="G$1" pin="CLK" pad="12"/>
-<connect gate="G$1" pin="GND" pad="10"/>
-<connect gate="G$1" pin="GPA0" pad="21"/>
-<connect gate="G$1" pin="GPA1" pad="22"/>
-<connect gate="G$1" pin="GPA2" pad="23"/>
-<connect gate="G$1" pin="GPA3" pad="24"/>
-<connect gate="G$1" pin="GPA4" pad="25"/>
-<connect gate="G$1" pin="GPA5" pad="26"/>
-<connect gate="G$1" pin="GPA6" pad="27"/>
-<connect gate="G$1" pin="GPA7" pad="28"/>
-<connect gate="G$1" pin="GPB0" pad="1"/>
-<connect gate="G$1" pin="GPB1" pad="2"/>
-<connect gate="G$1" pin="GPB2" pad="3"/>
-<connect gate="G$1" pin="GPB3" pad="4"/>
-<connect gate="G$1" pin="GPB4" pad="5"/>
-<connect gate="G$1" pin="GPB5" pad="6"/>
-<connect gate="G$1" pin="GPB6" pad="7"/>
-<connect gate="G$1" pin="GPB7" pad="8"/>
-<connect gate="G$1" pin="INTA" pad="20"/>
-<connect gate="G$1" pin="INTB" pad="19"/>
-<connect gate="G$1" pin="SDI" pad="13"/>
-<connect gate="G$1" pin="SDO" pad="14"/>
-<connect gate="G$1" pin="VDD" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SSOP28" package="SSOP-28">
 <connects>
 <connect gate="G$1" pin="!CS" pad="11"/>
 <connect gate="G$1" pin="!RESET" pad="18"/>
@@ -9175,6 +9308,29 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
+<deviceset name="DCM3714XD2K13E0YZZ">
+<gates>
+<gate name="G$1" symbol="DCM3714" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3714DCM_VIA">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT+" pad="3"/>
+<connect gate="G$1" pin="OUT-" pad="4"/>
+<connect gate="G$1" pin="SENSE+" pad="9"/>
+<connect gate="G$1" pin="SENSE-" pad="8"/>
+<connect gate="G$1" pin="TR" pad="7"/>
+<connect gate="G$1" pin="VDDE" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
@@ -9182,11 +9338,6 @@ Coil voltage: 75% - 170% of nominal voltage
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
