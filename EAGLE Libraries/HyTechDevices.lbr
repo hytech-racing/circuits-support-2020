@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -81,7 +81,7 @@
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
@@ -6847,6 +6847,61 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="0.762" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="0" y="-21.082" size="1.27" layer="96" font="vector" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="HEADER_FEMALE">
+<description>Symbol creared for usage in BOM to track usage of female headers</description>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0" x2="1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.556" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="0" x2="4.064" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.016" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="1.016" y1="-4.318" x2="1.524" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="1.524" y1="-4.318" x2="1.524" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="3.556" y1="0" x2="3.556" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="3.556" y1="-4.318" x2="4.064" y2="-4.318" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="4.064" y1="-4.318" x2="4.064" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;LENGTH</text>
+<text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="HEADER_MALE">
+<description>Symbol creared for usage in BOM to track usage of male headers</description>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.1524" layer="94"/>
+<text x="0" y="2.032" size="1.27" layer="96">&gt;LENGTH</text>
+<text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="ANTENNA">
+<description>Antenna symbol for BOM tracking</description>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LR8">
@@ -8481,12 +8536,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name="">
 <attribute name="RESISTANCE" value="" constant="no"/>
 </technology>
-<technology name="10K">
-<attribute name="RESISTANCE" value="10K"/>
-</technology>
-<technology name="43K">
-<attribute name="RESISTANCE" value="43K"/>
-</technology>
 </technologies>
 </device>
 <device name="AXIAL-0.3" package="AXIAL-0.3">
@@ -9307,6 +9356,22 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="SENSE-" pad="8"/>
 <connect gate="G$1" pin="TR" pad="7"/>
 <connect gate="G$1" pin="VDDE" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="885_FUSE">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0885">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
