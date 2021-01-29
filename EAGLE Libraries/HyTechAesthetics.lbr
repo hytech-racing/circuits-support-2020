@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="281.49717" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -19799,6 +19799,14 @@
 <rectangle x1="-0.016934375" y1="6.176371875" x2="0.016928125" y2="6.184834375" layer="21"/>
 <rectangle x1="-0.008465625" y1="6.1848375" x2="0.016928125" y2="6.19330625" layer="21"/>
 <rectangle x1="-0.008465625" y1="6.19330625" x2="0.008465625" y2="6.20176875" layer="21"/>
+</package>
+<package name="NUMBER">
+<wire x1="0" y1="8.89" x2="0" y2="0" width="0.508" layer="51"/>
+<wire x1="0" y1="0" x2="17.907" y2="0" width="0.508" layer="51"/>
+<wire x1="17.907" y1="0" x2="17.907" y2="8.89" width="0.508" layer="51"/>
+<wire x1="17.907" y1="8.89" x2="0" y2="8.89" width="0.508" layer="51"/>
+<text x="2.667" y="4.445" size="6.096" layer="51" font="vector" align="center">#</text>
+<rectangle x1="5.08" y1="0" x2="17.907" y2="8.89" layer="51"/>
 </package>
 </packages>
 <symbols>
