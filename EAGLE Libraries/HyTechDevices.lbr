@@ -6902,6 +6902,43 @@ Pins tied to VREG: ISOMD, DTEN
 <wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
 <text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="CAN_TRANSCIEVER">
+<description>Generalized CAN Transciever
+&lt;br&gt;
+&lt;br&gt;
+TCAN337 Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tcan337.pdf?ts=1610765239354&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCAN337"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+TCAN1051*V Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tcan1051hgv-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610765132518&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252Ff"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/20005284A-708901.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+MCP2551 Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/20001667G-1115479.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
+<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="RXD" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="&gt;PIN5" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="&gt;PIN8" x="-2.54" y="-12.7" length="short" direction="in"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LR8">
@@ -9375,6 +9412,135 @@ Coil voltage: 75% - 170% of nominal voltage
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAN_TRANSCIEVER_TCAN337" prefix="U">
+<description>TCAN337 Can Tranciever
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tcan337.pdf?ts=1610765239354&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCAN337"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN337" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT-23-8" package="SOT-23-8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="FAULT" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="S" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name="TCAN337">
+<attribute name="DKPN" value="296-44539-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-TCAN337GDCNT"/>
+<attribute name="MPN" value="TCAN337GDCNT "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_NETWORK_4_*" prefix="RN">
+<description>Resistor Network w/ 4 Indepedent Resistors
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Yageo TC Series&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf"&gt;Panasonice EXB Series&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RESISTOR" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="RESISTOR" x="0" y="-10.16" swaplevel="1"/>
+<gate name="C" symbol="RESISTOR" x="0" y="-20.32" swaplevel="1"/>
+<gate name="D" symbol="RESISTOR" x="0" y="-30.48" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="YC/TC164">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="8"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="7"/>
+<connect gate="C" pin="1" pad="3"/>
+<connect gate="C" pin="2" pad="6"/>
+<connect gate="D" pin="1" pad="4"/>
+<connect gate="D" pin="2" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="0"/>
+</technology>
+<technology name="100">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="100"/>
+</technology>
+<technology name="100K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="100k"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="10k"/>
+</technology>
+<technology name="12K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="12k"/>
+</technology>
+<technology name="1K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="1k"/>
+</technology>
+<technology name="27K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="27k"/>
+</technology>
+<technology name="2K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="2k"/>
+</technology>
+<technology name="43K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="43k"/>
+</technology>
 </technologies>
 </device>
 </devices>
