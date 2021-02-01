@@ -7885,7 +7885,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-3" prefix="JP" uservalue="yes">
+<deviceset name="CONNECTOR-3" prefix="J" uservalue="yes">
 <description>3 Pin Connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
@@ -7896,6 +7896,16 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOURIAU" package="SOURIAU_04-35">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
