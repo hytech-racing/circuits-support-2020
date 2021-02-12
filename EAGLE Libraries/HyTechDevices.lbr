@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1003,7 +1003,7 @@ MOPN: 534-3568</description>
 <text x="-1.905" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
 </package>
-<package name="MOLEX_NANOFIT_SMD_08">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_08">
 <description>8 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051208"&gt;Part&lt;\a&gt;
@@ -1033,7 +1033,7 @@ visible on the PCB.</text>
 <rectangle x1="-7.62" y1="-19.43" x2="7.62" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_04">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
 <description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
@@ -1059,7 +1059,7 @@ visible on the PCB.</text>
 <rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_12">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_12">
 <description>12 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051212"&gt;Part&lt;\a&gt;
@@ -1093,7 +1093,7 @@ visible on the PCB.</text>
 <rectangle x1="-10.16" y1="-19.43" x2="10.16" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_06">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
 <description>6 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051206"&gt;Part&lt;\a&gt;
@@ -1121,7 +1121,7 @@ visible on the PCB.</text>
 <rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_10">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_10">
 <description>10 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051210"&gt;Part&lt;\a&gt;
@@ -2585,7 +2585,7 @@ Note: Based off of Page 112.</description>
 <rectangle x1="3.7084" y1="2.159" x2="4.5212" y2="6.858" layer="21"/>
 <rectangle x1="5.08" y1="-0.381" x2="5.8928" y2="6.858" layer="21"/>
 </package>
-<package name="MOLEX_NANOFIT_SMD_02">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_02">
 <description>2 Pin Nano-Fit Vertical Header, PCB Mount, Single Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054301202"&gt;Part&lt;\a&gt;
@@ -2609,7 +2609,7 @@ Note: Based off of Page 112.</description>
 visible on the PCB.</text>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_14">
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_14">
 <description>14 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051214"&gt;Part&lt;\a&gt;
@@ -3941,6 +3941,63 @@ Note: Based on Page 88.</description>
 <text x="0" y="4.318" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
 </package>
+<package name="3921">
+<description>3921 Yageo Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/447/PYu-PU_51_RoHS_L_6-1504619.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.175" y="0" dx="2.75" dy="6.2" layer="1"/>
+<smd name="2" x="4.175" y="0" dx="2.75" dy="6.2" layer="1"/>
+<wire x1="-5" y1="2.6" x2="5" y2="2.6" width="0.127" layer="21"/>
+<wire x1="5" y1="2.6" x2="5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.6" x2="-5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.6" x2="-5" y2="2.6" width="0.127" layer="21"/>
+<rectangle x1="-6.096" y1="-3.556" x2="6.096" y2="3.556" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_NANOFIT_SMD_VERTICAL_02">
+<description>2 Pin Nano-Fit Vertical Header, SMD Mount, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054311102"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054311102_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="1" x="1.25" y="0" dx="1.24" dy="7" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.24" dy="7" layer="1"/>
+<smd name="PAD" x="3.055" y="0" dx="1.1" dy="8" layer="1"/>
+<smd name="PAD1" x="-3.055" y="0" dx="1.1" dy="8" layer="1"/>
+<rectangle x1="-4.115" y1="-4" x2="4.115" y2="5.05" layer="39"/>
+<wire x1="-4.115" y1="-1.74" x2="4.115" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="4.115" y1="-1.74" x2="4.115" y2="1.74" width="0.127" layer="21"/>
+<wire x1="4.115" y1="1.74" x2="2.55" y2="1.74" width="0.127" layer="21"/>
+<wire x1="2.55" y1="1.74" x2="2.55" y2="4.95" width="0.127" layer="21"/>
+<wire x1="2.55" y1="4.95" x2="-2.55" y2="4.95" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="4.95" x2="-2.55" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="1.74" x2="-4.115" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-4.115" y1="1.74" x2="-4.115" y2="-1.74" width="0.127" layer="21"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_NANOFIT_SMD_VERTICAL_04">
+<description>4 Pin Nano-Fit Vertical Header, SMD Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054291104"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054291104_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="1" x="1.25" y="3.25" dx="1.24" dy="3" layer="1"/>
+<smd name="2" x="-1.25" y="3.25" dx="1.24" dy="3" layer="1"/>
+<smd name="3" x="1.25" y="-3.25" dx="1.24" dy="3" layer="1"/>
+<smd name="4" x="-1.25" y="-3.25" dx="1.24" dy="3" layer="1"/>
+<smd name="PAD1" x="-3.055" y="0" dx="1.1" dy="10.5" layer="1"/>
+<smd name="PAD" x="3.055" y="0" dx="1.1" dy="10.5" layer="1"/>
+<rectangle x1="-4.115" y1="-5.25" x2="4.115" y2="6.3" layer="39"/>
+<wire x1="-4.115" y1="-3.49" x2="4.115" y2="-3.49" width="0.127" layer="21"/>
+<wire x1="4.115" y1="-3.49" x2="4.115" y2="3.49" width="0.127" layer="21"/>
+<wire x1="4.115" y1="3.49" x2="2.3" y2="3.49" width="0.127" layer="21"/>
+<wire x1="2.3" y1="3.49" x2="2.3" y2="6.2" width="0.127" layer="21"/>
+<wire x1="2.3" y1="6.2" x2="-2.3" y2="6.2" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="6.2" x2="-2.3" y2="3.49" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="3.49" x2="-4.115" y2="3.49" width="0.127" layer="21"/>
+<wire x1="-4.115" y1="3.49" x2="-4.115" y2="-3.49" width="0.127" layer="21"/>
+<text x="0" y="6.35" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -4107,10 +4164,10 @@ Note: Based on Page 88.</description>
 <wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
 <pin name="VREF" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
 <pin name="CANH" x="20.32" y="-7.62" length="short" rot="R180"/>
@@ -5304,8 +5361,8 @@ Note: No sure about SDO/SDI accuracy</description>
 <text x="0" y="-46.482" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="TEENSY_4.1_EXT">
-<pin name="(CRX2)D0" x="22.86" y="-78.74" visible="pin" length="short" rot="R180"/>
-<pin name="(CTX2)D1" x="22.86" y="-76.2" visible="pin" length="short" rot="R180"/>
+<pin name="(CRX1)D0" x="22.86" y="-78.74" visible="pin" length="short" rot="R180"/>
+<pin name="(CTX1)D1" x="22.86" y="-76.2" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-78.74" visible="pin" length="short"/>
 <wire x1="20.32" y1="-81.28" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -6461,10 +6518,10 @@ Designed for using a single sense resistor (pg 15)</description>
 <wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
 <pin name="VLOGIC" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
 <pin name="CANH" x="20.32" y="-7.62" length="short" rot="R180"/>
@@ -6483,11 +6540,11 @@ Designed for using a single sense resistor (pg 15)</description>
 <pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="RXD" x="-2.54" y="-12.7" length="short" direction="out"/>
 <pin name="VIO" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="S" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="CANL" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="S" x="20.32" y="-7.62" length="short" direction="in" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -6502,11 +6559,11 @@ Designed for using a single sense resistor (pg 15)</description>
 <pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
 <pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-5.08" length="short" direction="out"/>
-<pin name="FAULT" x="20.32" y="-12.7" length="short" direction="oc" rot="R180"/>
-<pin name="CANL" x="20.32" y="-7.62" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-5.08" length="short" direction="out" rot="R180"/>
-<pin name="S" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
+<pin name="FAULT" x="-2.54" y="-12.7" length="short" direction="oc"/>
+<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="S" x="20.32" y="-5.08" length="short" direction="in" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -6902,43 +6959,6 @@ Pins tied to VREG: ISOMD, DTEN
 <wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
 <text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="CAN_TRANSCIEVER">
-<description>Generalized CAN Transciever
-&lt;br&gt;
-&lt;br&gt;
-TCAN337 Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tcan337.pdf?ts=1610765239354&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCAN337"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-TCAN1051*V Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tcan1051hgv-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610765132518&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252Ff"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-MCP2562FD Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/20005284A-708901.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-MCP2551 Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/20001667G-1115479.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
-<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-7.62" length="short" direction="out"/>
-<pin name="&gt;PIN5" x="20.32" y="-5.08" length="short" rot="R180"/>
-<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="&gt;PIN8" x="-2.54" y="-12.7" length="short" direction="in"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LR8">
@@ -6975,7 +6995,7 @@ MCP2551 Can Tranciever
 </technology>
 </technologies>
 </device>
-<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_02">
+<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_02">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7026,7 +7046,7 @@ MCP2551 Can Tranciever
 <technology name=""/>
 </technologies>
 </device>
-<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_04">
+<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7096,7 +7116,7 @@ MCP2551 Can Tranciever
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="MOLEX_NANOFIT_SMD_06">
+<device name="NANO-FIT_RIGHT_ANGLE-6-SURFACE" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7167,7 +7187,7 @@ MCP2551 Can Tranciever
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="MOLEX_NANOFIT_SMD_12">
+<device name="NANO-FIT_RIGHT_ANGLE-12-SURFACE" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_12">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -7233,7 +7253,7 @@ MCP2551 Can Tranciever
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="MOLEX_NANOFIT_SMD_08">
+<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_08">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7293,7 +7313,7 @@ MCP2551 Can Tranciever
 </technology>
 </technologies>
 </device>
-<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="MOLEX_NANOFIT_SMD_10">
+<device name="NANO-FIT_RIGHT_ANGLE-SURFACE" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_10">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -8567,35 +8587,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_?_*" prefix="R">
-<description>&lt;b&gt;Resistor&lt;/b&gt;
-Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603" package="0603-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="RESISTANCE" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="AXIAL-0.3" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="0001.2704.11" prefix="F" uservalue="yes">
 <description>Ceramic Surface Mount Fuse
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -9226,27 +9217,260 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="PWR163S-25-5R00J" prefix="R" uservalue="yes">
-<description>&lt;b&gt;PWR163S-25-5R00J&lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/54/pwr163-777985.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="RESISTOR_?_*" prefix="R">
+<description>&lt;b&gt;Resistor&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/pwr163-777985.pdf"&gt;PWR163 Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_PYu_AC_51_RoHS_L_7_1714230-1874691.pdf"&gt;AC Series&lt;/a&gt;&lt;li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/PYu-PU_51_RoHS_L_6-1504619.pdf"&gt;PU Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PWR163">
+<device name="PWR163" package="PWR163">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="5">
+<attribute name="DKPN" value="118-PWR163S-25-5R00JECT-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-PWR163S255R00JE"/>
+<attribute name="MPN" value="PWR163S-25-5R00JE"/>
+<attribute name="POWER" value="25W"/>
+<attribute name="RESISTANCE" value="5Ω"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="2000V"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="DKPN" value="311-0.0LDCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-070RL"/>
+<attribute name="MPN" value="AC0603FR-070RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="0Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1.2K">
+<attribute name="DKPN" value="YAG3572CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-071K2L"/>
+<attribute name="MPN" value="AC0603FR-071K2L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.2kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1.4K">
+<attribute name="DKPN" value="13-AC0603FR-071K4LCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-071K4L"/>
+<attribute name="MPN" value="AC0603FR-071K4L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.4kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="100">
+<attribute name="DKPN" value="YAG3561CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-07100RL"/>
+<attribute name="MPN" value="AC0603FR-07100RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KLDCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-07100KL"/>
+<attribute name="MPN" value="AC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="311-10KLDCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0710KL"/>
+<attribute name="MPN" value="AC0603FR-0710KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="10kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="12K">
+<attribute name="DKPN" value="YAG3565CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0712KL"/>
+<attribute name="MPN" value="AC0603FR-0712KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="12kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="14K">
+<attribute name="DKPN" value="13-AC0603FR-0714KLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0714KL"/>
+<attribute name="MPN" value="AC0603FR-0714KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="14kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="158">
+<attribute name="DKPN" value="AC0603FR-07158RL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-07158RL"/>
+<attribute name="MPN" value="AC0603FR-07158RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="158Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1K">
+<attribute name="DKPN" value="311-1KLDCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-071KL"/>
+<attribute name="MPN" value="AC0603FR-071KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="1M">
+<attribute name="DKPN" value="311-1MLDCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-071ML"/>
+<attribute name="MPN" value="AC0603FR-071ML"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1MΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="22">
+<attribute name="DKPN" value="YAG3581CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0722RL"/>
+<attribute name="MPN" value="AC0603FR-0722RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="22Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="26.7K">
+<attribute name="DKPN" value="13-AC0603FR-0726K7LCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0726K7L"/>
+<attribute name="MPN" value="AC0603FR-0726K7L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="26.7kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="2K">
+<attribute name="DKPN" value="YAG3590CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-072KL"/>
+<attribute name="MPN" value="AC0603FR-072KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="2kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="3.3K">
+<attribute name="DKPN" value="YAG3605CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-073K3L"/>
+<attribute name="MPN" value="AC0603FR-073K3L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.3kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="402">
+<attribute name="DKPN" value="13-AC0603FR-07402RLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-07402RL"/>
+<attribute name="MPN" value="AC0603FR-07402RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="402Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="43K">
+<attribute name="DKPN" value="13-AC0603FR-0743KLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0743KL"/>
+<attribute name="MPN" value="AC0603FR-0743KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="43kΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="60.4">
+<attribute name="DKPN" value="13-AC0603FR-0760R4LCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-0760R4L"/>
+<attribute name="MPN" value="AC0603FR-0760R4L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="60.4Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="806">
+<attribute name="DKPN" value="AC0603FR-07806RL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-AC0603FR-07806RL"/>
+<attribute name="MPN" value="AC0603FR-07806RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="806Ω"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+</technologies>
+</device>
+<device name="AXIAL0.3" package="AXIAL-0.3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="118-PWR163S-25-5R00JECT-ND"/>
-<attribute name="MPN" value="652-PWR163S255R00JE"/>
-<attribute name="POWER" value="25W"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VALUE" value="5Ω"/>
-<attribute name="VOLTAGE" value="2000V"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="RESISTANCE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3921" package="3921">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="0.001">
+<attribute name="DKPN" value="YAG6126CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-U3921FKMP50R001L"/>
+<attribute name="MPN" value="PU3921FKMP50R001L"/>
+<attribute name="POWER" value="5W"/>
+<attribute name="RESISTANCE" value="1mΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="0.07V"/>
 </technology>
 </technologies>
 </device>
@@ -9457,11 +9681,10 @@ Coil voltage: 75% - 170% of nominal voltage
 </devices>
 </deviceset>
 <deviceset name="RESISTOR_NETWORK_4_*" prefix="RN">
-<description>Resistor Network w/ 4 Indepedent Resistors
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Yageo TC Series&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf"&gt;Panasonice EXB Series&lt;/a&gt;</description>
+<description>&lt;b&gt;Resistor Network w/ 4 Indepedent Resistors&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Yageo TC Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="A" symbol="RESISTOR" x="0" y="0" swaplevel="1"/>
 <gate name="B" symbol="RESISTOR" x="0" y="-10.16" swaplevel="1"/>
@@ -9486,70 +9709,120 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="0">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="0"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="100">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="100"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="100K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="10K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="10k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="12K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="12k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+<technology name="14K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="RESISTANCE" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+<technology name="158">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="RESISTANCE" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="1K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="1k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
-<technology name="27K">
+<technology name="26.7K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
-<attribute name="RESISTANCE" value="27k"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="RESISTANCE" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="2K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="2k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="43K">
 <attribute name="DKPN" value="" constant="no"/>
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MOPN" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="RESISTANCE" value="43k"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9560,7 +9833,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <gate name="G$1" symbol="CONNECTOR_CAN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_NANOFIT_SMD_04">
+<device name="" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
 <connects>
 <connect gate="G$1" pin="+12V" pad="1"/>
 <connect gate="G$1" pin="CANH" pad="4"/>
