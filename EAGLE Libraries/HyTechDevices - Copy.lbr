@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9548,7 +9548,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADC128S022" prefix="U">
+<deviceset name="ADC128S022">
 <description>ADC128S022 8-channel Analog to Digital Converter&lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/adc128s022.pdf?ts=1609290895378&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADC128S022%253Fqgpn%253Dadc128s022"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -9575,12 +9575,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="VLOGIC" pad="13"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DKPN" value="296-38561-1-ND"/>
-<attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="926-A128S022CIMTXNPB"/>
-<attribute name="MPN" value="ADC128S022CIMTX/NOPB"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
