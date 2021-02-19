@@ -3128,11 +3128,11 @@ visible on the PCB.</text>
 <description>BR-1632A/HAN RTC Battery
 &lt;br&gt;
 &lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Batteries%20PDFS/BR-1632A_HAN_Dwg.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="MINUS" x="-7.6" y="0" drill="0.8"/>
-<pad name="PLUS" x="7.6" y="0" drill="0.8"/>
+<pad name="-" x="-7.6" y="0" drill="0.8"/>
+<pad name="+" x="7.6" y="0" drill="0.8"/>
 <circle x="-1.3" y="0" radius="8.75" width="0.127" layer="21"/>
-<text x="6.35" y="0" size="1.27" layer="21" font="vector" align="center">+</text>
-<text x="-8.89" y="0" size="1.27" layer="21" font="vector" align="center">-</text>
+<text x="9.525" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-10.795" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">-</text>
 <text x="-1.27" y="8.89" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-7.6" y="0" radius="0.889" width="0.127" layer="39"/>
 <circle x="-7.6" y="0" radius="0.889" width="0.127" layer="40"/>
@@ -4023,6 +4023,27 @@ Note: Based on Page 88.</description>
 <pad name="VBAT" x="12.7" y="33.02" drill="1.016" rot="R180"/>
 <rectangle x1="11.176" y1="31.496" x2="16.764" y2="34.544" layer="39"/>
 <rectangle x1="11.176" y1="31.496" x2="16.764" y2="34.544" layer="40"/>
+</package>
+<package name="MSOP-10">
+<description>MSOP 10
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081661_F_MS.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="2" x="-0.5" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="3" x="0" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="4" x="0.5" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="5" x="1" y="-2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="6" x="1" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="7" x="0.5" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="8" x="0" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="9" x="-0.5" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<smd name="10" x="-1" y="2.1055" dx="0.305" dy="0.889" layer="1"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-1.778" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-1.651" y="-2.1055" radius="0.1524" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6299,8 +6320,8 @@ I2C Mode
 <symbol name="BATTERY">
 <wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
 <wire x1="-1.905" y1="-2.54" x2="-1.905" y2="2.54" width="0.4064" layer="94"/>
-<pin name="PLUS" x="-5.08" y="0" visible="pad" length="short" direction="pwr"/>
-<pin name="MINUS" x="2.54" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
 <text x="-1.27" y="3.302" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
@@ -7053,6 +7074,15 @@ Pins tied to VREG: ISOMD, DTEN
 <technology name=""/>
 </technologies>
 </device>
+<device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-4" prefix="J" uservalue="yes">
@@ -7434,7 +7464,7 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP" prefix="C" uservalue="yes">
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;
 Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <gates>
@@ -7662,7 +7692,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPC1002N">
+<deviceset name="OPTOCOUPLER">
 <description>&lt;b&gt;IXYS Solid State Relay .7A&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_OPTOCOUPLER" x="7.62" y="5.08"/>
@@ -7694,49 +7724,6 @@ Coil voltage: 75% - 170% of nominal voltage
 </gates>
 <devices>
 <device name="" package="G5LE-14">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FUSE" prefix="F" uservalue="yes">
-<description>Fuse/Fuseclips
-&lt;br&gt;
-Keystone Electronics 3568 Fuse
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bussman/Eaton Midget Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Schurter 0751.0110 Brass Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bel Fuse 0ZCF Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://belfuse.com/resources/CircuitProtection/datasheets/0ZCF%20Nov2016.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8613,9 +8600,40 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="0001.2704.11" prefix="F" uservalue="yes">
+<deviceset name="FUSE" prefix="F" uservalue="yes">
 <description>Ceramic Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;
+
+Fuse/Fuseclips
+&lt;br&gt;
+Keystone Electronics 3568 Fuse
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Bussman/Eaton Midget Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Schurter 0751.0110 Brass Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Bel Fuse 0ZCF Series Surface Mount PTC (resettable) Fuse
+&lt;br&gt;
+&lt;a href="https://belfuse.com/resources/CircuitProtection/datasheets/0ZCF%20Nov2016.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
+&lt;br&gt;
+&lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"&gt;Datasheet&lt;/a&gt;
+
+Ceramic SMD Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -8628,11 +8646,32 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 <technologies>
 <technology name="">
 <attribute name="BREAKINGCURRENT" value="1500A"/>
+<attribute name="CURRENT" value="1A"/>
 <attribute name="DKPN" value="486-2487-ND"/>
 <attribute name="I2T" value="1.1"/>
 <attribute name="MOPN" value="693-0001.2704.11"/>
-<attribute name="VALUE" value="1A"/>
+<attribute name="MPN" value="0001.2704.11"/>
 <attribute name="VOLTAGE" value="300VDC"/>
+</technology>
+</technologies>
+</device>
+<device name="MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0885" package="0885">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="08851.25DR"/>
 </technology>
 </technologies>
 </device>
@@ -8719,7 +8758,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="AVR-ISP-HEADER" prefix="J">
+<deviceset name="CONNECTOR_AVR_ISP" prefix="J">
 <description>&lt;p&gt;AVR ISP 6-pin Header&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/In-system_programming"&gt;Reference&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
@@ -8765,32 +8804,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 <technologies>
 <technology name="">
 <attribute name="VOLTAGE" value="15V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABM3B-16.000MHZ-10-1-U" prefix="X" uservalue="yes">
-<description>ABM3B Ceramic SMD Crystal.
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ABM3B">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CAPACITANCE" value="10 pF"/>
-<attribute name="DKPN" value="300-8206-1-ND"/>
-<attribute name="MOPN" value="815-ABM3B-16-T"/>
-<attribute name="STABILITY" value="10 ppm"/>
-<attribute name="TOLERANCE" value="10 ppm"/>
-<attribute name="VALUE" value="16 MHz"/>
 </technology>
 </technologies>
 </device>
@@ -9004,6 +9017,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet
 <description>1-Channel 12V 12-Bit DAC
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/ad5761r_5721r-1501754.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
+<gate name="G$1" symbol="AD57X1R" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TSSOP-16">
@@ -9121,11 +9135,11 @@ Coil voltage: 75% - 170% of nominal voltage
 <description>AD5263 20 kΩ Digital Potentiometer
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/AD5263-1501493.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="AD5263_BASE" x="0" y="0"/>
-<gate name="G$2" symbol="RESISTOR_TRIMPOT" x="33.02" y="-2.54" swaplevel="1"/>
-<gate name="G$3" symbol="RESISTOR_TRIMPOT" x="33.02" y="-22.86" swaplevel="1"/>
-<gate name="G$4" symbol="RESISTOR_TRIMPOT" x="45.72" y="-2.54" swaplevel="1"/>
-<gate name="G$5" symbol="RESISTOR_TRIMPOT" x="45.72" y="-22.86" swaplevel="1"/>
+<gate name="P" symbol="AD5263_BASE" x="0" y="0" addlevel="always"/>
+<gate name="A" symbol="RESISTOR_TRIMPOT" x="33.02" y="-2.54" swaplevel="1"/>
+<gate name="B" symbol="RESISTOR_TRIMPOT" x="33.02" y="-22.86" swaplevel="1"/>
+<gate name="C" symbol="RESISTOR_TRIMPOT" x="45.72" y="-2.54" swaplevel="1"/>
+<gate name="D" symbol="RESISTOR_TRIMPOT" x="45.72" y="-22.86" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="TSSOP-24">
@@ -9133,6 +9147,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <technology name="">
 <attribute name="DKPN" value="AD5263BRUZ20-REEL7CT-ND"/>
 <attribute name="MOPN" value="584-AD5263BRUZ20-R7"/>
+<attribute name="MPN" value="AD5263BRUZ20-REEL7"/>
 <attribute name="RESISTANCE" value="20kΩ"/>
 <attribute name="TOLERANCE" value="30%"/>
 </technology>
@@ -9502,29 +9517,15 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="08851.25DR" prefix="F" uservalue="yes">
-<description>Ceramic SMD Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="BREAKINGCURRENT" value="100A"/>
-<attribute name="DKPN" value="F10986CT-ND"/>
-<attribute name="I2T" value="1.25"/>
-<attribute name="MOPN" value="576-08851.25DR"/>
-<attribute name="VALUE" value="1.25A"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="7B-16.000MEEQ-T" prefix="Y" uservalue="yes">
+<deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
 <description>7B Ceramic SMD Crystal.
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/417/7b-5226.pdf"&gt;Datasheet&lt;/a&gt;</description>
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/417/7b-5226.pdf"&gt;Datasheet&lt;/a&gt;
+
+&lt;br&gt;
+ABM3B Ceramic SMD Crystal.
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;
+
+ABM3B-16.000MHZ-10-1-U</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -9540,6 +9541,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="CAPACITANCE" value="10 pF"/>
 <attribute name="DKPN" value="887-1298-1-ND"/>
 <attribute name="MOPN" value="717-7B-16.000MEEQ-T"/>
+<attribute name="MPN" value="7B-16.000MEEQ-T"/>
 <attribute name="STABILITY" value="10 ppm"/>
 <attribute name="TOLERANCE" value="10 ppm"/>
 <attribute name="VALUE" value="16 MHz"/>
@@ -9585,7 +9587,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADM823">
+<deviceset name="WATCHDOG_ADM823">
 <description>ADM823 Watchdog Timer&lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADM823_824_825.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -9615,16 +9617,34 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADG1423">
+<deviceset name="ADG1423" prefix="U">
+<description>ADG1423 Form-A/Form-C Analog Switch
+&lt;br&gt;
+&lt; a href="https://www.mouser.com/datasheet/2/609/ADG1421_1422_1423-1502752.pdf"&gt;Datasheet&lt;/A&gt;</description>
 <gates>
-<gate name="G$1" symbol="PWR_GND" x="5.08" y="-2.54"/>
-<gate name="G$2" symbol="SWITCH_SPST_NC" x="17.78" y="0"/>
-<gate name="G$3" symbol="SWITCH_SPST_NO" x="38.1" y="0"/>
+<gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="always"/>
+<gate name="S1" symbol="SWITCH_SPST_NC" x="15.24" y="0" swaplevel="1"/>
+<gate name="S2" symbol="SWITCH_SPST_NO" x="33.02" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="MSOP-10">
+<connects>
+<connect gate="P" pin="GND" pad="4 8"/>
+<connect gate="P" pin="VDD" pad="5"/>
+<connect gate="S1" pin="D" pad="10"/>
+<connect gate="S1" pin="IN" pad="7"/>
+<connect gate="S1" pin="S" pad="1"/>
+<connect gate="S2" pin="D" pad="9"/>
+<connect gate="S2" pin="IN" pad="6"/>
+<connect gate="S2" pin="S" pad="2"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="ADG1423BRMZ-REEL7CT-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-ADG1423BRMZ"/>
+<attribute name="MPN" value="ADG1423BRMZ"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9658,22 +9678,6 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="SENSE-" pad="8"/>
 <connect gate="G$1" pin="TR" pad="7"/>
 <connect gate="G$1" pin="VDDE" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="885_FUSE">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0885">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9875,6 +9879,43 @@ Coil voltage: 75% - 170% of nominal voltage
 <technology name="">
 <attribute name="MODEL" value="SMD Nanofit"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY" prefix="BT">
+<description>Battery
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/panasonic-lithium-coin-hightemp-br1632a-datasheet-876746.pdf"&gt;BR1632A/HAN&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BATTERY" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="BR-1632A/HAN">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="-"/>
+<connect gate="G$1" pin="PLUS" pad="+"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="P023-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic - BSG"/>
+<attribute name="MOPN" value="658-BR1632A/HAN"/>
+<attribute name="MPN" value="BR-1632A/HAN"/>
+<attribute name="VOLTAGE" value=" 3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAN_TRANSCIEVER_TCAN1051">
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
