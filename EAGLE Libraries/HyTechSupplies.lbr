@@ -197,6 +197,15 @@
 <text x="0" y="-1.27" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="V-" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="VREF2">
+<text x="0" y="1.27" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VREF2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="0.889" y="-1.27"/>
+<vertex x="-0.889" y="-1.27"/>
+<vertex x="0" y="0.127"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -353,6 +362,18 @@
 <deviceset name="V-B">
 <gates>
 <gate name="G$1" symbol="V-B" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF2">
+<gates>
+<gate name="G$1" symbol="VREF2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
