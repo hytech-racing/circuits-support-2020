@@ -9886,19 +9886,27 @@ ABM3B-16.000MHZ-10-1-U</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR_P_MOS" prefix="Q">
+<deviceset name="TRANSISTOR_P_MOS_?_*" prefix="Q">
+<description>MOSFET P Channel
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/427/si2369d-1764360.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23">
+<device name="SOT23" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="SI2369DS-T1-GE3">
+<attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Siliconix"/>
+<attribute name="MOPN" value="78-SI2369DS-T1-GE3"/>
+<attribute name="MPN" value="SI2369DS-T1-GE3"/>
+</technology>
 </technologies>
 </device>
 </devices>
