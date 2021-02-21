@@ -3667,7 +3667,7 @@ Note: Based on Page 88.</description>
 <smd name="62" x="-2.75" y="5.75" dx="1.3" dy="0.3" layer="1" rot="R90"/>
 <smd name="63" x="-3.25" y="5.75" dx="1.3" dy="0.3" layer="1" rot="R90"/>
 <smd name="64" x="-3.75" y="5.75" dx="1.3" dy="0.3" layer="1" rot="R90"/>
-<smd name="PAD" x="0" y="0" dx="5.74" dy="5.74" layer="1"/>
+<smd name="65" x="0" y="0" dx="5.74" dy="5.74" layer="1"/>
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
 <wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
@@ -4360,88 +4360,86 @@ Note: Based on Page 88.</description>
 </symbol>
 <symbol name="TRANSFORMER">
 <description>Transformer</description>
-<wire x1="2.5146" y1="0" x2="1.2446" y2="-1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="-2.5397" x2="1.27" y2="-1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="2.5146" y1="-2.54" x2="1.2446" y2="-3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="-5.0797" x2="1.27" y2="-3.81" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="2.5146" y1="-5.08" x2="1.2446" y2="-6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="-7.6197" x2="1.2697" y2="-6.35" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="2.5146" y1="-7.62" x2="1.2446" y2="-8.89" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="-10.1597" x2="1.2697" y2="-8.89" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="-1.2446" y1="-1.2959" x2="-2.54" y2="-0.0002" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="-1.27" y1="-1.2954" x2="-2.54" y2="-2.5654" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.2446" y1="-3.8359" x2="-2.54" y2="-2.5402" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="-1.27" y1="-3.8354" x2="-2.54" y2="-5.1054" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.2443" y1="-6.35" x2="-2.54" y2="-5.0804" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="-1.27" y1="-6.35" x2="-2.54" y2="-7.5946" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<wire x1="-1.2443" y1="-8.89" x2="-2.54" y2="-7.6204" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="-1.27" y1="-8.89" x2="-2.54" y2="-10.1346" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<text x="0" y="12.7" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.5146" y1="0" x2="-1.2446" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="2.5397" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-2.5146" y1="2.54" x2="-1.2446" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="5.0797" x2="-1.27" y2="3.81" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-2.5146" y1="5.08" x2="-1.2446" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="7.6197" x2="-1.2697" y2="6.35" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-2.5146" y1="7.62" x2="-1.2446" y2="8.89" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="10.1597" x2="-1.2697" y2="8.89" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="1.2446" y1="1.2959" x2="2.54" y2="0.0002" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="1.27" y1="1.2954" x2="2.54" y2="2.5654" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.2446" y1="3.8359" x2="2.54" y2="2.5402" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="1.27" y1="3.8354" x2="2.54" y2="5.1054" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.2443" y1="6.35" x2="2.54" y2="5.0804" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="1.27" y1="6.35" x2="2.54" y2="7.5946" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="1.2443" y1="8.89" x2="2.54" y2="7.6204" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="1.27" y1="8.89" x2="2.54" y2="10.1346" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<text x="0" y="10.922" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-11.43" size="1.27" layer="96" align="top-center">&gt;MPN</text>
-<wire x1="0.508" y1="10.16" x2="0.508" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="-0.508" y1="-10.16" x2="-0.508" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="2.5146" y1="10.16" x2="1.2446" y2="8.89" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="7.6203" x2="1.27" y2="8.89" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="2.5146" y1="7.62" x2="1.2446" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="5.0803" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="2.5146" y1="5.08" x2="1.2446" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="2.5403" x2="1.2697" y2="3.81" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="2.5146" y1="2.54" x2="1.2446" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="2.5146" y1="0.0003" x2="1.2697" y2="1.27" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="-1.2446" y1="8.8641" x2="-2.54" y2="10.1598" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="-1.27" y1="8.8646" x2="-2.54" y2="7.5946" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.2446" y1="6.3241" x2="-2.54" y2="7.6198" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="-1.27" y1="6.3246" x2="-2.54" y2="5.0546" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.2443" y1="3.81" x2="-2.54" y2="5.0796" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="-1.27" y1="3.81" x2="-2.54" y2="2.5654" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<wire x1="-1.2443" y1="1.27" x2="-2.54" y2="2.5396" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="-1.27" y1="1.27" x2="-2.54" y2="0.0254" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<pin name="MX+" x="-12.7" y="10.16" visible="off" length="point" direction="pas"/>
-<pin name="MCT" x="-12.7" y="12.7" visible="off" length="point" direction="pas"/>
-<pin name="MX-" x="-12.7" y="-10.16" visible="off" length="point" direction="pas"/>
-<pin name="TCT" x="25.4" y="12.7" visible="off" length="point" direction="pas" rot="R180"/>
-<pin name="TD+" x="25.4" y="5.08" visible="off" length="point" direction="pas" rot="R180"/>
-<pin name="TD-" x="25.4" y="-5.08" visible="off" length="point" direction="pas" rot="R180"/>
-<wire x1="22.86" y1="-0.508" x2="12.7" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="0.508" x2="22.86" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="-2.5146" x2="21.59" y2="-1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="20.3203" y1="-2.5146" x2="21.59" y2="-1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="20.32" y1="-2.5146" x2="19.05" y2="-1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="17.7803" y1="-2.5146" x2="19.05" y2="-1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
-<wire x1="17.78" y1="-2.5146" x2="16.51" y2="-1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="15.2403" y1="-2.5146" x2="16.51" y2="-1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="15.24" y1="-2.5146" x2="13.97" y2="-1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="12.7003" y1="-2.5146" x2="13.97" y2="-1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
-<wire x1="21.5641" y1="1.2446" x2="22.8598" y2="2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="21.5646" y1="1.27" x2="20.2946" y2="2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="19.0241" y1="1.2446" x2="20.3198" y2="2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
-<wire x1="19.0246" y1="1.27" x2="17.7546" y2="2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="16.51" y1="1.2443" x2="17.7796" y2="2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="16.51" y1="1.27" x2="15.2654" y2="2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<wire x1="13.97" y1="1.2443" x2="15.2396" y2="2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
-<wire x1="13.97" y1="1.27" x2="12.7254" y2="2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
-<wire x1="22.86" y1="-2.54" x2="22.86" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="12.7" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
-<circle x="-2.54" y="8.89" radius="0.381" width="0" layer="94"/>
-<circle x="2.54" y="8.89" radius="0.381" width="0" layer="94"/>
-<circle x="13.97" y="2.54" radius="0.381" width="0" layer="94"/>
-<circle x="13.97" y="-2.54" radius="0.381" width="0" layer="94"/>
-<wire x1="2.54" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="94"/>
-<circle x="-2.54" y="-1.27" radius="0.381" width="0" layer="94"/>
-<circle x="2.54" y="-1.27" radius="0.381" width="0" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="10.16" x2="0.508" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-2.5146" y1="-10.16" x2="-1.2446" y2="-8.89" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="-7.6203" x2="-1.27" y2="-8.89" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-2.5146" y1="-7.62" x2="-1.2446" y2="-6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="-5.0803" x2="-1.27" y2="-6.35" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-2.5146" y1="-5.08" x2="-1.2446" y2="-3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="-2.5403" x2="-1.2697" y2="-3.81" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-2.5146" y1="-2.54" x2="-1.2446" y2="-1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5146" y1="-0.0003" x2="-1.2697" y2="-1.27" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="1.2446" y1="-8.8641" x2="2.54" y2="-10.1598" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="1.27" y1="-8.8646" x2="2.54" y2="-7.5946" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.2446" y1="-6.3241" x2="2.54" y2="-7.6198" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="1.27" y1="-6.3246" x2="2.54" y2="-5.0546" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.2443" y1="-3.81" x2="2.54" y2="-5.0796" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="1.27" y1="-3.81" x2="2.54" y2="-2.5654" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="1.2443" y1="-1.27" x2="2.54" y2="-2.5396" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="1.27" y1="-1.27" x2="2.54" y2="-0.0254" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<pin name="MX+" x="12.7" y="-10.16" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="MCT" x="12.7" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="MX-" x="12.7" y="10.16" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="TCT" x="-25.4" y="-12.7" visible="off" length="point" direction="pas"/>
+<pin name="TD+" x="-25.4" y="-5.08" visible="off" length="point" direction="pas"/>
+<pin name="TD-" x="-25.4" y="5.08" visible="off" length="point" direction="pas"/>
+<wire x1="-22.86" y1="0.508" x2="-12.7" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-0.508" x2="-22.86" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="2.5146" x2="-21.59" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-20.3203" y1="2.5146" x2="-21.59" y2="1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-20.32" y1="2.5146" x2="-19.05" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-17.7803" y1="2.5146" x2="-19.05" y2="1.27" width="0.1524" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="-17.78" y1="2.5146" x2="-16.51" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-15.2403" y1="2.5146" x2="-16.51" y2="1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-15.24" y1="2.5146" x2="-13.97" y2="1.2446" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="-12.7003" y1="2.5146" x2="-13.97" y2="1.2697" width="0.1524" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-21.5641" y1="-1.2446" x2="-22.8598" y2="-2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="-21.5646" y1="-1.27" x2="-20.2946" y2="-2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-19.0241" y1="-1.2446" x2="-20.3198" y2="-2.54" width="0.1524" layer="94" curve="92.304783" cap="flat"/>
+<wire x1="-19.0246" y1="-1.27" x2="-17.7546" y2="-2.54" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-16.51" y1="-1.2443" x2="-17.7796" y2="-2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="-16.51" y1="-1.27" x2="-15.2654" y2="-2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="-13.97" y1="-1.2443" x2="-15.2396" y2="-2.54" width="0.1524" layer="94" curve="91.165843" cap="flat"/>
+<wire x1="-13.97" y1="-1.27" x2="-12.7254" y2="-2.54" width="0.1524" layer="94" curve="-88.865467" cap="flat"/>
+<wire x1="-22.86" y1="2.54" x2="-22.86" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="-2.54" x2="-22.86" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="-12.7" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="94"/>
+<circle x="2.54" y="-8.89" radius="0.381" width="0" layer="94"/>
+<circle x="-2.54" y="-8.89" radius="0.381" width="0" layer="94"/>
+<circle x="-13.97" y="-2.54" radius="0.381" width="0" layer="94"/>
+<circle x="-13.97" y="2.54" radius="0.381" width="0" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-25.4" y2="-12.7" width="0.1524" layer="94"/>
+<circle x="2.54" y="1.27" radius="0.381" width="0" layer="94"/>
+<circle x="-2.54" y="1.27" radius="0.381" width="0" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="12.7" y2="0" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="-5.08" x2="-25.4" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="5.08" x2="-25.4" y2="5.08" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LTC6811-2">
 <description>LTC 6811-2 12 Cell Battery Monitor
@@ -4562,9 +4560,9 @@ Pins tied to GND: SLOW
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
 <text x="0" y="5.08" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
 <text x="0" y="-5.08" size="1.27" layer="95" align="top-center">&gt;MPN</text>
 </symbol>
 <symbol name="FUSE">
@@ -7464,22 +7462,42 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
+<deviceset name="CAPACITOR_?_*" prefix="C" uservalue="yes">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;
 Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603-CAP" package="0603-CAP">
+<device name="0603" package="0603-CAP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="VALUE" value="4"/>
-<attribute name="VOLTAGE" value="5V"/>
+<technology name="100V_0.1UF">
+<attribute name="CAPACITANCE" value="0.1µF"/>
+<attribute name="DKPN" value="311-1523-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R0BB104"/>
+<attribute name="MPN" value="CC0603KRX7R0BB104"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="100V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="311-1788-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R0BB103"/>
+<attribute name="MPN" value="CC0603KRX7R0BB103"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="10V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="311-1796-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 </technologies>
 </device>
@@ -7494,17 +7512,25 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<description>Light Emitting Diode (LED)
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
+<deviceset name="LED_?_*" prefix="D" uservalue="yes">
+<description>LED</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="0603" package="0603-LED">
+<connects>
+<connect gate="LED" pin="A" pad="2"/>
+<connect gate="LED" pin="C" pad="1"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="RED">
+<attribute name="COLOR" value="RED"/>
+<attribute name="DKPN" value="754-1786-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECKJ3PRV"/>
+<attribute name="MPN" value="APT1608SECK/J3-PRV"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7946,7 +7972,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 </devices>
 </deviceset>
-<deviceset name="NSV1C201MZ4" uservalue="yes">
+<deviceset name="TRANSISTOR_NPN" prefix="Q" uservalue="yes">
 <description>&lt;b&gt;NPN Transistor&lt;/b&gt;
 
 &lt;a href="http://www.onsemi.com/pub/Collateral/NSS1C201MZ4-D.PDF"&gt;Datasheet &lt;/a&gt;
@@ -7966,7 +7992,12 @@ MAX voltage: 100V</description>
 <connect gate="G$1" pin="EMITTER" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="NSV1C201MZ4T1GOSCT-ND"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="MOPN" value="863-NSV1C201MZ4T1G"/>
+<attribute name="MPN" value="NSV1C201MZ4"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -8106,7 +8137,7 @@ MAX voltage: 100V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HM2102NLT">
+<deviceset name="TRANSFORMER" prefix="T">
 <description>&lt;b&gt;2 Channel SMT Transformer&lt;/b&gt;&lt;br/&gt;
 Turns ratio: 1CT: 1CT&lt;br/&gt;
 Isolation Voltage: 4300 VDC&lt;br/&gt;
@@ -8114,11 +8145,11 @@ Inductance: 150 uH&lt;br/&gt;
 Leakage Inductance: 0.50 uH max
 &lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="TRANSFORMER" x="5.08" y="17.78"/>
-<gate name="G$2" symbol="TRANSFORMER" x="5.08" y="-17.78"/>
+<gate name="G$1" symbol="TRANSFORMER" x="5.08" y="17.78" swaplevel="1"/>
+<gate name="G$2" symbol="TRANSFORMER" x="5.08" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="HM2102NLT">
+<device name="HM2102NLT" package="HM2102NLT">
 <connects>
 <connect gate="G$1" pin="MCT" pad="2"/>
 <connect gate="G$1" pin="MX+" pad="1"/>
@@ -8134,7 +8165,12 @@ Leakage Inductance: 0.50 uH max
 <connect gate="G$2" pin="TD-" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="1840-1034-1-ND"/>
+<attribute name="MANUFACTURER" value="Pulse Electronics Network"/>
+<attribute name="MOPN" value="673-HM2102NLT"/>
+<attribute name="MPN" value="HM2102NLT"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9293,193 +9329,43 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="0">
-<attribute name="DKPN" value="311-0.0LDCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-070RL"/>
-<attribute name="MPN" value="AC0603FR-070RL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="0Ω"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="1.2K">
-<attribute name="DKPN" value="YAG3572CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-071K2L"/>
-<attribute name="MPN" value="AC0603FR-071K2L"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="1.2kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="1.4K">
-<attribute name="DKPN" value="13-AC0603FR-071K4LCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-071K4L"/>
-<attribute name="MPN" value="AC0603FR-071K4L"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="1.4kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
 <technology name="100">
-<attribute name="DKPN" value="YAG3561CT-ND"/>
+<attribute name="DKPN" value="311-100HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-07100RL"/>
-<attribute name="MPN" value="AC0603FR-07100RL"/>
+<attribute name="MOPN" value="603-RC0603FR-07100RL"/>
+<attribute name="MPN" value="RC0603FR-07100RL"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="100Ω"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
-<technology name="100K">
-<attribute name="DKPN" value="311-100KLDCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-07100KL"/>
-<attribute name="MPN" value="AC0603FR-07100KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="100kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="10K">
-<attribute name="DKPN" value="311-10KLDCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0710KL"/>
-<attribute name="MPN" value="AC0603FR-0710KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="10kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="12K">
-<attribute name="DKPN" value="YAG3565CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0712KL"/>
-<attribute name="MPN" value="AC0603FR-0712KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="12kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="14K">
-<attribute name="DKPN" value="13-AC0603FR-0714KLCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0714KL"/>
-<attribute name="MPN" value="AC0603FR-0714KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="14kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="158">
-<attribute name="DKPN" value="AC0603FR-07158RL-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-07158RL"/>
-<attribute name="MPN" value="AC0603FR-07158RL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="158Ω"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
 <technology name="1K">
-<attribute name="DKPN" value="311-1KLDCT-ND"/>
+<attribute name="DKPN" value="311-1.00KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-071KL"/>
-<attribute name="MPN" value="AC0603FR-071KL"/>
+<attribute name="MOPN" value="603-RC0603FR-071KL"/>
+<attribute name="MPN" value="RC0603FR-071KL"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1kΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
-<technology name="1M">
-<attribute name="DKPN" value="311-1MLDCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-071ML"/>
-<attribute name="MPN" value="AC0603FR-071ML"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="1MΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="22">
-<attribute name="DKPN" value="YAG3581CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0722RL"/>
-<attribute name="MPN" value="AC0603FR-0722RL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="22Ω"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="26.7K">
-<attribute name="DKPN" value="13-AC0603FR-0726K7LCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0726K7L"/>
-<attribute name="MPN" value="AC0603FR-0726K7L"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="26.7kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="2K">
-<attribute name="DKPN" value="YAG3590CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-072KL"/>
-<attribute name="MPN" value="AC0603FR-072KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="2kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
 <technology name="3.3K">
-<attribute name="DKPN" value="YAG3605CT-ND"/>
+<attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-073K3L"/>
-<attribute name="MPN" value="AC0603FR-073K3L"/>
+<attribute name="MOPN" value="603-RC0603FR-073K3L"/>
+<attribute name="MPN" value="RC0603FR-073K3L"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="3.3kΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
-<technology name="402">
-<attribute name="DKPN" value="13-AC0603FR-07402RLCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-07402RL"/>
-<attribute name="MPN" value="AC0603FR-07402RL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="402Ω"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="43K">
-<attribute name="DKPN" value="13-AC0603FR-0743KLCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0743KL"/>
-<attribute name="MPN" value="AC0603FR-0743KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="43kΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
 <technology name="60.4">
-<attribute name="DKPN" value="13-AC0603FR-0760R4LCT-ND"/>
+<attribute name="DKPN" value="311-60.4HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-0760R4L"/>
-<attribute name="MPN" value="AC0603FR-0760R4L"/>
+<attribute name="MOPN" value="603-RC0603FR-0760R4L"/>
+<attribute name="MPN" value="RC0603FR-0760R4L"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="60.4Ω"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="75V"/>
-</technology>
-<technology name="806">
-<attribute name="DKPN" value="AC0603FR-07806RL-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-AC0603FR-07806RL"/>
-<attribute name="MPN" value="AC0603FR-07806RL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="806Ω"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -9914,6 +9800,103 @@ ABM3B-16.000MHZ-10-1-U</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6813" prefix="U">
+<description>LTC6813 18-Cell Battery Monitor
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6813-1.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC6813" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LQFP-64">
+<connects>
+<connect gate="G$1" pin="C0" pad="38"/>
+<connect gate="G$1" pin="C1" pad="36"/>
+<connect gate="G$1" pin="C10" pad="18"/>
+<connect gate="G$1" pin="C11" pad="16"/>
+<connect gate="G$1" pin="C12" pad="14"/>
+<connect gate="G$1" pin="C13" pad="12"/>
+<connect gate="G$1" pin="C14" pad="10"/>
+<connect gate="G$1" pin="C15" pad="8"/>
+<connect gate="G$1" pin="C16" pad="6"/>
+<connect gate="G$1" pin="C17" pad="4"/>
+<connect gate="G$1" pin="C18" pad="2"/>
+<connect gate="G$1" pin="C2" pad="34"/>
+<connect gate="G$1" pin="C3" pad="32"/>
+<connect gate="G$1" pin="C4" pad="30"/>
+<connect gate="G$1" pin="C5" pad="28"/>
+<connect gate="G$1" pin="C6" pad="26"/>
+<connect gate="G$1" pin="C7" pad="24"/>
+<connect gate="G$1" pin="C8" pad="22"/>
+<connect gate="G$1" pin="C9" pad="20"/>
+<connect gate="G$1" pin="DRIVE" pad="49"/>
+<connect gate="G$1" pin="GPI01" pad="39"/>
+<connect gate="G$1" pin="GPI02" pad="40"/>
+<connect gate="G$1" pin="GPI03" pad="41"/>
+<connect gate="G$1" pin="GPI04" pad="42"/>
+<connect gate="G$1" pin="GPI05" pad="43"/>
+<connect gate="G$1" pin="GPI06" pad="44"/>
+<connect gate="G$1" pin="GPI07" pad="45"/>
+<connect gate="G$1" pin="GPI08" pad="46"/>
+<connect gate="G$1" pin="GPI09" pad="47"/>
+<connect gate="G$1" pin="IBIAS" pad="57"/>
+<connect gate="G$1" pin="ICMP" pad="58"/>
+<connect gate="G$1" pin="IMA" pad="61"/>
+<connect gate="G$1" pin="IMB" pad="63"/>
+<connect gate="G$1" pin="IPA" pad="62"/>
+<connect gate="G$1" pin="IPB" pad="64"/>
+<connect gate="G$1" pin="S1" pad="37"/>
+<connect gate="G$1" pin="S10" pad="19"/>
+<connect gate="G$1" pin="S11" pad="17"/>
+<connect gate="G$1" pin="S12" pad="15"/>
+<connect gate="G$1" pin="S13" pad="13"/>
+<connect gate="G$1" pin="S14" pad="11"/>
+<connect gate="G$1" pin="S15" pad="9"/>
+<connect gate="G$1" pin="S16" pad="7"/>
+<connect gate="G$1" pin="S17" pad="5"/>
+<connect gate="G$1" pin="S18" pad="3"/>
+<connect gate="G$1" pin="S2" pad="35"/>
+<connect gate="G$1" pin="S3" pad="33"/>
+<connect gate="G$1" pin="S4" pad="31"/>
+<connect gate="G$1" pin="S5" pad="29"/>
+<connect gate="G$1" pin="S6" pad="27"/>
+<connect gate="G$1" pin="S7" pad="25"/>
+<connect gate="G$1" pin="S8" pad="23"/>
+<connect gate="G$1" pin="S9" pad="21"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="59 60 65"/>
+<connect gate="G$1" pin="VREF1" pad="51"/>
+<connect gate="G$1" pin="VREF2" pad="50"/>
+<connect gate="G$1" pin="VREG" pad="48 52 55"/>
+<connect gate="G$1" pin="WDT" pad="56"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LTC6813ILWE-1#3ZZPBF-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MPN" value="LTC6813ILWE-1#3ZZPBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSISTOR_P_MOS" prefix="Q">
+<gates>
+<gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
