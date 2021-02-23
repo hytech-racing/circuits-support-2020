@@ -4077,7 +4077,6 @@ Note: Based on Page 88.</description>
 <wire x1="-2.8575" y1="1.016" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.635" y1="0" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<text x="-1.27" y="-4.064" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 </symbol>
 <symbol name="LM555">
 <description>LM555 Timer
@@ -4182,12 +4181,6 @@ Note: Based on Page 88.</description>
 <pin name="5" x="10.16" y="-12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="10.16" y="-15.24" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0" y="-18.415" size="1.778" layer="96" align="top-left">&gt;MODEL</text>
-</symbol>
-<symbol name="MV">
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<pin name="S" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="DIODE">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -4572,7 +4565,6 @@ Pins tied to GND: SLOW
 <text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<text x="-1.27" y="-3.175" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 </symbol>
 <symbol name="RELAY_OPTOCOUPLER">
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
@@ -7002,81 +6994,40 @@ Pins tied to VREG: ISOMD, DTEN
 <wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
 <text x="0" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="CONNECTOR_01">
+<wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-5.715" size="1.4224" layer="96" align="top-left">&gt;MODEL</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LR8">
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR_ADJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT89">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="3"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2 2@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-2" prefix="J" uservalue="yes">
+<deviceset name="CONNECTOR-2_?_*" prefix="J" uservalue="yes">
 <description>2 Pin Connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_NANOFIT_PTH_02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="1053091202"/>
-</technology>
-</technologies>
-</device>
-<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="1054301202"/>
-</technology>
-</technologies>
-</device>
-<device name="MINIFIT" package="MOLEX_MINIFIT_PTH_02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="39288020"/>
-<attribute name="TYPE" value="MINIFIT"/>
-</technology>
-</technologies>
-</device>
-<device name="HEADER" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="Nanofit_SMD_Vertical_Black"/>
+<attribute name="MPN" value="1054291304"/>
+</technology>
+<technology name="NATURAL">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="Nanofit_SMD_Vertical_Natural"/>
+<attribute name="MPN" value="1054312302"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7401,65 +7352,6 @@ Pins tied to VREG: ISOMD, DTEN
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP2515">
-<description>MCP2515 CAN Controller with SPI Interface
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21801G.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="SMD" package="SOIC-18W">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TSSOP" package="TSSOP-20">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP2551">
-<description>MCP2551 High-Speed CAN Transceiver
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.microchip.com/wwwproducts/en/MCP2551"&gt;Product Webpage&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21667f.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;This device is outdated&lt;/b&gt;
-&lt;br&gt;
-It is replaced by MCP2561.
-&lt;br&gt;
-&lt;a href="https://www.microchip.com/wwwproducts/ProductCompare/MCP2551/MCP2561"&gt;Comparison Page&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.microchip.com/wwwproducts/en/MCP2561"&gt;Product Webpage&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20005167C.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2551" x="0" y="-12.7"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VREF" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAPACITOR_?_*" prefix="C" uservalue="yes">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;
 Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
@@ -7488,6 +7380,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MOPN" value="603-CC603KRX7R0BB103"/>
 <attribute name="MPN" value="CC0603KRX7R0BB103"/>
 <attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="10V_10NF">
+<attribute name="CAPACITANCE" value="10nF"/>
+<attribute name="DKPN" value="311-4054-1-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB103"/>
+<attribute name="MPN" value="CC0603KRX7R6BB103"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="10V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
@@ -7533,239 +7433,27 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="XBEE">
-<description>&lt;a href="https://github.com/adafruit/Adafruit-Eagle-Library"&gt;Source: Adafruit&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="XBEE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XBEE">
-<connects>
-<connect gate="G$1" pin="!RESET" pad="5"/>
-<connect gate="G$1" pin="!RTS!/AD6/DIO6" pad="16"/>
-<connect gate="G$1" pin="AD0/DIO0" pad="20"/>
-<connect gate="G$1" pin="AD1/DIO1" pad="19"/>
-<connect gate="G$1" pin="AD2/DIO2" pad="18"/>
-<connect gate="G$1" pin="AD3/DIO3" pad="17"/>
-<connect gate="G$1" pin="AD4/DIO4" pad="11"/>
-<connect gate="G$1" pin="ASC/AD5/DIO5" pad="15"/>
-<connect gate="G$1" pin="CTS/DIO7" pad="12"/>
-<connect gate="G$1" pin="DIN" pad="3"/>
-<connect gate="G$1" pin="DIO12" pad="4"/>
-<connect gate="G$1" pin="DOUT" pad="2"/>
-<connect gate="G$1" pin="DTR/DI08" pad="9"/>
-<connect gate="G$1" pin="GND" pad="10"/>
-<connect gate="G$1" pin="ON/SLEEP/DIO9" pad="13"/>
-<connect gate="G$1" pin="PWM0/RSSI" pad="6"/>
-<connect gate="G$1" pin="PWM1" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BUTTON" prefix="S" uservalue="yes">
-<description>Small momentary tactile push button</description>
-<gates>
-<gate name="1" symbol="BUTTON" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="B3S-100X">
-<connects>
-<connect gate="1" pin="P" pad="1 2"/>
-<connect gate="1" pin="S" pad="3 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.2">
-<description>Simple version of the Teensy 3.2 board that only uses the 2 main rows of pins, not the inner pins or the pins opposite the usb port.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_SHORT">
-<connects>
-<connect gate="G$1" pin="(CLK)D13" pad="D13"/>
-<connect gate="G$1" pin="(CRX)D4" pad="D4"/>
-<connect gate="G$1" pin="(CS)D10" pad="D10"/>
-<connect gate="G$1" pin="(CTX)D3" pad="D3"/>
-<connect gate="G$1" pin="(SDI)D12" pad="D12"/>
-<connect gate="G$1" pin="(SDO)D11" pad="D11"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="A0" pad="D14"/>
-<connect gate="G$1" pin="A1" pad="D15"/>
-<connect gate="G$1" pin="A2" pad="D16"/>
-<connect gate="G$1" pin="A3" pad="D17"/>
-<connect gate="G$1" pin="A4" pad="D18"/>
-<connect gate="G$1" pin="A5" pad="D19"/>
-<connect gate="G$1" pin="A6" pad="D20"/>
-<connect gate="G$1" pin="A7" pad="D21"/>
-<connect gate="G$1" pin="A8" pad="D22"/>
-<connect gate="G$1" pin="A9" pad="D23"/>
-<connect gate="G$1" pin="AGND" pad="AGND/GND"/>
-<connect gate="G$1" pin="D0" pad="D0"/>
-<connect gate="G$1" pin="D1" pad="D1"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7" pad="D7"/>
-<connect gate="G$1" pin="D8" pad="D8"/>
-<connect gate="G$1" pin="D9" pad="D9"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="THERMISTOR_NCP21">
-<description>&lt;strong&gt;Murata NCP Thermistor&lt;/strong&gt;
+<deviceset name="THERMISTOR" prefix="RT">
+<description>Thermistor
 &lt;br&gt;
-&lt;a href="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/ntc/r44e.ashx"&gt;Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.murata.com/-/media/webrenewal/support/library/catalog/products/thermistor/r03e.ashx?la=en-us"&gt;Datasheet Murata&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_THERMISTOR" x="2.54" y="5.08"/>
 </gates>
 <devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LTC6820">
-<description>&lt;b&gt; Linear Technology isoSPI Isolated Communications Interface &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="http://cds.linear.com/docs/en/datasheet/6820fb.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LTC6820" x="-7.62" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="MSOP-16">
+<device name="" package="0603-RES">
 <connects>
-<connect gate="G$1" pin="!CS" pad="5"/>
-<connect gate="G$1" pin="CLK" pad="4"/>
-<connect gate="G$1" pin="GND" pad="13 14"/>
-<connect gate="G$1" pin="IBIAS" pad="16"/>
-<connect gate="G$1" pin="ICMP" pad="15"/>
-<connect gate="G$1" pin="IM" pad="10"/>
-<connect gate="G$1" pin="IP" pad="11"/>
-<connect gate="G$1" pin="SDI" pad="2"/>
-<connect gate="G$1" pin="SDO" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="1 7 8 9 12"/>
-<connect gate="G$1" pin="VLOGIC" pad="6"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="N-CHANNEL_MOSFET">
-<description>Generic N-Channel MOSFET</description>
-<gates>
-<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TRIMPOT_3296" prefix="R" uservalue="yes">
-<description>&lt;b&gt;3296 Series&lt;/b&gt;&lt;p&gt;
-3/8" Square Trimmer
-&lt;br&gt;
-&lt;a href="https://github.com/chiengineer/Eagle-Libraries/blob/master/Potentiometers/bourns.lbr"&gt;Source&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="C" package="TRIMPOT_3296">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="P-CHANNEL_MOSFET_DMP3099L-7" prefix="Q">
-<description>&lt;B&gt; Diodes Incorporated P-Channel Enhancement Mode MOSFET &lt;/B&gt;
-&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/115/DMP3099L-266220.pdf"&gt;Datasheet</description>
-<gates>
-<gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPTOCOUPLER">
-<description>&lt;b&gt;IXYS Solid State Relay .7A&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_OPTOCOUPLER" x="7.62" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="SOP-04">
-<connects>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-<connect gate="G$1" pin="DC+" pad="4"/>
-<connect gate="G$1" pin="DC-" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="G5LE-14">
-<description>Omron G5LE SPDT Relay
-&lt;br&gt;
-DC12 (12VDC) model used
-&lt;br&gt;
-Coil voltage: 75% - 170% of nominal voltage
-&lt;br&gt;
-&lt;a href="https://www.omron.com/ecb/products/pdf/en-g5le.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SPDT" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="G5LE-14">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEST_POINT">
-<description>Keystone Electronics Test Point 5005</description>
-<gates>
-<gate name="G$1" symbol="TEST_POINT" x="-5.08" y="0"/>
-</gates>
-<devices>
-<device name="MICRO_MINIATURE" package="MICRO_MINIATURE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="490-18147-1-ND"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-NCU18XH103D60RB"/>
+<attribute name="MPN" value="NCU18XH103D60RB"/>
+<attribute name="RESISTANCE" value="10k"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7787,34 +7475,6 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="TXB0104">
-<description>Texas Instruments TXB0104 4-channel low voltage to high voltage Logic Level Shifter.
-Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</description>
-<gates>
-<gate name="G$1" symbol="TXB0104" x="0" y="0"/>
-</gates>
-<devices>
-<device name="TSSOP" package="TSSOP-14">
-<connects>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="A3" pad="4"/>
-<connect gate="G$1" pin="A4" pad="5"/>
-<connect gate="G$1" pin="B1" pad="13"/>
-<connect gate="G$1" pin="B2" pad="12"/>
-<connect gate="G$1" pin="B3" pad="11"/>
-<connect gate="G$1" pin="B4" pad="10"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="OE" pad="8"/>
-<connect gate="G$1" pin="VCCA" pad="1"/>
-<connect gate="G$1" pin="VCCB" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CONNECTOR-5" prefix="JP" uservalue="yes">
 <description>5 Pin Connector</description>
 <gates>
@@ -7828,113 +7488,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74AHC1G09">
-<description>TI SN74AHC1G09  Single 2–Input Positive-AND Gate With Open-Drain Output
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn74ahc1g09.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74LVC1G08">
-<description>TI SN74LVC1G08  SINGLE 2-INPUT POSITIVE-AND GATE
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT-323-5" package="SC-70-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP3208">
-<description>Analog to Digital Converter</description>
-<gates>
-<gate name="G$1" symbol="MCP3208" x="-2.54" y="-2.54"/>
-</gates>
-<devices>
-<device name="SOIC" package="SOIC-16">
-<connects>
-<connect gate="G$1" pin="!CS!/SHDN" pad="10"/>
-<connect gate="G$1" pin="AGND" pad="14"/>
-<connect gate="G$1" pin="CH0" pad="1"/>
-<connect gate="G$1" pin="CH1" pad="2"/>
-<connect gate="G$1" pin="CH2" pad="3"/>
-<connect gate="G$1" pin="CH3" pad="4"/>
-<connect gate="G$1" pin="CH4" pad="5"/>
-<connect gate="G$1" pin="CH5" pad="6"/>
-<connect gate="G$1" pin="CH6" pad="7"/>
-<connect gate="G$1" pin="CH7" pad="8"/>
-<connect gate="G$1" pin="CLK" pad="13"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="SDI" pad="11"/>
-<connect gate="G$1" pin="SDO" pad="12"/>
-<connect gate="G$1" pin="VDD" pad="16"/>
-<connect gate="G$1" pin="VREF" pad="15"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MC34152">
-<description>Microchip MC34152 High Speed Dual MOSFET Driver</description>
-<gates>
-<gate name="G$1" symbol="GATE_DRIVER_2CHANNEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INA" pad="2"/>
-<connect gate="G$1" pin="INB" pad="4"/>
-<connect gate="G$1" pin="OUTA" pad="7"/>
-<connect gate="G$1" pin="OUTB" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="__EXTERNAL__" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OKI-78SR-5">
-<description>Murata OKI-78SR 5V 1.5A Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OKI-78SR">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8052,89 +7605,6 @@ MAX voltage: 100V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP23S17">
-<gates>
-<gate name="G$1" symbol="MCP23S17" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC_WIDE" package="SOIC-28W">
-<connects>
-<connect gate="G$1" pin="!CS" pad="11"/>
-<connect gate="G$1" pin="!RESET" pad="18"/>
-<connect gate="G$1" pin="A0" pad="15"/>
-<connect gate="G$1" pin="A1" pad="16"/>
-<connect gate="G$1" pin="A2" pad="17"/>
-<connect gate="G$1" pin="CLK" pad="12"/>
-<connect gate="G$1" pin="GND" pad="10"/>
-<connect gate="G$1" pin="GPA0" pad="21"/>
-<connect gate="G$1" pin="GPA1" pad="22"/>
-<connect gate="G$1" pin="GPA2" pad="23"/>
-<connect gate="G$1" pin="GPA3" pad="24"/>
-<connect gate="G$1" pin="GPA4" pad="25"/>
-<connect gate="G$1" pin="GPA5" pad="26"/>
-<connect gate="G$1" pin="GPA6" pad="27"/>
-<connect gate="G$1" pin="GPA7" pad="28"/>
-<connect gate="G$1" pin="GPB0" pad="1"/>
-<connect gate="G$1" pin="GPB1" pad="2"/>
-<connect gate="G$1" pin="GPB2" pad="3"/>
-<connect gate="G$1" pin="GPB3" pad="4"/>
-<connect gate="G$1" pin="GPB4" pad="5"/>
-<connect gate="G$1" pin="GPB5" pad="6"/>
-<connect gate="G$1" pin="GPB6" pad="7"/>
-<connect gate="G$1" pin="GPB7" pad="8"/>
-<connect gate="G$1" pin="INTA" pad="20"/>
-<connect gate="G$1" pin="INTB" pad="19"/>
-<connect gate="G$1" pin="SDI" pad="13"/>
-<connect gate="G$1" pin="SDO" pad="14"/>
-<connect gate="G$1" pin="VDD" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX7480" uservalue="yes">
-<description>8th-order lowpass butterworth filter</description>
-<gates>
-<gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="CLK" pad="8"/>
-<connect gate="G$1" pin="COM" pad="1"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="IN" pad="2"/>
-<connect gate="G$1" pin="OS" pad="6"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="4 7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DBT71210" uservalue="yes">
-<description>DBT71210 Reed Relay Form B (Standard normally closed), switch 12V</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SPST_NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SENSATA_D_SERIES_RELAY">
-<connects>
-<connect gate="G$1" pin="COIL+" pad="COIL+"/>
-<connect gate="G$1" pin="COIL-" pad="COIL-"/>
-<connect gate="G$1" pin="O" pad="CONTACT2"/>
-<connect gate="G$1" pin="P" pad="CONTACT1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRANSFORMER" prefix="T">
 <description>&lt;b&gt;2 Channel SMT Transformer&lt;/b&gt;&lt;br/&gt;
 Turns ratio: 1CT: 1CT&lt;br/&gt;
@@ -8168,37 +7638,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Pulse Electronics Network"/>
 <attribute name="MOPN" value="673-HM2102NLT"/>
 <attribute name="MPN" value="HM2102NLT"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ADIS16209">
-<description>ADIS16209 Inclinometer
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/ADIS16209_Anomaly-1503040.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADIS16209" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CC-16-2">
-<connects>
-<connect gate="G$1" pin="!CS" pad="4"/>
-<connect gate="G$1" pin="!RESET" pad="9"/>
-<connect gate="G$1" pin="AUX_ADC" pad="14"/>
-<connect gate="G$1" pin="AUX_DAC" pad="12"/>
-<connect gate="G$1" pin="CLK" pad="1"/>
-<connect gate="G$1" pin="DIO1" pad="5"/>
-<connect gate="G$1" pin="DIO2" pad="6"/>
-<connect gate="G$1" pin="GND" pad="16"/>
-<connect gate="G$1" pin="SDI" pad="3"/>
-<connect gate="G$1" pin="SDO" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VREF" pad="15"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="ADIS16209CCCZ-ND"/>
-<attribute name="MOPN" value="584-ADIS16209CCCZ"/>
 </technology>
 </technologies>
 </device>
@@ -8254,259 +7693,6 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
-<deviceset name="TXB0106">
-<description>Texas Instruments TXB0106 6-channel low voltage to high voltage Logic Level Shifter.
-Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</description>
-<gates>
-<gate name="G$1" symbol="TXB0106" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSSOP-16">
-<connects>
-<connect gate="G$1" pin="A1" pad="1"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="A3" pad="4"/>
-<connect gate="G$1" pin="A4" pad="5"/>
-<connect gate="G$1" pin="A5" pad="6"/>
-<connect gate="G$1" pin="A6" pad="7"/>
-<connect gate="G$1" pin="B1" pad="16"/>
-<connect gate="G$1" pin="B2" pad="14"/>
-<connect gate="G$1" pin="B3" pad="13"/>
-<connect gate="G$1" pin="B4" pad="12"/>
-<connect gate="G$1" pin="B5" pad="11"/>
-<connect gate="G$1" pin="B6" pad="10"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="OE" pad="8"/>
-<connect gate="G$1" pin="VCCA" pad="2"/>
-<connect gate="G$1" pin="VCCB" pad="15"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DMG3406L" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;Generic NPN MOSFET&lt;/b&gt;
-&lt;p&gt;
-DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="SOT" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RT424009">
-<description>TE/Schrack Double Pull Double Throw Relay 9VDC
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.te.com/usa-en/product-6-1393243-2.html"&gt;Product Page&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RT*2*">
-<connects>
-<connect gate="G$1" pin="2" pad="12"/>
-<connect gate="G$1" pin="3" pad="11"/>
-<connect gate="G$1" pin="4" pad="14"/>
-<connect gate="G$1" pin="5" pad="24"/>
-<connect gate="G$1" pin="6" pad="21"/>
-<connect gate="G$1" pin="7" pad="22"/>
-<connect gate="G$1" pin="COIL+" pad="A1"/>
-<connect gate="G$1" pin="COIL-" pad="A2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CDSOT23-T24CAN-Q">
-<description>CAN Bus dual TVS array for transceiver ESD and surge protection</description>
-<gates>
-<gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL_DUAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="C1" pad="3"/>
-<connect gate="G$1" pin="C2" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KT12-1A-40L-THT">
-<gates>
-<gate name="G$1" symbol="RELAY_SPST_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KT12-1A-40L-THT">
-<connects>
-<connect gate="G$1" pin="COIL+" pad="C2"/>
-<connect gate="G$1" pin="COIL-" pad="C1"/>
-<connect gate="G$1" pin="P" pad="S1"/>
-<connect gate="G$1" pin="S" pad="S2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LTC6811-2">
-<description>&lt;b&gt; Linear Technology Multicell Battery Stack Monitor &lt;/b&gt;
-&lt;br&gt;
-Variant 2: Addressable/Multi-Drop Configuration
-&lt;br&gt;
-&lt;a href="http://cds.linear.com/docs/en/datasheet/680412fc.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LTC6811-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SSOP-48">
-<connects>
-<connect gate="G$1" pin="A0" pad="45"/>
-<connect gate="G$1" pin="A1" pad="46"/>
-<connect gate="G$1" pin="A2" pad="47"/>
-<connect gate="G$1" pin="A3" pad="48"/>
-<connect gate="G$1" pin="C0" pad="26"/>
-<connect gate="G$1" pin="C1" pad="24"/>
-<connect gate="G$1" pin="C10" pad="6"/>
-<connect gate="G$1" pin="C11" pad="4"/>
-<connect gate="G$1" pin="C12" pad="2"/>
-<connect gate="G$1" pin="C2" pad="22"/>
-<connect gate="G$1" pin="C3" pad="20"/>
-<connect gate="G$1" pin="C4" pad="18"/>
-<connect gate="G$1" pin="C5" pad="16"/>
-<connect gate="G$1" pin="C6" pad="14"/>
-<connect gate="G$1" pin="C7" pad="12"/>
-<connect gate="G$1" pin="C8" pad="10"/>
-<connect gate="G$1" pin="C9" pad="8"/>
-<connect gate="G$1" pin="DRIVE" pad="38"/>
-<connect gate="G$1" pin="GPI01" pad="27"/>
-<connect gate="G$1" pin="GPI02" pad="28"/>
-<connect gate="G$1" pin="GPI03" pad="29"/>
-<connect gate="G$1" pin="GPI04" pad="32"/>
-<connect gate="G$1" pin="GPI05" pad="33"/>
-<connect gate="G$1" pin="IBIAS" pad="44"/>
-<connect gate="G$1" pin="ICMP" pad="43"/>
-<connect gate="G$1" pin="IM" pad="41"/>
-<connect gate="G$1" pin="IP" pad="42"/>
-<connect gate="G$1" pin="S1" pad="25"/>
-<connect gate="G$1" pin="S10" pad="7"/>
-<connect gate="G$1" pin="S11" pad="5"/>
-<connect gate="G$1" pin="S12" pad="3"/>
-<connect gate="G$1" pin="S2" pad="23"/>
-<connect gate="G$1" pin="S3" pad="21"/>
-<connect gate="G$1" pin="S4" pad="19"/>
-<connect gate="G$1" pin="S5" pad="17"/>
-<connect gate="G$1" pin="S6" pad="15"/>
-<connect gate="G$1" pin="S7" pad="13"/>
-<connect gate="G$1" pin="S8" pad="11"/>
-<connect gate="G$1" pin="S9" pad="9"/>
-<connect gate="G$1" pin="V+" pad="1"/>
-<connect gate="G$1" pin="V-" pad="30 31"/>
-<connect gate="G$1" pin="VREF1" pad="35"/>
-<connect gate="G$1" pin="VREF2" pad="34"/>
-<connect gate="G$1" pin="VREG" pad="36 37 40"/>
-<connect gate="G$1" pin="WDT" pad="39"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OKI-78SR-3.3">
-<description>Murata OKI-78SR 5V 1.5A Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OKI-78SR">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="XP-E2">
-<description>XP-E2 high-brightness LED.
-&lt;a href="https://www.cree.com/led-components/media/documents/XLampXPE2.pdf"&gt;Data sheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_LED_THERMAL" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="XP-E2" package="XP-E2">
-<connects>
-<connect gate="G$1" pin="A" pad="CATHODE"/>
-<connect gate="G$1" pin="C" pad="ANODE"/>
-<connect gate="G$1" pin="THERMAL" pad="X"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_4.0">
-<description>Simple version of the Teensy 4.0 board that only uses the 2 main rows of pins, with no perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_4.0" x="-10.16" y="-20.32"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LM555">
-<description>Texas Instruments NA555 timer. &lt;a href="http://www.ti.com/lit/ds/symlink/se555.pdf"&gt;Data sheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LM555" x="-12.7" y="-10.16"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="CONTROL" pad="5"/>
-<connect gate="G$1" pin="DISCHARGE" pad="7"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="OUTPUT" pad="3"/>
-<connect gate="G$1" pin="RESET" pad="4"/>
-<connect gate="G$1" pin="THRESHOLD" pad="6"/>
-<connect gate="G$1" pin="TRIGGER" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CONNECTOR-22">
 <description>22 Pin Connector</description>
 <gates>
@@ -8542,94 +7728,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 <technology name="">
 <attribute name="PINS" value="22" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.5_EXT_RTC">
-<description>Extended version of the Teensy 3.5 board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.5_EXT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PCC-SMP-K-100-R-ROHS" prefix="J">
-<description>&lt;b&gt;NEWPORT ELECTRONICS - PCC-SMP-K-100-R-ROHS - CIRCUIT BOARD THERMOCOUPLE, K TYPE&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/1789660.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CONNECTOR_THERMOCOUPLE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PCC-SMP">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="NEWPORT ELECTRONICS - PCC-SMP-K-100-R-ROHS - CIRCUIT BOARD THERMOCOUPLE, K TYPE" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="NEWPORT ELECTRONICS" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PCC-SMP-K-100-R-ROHS" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="" constant="no"/>
-<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CURRENT_SENSOR_ACHS_712*">
-<description>10A SMD Current Sensor
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/678/ACHS_712x_DS101_2018_02_28-1386725.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ACHS-712X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX4622">
-<description>Maxim Integrated MAX 4622 analogue switch.
-&lt;a href="https://datasheets.maximintegrated.com/en/ds/MAX4621-MAX4623.pdf"&gt;Data sheet&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX31855KASA+" prefix="U">
-<gates>
-<gate name="A" symbol="MAX31855KASA+" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08">
-<connects>
-<connect gate="A" pin="!CS" pad="6"/>
-<connect gate="A" pin="CLK" pad="5"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="SDO" pad="7"/>
-<connect gate="A" pin="T+" pad="3"/>
-<connect gate="A" pin="T-" pad="2"/>
-<connect gate="A" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8672,32 +7770,6 @@ Ceramic SMD Surface Mount Fuse
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5X20MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BREAKINGCURRENT" value="1500A"/>
-<attribute name="CURRENT" value="1A"/>
-<attribute name="DKPN" value="486-2487-ND"/>
-<attribute name="I2T" value="1.1"/>
-<attribute name="MOPN" value="693-0001.2704.11"/>
-<attribute name="MPN" value="0001.2704.11"/>
-<attribute name="VOLTAGE" value="300VDC"/>
-</technology>
-</technologies>
-</device>
-<device name="MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="0885" package="0885">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -8705,88 +7777,11 @@ Ceramic SMD Surface Mount Fuse
 </connects>
 <technologies>
 <technology name="">
+<attribute name="CURRENT" value="1.25A"/>
+<attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="MPN" value="08851.25DR"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BATTERY_SPRING" prefix="J">
-<description>&lt;b&gt; Keystone Electronics Battery Spring Contact &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;b&gt; Mill-Max Pogo Pins &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://www.mill-max.com/catalog/download/2019-08%3A019.6M.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="_KEYSTONE5222" package="KEYSTONE5222">
-<connects>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SPRING_CONTACT" package="807-22-001-10-02X101">
-<connects>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ATMEGA328P-AU" prefix="U">
-<description>ATmega Series 20 MHz 32 KB Flash 2 KB SRAM 8-Bit Microcontroller - TQFP-32</description>
-<gates>
-<gate name="G$1" symbol="ATMEGA328P-AU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TQFP-32">
-<connects>
-<connect gate="G$1" pin="(CLK)PB5" pad="17"/>
-<connect gate="G$1" pin="(CS)PB2" pad="14"/>
-<connect gate="G$1" pin="(SDI)PB4" pad="16"/>
-<connect gate="G$1" pin="(SDO)PB3" pad="15"/>
-<connect gate="G$1" pin="(XTAL1)PB6" pad="7"/>
-<connect gate="G$1" pin="(XTAL2)PB7" pad="8"/>
-<connect gate="G$1" pin="ADC6" pad="19"/>
-<connect gate="G$1" pin="ADC7" pad="22"/>
-<connect gate="G$1" pin="AREF" pad="20"/>
-<connect gate="G$1" pin="AVDD" pad="18"/>
-<connect gate="G$1" pin="GND" pad="3 5 21"/>
-<connect gate="G$1" pin="PB0" pad="12"/>
-<connect gate="G$1" pin="PB1" pad="13"/>
-<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
-<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
-<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
-<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
-<connect gate="G$1" pin="PC4(ADC4)" pad="27"/>
-<connect gate="G$1" pin="PC5(ADC5)" pad="28"/>
-<connect gate="G$1" pin="PC6(!RESET!)" pad="29"/>
-<connect gate="G$1" pin="PD0" pad="30"/>
-<connect gate="G$1" pin="PD1" pad="31"/>
-<connect gate="G$1" pin="PD2" pad="32"/>
-<connect gate="G$1" pin="PD3" pad="1"/>
-<connect gate="G$1" pin="PD4" pad="2"/>
-<connect gate="G$1" pin="PD5" pad="9"/>
-<connect gate="G$1" pin="PD6" pad="10"/>
-<connect gate="G$1" pin="PD7" pad="11"/>
-<connect gate="G$1" pin="VDD" pad="4 6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB _16K x 16_ FLASH 32-TQFP _7x7_ "/>
-<attribute name="MF" value="Microchip"/>
-<attribute name="MP" value="ATMEGA328P-AU"/>
-<attribute name="PACKAGE" value="TQFP-32 Microchip"/>
-<attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
 </device>
@@ -8816,237 +7811,6 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="MMBZ5245BTS-7-F">
-<description>15V Zener Diode Array 3 Independent with SOT363 footprint.
-
-&lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/115/ds30184-1382386.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_ZENER" x="5.08" y="0"/>
-<gate name="G$2" symbol="DIODE_ZENER" x="5.08" y="-7.62"/>
-<gate name="G$3" symbol="DIODE_ZENER" x="5.08" y="-17.78"/>
-</gates>
-<devices>
-<device name="" package="SOT363">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="6"/>
-<connect gate="G$2" pin="A" pad="2"/>
-<connect gate="G$2" pin="C" pad="5"/>
-<connect gate="G$3" pin="A" pad="3"/>
-<connect gate="G$3" pin="C" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VOLTAGE" value="15V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="STWD100PYW83F">
-<description>STWD100 Watchdog Timer (push-pull configuration) &lt;a href="https://www.st.com/resource/en/datasheet/stwd100.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="STWD100" x="-7.62" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="SC-70-5">
-<connects>
-<connect gate="G$1" pin="!EN" pad="3"/>
-<connect gate="G$1" pin="!WDO" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WDI" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="YC248-JR-0710KL" prefix="R">
-<description>&lt;p&gt;10k 8-resistor array. Replaces Bourns Cat 16&lt;\p&gt;
-&lt;br&gt;
-
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt; Datasheet&lt;\a&gt;</description>
-<gates>
-<gate name="A" symbol="RESISTOR" x="5.08" y="0"/>
-<gate name="B" symbol="RESISTOR" x="5.08" y="-7.62"/>
-<gate name="C" symbol="RESISTOR" x="5.08" y="-15.24"/>
-<gate name="D" symbol="RESISTOR" x="5.08" y="-22.86"/>
-<gate name="E" symbol="RESISTOR" x="5.08" y="-30.48"/>
-<gate name="F" symbol="RESISTOR" x="5.08" y="-38.1"/>
-<gate name="G" symbol="RESISTOR" x="5.08" y="-45.72"/>
-<gate name="H" symbol="RESISTOR" x="5.08" y="-53.34"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TPS26600">
-<gates>
-<gate name="G$1" symbol="TPS26600" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HTSSOP-16">
-<connects>
-<connect gate="G$1" pin="!FLT!" pad="14"/>
-<connect gate="G$1" pin="!SHDN!" pad="7"/>
-<connect gate="G$1" pin="DVDT" pad="12"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="ILIM" pad="11"/>
-<connect gate="G$1" pin="IMON" pad="10"/>
-<connect gate="G$1" pin="IN" pad="1 2"/>
-<connect gate="G$1" pin="MODE" pad="6"/>
-<connect gate="G$1" pin="OUT" pad="15 16"/>
-<connect gate="G$1" pin="OVP" pad="5"/>
-<connect gate="G$1" pin="RTN" pad="8 PAD"/>
-<connect gate="G$1" pin="UVLO" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TPS26630">
-<gates>
-<gate name="G$1" symbol="TPS26630" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HTSSOP-20">
-<connects>
-<connect gate="G$1" pin="!FLT" pad="15"/>
-<connect gate="G$1" pin="!SHDN" pad="13"/>
-<connect gate="G$1" pin="B_GATE" pad="4"/>
-<connect gate="G$1" pin="DRV" pad="5"/>
-<connect gate="G$1" pin="DVDT" pad="10"/>
-<connect gate="G$1" pin="GND" pad="9 PAD"/>
-<connect gate="G$1" pin="ILIM" pad="11"/>
-<connect gate="G$1" pin="IMON" pad="14"/>
-<connect gate="G$1" pin="IN" pad="1 2 3"/>
-<connect gate="G$1" pin="IN_SYS" pad="6"/>
-<connect gate="G$1" pin="MODE" pad="12"/>
-<connect gate="G$1" pin="OUT" pad="18 19 20"/>
-<connect gate="G$1" pin="OVP" pad="8"/>
-<connect gate="G$1" pin="PGOOD" pad="17"/>
-<connect gate="G$1" pin="PGTH" pad="16"/>
-<connect gate="G$1" pin="UVLO" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPA990IDBVR">
-<description>TI OPA990 20V Op-Amp Comparator
-
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;&lt;a href=https://www.ti.com/lit/ds/symlink/opa990.pdf&gt;Datasheet&lt;\b&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN74LVC1G32">
-<description>TI SN74LVC1G32 Single 2-Input Positive-OR Gate
-&lt;br&gt;&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf?ts=1594782477606&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;Datasheet&lt;\a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="&quot;" package="SOT-23-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP3204">
-<gates>
-<gate name="G$1" symbol="MCP3204" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="SOIC-14">
-<connects>
-<connect gate="G$1" pin="!CS!/SHDN" pad="8"/>
-<connect gate="G$1" pin="AGND" pad="12"/>
-<connect gate="G$1" pin="CH0" pad="1"/>
-<connect gate="G$1" pin="CH1" pad="2"/>
-<connect gate="G$1" pin="CH2" pad="3"/>
-<connect gate="G$1" pin="CH3" pad="4"/>
-<connect gate="G$1" pin="CLK" pad="11"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="SDI" pad="9"/>
-<connect gate="G$1" pin="SDO" pad="10"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-<connect gate="G$1" pin="VREF" pad="13"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MTK3339">
-<description>MTK3339
-&lt;br&gt;&lt;br&gt;
-66 channel, 10 Hz GPS breakout board
-&lt;br&gt;&lt;br&gt;
-&lt;a href="https://www.adafruit.com/product/746"&gt;Adafruit Link&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MTK3339" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X09">
-<connects>
-<connect gate="G$1" pin="3V3" pad="9"/>
-<connect gate="G$1" pin="EN" pad="8"/>
-<connect gate="G$1" pin="FIX" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PPS" pad="1"/>
-<connect gate="G$1" pin="RX" pad="4"/>
-<connect gate="G$1" pin="TX" pad="5"/>
-<connect gate="G$1" pin="VBAT" pad="7"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LM340">
-<description>LM340
-&lt;br&gt;&lt;br&gt;
-7.5-35V to 5V SMD regulator
-&lt;br&gt;&lt;br&gt;
-&lt;a href="https://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB?qs=sGAEpiMZZMvu8NZDyZ4K0cQiG3JqdhEW"&gt;Mouser link&lt;\a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="AD5721R" prefix="U">
 <description>1-Channel 12V 12-Bit DAC
 &lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/ad5761r_5721r-1501754.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -9061,129 +7825,6 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="DKPN" value="AD5721RBRUZ-ND"/>
 <attribute name="MOPN" value="584-AD5721RBRUZ"/>
 <attribute name="RESOLUTION" value="12-Bit"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIODE_ZENER" prefix="D">
-<description>&lt;B&gt;ZENER DIODE&lt;/B&gt;&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_ZENER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="G5LE-1A4">
-<description>Omron G5LE SPST Relay
-&lt;br&gt;
-DC12 (12VDC) model used
-&lt;br&gt;
-Coil voltage: 75% - 170% of nominal voltage
-&lt;br&gt;
-&lt;a href="https://www.omron.com/ecb/products/pdf/en-g5le.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SPST_NO" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="G5LE-1A4">
-<connects>
-<connect gate="G$1" pin="COIL+" pad="1"/>
-<connect gate="G$1" pin="COIL-" pad="2"/>
-<connect gate="G$1" pin="P" pad="P"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RTE44009">
-<description>TE/Schrack Double Pull Single Throw Relay 9VDC
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=RT2&amp;DocType=DS&amp;DocLang=English"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.te.com/usa-en/product-3-1393243-1.html?q=rte44009&amp;source=headerl"&gt;Product Page&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/RTE44009/1128653?s=N4IgTCBcDaIE4BcCmAWFAGdBOEBdAvkA"&gt;Digikey&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_DPST_NO" x="2.54" y="-2.54"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DAC_AD568*" prefix="U">
-<description>4-Channel 5V 12-Bit DAC
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/AD5686R_5685R_5684R-1501714.pdf"&gt;Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="AD568X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSSOP-16">
-<connects>
-<connect gate="G$1" pin="!CS" pad="13"/>
-<connect gate="G$1" pin="!RESET" pad="15"/>
-<connect gate="G$1" pin="AVDD" pad="5"/>
-<connect gate="G$1" pin="CLK" pad="12"/>
-<connect gate="G$1" pin="GND" pad="4 9"/>
-<connect gate="G$1" pin="RSTSEL" pad="16"/>
-<connect gate="G$1" pin="SDI" pad="14"/>
-<connect gate="G$1" pin="SDO" pad="8"/>
-<connect gate="G$1" pin="VLOGIC" pad="10 11"/>
-<connect gate="G$1" pin="VOUTA" pad="3"/>
-<connect gate="G$1" pin="VOUTB" pad="2"/>
-<connect gate="G$1" pin="VOUTC" pad="6"/>
-<connect gate="G$1" pin="VOUTD" pad="7"/>
-<connect gate="G$1" pin="VREF" pad="1"/>
-</connects>
-<technologies>
-<technology name="4RBRUZ">
-<attribute name="CHANNELS" value="4"/>
-<attribute name="DKPN" value="AD5684RBRUZ-ND"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
-<attribute name="MOPN" value="584-AD5684RBRUZ"/>
-<attribute name="MPN" value="AD5684BRUZ"/>
-<attribute name="RESOLUTION" value="12-Bit"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AD5263BRUZ20-REEL7" prefix="U">
-<description>AD5263 20 kΩ Digital Potentiometer
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/609/AD5263-1501493.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="P" symbol="AD5263_BASE" x="0" y="0" addlevel="always"/>
-<gate name="A" symbol="RESISTOR_TRIMPOT" x="33.02" y="-2.54" swaplevel="1"/>
-<gate name="B" symbol="RESISTOR_TRIMPOT" x="33.02" y="-22.86" swaplevel="1"/>
-<gate name="C" symbol="RESISTOR_TRIMPOT" x="45.72" y="-2.54" swaplevel="1"/>
-<gate name="D" symbol="RESISTOR_TRIMPOT" x="45.72" y="-22.86" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="TSSOP-24">
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="AD5263BRUZ20-REEL7CT-ND"/>
-<attribute name="MOPN" value="584-AD5263BRUZ20-R7"/>
-<attribute name="MPN" value="AD5263BRUZ20-REEL7"/>
-<attribute name="RESISTANCE" value="20kΩ"/>
-<attribute name="TOLERANCE" value="30%"/>
 </technology>
 </technologies>
 </device>
@@ -9225,20 +7866,6 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
-<deviceset name="MAX7400">
-<description>MAX7400 Elliptic Filter&lt;br&gt;
-&lt;a href="https://datasheets.maximintegrated.com/en/ds/MAX7400-MAX7407.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MAX74XX" x="-7.62" y="5.08"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="M3_MOUNTING">
 <gates>
 </gates>
@@ -9257,37 +7884,6 @@ Coil voltage: 75% - 170% of nominal voltage
 <device name="" package="MOUNTING_M4">
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="F09HP" prefix="X" uservalue="yes">
-<description>&lt;b&gt;SUB-D&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="F09G" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="F09HP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-<connect gate="G$1" pin="G1" pad="G1"/>
-<connect gate="G$1" pin="G2" pad="G2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -9315,7 +7911,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MOPN" value="652-PWR163S255R00JE"/>
 <attribute name="MPN" value="PWR163S-25-5R00JE"/>
 <attribute name="POWER" value="25W"/>
-<attribute name="RESISTANCE" value="5Ω"/>
+<attribute name="RESISTANCE" value="5"/>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="2000V"/>
 </technology>
@@ -9333,7 +7929,17 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MOPN" value="603-RC0603FR-07100RL"/>
 <attribute name="MPN" value="RC0603FR-07100RL"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="100Ω"/>
+<attribute name="RESISTANCE" value="100"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="311-10.0KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0710KL"/>
+<attribute name="MPN" value="RC0603FR-0710KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="10k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -9343,7 +7949,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MOPN" value="603-RC0603FR-071KL"/>
 <attribute name="MPN" value="RC0603FR-071KL"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="1kΩ"/>
+<attribute name="RESISTANCE" value="1k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -9353,7 +7959,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MOPN" value="603-RC0603FR-073K3L"/>
 <attribute name="MPN" value="RC0603FR-073K3L"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="3.3kΩ"/>
+<attribute name="RESISTANCE" value="3.3k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -9363,7 +7969,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="MOPN" value="603-RC0603FR-0760R4L"/>
 <attribute name="MPN" value="RC0603FR-0760R4L"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="60.4Ω"/>
+<attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
@@ -9396,39 +8002,6 @@ Coil voltage: 75% - 170% of nominal voltage
 <attribute name="RESISTANCE" value="1mΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="0.07V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
-<description>7B Ceramic SMD Crystal.
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/417/7b-5226.pdf"&gt;Datasheet&lt;/a&gt;
-
-&lt;br&gt;
-ABM3B Ceramic SMD Crystal.
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-39910.pdf"&gt;Datasheet&lt;/a&gt;
-
-ABM3B-16.000MHZ-10-1-U</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ABM3B">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CAPACITANCE" value="10 pF"/>
-<attribute name="DKPN" value="887-1298-1-ND"/>
-<attribute name="MOPN" value="717-7B-16.000MEEQ-T"/>
-<attribute name="MPN" value="7B-16.000MEEQ-T"/>
-<attribute name="STABILITY" value="10 ppm"/>
-<attribute name="TOLERANCE" value="10 ppm"/>
-<attribute name="VALUE" value="16 MHz"/>
 </technology>
 </technologies>
 </device>
@@ -9471,36 +8044,6 @@ ABM3B-16.000MHZ-10-1-U</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WATCHDOG_ADM823">
-<description>ADM823 Watchdog Timer&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADM823_824_825.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADM823" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SC-70-5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TVS_VESD">
-<gates>
-<gate name="G$1" symbol="DIODE_TVS_UNIDIRECTIONAL" x="5.08" y="0" swaplevel="1"/>
-<gate name="G$2" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="5.08" y="-10.16" swaplevel="1"/>
-<gate name="G$3" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="5.08" y="-20.32" swaplevel="1"/>
-<gate name="G$4" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="5.08" y="-30.48" swaplevel="1"/>
-<gate name="G$5" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="5.08" y="-40.64" swaplevel="1"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ADG1423" prefix="U">
 <description>ADG1423 Form-A/Form-C Analog Switch
 &lt;br&gt;
@@ -9528,220 +8071,6 @@ ABM3B-16.000MHZ-10-1-U</description>
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-ADG1423BRMZ"/>
 <attribute name="MPN" value="ADG1423BRMZ"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GATE_DRIVER">
-<description>&lt;a href="https://www.ti.com/lit/ds/symlink/ucc27524a1-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610071431501&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F
-"&gt;TI Gate Driver Datasheet&lt;/a&gt;</description>
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DCM3714XD2K13E0YZZ">
-<gates>
-<gate name="G$1" symbol="DCM3714" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="3714DCM_VIA">
-<connects>
-<connect gate="G$1" pin="EN" pad="6"/>
-<connect gate="G$1" pin="IN+" pad="1"/>
-<connect gate="G$1" pin="IN-" pad="2"/>
-<connect gate="G$1" pin="OUT+" pad="3"/>
-<connect gate="G$1" pin="OUT-" pad="4"/>
-<connect gate="G$1" pin="SENSE+" pad="9"/>
-<connect gate="G$1" pin="SENSE-" pad="8"/>
-<connect gate="G$1" pin="TR" pad="7"/>
-<connect gate="G$1" pin="VDDE" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAN_TRANSCIEVER_TCAN337" prefix="U">
-<description>TCAN337 Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tcan337.pdf?ts=1610765239354&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCAN337"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN337" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT-23-8" package="SOT-23-8">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="FAULT" pad="5"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="S" pad="8"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-</connects>
-<technologies>
-<technology name="TCAN337">
-<attribute name="DKPN" value="296-44539-1-ND"/>
-<attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-TCAN337GDCNT"/>
-<attribute name="MPN" value="TCAN337GDCNT "/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RESISTOR_NETWORK_4_*" prefix="RN">
-<description>&lt;b&gt;Resistor Network w/ 4 Indepedent Resistors&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Yageo TC Series&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="A" symbol="RESISTOR" x="0" y="0" swaplevel="1"/>
-<gate name="B" symbol="RESISTOR" x="0" y="-10.16" swaplevel="1"/>
-<gate name="C" symbol="RESISTOR" x="0" y="-20.32" swaplevel="1"/>
-<gate name="D" symbol="RESISTOR" x="0" y="-30.48" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="YC/TC164">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="8"/>
-<connect gate="B" pin="1" pad="2"/>
-<connect gate="B" pin="2" pad="7"/>
-<connect gate="C" pin="1" pad="3"/>
-<connect gate="C" pin="2" pad="6"/>
-<connect gate="D" pin="1" pad="4"/>
-<connect gate="D" pin="2" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="0">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="0"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="100">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="100"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="100K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="100k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="10K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="10k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="12K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="12k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="14K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="158">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="1K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="1k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="26.7K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="2K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="2k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
-<technology name="43K">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="" constant="no"/>
-<attribute name="RESISTANCE" value="43k"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9788,18 +8117,6 @@ ABM3B-16.000MHZ-10-1-U</description>
 <attribute name="MPN" value="BR-1632A/HAN"/>
 <attribute name="VOLTAGE" value=" 3V"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAN_TRANSCIEVER_TCAN1051">
-<gates>
-<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9909,18 +8226,25 @@ ABM3B-16.000MHZ-10-1-U</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POGO_PIN" prefix="J">
+<deviceset name="CONNECTOR-1" prefix="J">
+<description>1 Pin Connector
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="MV" x="0" y="0"/>
+<gate name="G$1" symbol="CONNECTOR_01" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="807-22-001-10-02X101">
 <connects>
-<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="807-22-001-10-02X101"/>
+<attribute name="DKPN" value="807-22-001-10-022101-ND"/>
+<attribute name="MANUFACTURER" value="Mill-Max Manufacturing Corp."/>
+<attribute name="MODEL" value="POGO-PIN"/>
+<attribute name="MOPN" value="575-8072200110022101"/>
+<attribute name="MPN" value="807-22-001-10-022101"/>
 </technology>
 </technologies>
 </device>
