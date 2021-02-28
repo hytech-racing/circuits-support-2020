@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -581,10 +581,7 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="0.75" x2="1.45" y2="0.75" width="0.0508" layer="39"/>
-<wire x1="1.45" y1="0.75" x2="1.45" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="1.45" y1="-0.75" x2="-1.45" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="-1.45" y1="-0.75" x2="-1.45" y2="0.75" width="0.0508" layer="39"/>
+<rectangle x1="-1.45" y1="-0.75" x2="1.45" y2="0.75" layer="39"/>
 </package>
 <package name="AXIAL-0.3">
 <description>0.3" Axial Resistor</description>
@@ -606,10 +603,6 @@
 &lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
-<wire x1="-1.35" y1="0.75" x2="1.35" y2="0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="0.75" x2="1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="-0.75" x2="-1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="-1.35" y1="-0.75" x2="-1.35" y2="0.75" width="0.0508" layer="39"/>
 <smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -617,6 +610,7 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
 <package name="AXIAL-5MM">
 <description>5mm Axial Capacitor</description>
@@ -1667,7 +1661,7 @@ visible on the PCB.</text>
 <wire x1="7.4041" y1="-5.842" x2="-7.4041" y2="-5.842" width="0.1524" layer="21"/>
 <wire x1="-7.4041" y1="-5.842" x2="-7.4041" y2="5.842" width="0.1524" layer="21"/>
 <circle x="-6.858" y="-6.858" radius="0.635" width="0.127" layer="21"/>
-<text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-7.62" y="0" locked="yes" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.255" y1="-8.255" x2="8.255" y2="8.255" layer="39"/>
 </package>
 <package name="CC-16-2">
@@ -2010,8 +2004,8 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <wire x1="4.064" y1="3.556" x2="4.064" y2="-5.2324" width="0.127" layer="21"/>
 <wire x1="4.064" y1="-5.2324" x2="-4.064" y2="-5.2324" width="0.127" layer="21"/>
 <wire x1="-4.064" y1="-5.2324" x2="-4.064" y2="3.556" width="0.127" layer="21"/>
-<text x="0" y="5.08" size="0.8128" layer="25" ratio="10" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-5.08" y1="-10.16" x2="5.08" y2="5.08" layer="41"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.08" y1="-10.16" x2="5.08" y2="5.08" layer="39"/>
 </package>
 <package name="KEYSTONE5222">
 <description>Keystone 5222 Battery Spring
@@ -2027,8 +2021,8 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 &lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pad name="1" x="0" y="0" drill="0.7366" diameter="1.8288"/>
 <circle x="0" y="0" radius="1.1938" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.3208" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="1.3208" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.3208" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.3208" width="0" layer="39"/>
 <text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="TQFP-32">
@@ -4234,12 +4228,12 @@ Note: Based on Page 88.</description>
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
 <text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
+<text x="-1.778" y="-2.54" size="1.27" layer="96" align="top-right">&gt;VOLTAGE</text>
 <rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
 <rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
+<text x="-0.762" y="-2.54" size="1.27" layer="96" align="top-left">&gt;CAPACITANCE</text>
 </symbol>
 <symbol name="DIODE_LED">
 <wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
@@ -7020,12 +7014,12 @@ Pins tied to VREG: ISOMD, DTEN
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="Nanofit_SMD_Vertical_Black"/>
+<attribute name="MODEL" value="NF_S_V_B"/>
 <attribute name="MPN" value="1054291304"/>
 </technology>
 <technology name="NATURAL">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="Nanofit_SMD_Vertical_Natural"/>
+<attribute name="MODEL" value="NF_S_V_N"/>
 <attribute name="MPN" value="1054312302"/>
 </technology>
 </technologies>
@@ -7454,23 +7448,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MPN" value="NCU18XH103D60RB"/>
 <attribute name="RESISTANCE" value="10k"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER" prefix="J">
-<description>Jumper for changing operation of a device</description>
-<gates>
-<gate name="G$1" symbol="JUMPER" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name=".1" package="1X02">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7906,13 +7883,13 @@ Ceramic SMD Surface Mount Fuse
 </connects>
 <technologies>
 <technology name="5">
-<attribute name="DKPN" value="118-PWR163S-25-5R00JECT-ND"/>
+<attribute name="DKPN" value="PWR163S-25-5R00FECT-ND"/>
 <attribute name="MANUFACTURER" value="Bourns Inc."/>
-<attribute name="MOPN" value="652-PWR163S255R00JE"/>
-<attribute name="MPN" value="PWR163S-25-5R00JE"/>
+<attribute name="MOPN" value="652-PWR163S255R00FE"/>
+<attribute name="MPN" value="PWR163S-25-5R00FE"/>
 <attribute name="POWER" value="25W"/>
 <attribute name="RESISTANCE" value="5"/>
-<attribute name="TOLERANCE" value="5%"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="2000V"/>
 </technology>
 </technologies>
@@ -8050,8 +8027,8 @@ Ceramic SMD Surface Mount Fuse
 &lt; a href="https://www.mouser.com/datasheet/2/609/ADG1421_1422_1423-1502752.pdf"&gt;Datasheet&lt;/A&gt;</description>
 <gates>
 <gate name="P" symbol="PWR_GND" x="0" y="0" addlevel="always"/>
-<gate name="S1" symbol="SWITCH_SPST_NC" x="15.24" y="0" swaplevel="1"/>
-<gate name="S2" symbol="SWITCH_SPST_NO" x="33.02" y="0" swaplevel="1"/>
+<gate name="S1" symbol="SWITCH_SPST_NC" x="15.24" y="0"/>
+<gate name="S2" symbol="SWITCH_SPST_NO" x="33.02" y="0"/>
 </gates>
 <devices>
 <device name="" package="MSOP-10">
@@ -8245,6 +8222,32 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MODEL" value="POGO-PIN"/>
 <attribute name="MOPN" value="575-8072200110022101"/>
 <attribute name="MPN" value="807-22-001-10-022101"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER" prefix="J" uservalue="yes">
+<description>2 Pin Connector</description>
+<gates>
+<gate name="G$1" symbol="JUMPER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_S_V_B"/>
+<attribute name="MPN" value="1054291304"/>
+</technology>
+<technology name="NATURAL">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_S_V_N"/>
+<attribute name="MPN" value="1054312302"/>
 </technology>
 </technologies>
 </device>
