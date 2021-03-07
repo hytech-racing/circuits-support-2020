@@ -4044,6 +4044,37 @@ Note: Based on Page 88.</description>
 <circle x="-1.651" y="-2.1055" radius="0.1524" width="0" layer="21"/>
 <rectangle x1="-1.778" y1="-2.794" x2="1.778" y2="2.794" layer="39"/>
 </package>
+<package name="0805-RES">
+<description>0805 Resistor Footprint
+&lt;br&gt;
+&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
+</package>
+<package name="SC-70-3">
+<description>SC-70-3/SOT323
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tpd2e007.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1615155679700&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: Based on page 14 and 15.</description>
+<smd name="1" x="-1.1" y="0.65" dx="0.95" dy="0.4" layer="1"/>
+<smd name="2" x="-1.1" y="-0.65" dx="0.95" dy="0.4" layer="1"/>
+<smd name="3" x="1.1" y="0" dx="0.95" dy="0.4" layer="1"/>
+<wire x1="-0.7" y1="1.075" x2="-0.7" y2="-1.075" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-1.075" x2="0.7" y2="-1.075" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-1.075" x2="0.7" y2="1.075" width="0.127" layer="21"/>
+<wire x1="0.7" y1="1.075" x2="-0.7" y2="1.075" width="0.127" layer="21"/>
+<text x="0" y="1.2" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.778" y1="-1.27" x2="1.778" y2="1.27" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -6277,7 +6308,7 @@ I2C Mode
 <wire x1="-3.937" y1="-1.524" x2="-3.937" y2="-3.302" width="0.1524" layer="94"/>
 <pin name="C2" x="-7.62" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="A" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-3.937" y="-4.445" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
+<text x="-3.937" y="-4.445" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 <polygon width="0.1524" layer="94">
 <vertex x="-6.477" y="-1.27"/>
 <vertex x="-6.477" y="-3.81"/>
@@ -7096,6 +7127,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_4.7NF">
+<attribute name="CAPACITANCE" value="4.7nF"/>
+<attribute name="DKPN" value="732-7931-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012206012"/>
+<attribute name="MPN" value="885012206012"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_4.7UF">
 <attribute name="CAPACITANCE" value="4.7µF"/>
 <attribute name="DKPN" value="1276-1044-1-ND"/>
@@ -7123,15 +7163,6 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
-</technologies>
-</device>
-<device name="_" package="AXIAL-5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7427,6 +7458,26 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
+<technology name="12K">
+<attribute name="DKPN" value="311-12.0KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0712KL"/>
+<attribute name="MPN" value="RC0603FR-0712KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="12k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="180">
+<attribute name="DKPN" value="311-180HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07180RL"/>
+<attribute name="MPN" value="RC0603FR-07180RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="180"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="1K">
 <attribute name="DKPN" value="311-1.00KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7447,6 +7498,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
+<technology name="43K">
+<attribute name="DKPN" value="311-43.0KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0743KL"/>
+<attribute name="MPN" value="RC0603FR-0743KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="43k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="60.4">
 <attribute name="DKPN" value="311-60.4HRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7456,18 +7517,6 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
-</technology>
-</technologies>
-</device>
-<device name="AXIAL0.3" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="RESISTANCE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7486,6 +7535,24 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="RESISTANCE" value="1mΩ"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="0.07V"/>
+</technology>
+</technologies>
+</device>
+<device name="0805" package="0805-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="200">
+<attribute name="DKPN" value="311-200CRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0805FR-07200RL"/>
+<attribute name="MPN" value="RC0805FR-07200RL"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="200"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="150V"/>
 </technology>
 </technologies>
 </device>
@@ -7560,12 +7627,13 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-CAN" prefix="J">
+<deviceset name="CONNECTOR-CAN_?_*" prefix="J">
+<description>HyTech CAN Connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_CAN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
+<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
 <connects>
 <connect gate="G$1" pin="+12V" pad="1"/>
 <connect gate="G$1" pin="CANH" pad="4"/>
@@ -7573,8 +7641,10 @@ Ceramic SMD Surface Mount Fuse
 <connect gate="G$1" pin="GND" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MODEL" value="SMD Nanofit"/>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_S_RA_B" constant="no"/>
+<attribute name="MPN" value="105405-1304"/>
 </technology>
 </technologies>
 </device>
@@ -7755,6 +7825,17 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_S_V_N"/>
 <attribute name="MPN" value="1054312302"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BRIDGE">
+<attribute name="MODEL" value="Bridge"/>
 </technology>
 </technologies>
 </device>
@@ -8124,6 +8205,83 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
 <attribute name="MOPN" value="78-VSKY20401608G408"/>
 <attribute name="MPN" value="VSKY20401608-G4-08"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TVS_BIDIRECTIONAL_DUAL" prefix="D">
+<description>Bdirectional TVS for CAN ESD
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tpd2e007.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1615155679700&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_TVS_BIDIRECTIONAL_DUAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-3">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C1" pad="1"/>
+<connect gate="G$1" pin="C2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="296-25281-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="595-TPD2E007DCKR"/>
+<attribute name="MPN" value="TPD2E007DCKR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-8_?_*" prefix="J">
+<description>8 Pin Connector</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_08" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_S_RA_B"/>
+<attribute name="MPN" value="105405-1308"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-6_?_*" prefix="J">
+<description>6 Pin Connector</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_06" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_S_RA_B"/>
+<attribute name="MPN" value="105405-1306"/>
 </technology>
 </technologies>
 </device>
