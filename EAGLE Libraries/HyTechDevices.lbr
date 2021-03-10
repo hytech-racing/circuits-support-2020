@@ -7680,6 +7680,22 @@ Ceramic SMD Surface Mount Fuse
 </technology>
 </technologies>
 </device>
+<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_04">
+<connects>
+<connect gate="G$1" pin="+12V" pad="1"/>
+<connect gate="G$1" pin="CANH" pad="4"/>
+<connect gate="G$1" pin="CANL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_T_V_B"/>
+<attribute name="MPN" value="105429-1304
+"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BATTERY" prefix="BT">
@@ -8070,7 +8086,9 @@ Ceramic SMD Surface Mount Fuse
 <deviceset name="VOLTAGE_REGULATOR_?_*" prefix="U">
 <description>Voltage Regulators
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;OKI-78SR Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
@@ -8087,6 +8105,21 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="MOPN" value="511-LDL1117S50R"/>
 <attribute name="MPN" value="LDL1117S50R"/>
+</technology>
+</technologies>
+</device>
+<device name="OKI-78SR" package="OKI-78SR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="5V">
+<attribute name="DKPN" value="811-2196-5-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
+<attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
 </technology>
 </technologies>
 </device>
@@ -8120,7 +8153,7 @@ Ceramic SMD Surface Mount Fuse
 <deviceset name="TVS_ARRAY_*" prefix="DN">
 <description>TVS Diode Array
 &lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/427/vesd05a5-06gtovesd26a5-06g-1768003.pdf"&gt;Datasshet&lt;/a&gt;</description>
+&lt;a href="https://www.mouser.com/datasheet/2/427/vesd05a5-06gtovesd26a5-06g-1768003.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="A" symbol="DIODE_TVS_UNIDIRECTIONAL" x="0" y="0" swaplevel="1"/>
 <gate name="B" symbol="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED" x="0" y="-10.16" swaplevel="1"/>
@@ -8139,6 +8172,13 @@ Ceramic SMD Surface Mount Fuse
 <connect gate="E" pin="C" pad="6"/>
 </connects>
 <technologies>
+<technology name="16V">
+<attribute name="DKPN" value="112-VESD16A5-06G-G3-08CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-VESD16A5-06G-G308"/>
+<attribute name="MPN" value="VESD16A5-06G-G3-08"/>
+<attribute name="VOLTAGE" value="16V"/>
+</technology>
 <technology name="5V">
 <attribute name="DKPN" value="112-VESD05A5-06G-G3-08CT-ND"/>
 <attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
@@ -8292,6 +8332,25 @@ Ceramic SMD Surface Mount Fuse
 </technology>
 </technologies>
 </device>
+<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_T_V_B"/>
+<attribute name="MPN" value="105310-1308"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-6_?_*" prefix="J">
@@ -8314,6 +8373,24 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_S_RA_B"/>
 <attribute name="MPN" value="105405-1306"/>
+</technology>
+</technologies>
+</device>
+<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_06">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MODEL" value="NF_T_V_B"/>
+<attribute name="MPN" value="105310-1306
+"/>
 </technology>
 </technologies>
 </device>
@@ -8341,6 +8418,71 @@ Ceramic SMD Surface Mount Fuse
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEENSY_3.5" prefix="U">
+<gates>
+<gate name="G$1" symbol="TEENSY_3.5_EXT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEENSY_LONG_EXT">
+<connects>
+<connect gate="G$1" pin="(CLK)D13" pad="D13"/>
+<connect gate="G$1" pin="(CRX)D4" pad="D4"/>
+<connect gate="G$1" pin="(CS)D10" pad="D10"/>
+<connect gate="G$1" pin="(CTX)D3" pad="D3"/>
+<connect gate="G$1" pin="(RX1)D0" pad="D0"/>
+<connect gate="G$1" pin="(RX3)D7" pad="D7"/>
+<connect gate="G$1" pin="(SDI)D12" pad="D12"/>
+<connect gate="G$1" pin="(SDO)D11" pad="D11"/>
+<connect gate="G$1" pin="(TX1)D1" pad="D1"/>
+<connect gate="G$1" pin="(TX3)D8" pad="D8"/>
+<connect gate="G$1" pin="3.3V" pad="3V3 3V3@2 3V3@3"/>
+<connect gate="G$1" pin="A0" pad="D14"/>
+<connect gate="G$1" pin="A1" pad="D15"/>
+<connect gate="G$1" pin="A12" pad="D31"/>
+<connect gate="G$1" pin="A13" pad="D32"/>
+<connect gate="G$1" pin="A14" pad="D33"/>
+<connect gate="G$1" pin="A15" pad="D34"/>
+<connect gate="G$1" pin="A16" pad="D35"/>
+<connect gate="G$1" pin="A17" pad="D36"/>
+<connect gate="G$1" pin="A18" pad="D37"/>
+<connect gate="G$1" pin="A19" pad="D38"/>
+<connect gate="G$1" pin="A2" pad="D16"/>
+<connect gate="G$1" pin="A20" pad="D39"/>
+<connect gate="G$1" pin="A21" pad="D40"/>
+<connect gate="G$1" pin="A22" pad="D41"/>
+<connect gate="G$1" pin="A3" pad="D17"/>
+<connect gate="G$1" pin="A4" pad="D18"/>
+<connect gate="G$1" pin="A5" pad="D19"/>
+<connect gate="G$1" pin="A6" pad="D20"/>
+<connect gate="G$1" pin="A7" pad="D21"/>
+<connect gate="G$1" pin="A8" pad="D22"/>
+<connect gate="G$1" pin="A9" pad="D23"/>
+<connect gate="G$1" pin="AGND" pad="AGND/GND"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D24" pad="D24"/>
+<connect gate="G$1" pin="D25" pad="D25"/>
+<connect gate="G$1" pin="D26" pad="D26"/>
+<connect gate="G$1" pin="D27" pad="D27"/>
+<connect gate="G$1" pin="D28" pad="D28"/>
+<connect gate="G$1" pin="D29" pad="D29"/>
+<connect gate="G$1" pin="D30" pad="D30"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D9" pad="D9"/>
+<connect gate="G$1" pin="GND" pad="GND GND@2 GND@3"/>
+<connect gate="G$1" pin="PRGM" pad="PRGM"/>
+<connect gate="G$1" pin="RST" pad="ON/OFF"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TEENSY" value="3.5"/>
+</technology>
 </technologies>
 </device>
 </devices>
