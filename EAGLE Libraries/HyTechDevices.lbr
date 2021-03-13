@@ -8437,7 +8437,7 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_3.5" prefix="U">
+<deviceset name="TEENSY_3.5" prefix="A">
 <description>Teensy 3.5
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/store/teensy35.html"&gt;Datasheet&lt;/a&gt;</description>
@@ -8560,7 +8560,7 @@ Note: OPA991 is also a comparator</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_4.0_VBAT" prefix="U">
+<deviceset name="TEENSY_4.0_VBAT" prefix="A">
 <description>Teensy 4.0 with VBAT Pin
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;</description>
@@ -8605,7 +8605,7 @@ Note: OPA991 is also a comparator</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_4.1" prefix="U">
+<deviceset name="TEENSY_4.1" prefix="A">
 <description>Teensy 4.1 with VBAT
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/store/teensy41.html#pins"&gt;Datasheet&lt;/a&gt;</description>
