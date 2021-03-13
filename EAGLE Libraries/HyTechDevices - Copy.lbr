@@ -9896,6 +9896,35 @@ Coil voltage: 75% - 170% of nominal voltage
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPS259474*">
+<description>TPS259474x E-Fuse
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tps25947.pdf?ts=1611163131190&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: See page 32 for application schematic.</description>
+<gates>
+<gate name="G$1" symbol="TPS259474*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN-HR-10">
+<connects>
+<connect gate="G$1" pin="DVDT" pad="7"/>
+<connect gate="G$1" pin="EN/UVLO" pad="1"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="ILM" pad="9"/>
+<connect gate="G$1" pin="IN" pad="5"/>
+<connect gate="G$1" pin="ITIMER" pad="10"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="OVLO" pad="2"/>
+<connect gate="G$1" pin="PG" pad="3"/>
+<connect gate="G$1" pin="PGTH" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
