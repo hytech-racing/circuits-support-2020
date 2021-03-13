@@ -3519,7 +3519,7 @@ Note: Based off of page 57 and 58.</description>
 <smd name="8" x="0.9" y="-0.225" dx="0.6" dy="0.25" layer="1"/>
 <smd name="9" x="0.9" y="0.225" dx="0.6" dy="0.25" layer="1"/>
 <smd name="10" x="0.9" y="0.7" dx="0.6" dy="0.3" layer="1"/>
-<smd name="1@1" x="0.725" y="0.875" dx="0.25" dy="0.65" layer="1"/>
+<smd name="10@2" x="0.725" y="0.875" dx="0.25" dy="0.65" layer="1"/>
 <wire x1="-1.05" y1="1.05" x2="1.05" y2="1.05" width="0.127" layer="21"/>
 <wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.127" layer="21"/>
 <wire x1="1.05" y1="-1.05" x2="-1.05" y2="-1.05" width="0.127" layer="21"/>
@@ -8665,6 +8665,37 @@ Note: OPA991 is also a comparator</description>
 <technologies>
 <technology name="">
 <attribute name="TEENSY" value="4.1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS259474LRPW" prefix="U">
+<description>TPS259474x E-Fuse
+&lt;br&gt;
+&lt;a href="https://www.ti.com/lit/ds/symlink/tps25947.pdf?ts=1611163131190&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: See page 32 for application schematic.</description>
+<gates>
+<gate name="G$1" symbol="TPS259474*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN-HR-10">
+<connects>
+<connect gate="G$1" pin="DVDT" pad="7 7@2"/>
+<connect gate="G$1" pin="EN/UVLO" pad="1 1@2"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="ILM" pad="9"/>
+<connect gate="G$1" pin="IN" pad="5"/>
+<connect gate="G$1" pin="ITIMER" pad="10 10@2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="OVLO" pad="2"/>
+<connect gate="G$1" pin="PG" pad="3"/>
+<connect gate="G$1" pin="PGTH" pad="4 4@2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="TPS259474LRPW"/>
 </technology>
 </technologies>
 </device>
