@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1542,7 +1542,7 @@ visible on the PCB.</text>
 <description>SOURIAU 4 Pin
 &lt;br&gt;
 &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
-<circle x="0" y="0" radius="8.72" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="8.72" width="0.127" layer="22"/>
 <pad name="1" x="0" y="3.81" drill="2"/>
 <pad name="2" x="3.7084" y="0.889" drill="2"/>
 <pad name="3" x="0" y="-2.1082" drill="2"/>
@@ -3101,7 +3101,7 @@ visible on the PCB.</text>
 <circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
 <circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="6" width="0.1524" layer="40"/>
-<circle x="0" y="0" radius="6.6" width="0.1524" layer="41"/>
+<circle x="0" y="0" radius="6.6" width="0.1524" layer="39"/>
 <hole x="8.1" y="8.1" drill="3.4"/>
 <circle x="8.1" y="8.1" radius="3" width="0.127" layer="39"/>
 <circle x="8.1" y="8.1" radius="3" width="0.127" layer="40"/>
@@ -3112,8 +3112,8 @@ visible on the PCB.</text>
 <circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="40"/>
 <circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="41"/>
 <circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="42"/>
-<text x="0" y="7" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<text x="0" y="8" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
+<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
+<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
 </package>
 <package name="BR-1632A/HAN">
 <description>BR-1632A/HAN RTC Battery
@@ -4977,19 +4977,20 @@ Pins tied to GND: SLOW
 &lt;a href="https://www.mouser.com/datasheet/2/256/MAX7480-1515905.pdf"&gt;MAX7480 Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/256/MAX7404-1514314.pdf"&gt;MAX7400 Datsheet&lt;/a&gt;</description>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="COM" x="-2.54" y="-10.16" length="short"/>
-<pin name="IN" x="-2.54" y="-5.08" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-17.78" length="short" direction="pwr"/>
-<pin name="VDD" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="OUT" x="15.24" y="-5.08" length="short" direction="out" rot="R180"/>
-<pin name="OS" x="-2.54" y="-12.7" length="short"/>
-<pin name="CLK" x="-2.54" y="-7.62" length="short" direction="in" function="clk"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="COM" x="-2.54" y="-12.7" length="short"/>
+<pin name="IN" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="-20.32" length="short" direction="pwr"/>
+<pin name="VDD" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="OUT" x="17.78" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="OS" x="-2.54" y="-15.24" length="short"/>
+<pin name="CLK" x="-2.54" y="-10.16" length="short" direction="in" function="clk"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-21.082" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="!SHDN" x="17.78" y="-5.08" length="short" direction="in" rot="R180"/>
 </symbol>
 <symbol name="ADIS16209">
 <description>ADIS16209 Inclinometer and Accelerometer
@@ -7035,9 +7036,19 @@ Pins tied to VREG: ISOMD, DTEN
 <wire x1="0.635" y1="0" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="CAPACITOR_VALUE">
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
+<rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONNECTOR-2_?_*" prefix="J" uservalue="yes">
+<deviceset name="CONNECTOR-2_?_*" prefix="J">
 <description>2 Pin Connector</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_02" x="0" y="0"/>
@@ -7076,7 +7087,10 @@ Pins tied to VREG: ISOMD, DTEN
 GRM188R61A226ME15D&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/281/1/GRM188R61E106MA73_01A-1985806.pdf"&gt;
-GRM188R61E106MA73D&lt;/a&gt;</description>
+GRM188R61E106MA73D&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/445/885012006013-1726946.pdf"&gt;885012006013&lt;/a&gt;
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -7166,6 +7180,15 @@ GRM188R61E106MA73D&lt;/a&gt;</description>
 <attribute name="MOPN" value="187-CL10A475KP8NNNC"/>
 <attribute name="MPN" value="CL10A475KP8NNNC"/>
 <attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_680PF">
+<attribute name="CAPACITANCE" value="680pF"/>
+<attribute name="DKPN" value="732-7757-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012006013"/>
+<attribute name="MPN" value="885012006013"/>
+<attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="25V_0.1UF">
@@ -7467,6 +7490,7 @@ Ceramic SMD Surface Mount Fuse
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/pwr163-777985.pdf"&gt;PWR163 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_PYu_AC_51_RoHS_L_7_1714230-1874691.pdf"&gt;AC Series&lt;/a&gt;&lt;li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/PYu-PU_51_RoHS_L_6-1504619.pdf"&gt;PU Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf"&gt;ERA Series&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -7526,6 +7550,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
+<technology name="11.5K">
+<attribute name="DKPN" value="P11.5KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB1152V"/>
+<attribute name="MPN" value="ERA-3AEB1152V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="11.5k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7574,6 +7608,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="1M"/>
 <attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="75V"/>
+</technology>
+<technology name="22.1K">
+<attribute name="DKPN" value="P22.1KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB2212V"/>
+<attribute name="MPN" value="ERA-3AEB2212V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="22.1k"/>
+<attribute name="TOLERANCE" value="0.1W"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
 <technology name="3.3K">
@@ -8280,6 +8324,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="100">
+<attribute name="DKPN" value="CAT16-1000F4LFCT-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-CAT16-1000F4LF"/>
+<attribute name="MPN" value="CAT16-1000F4LF"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="100"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="YAG3410CT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8298,6 +8352,16 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="POWER" value="1/16W"/>
 <attribute name="RESISTANCE" value="160"/>
 <attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="1K">
+<attribute name="DKPN" value="13-YC164-FR-071KLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-YC164-FR-071KL"/>
+<attribute name="MPN" value="YC164-FR-071KL"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="1k"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="27K">
@@ -8334,6 +8398,13 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MOPN" value="78-GSOT15-E3-08"/>
 <attribute name="MPN" value="GSOT15-E3-08"/>
 <attribute name="VOLTAGE" value="15V"/>
+</technology>
+<technology name="4V">
+<attribute name="DKPN" value="GSOT04-E3-08CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-GSOT04-E3-08"/>
+<attribute name="MPN" value="GSOT04-E3-08"/>
+<attribute name="VOLTAGE" value="4V"/>
 </technology>
 </technologies>
 </device>
@@ -8476,22 +8547,13 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_VALUE" prefix="R" uservalue="yes">
+<deviceset name="RESISTOR_VALUE" prefix="RV" uservalue="yes">
 <description>Resistor for prototyping circuits</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_VALUE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="0603-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805" package="0805-RES">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8762,6 +8824,125 @@ Note: See page 32 for application schematic.</description>
 <technology name="">
 <attribute name="MPN" value="TPS259474LRPW"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_VALUE" prefix="CV" uservalue="yes">
+<description>Capacitor for prototyping circuits</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_VALUE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADM823" prefix="U">
+<description>ADM823 Watchdog
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/ADM823_824_825-1503117.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADM823" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-5">
+<connects>
+<connect gate="G$1" pin="!MR!" pad="3"/>
+<connect gate="G$1" pin="!RESET!" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="WDI" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="505-ADM823TYKSZ-R7CT-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-ADM823TYKSZ-R7"/>
+<attribute name="MPN" value="ADM823TYKSZ-R7"/>
+<attribute name="RESET_VOLTAGE" value="3.08"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX74*" prefix="U">
+<description>8th-Order Maxim Filter
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/256/MAX7480-1515905.pdf"&gt;MAX7480 Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/256/MAX7404-1514314.pdf"&gt;MAX7400 Datsheet&lt;/a&gt;
+&lt;br&gt;
+MAX7404 uses a 680 pF clock capcitor</description>
+<gates>
+<gate name="G$1" symbol="MAX74XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="8"/>
+<connect gate="G$1" pin="COM" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OS" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="04">
+<attribute name="DKPN" value="MAX7404CSA+-ND"/>
+<attribute name="MANUFACTURER" value="Maxim Integrated"/>
+<attribute name="MOPN" value="700-MAX7404CSA"/>
+<attribute name="MPN" value="MAX7404CSA+"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-4_?_*" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOURIAU" package="SOURIAU_12-04">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MODEL" value="Souriau"/>
+<attribute name="MPN" value="8STA21204PN
+"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-3_?" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOURIAU_04-35">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
