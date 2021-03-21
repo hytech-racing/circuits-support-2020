@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5324,33 +5324,33 @@ Pins tied to GND: SLOW
 <text x="0" y="-46.482" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <pin name="VDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-2.54" y="-43.18" length="short" direction="pwr"/>
-<pin name="PB0" x="25.4" y="-27.94" length="short" rot="R180"/>
-<pin name="PB1" x="25.4" y="-25.4" length="short" rot="R180"/>
-<pin name="(CS)PB2" x="25.4" y="-22.86" length="short" rot="R180"/>
-<pin name="(SDO)PB3" x="25.4" y="-20.32" length="short" rot="R180"/>
-<pin name="(SDI)PB4" x="25.4" y="-17.78" length="short" rot="R180"/>
-<pin name="(CLK)PB5" x="25.4" y="-15.24" length="short" rot="R180"/>
-<pin name="(XTAL1)PB6" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="(XTAL2)PB7" x="25.4" y="-10.16" length="short" rot="R180"/>
-<pin name="PC0(ADC0)" x="-2.54" y="-25.4" length="short"/>
-<pin name="PC1(ADC1)" x="-2.54" y="-27.94" length="short"/>
-<pin name="PC2(ADC2)" x="-2.54" y="-30.48" length="short"/>
-<pin name="PC3(ADC3)" x="-2.54" y="-33.02" length="short"/>
-<pin name="PC4(ADC4)" x="-2.54" y="-35.56" length="short"/>
-<pin name="PC5(ADC5)" x="-2.54" y="-38.1" length="short"/>
-<pin name="PC6(!RESET!)" x="-2.54" y="-40.64" length="short"/>
-<pin name="PD0" x="-2.54" y="-2.54" length="short"/>
-<pin name="PD1" x="-2.54" y="-5.08" length="short"/>
-<pin name="PD2" x="-2.54" y="-7.62" length="short"/>
-<pin name="PD3" x="-2.54" y="-10.16" length="short"/>
-<pin name="PD4" x="-2.54" y="-12.7" length="short"/>
-<pin name="PD5" x="-2.54" y="-15.24" length="short"/>
-<pin name="PD6" x="-2.54" y="-17.78" length="short"/>
-<pin name="PD7" x="-2.54" y="-20.32" length="short"/>
+<pin name="8" x="25.4" y="-27.94" length="short" rot="R180"/>
+<pin name="(PWM)9" x="25.4" y="-25.4" length="short" rot="R180"/>
+<pin name="(PWM/CS)10" x="25.4" y="-22.86" length="short" rot="R180"/>
+<pin name="(PWM/SDO)11" x="25.4" y="-20.32" length="short" rot="R180"/>
+<pin name="(SDI)12" x="25.4" y="-17.78" length="short" rot="R180"/>
+<pin name="(CLK)13" x="25.4" y="-15.24" length="short" rot="R180"/>
+<pin name="(XTAL1)14" x="25.4" y="-12.7" length="short" rot="R180"/>
+<pin name="(XTAL2)15" x="25.4" y="-10.16" length="short" rot="R180"/>
+<pin name="14(A0)" x="-2.54" y="-25.4" length="short"/>
+<pin name="15(A1)" x="-2.54" y="-27.94" length="short"/>
+<pin name="16(A2)" x="-2.54" y="-30.48" length="short"/>
+<pin name="17(A3)" x="-2.54" y="-33.02" length="short"/>
+<pin name="18(A4)" x="-2.54" y="-35.56" length="short"/>
+<pin name="19(A5)" x="-2.54" y="-38.1" length="short"/>
+<pin name="22(!RESET!)" x="-2.54" y="-40.64" length="short"/>
+<pin name="0" x="-2.54" y="-2.54" length="short"/>
+<pin name="1" x="-2.54" y="-5.08" length="short"/>
+<pin name="2" x="-2.54" y="-7.62" length="short"/>
+<pin name="3(PWM)" x="-2.54" y="-10.16" length="short"/>
+<pin name="4" x="-2.54" y="-12.7" length="short"/>
+<pin name="5(PWM)" x="-2.54" y="-15.24" length="short"/>
+<pin name="6(PWM)" x="-2.54" y="-17.78" length="short"/>
+<pin name="7" x="-2.54" y="-20.32" length="short"/>
 <pin name="AREF" x="25.4" y="-38.1" length="short" direction="in" rot="R180"/>
 <pin name="AVDD" x="25.4" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="ADC6" x="25.4" y="-33.02" length="short" rot="R180"/>
-<pin name="ADC7" x="25.4" y="-35.56" length="short" rot="R180"/>
+<pin name="A6" x="25.4" y="-33.02" length="short" rot="R180"/>
+<pin name="A7" x="25.4" y="-35.56" length="short" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_AVR_ISP">
 <description>Connector for ISP Header
@@ -7998,34 +7998,34 @@ Ceramic SMD Surface Mount Fuse
 <devices>
 <device name="" package="TQFP-32">
 <connects>
-<connect gate="G$1" pin="(CLK)PB5" pad="17"/>
-<connect gate="G$1" pin="(CS)PB2" pad="14"/>
-<connect gate="G$1" pin="(SDI)PB4" pad="16"/>
-<connect gate="G$1" pin="(SDO)PB3" pad="15"/>
-<connect gate="G$1" pin="(XTAL1)PB6" pad="7"/>
-<connect gate="G$1" pin="(XTAL2)PB7" pad="8"/>
-<connect gate="G$1" pin="ADC6" pad="19"/>
-<connect gate="G$1" pin="ADC7" pad="22"/>
+<connect gate="G$1" pin="(CLK)13" pad="17"/>
+<connect gate="G$1" pin="(PWM)9" pad="13"/>
+<connect gate="G$1" pin="(PWM/CS)10" pad="14"/>
+<connect gate="G$1" pin="(PWM/SDO)11" pad="15"/>
+<connect gate="G$1" pin="(SDI)12" pad="16"/>
+<connect gate="G$1" pin="(XTAL1)14" pad="7"/>
+<connect gate="G$1" pin="(XTAL2)15" pad="8"/>
+<connect gate="G$1" pin="0" pad="30"/>
+<connect gate="G$1" pin="1" pad="31"/>
+<connect gate="G$1" pin="14(A0)" pad="23"/>
+<connect gate="G$1" pin="15(A1)" pad="24"/>
+<connect gate="G$1" pin="16(A2)" pad="25"/>
+<connect gate="G$1" pin="17(A3)" pad="26"/>
+<connect gate="G$1" pin="18(A4)" pad="27"/>
+<connect gate="G$1" pin="19(A5)" pad="28"/>
+<connect gate="G$1" pin="2" pad="32"/>
+<connect gate="G$1" pin="22(!RESET!)" pad="29"/>
+<connect gate="G$1" pin="3(PWM)" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5(PWM)" pad="9"/>
+<connect gate="G$1" pin="6(PWM)" pad="10"/>
+<connect gate="G$1" pin="7" pad="11"/>
+<connect gate="G$1" pin="8" pad="12"/>
+<connect gate="G$1" pin="A6" pad="19"/>
+<connect gate="G$1" pin="A7" pad="22"/>
 <connect gate="G$1" pin="AREF" pad="20"/>
 <connect gate="G$1" pin="AVDD" pad="18"/>
 <connect gate="G$1" pin="GND" pad="3 5 21"/>
-<connect gate="G$1" pin="PB0" pad="12"/>
-<connect gate="G$1" pin="PB1" pad="13"/>
-<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
-<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
-<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
-<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
-<connect gate="G$1" pin="PC4(ADC4)" pad="27"/>
-<connect gate="G$1" pin="PC5(ADC5)" pad="28"/>
-<connect gate="G$1" pin="PC6(!RESET!)" pad="29"/>
-<connect gate="G$1" pin="PD0" pad="30"/>
-<connect gate="G$1" pin="PD1" pad="31"/>
-<connect gate="G$1" pin="PD2" pad="32"/>
-<connect gate="G$1" pin="PD3" pad="1"/>
-<connect gate="G$1" pin="PD4" pad="2"/>
-<connect gate="G$1" pin="PD5" pad="9"/>
-<connect gate="G$1" pin="PD6" pad="10"/>
-<connect gate="G$1" pin="PD7" pad="11"/>
 <connect gate="G$1" pin="VDD" pad="4 6"/>
 </connects>
 <technologies>
@@ -8923,8 +8923,7 @@ MAX7404 uses a 680 pF clock capcitor</description>
 <technology name="">
 <attribute name="MANUFACTURER" value="Souriau"/>
 <attribute name="MODEL" value="Souriau"/>
-<attribute name="MPN" value="8STA21204PN
-"/>
+<attribute name="MPN" value="8STA21204PN "/>
 </technology>
 </technologies>
 </device>
