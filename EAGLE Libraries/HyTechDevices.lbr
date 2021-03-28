@@ -5495,7 +5495,7 @@ Note: No sure about SDO/SDI accuracy</description>
 <pin name="CH2" x="25.4" y="-12.7" length="short" direction="in" rot="R180"/>
 <pin name="CH3" x="25.4" y="-15.24" length="short" direction="in" rot="R180"/>
 <pin name="GND" x="-2.54" y="-17.78" length="short" direction="pwr"/>
-<pin name="!CS!/SHDN" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="!CS!/SHDN" x="-2.54" y="-12.7" length="short" direction="in" function="dot"/>
 <pin name="SDI" x="-2.54" y="-10.16" length="short" direction="in"/>
 <pin name="SDO" x="-2.54" y="-7.62" length="short" direction="out"/>
 <pin name="CLK" x="-2.54" y="-5.08" length="short" direction="in" function="clk"/>
@@ -8942,6 +8942,80 @@ MAX7404 uses a 680 pF clock capcitor</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2515" prefix="U">
+<description>MCP2515 Can Controller
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/MCP2515-Stand-Alone-CAN-Controller-with-SPI-200018-708845.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP2515" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-20">
+<connects>
+<connect gate="G$1" pin="!CS" pad="18"/>
+<connect gate="G$1" pin="!INT" pad="13"/>
+<connect gate="G$1" pin="!RESET" pad="19"/>
+<connect gate="G$1" pin="!RX0BF" pad="12"/>
+<connect gate="G$1" pin="!RX1BF" pad="11"/>
+<connect gate="G$1" pin="!TX0RTS" pad="4"/>
+<connect gate="G$1" pin="!TX1RTS" pad="5"/>
+<connect gate="G$1" pin="!TX2RTS" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="14"/>
+<connect gate="G$1" pin="CLKOUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="OSC1" pad="9"/>
+<connect gate="G$1" pin="OSC2" pad="8"/>
+<connect gate="G$1" pin="RX" pad="2"/>
+<connect gate="G$1" pin="SDI" pad="16"/>
+<connect gate="G$1" pin="SDO" pad="17"/>
+<connect gate="G$1" pin="TX" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP2515-E/ST-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2515-E/ST"/>
+<attribute name="MPN" value="MCP2515-E/ST"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3204" prefix="U">
+<description>MCP3204 4-Channel ADC
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/21298c-68472.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP3204" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-14">
+<connects>
+<connect gate="G$1" pin="!CS!/SHDN" pad="8"/>
+<connect gate="G$1" pin="AGND" pad="12"/>
+<connect gate="G$1" pin="CH0" pad="1"/>
+<connect gate="G$1" pin="CH1" pad="2"/>
+<connect gate="G$1" pin="CH2" pad="3"/>
+<connect gate="G$1" pin="CH3" pad="4"/>
+<connect gate="G$1" pin="CLK" pad="11"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="SDI" pad="9"/>
+<connect gate="G$1" pin="SDO" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VREF" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP3204-BI/SL-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP3204-BI/SL"/>
+<attribute name="MPN" value="MCP3204-BI/SL"/>
+</technology>
 </technologies>
 </device>
 </devices>
