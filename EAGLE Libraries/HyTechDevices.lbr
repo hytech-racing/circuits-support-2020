@@ -8897,6 +8897,12 @@ MAX7404 uses a 680 pF clock capcitor</description>
 <connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
+<technology name="00">
+<attribute name="DKPN" value="MAX7400CSA+-ND"/>
+<attribute name="MANUFACTURER" value="Maxim Integrated"/>
+<attribute name="MOPN" value="700-MAX7400CSA"/>
+<attribute name="MPN" value="MAX7400CSA+"/>
+</technology>
 <technology name="04">
 <attribute name="DKPN" value="MAX7404CSA+-ND"/>
 <attribute name="MANUFACTURER" value="Maxim Integrated"/>
