@@ -4075,9 +4075,7 @@ Note: Based on page 14 and 15.</description>
 <package name="TSOT-23-6">
 <description>6-Lead Plastic ThinSOT-23
 &lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_6_05-08-1636.pdf"&gt;Footprint Detailing&lt;/a&gt;
-&lt;br&gt;
-For LTC3200-5 Charge Pump</description>
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_6_05-08-1636.pdf"&gt;Footprint Detailing&lt;/a&gt;</description>
 <wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
 <wire x1="1.45" y1="0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
 <wire x1="-1.45" y1="0.875" x2="-1.45" y2="-0.875" width="0.127" layer="21"/>
@@ -4089,8 +4087,6 @@ For LTC3200-5 Charge Pump</description>
 <smd name="5" x="0" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <smd name="6" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
 <circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
-<text x="1" y="2" size="0.8128" layer="21" font="vector" align="bottom-center">+</text>
-<text x="-1" y="2" size="0.8128" layer="21" font="vector" align="bottom-center">-</text>
 <text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
 </package>
@@ -7071,8 +7067,7 @@ Pins tied to VREG: ISOMD, DTEN
 <symbol name="LTC3200-5">
 <description>LTC3200-5 Low Noise, Regulated Charge Pump DC/DC Converter
 &lt;br&gt;
-&lt;a href="https://www.analog.com/en/products/ltc3200.html#product-overview
-"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;
 Produces a regulated output voltage from a 2.7V to 4.5V input
 with up to 100mA of output current</description>
@@ -9072,10 +9067,19 @@ MAX7404 uses a 680 pF clock capcitor</description>
 <deviceset name="LTC3200-5">
 <description>LTC3200-5
 &lt;br&gt;
-&lt;a href="https://www.analog.com/en/products/ltc3200.html#product-overview"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 Produces a regulated output voltage from a 2.7V to 4.5V input
-with up to 100mA of output current</description>
+with up to 100mA of output current
+
+&lt;br&gt;&lt;br&gt;
+*Notes: 
+&lt;br&gt;
+- Flying capacitors connected to pins 4 (C-) and 6 (C+) must have at least 0.68 uF of capacitance in order to achieve the rated output current
+&lt;br&gt;
+- Pins 1 (Vin) and 5 (Vout) both need to be bypassed with capacitors with capacitance &gt;=0.47 uF
+&lt;br&gt;
+- Pins 5 (Vout) and 3 (!SHDN) should have connected inputs</description>
 <gates>
 <gate name="G$1" symbol="LTC3200-5" x="0" y="0"/>
 </gates>
@@ -9090,7 +9094,12 @@ with up to 100mA of output current</description>
 <connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="LTC3200ES6-5#TRPBFTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-C3200ES6-5TRPBF"/>
+<attribute name="MPN" value="LTC3200ES6-5#TRPBF"/>
+</technology>
 </technologies>
 </device>
 </devices>
