@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1508,14 +1508,6 @@ visible on the PCB.</text>
 <wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="1.27" x2="-11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="-1.27" x2="11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="11.43" y1="-1.27" x2="11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="11.43" y1="1.27" x2="-11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="1.27" x2="11.43" y2="1.27" width="0.254" layer="40"/>
-<wire x1="11.43" y1="1.27" x2="11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.254" layer="40"/>
 <wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
@@ -1537,6 +1529,8 @@ visible on the PCB.</text>
 <wire x1="9.525" y1="1.27" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="8.89" y1="-0.635" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-11.43" y1="-1.27" x2="11.43" y2="1.27" layer="40"/>
+<rectangle x1="-11.43" y1="-1.27" x2="11.43" y2="1.27" layer="39"/>
 </package>
 <package name="SOURIAU_12-04">
 <description>SOURIAU 4 Pin
@@ -1549,17 +1543,17 @@ visible on the PCB.</text>
 <pad name="4" x="-3.7084" y="0.889" drill="2"/>
 <circle x="0" y="0" radius="13" width="0.127" layer="21"/>
 <hole x="10.2884" y="10.2884" drill="3.4"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="39"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="41"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="42"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="39"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="41"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
 <hole x="-10.2884" y="-10.2884" drill="3.4"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="39"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="41"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="42"/>
-<circle x="0" y="0" radius="13" width="0.1524" layer="39"/>
-<circle x="0" y="0" radius="8.72" width="0.127" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="39"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="41"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
+<circle x="0" y="0" radius="13" width="0" layer="39"/>
+<circle x="0" y="0" radius="8.72" width="0" layer="40"/>
 <text x="0" y="8.89" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="13.97" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
@@ -1567,7 +1561,7 @@ visible on the PCB.</text>
 <description>SOURIAU 37 PIN
 &lt;br&gt;
 &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="10.25" width="0" layer="40"/>
 <pad name="1" x="1.143" y="6.6548" drill="1"/>
 <pad name="2" x="3.1242" y="5.5118" drill="1"/>
 <pad name="3" x="5.3594" y="4.064" drill="1"/>
@@ -1607,17 +1601,17 @@ visible on the PCB.</text>
 <pad name="37" x="0" y="-0.1016" drill="1"/>
 <circle x="0" y="0" radius="14.5" width="0.127" layer="21"/>
 <hole x="-11.4905" y="-11.4905" drill="3.4"/>
-<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="39"/>
-<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="40"/>
-<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="41"/>
-<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="42"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0" layer="39"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0" layer="40"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0" layer="41"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0" layer="42"/>
 <hole x="11.4905" y="11.4905" drill="3.4"/>
-<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="39"/>
-<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="40"/>
-<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="41"/>
-<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="42"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0" layer="39"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0" layer="40"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0" layer="41"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0" layer="42"/>
 <circle x="0" y="0" radius="10.25" width="0.127" layer="22"/>
-<circle x="0" y="0" radius="14.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="14.5" width="0" layer="39"/>
 <text x="0" y="11.43" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="15.24" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
@@ -1925,17 +1919,17 @@ Adapted from &lt;a href="https://www.analog.com/media/en/package-pcb-resources/p
 <circle x="0" y="0" radius="8.725" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="13" width="0.127" layer="21"/>
 <hole x="-10.2884" y="-10.2884" drill="3.4"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="39"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="41"/>
-<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="42"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="39"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="41"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
 <hole x="10.2884" y="10.2884" drill="3.4"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="39"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="41"/>
-<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="42"/>
-<circle x="0" y="0" radius="13" width="0.1524" layer="39"/>
-<circle x="0" y="0" radius="8.72" width="0.127" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="39"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="41"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
+<circle x="0" y="0" radius="13" width="0" layer="39"/>
+<circle x="0" y="0" radius="8.72" width="0" layer="40"/>
 <text x="0" y="8.89" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="13.97" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
@@ -2102,18 +2096,9 @@ Note: Do not know if this is a specific crystal package.</description>
 <smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
 <smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
 <text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.1877" y1="2.0447" x2="-3.1877" y2="-2.0447" width="0.127" layer="39"/>
-<wire x1="-3.1877" y1="-2.0447" x2="3.1877" y2="-2.0447" width="0.127" layer="39"/>
-<wire x1="3.1877" y1="-2.0447" x2="3.1877" y2="2.0447" width="0.127" layer="39"/>
-<wire x1="3.1877" y1="2.0447" x2="-3.1877" y2="2.0447" width="0.127" layer="39"/>
-<wire x1="-3.1877" y1="2.0447" x2="-3.1877" y2="-2.0447" width="0.127" layer="40"/>
-<wire x1="-3.1877" y1="-2.0447" x2="3.1877" y2="-2.0447" width="0.127" layer="40"/>
-<wire x1="3.1877" y1="-2.0447" x2="3.1877" y2="2.0447" width="0.127" layer="40"/>
-<wire x1="3.1877" y1="2.0447" x2="-3.1877" y2="2.0447" width="0.127" layer="40"/>
-<wire x1="-3.1877" y1="2.0447" x2="-3.1877" y2="-2.0447" width="0.127" layer="43"/>
-<wire x1="-3.1877" y1="-2.0447" x2="3.1877" y2="-2.0447" width="0.127" layer="43"/>
-<wire x1="3.1877" y1="-2.0447" x2="3.1877" y2="2.0447" width="0.127" layer="43"/>
-<wire x1="3.1877" y1="2.0447" x2="-3.1877" y2="2.0447" width="0.127" layer="43"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
 </package>
 <package name="SC-70-5">
 <description>SC-70-5
@@ -2283,20 +2268,20 @@ Note: Based on page 48 and 49.</description>
 &lt;br&gt;
 &lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;</description>
 <hole x="0" y="0" drill="3.4"/>
-<circle x="0" y="0" radius="3" width="0.127" layer="39"/>
-<circle x="0" y="0" radius="3" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="3" width="0.127" layer="41"/>
-<circle x="0" y="0" radius="3" width="0.127" layer="42"/>
+<circle x="0" y="0" radius="3" width="0" layer="39"/>
+<circle x="0" y="0" radius="3" width="0" layer="40"/>
+<circle x="0" y="0" radius="3" width="0" layer="41"/>
+<circle x="0" y="0" radius="3" width="0" layer="42"/>
 </package>
 <package name="MOUNTING_M4">
 <description>M4 Mounting Hole
 &lt;br&gt;
 &lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;</description>
 <hole x="0" y="0" drill="4.5"/>
-<circle x="0" y="0" radius="3.75" width="0.127" layer="39"/>
-<circle x="0" y="0" radius="3.75" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="3.75" width="0.127" layer="41"/>
-<circle x="0" y="0" radius="3.75" width="0.127" layer="42"/>
+<circle x="0" y="0" radius="3.75" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.75" width="0" layer="40"/>
+<circle x="0" y="0" radius="3.75" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.75" width="0" layer="42"/>
 </package>
 <package name="TSSOP-24">
 <description>TSSOP 24
@@ -2461,12 +2446,6 @@ Note: Based off of Page 112.</description>
 <wire x1="1.27" y1="0.635" x2="1.905" y2="0" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
-<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="40"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.254" layer="40"/>
-<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.254" layer="40"/>
-<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="39"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.254" layer="39"/>
-<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.254" layer="39"/>
 <wire x1="-1.905" y1="0" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-0.635" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-1.905" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
@@ -2489,8 +2468,8 @@ Note: Based off of Page 112.</description>
 <wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
-<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="40"/>
-<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="39"/>
+<rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="39"/>
+<rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="40"/>
 </package>
 <package name="F09HP">
 <description>&lt;b&gt;SUB-D&lt;/b&gt;</description>
@@ -2705,14 +2684,6 @@ visible on the PCB.</text>
 <wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-17.78" y1="-1.27" x2="17.78" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="17.78" y1="-1.27" x2="17.78" y2="1.27" width="0.254" layer="39"/>
-<wire x1="17.78" y1="1.27" x2="-17.78" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-17.78" y1="1.27" x2="17.78" y2="1.27" width="0.254" layer="40"/>
-<wire x1="17.78" y1="1.27" x2="17.78" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="17.78" y1="-1.27" x2="-17.78" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="1.27" width="0.254" layer="40"/>
 <wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
@@ -2774,6 +2745,8 @@ visible on the PCB.</text>
 <wire x1="15.875" y1="1.27" x2="15.24" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="15.24" y1="-0.635" x2="15.875" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="17.145" y1="-1.27" x2="15.875" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-17.78" y1="-1.27" x2="17.78" y2="1.27" layer="39"/>
+<rectangle x1="-17.78" y1="-1.27" x2="17.78" y2="1.27" layer="40"/>
 </package>
 <package name="1X24">
 <description>0.1" Pitch Pin Header</description>
@@ -2831,14 +2804,6 @@ visible on the PCB.</text>
 <wire x1="-17.145" y1="1.27" x2="-17.78" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-17.78" y1="-0.635" x2="-17.145" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="-15.875" y1="-1.27" x2="-17.145" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-30.48" y1="1.27" x2="-30.48" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-30.48" y1="-1.27" x2="30.48" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="30.48" y1="-1.27" x2="30.48" y2="1.27" width="0.254" layer="39"/>
-<wire x1="30.48" y1="1.27" x2="-30.48" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-30.48" y1="1.27" x2="30.48" y2="1.27" width="0.254" layer="40"/>
-<wire x1="30.48" y1="1.27" x2="30.48" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="30.48" y1="-1.27" x2="-30.48" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-30.48" y1="-1.27" x2="-30.48" y2="1.27" width="0.254" layer="40"/>
 <wire x1="-14.605" y1="1.27" x2="-13.335" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-13.335" y1="1.27" x2="-12.7" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-12.7" y1="0.635" x2="-12.7" y2="-0.635" width="0.1524" layer="21"/>
@@ -2980,6 +2945,8 @@ visible on the PCB.</text>
 <wire x1="28.575" y1="1.27" x2="27.94" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="27.94" y1="-0.635" x2="28.575" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="29.845" y1="-1.27" x2="28.575" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-30.48" y1="-1.27" x2="30.48" y2="1.27" layer="40"/>
+<rectangle x1="-30.48" y1="-1.27" x2="30.48" y2="1.27" layer="39"/>
 </package>
 <package name="TEENSY_LONG_EXT">
 <description>Teensy 3.5/3.6/4.1 Footprint Extended
@@ -3097,20 +3064,20 @@ visible on the PCB.</text>
 <pad name="C" x="-1.24" y="0.72" drill="0.7"/>
 <circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
 <circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6" width="0.1524" layer="40"/>
-<circle x="0" y="0" radius="6.6" width="0.1524" layer="39"/>
+<circle x="0" y="0" radius="6" width="0" layer="40"/>
+<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
 <hole x="8.1" y="8.1" drill="3.4"/>
-<circle x="8.1" y="8.1" radius="3" width="0.127" layer="39"/>
-<circle x="8.1" y="8.1" radius="3" width="0.127" layer="40"/>
-<circle x="8.1" y="8.1" radius="3" width="0.127" layer="41"/>
-<circle x="8.1" y="8.1" radius="3" width="0.127" layer="42"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="41"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="42"/>
 <hole x="-8.1" y="-8.1" drill="3.4"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="39"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="40"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="41"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0.127" layer="42"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="41"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="42"/>
 <text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
 <text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="40"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="39"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="40"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="39"/>
 </package>
 <package name="BR-1632A/HAN">
 <description>BR-1632A/HAN RTC Battery
@@ -3199,14 +3166,6 @@ visible on the PCB.</text>
 <wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="1.27" x2="-11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="-1.27" x2="11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="11.43" y1="-1.27" x2="11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="11.43" y1="1.27" x2="-11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="1.27" x2="11.43" y2="1.27" width="0.254" layer="40"/>
-<wire x1="11.43" y1="1.27" x2="11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.254" layer="40"/>
 <wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
@@ -3232,6 +3191,8 @@ visible on the PCB.</text>
 <wire x1="12.7" y1="32.004" x2="-12.7" y2="32.004" width="0.1524" layer="21"/>
 <wire x1="-12.7" y1="32.004" x2="-12.7" y2="-2.032" width="0.1524" layer="21"/>
 <wire x1="-12.7" y1="-2.032" x2="12.7" y2="-2.032" width="0.1524" layer="21"/>
+<rectangle x1="-11.43" y1="-1.27" x2="11.43" y2="1.27" layer="39"/>
+<rectangle x1="-11.43" y1="-1.27" x2="11.43" y2="1.27" layer="40"/>
 </package>
 <package name="RT*4*">
 <description>RT Form A Relay
@@ -3310,14 +3271,6 @@ visible on the PCB.</text>
 <wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="1.27" x2="-11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="-1.27" x2="6.35" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.254" layer="39"/>
-<wire x1="6.35" y1="1.27" x2="-11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="40"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="6.35" y1="-1.27" x2="-11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.254" layer="40"/>
 <wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
@@ -3325,6 +3278,8 @@ visible on the PCB.</text>
 <wire x1="4.445" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-11.43" y1="-1.27" x2="6.35" y2="1.27" layer="39"/>
+<rectangle x1="-11.43" y1="-1.27" x2="6.35" y2="1.27" layer="40"/>
 </package>
 <package name="1X08">
 <description>0.1" Pitch Pin Header</description>
@@ -3381,14 +3336,6 @@ visible on the PCB.</text>
 <wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="1.27" x2="-11.43" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="-1.27" x2="8.89" y2="-1.27" width="0.254" layer="39"/>
-<wire x1="8.89" y1="-1.27" x2="8.89" y2="1.27" width="0.254" layer="39"/>
-<wire x1="8.89" y1="1.27" x2="-11.43" y2="1.27" width="0.254" layer="39"/>
-<wire x1="-11.43" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="40"/>
-<wire x1="8.89" y1="1.27" x2="8.89" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="8.89" y1="-1.27" x2="-11.43" y2="-1.27" width="0.254" layer="40"/>
-<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.254" layer="40"/>
 <wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
@@ -3403,6 +3350,8 @@ visible on the PCB.</text>
 <wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-11.43" y1="-1.27" x2="8.89" y2="1.27" layer="39"/>
+<rectangle x1="-11.43" y1="-1.27" x2="8.89" y2="1.27" layer="40"/>
 </package>
 <package name="SSOP-36">
 <description>SSOP 36
