@@ -4072,6 +4072,24 @@ Note: Based on page 14 and 15.</description>
 <text x="0" y="1.2" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.27" x2="1.778" y2="1.27" layer="39"/>
 </package>
+<package name="TSOT-23-6">
+<description>6-Lead Plastic ThinSOT-23
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_6_05-08-1636.pdf"&gt;Footprint Detailing&lt;/a&gt;</description>
+<wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.875" x2="-1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
+<smd name="1" x="-0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="3" x="0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="4" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="5" x="0" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="6" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
+<text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -7046,6 +7064,26 @@ Pins tied to VREG: ISOMD, DTEN
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="LTC3200-5">
+<description>LTC3200-5 Low Noise, Regulated Charge Pump DC/DC Converter
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+Produces a regulated output voltage from a 2.7V to 4.5V input
+with up to 100mA of output current</description>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="!SHDN" x="-2.54" y="-12.7" length="short" direction="in" function="dot"/>
+<pin name="VOUT" x="15.24" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short"/>
+<pin name="C-" x="2.54" y="2.54" length="short" rot="R270"/>
+<pin name="C+" x="10.16" y="2.54" length="short" rot="R270"/>
+<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+<text x="7.62" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-2_?_*" prefix="J">
@@ -9073,6 +9111,46 @@ MAX7404 uses a 680 pF clock capcitor</description>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP3204-BI/SL"/>
 <attribute name="MPN" value="MCP3204-BI/SL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3200-5">
+<description>LTC3200-5
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/32005f.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Produces a regulated output voltage from a 2.7V to 4.5V input
+with up to 100mA of output current
+
+&lt;br&gt;&lt;br&gt;
+*Notes: 
+&lt;br&gt;
+- Flying capacitors connected to pins 4 (C-) and 6 (C+) must have at least 0.68 uF of capacitance in order to achieve the rated output current
+&lt;br&gt;
+- Pins 1 (Vin) and 5 (Vout) both need to be bypassed with capacitors with capacitance &gt;=0.47 uF
+&lt;br&gt;
+- Pins 5 (Vout) and 3 (!SHDN) should have connected inputs</description>
+<gates>
+<gate name="G$1" symbol="LTC3200-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSOT-23-6">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="3"/>
+<connect gate="G$1" pin="C+" pad="6"/>
+<connect gate="G$1" pin="C-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="LTC3200ES6-5#TRPBFTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc."/>
+<attribute name="MOPN" value="584-C3200ES6-5TRPBF"/>
+<attribute name="MPN" value="LTC3200ES6-5#TRPBF"/>
 </technology>
 </technologies>
 </device>
