@@ -5293,22 +5293,22 @@ Pins tied to GND: SLOW
 <description>ATMEGA328P-TQFP32
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/268/ATmega48A_PA_88A_PA_168A_PA_328_P_DS_DS40002061B-1900559.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="22.86" y1="0" x2="22.86" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-45.72" x2="0" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-45.72" x2="0" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="0" y1="-45.72" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-46.482" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="VDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-2.54" y="-43.18" length="short" direction="pwr"/>
-<pin name="8" x="25.4" y="-22.86" length="short" rot="R180"/>
-<pin name="(PWM)9" x="25.4" y="-20.32" length="short" rot="R180"/>
-<pin name="(PWM/CS)10" x="25.4" y="-17.78" length="short" rot="R180"/>
-<pin name="(PWM/SDO)11" x="25.4" y="-15.24" length="short" rot="R180"/>
-<pin name="(SDI)12" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="(CLK)13" x="25.4" y="-10.16" length="short" rot="R180"/>
-<pin name="(XTAL1)14" x="25.4" y="-30.48" length="short" rot="R180"/>
-<pin name="(XTAL2)15" x="25.4" y="-27.94" length="short" rot="R180"/>
+<pin name="8" x="30.48" y="-22.86" length="short" rot="R180"/>
+<pin name="(PWM)9" x="30.48" y="-20.32" length="short" rot="R180"/>
+<pin name="(PWM/CS)10" x="30.48" y="-17.78" length="short" rot="R180"/>
+<pin name="(PWM/SDO)11" x="30.48" y="-15.24" length="short" rot="R180"/>
+<pin name="(SDI)12" x="30.48" y="-12.7" length="short" rot="R180"/>
+<pin name="(CLK)13" x="30.48" y="-10.16" length="short" rot="R180"/>
+<pin name="(XTAL1)14" x="30.48" y="-30.48" length="short" rot="R180"/>
+<pin name="(XTAL2)15" x="30.48" y="-27.94" length="short" rot="R180"/>
 <pin name="14(A0)" x="-2.54" y="-25.4" length="short"/>
 <pin name="15(A1)" x="-2.54" y="-27.94" length="short"/>
 <pin name="16(A2)" x="-2.54" y="-30.48" length="short"/>
@@ -5324,10 +5324,10 @@ Pins tied to GND: SLOW
 <pin name="5(PWM)" x="-2.54" y="-15.24" length="short"/>
 <pin name="6(PWM)" x="-2.54" y="-17.78" length="short"/>
 <pin name="7" x="-2.54" y="-20.32" length="short"/>
-<pin name="AREF" x="25.4" y="-40.64" length="short" direction="in" rot="R180"/>
-<pin name="AVDD" x="25.4" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="A6" x="25.4" y="-35.56" length="short" rot="R180"/>
-<pin name="A7" x="25.4" y="-38.1" length="short" rot="R180"/>
+<pin name="AREF" x="30.48" y="-40.64" length="short" direction="in" rot="R180"/>
+<pin name="AVDD" x="30.48" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="A6" x="30.48" y="-35.56" length="short" rot="R180"/>
+<pin name="A7" x="30.48" y="-38.1" length="short" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_AVR_ISP">
 <description>Connector for ISP Header
