@@ -5066,8 +5066,8 @@ Pins tied to GND: SLOW
 <wire x1="-4.318" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="-4.318" y1="-2.54" x2="-4.318" y2="-1.905" width="0.1524" layer="94" style="shortdash"/>
 <text x="-1.27" y="3.175" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<pin name="3" x="2.54" y="0" visible="off" length="short" direction="out" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="out" swaplevel="1"/>
+<pin name="3" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="GND" x="-2.54" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <text x="-1.27" y="-3.175" size="1.27" layer="96" align="top-left">&gt;FREQUENCY</text>
 </symbol>
@@ -6631,8 +6631,8 @@ Designed for using a single sense resistor (pg 15)</description>
 <pin name="!CS" x="-2.54" y="-10.16" length="short" direction="in" function="dot"/>
 <pin name="RX" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
 <pin name="TX" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="OSC1" x="25.4" y="-17.78" length="short" direction="in" rot="R180"/>
-<pin name="OSC2" x="25.4" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="OSC1" x="25.4" y="-17.78" length="short" rot="R180"/>
+<pin name="OSC2" x="25.4" y="-15.24" length="short" rot="R180"/>
 <pin name="VDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
 <pin name="CLKOUT" x="-2.54" y="-17.78" length="short" direction="out"/>
@@ -7258,7 +7258,7 @@ with up to 100mA of output current</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_?_*" prefix="D" uservalue="yes">
+<deviceset name="LED_?_*" prefix="D">
 <description>LED</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
