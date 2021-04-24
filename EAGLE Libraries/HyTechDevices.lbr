@@ -7644,7 +7644,7 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MPN" value="ERA-3AEB2212V"/>
 <attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="22.1k"/>
-<attribute name="TOLERANCE" value="0.1W"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE" value="75V"/>
 </technology>
 <technology name="3.3K">
@@ -8111,7 +8111,7 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAN_TRANSCIEVER_TCAN1051*V-Q1" prefix="U">
+<deviceset name="TCAN1051*V-Q1" prefix="U">
 <description>TCAN1051*V Can Tranciever
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/tcan1051hgv-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610765132518&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252Ff"&gt;Datasheet&lt;/a&gt;</description>
@@ -8704,7 +8704,7 @@ Ceramic SMD Surface Mount Fuse
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAN_TRANSCIEVER_TCAN337*" prefix="U">
+<deviceset name="TCAN337*" prefix="U">
 <description>TCAN337 Can Tranciever
 &lt;br&gt;
 &lt;a href="https://www.ti.com/lit/ds/symlink/tcan337.pdf?ts=1610765239354&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCAN337"&gt;Datasheet&lt;/a&gt;</description>
