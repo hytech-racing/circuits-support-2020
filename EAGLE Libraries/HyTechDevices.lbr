@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6305,6 +6305,76 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">STBY</text>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
 <text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
+</symbol>
+<symbol name="ACDA56-51CGKWA">
+<pin name="A" x="-30.48" y="7.62" length="middle"/>
+<pin name="B" x="-30.48" y="5.08" length="middle"/>
+<pin name="C" x="-30.48" y="2.54" length="middle"/>
+<pin name="D" x="-30.48" y="0" length="middle"/>
+<pin name="E" x="-30.48" y="-2.54" length="middle"/>
+<pin name="F" x="-30.48" y="-5.08" length="middle"/>
+<pin name="G" x="-30.48" y="-7.62" length="middle"/>
+<pin name="VDD" x="-30.48" y="-17.78" length="middle"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-17.526" y="7.62"/>
+<vertex x="-16.256" y="8.89"/>
+<vertex x="-8.636" y="8.89"/>
+<vertex x="-7.366" y="7.62"/>
+<vertex x="-8.636" y="6.35"/>
+<vertex x="-16.256" y="6.35"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-18.796" y="-3.81"/>
+<vertex x="-20.066" y="-2.54"/>
+<vertex x="-20.066" y="5.08"/>
+<vertex x="-18.796" y="6.35"/>
+<vertex x="-17.526" y="5.08"/>
+<vertex x="-17.526" y="-2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-6.096" y="-3.81"/>
+<vertex x="-7.366" y="-2.54"/>
+<vertex x="-7.366" y="5.08"/>
+<vertex x="-6.096" y="6.35"/>
+<vertex x="-4.826" y="5.08"/>
+<vertex x="-4.826" y="-2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-17.526" y="-5.08"/>
+<vertex x="-16.256" y="-3.81"/>
+<vertex x="-8.636" y="-3.81"/>
+<vertex x="-7.366" y="-5.08"/>
+<vertex x="-8.636" y="-6.35"/>
+<vertex x="-16.256" y="-6.35"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-18.796" y="-16.51"/>
+<vertex x="-20.066" y="-15.24"/>
+<vertex x="-20.066" y="-7.62"/>
+<vertex x="-18.796" y="-6.35"/>
+<vertex x="-17.526" y="-7.62"/>
+<vertex x="-17.526" y="-15.24"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-17.526" y="-17.78"/>
+<vertex x="-16.256" y="-16.51"/>
+<vertex x="-8.636" y="-16.51"/>
+<vertex x="-7.366" y="-17.78"/>
+<vertex x="-8.636" y="-19.05"/>
+<vertex x="-16.256" y="-19.05"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-6.096" y="-16.51"/>
+<vertex x="-7.366" y="-15.24"/>
+<vertex x="-7.366" y="-7.62"/>
+<vertex x="-6.096" y="-6.35"/>
+<vertex x="-4.826" y="-7.62"/>
+<vertex x="-4.826" y="-15.24"/>
+</polygon>
+<wire x1="-25.4" y1="-20.32" x2="-25.4" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-25.4" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-25.4" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="10.16" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
