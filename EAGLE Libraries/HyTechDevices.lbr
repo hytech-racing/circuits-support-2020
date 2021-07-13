@@ -3869,6 +3869,62 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <smd name="P$8" x="0" y="8.89" dx="1.27" dy="0.635" layer="1"/>
 <smd name="P$9" x="-2.54" y="8.89" dx="1.27" dy="0.635" layer="1"/>
 <smd name="P$10" x="-5.08" y="8.89" dx="1.27" dy="0.635" layer="1"/>
+<polygon width="0.1524" layer="21">
+<vertex x="-1.905" y="5.08"/>
+<vertex x="-1.27" y="5.715"/>
+<vertex x="1.27" y="5.715"/>
+<vertex x="1.905" y="5.08"/>
+<vertex x="1.27" y="4.445"/>
+<vertex x="-1.27" y="4.445"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="-2.54" y="0.635"/>
+<vertex x="-3.175" y="1.27"/>
+<vertex x="-3.175" y="3.81"/>
+<vertex x="-2.54" y="4.445"/>
+<vertex x="-1.905" y="3.81"/>
+<vertex x="-1.905" y="1.27"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="2.54" y="0.635"/>
+<vertex x="1.905" y="1.27"/>
+<vertex x="1.905" y="3.81"/>
+<vertex x="2.54" y="4.445"/>
+<vertex x="3.175" y="3.81"/>
+<vertex x="3.175" y="1.27"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="-1.905" y="0"/>
+<vertex x="-1.27" y="0.635"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.905" y="0"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="-2.54" y="-0.635"/>
+<vertex x="-1.905" y="-1.27"/>
+<vertex x="-1.905" y="-3.81"/>
+<vertex x="-2.54" y="-4.445"/>
+<vertex x="-3.175" y="-3.81"/>
+<vertex x="-3.175" y="-1.27"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="2.54" y="-4.445"/>
+<vertex x="1.905" y="-3.81"/>
+<vertex x="1.905" y="-1.27"/>
+<vertex x="2.54" y="-0.635"/>
+<vertex x="3.175" y="-1.27"/>
+<vertex x="3.175" y="-3.81"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="1.905" y="-5.08"/>
+<vertex x="1.27" y="-5.715"/>
+<vertex x="-1.27" y="-5.715"/>
+<vertex x="-1.905" y="-5.08"/>
+<vertex x="-1.27" y="-4.445"/>
+<vertex x="1.27" y="-4.445"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -6381,14 +6437,13 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
 </symbol>
 <symbol name="ACSA56-51CGKWA">
-<pin name="A" x="-30.48" y="7.62" length="middle"/>
-<pin name="B" x="-30.48" y="5.08" length="middle"/>
-<pin name="C" x="-30.48" y="2.54" length="middle"/>
-<pin name="D" x="-30.48" y="0" length="middle"/>
-<pin name="E" x="-30.48" y="-2.54" length="middle"/>
-<pin name="F" x="-30.48" y="-5.08" length="middle"/>
-<pin name="G" x="-30.48" y="-7.62" length="middle"/>
-<pin name="VDD" x="-30.48" y="-17.78" length="middle"/>
+<pin name="A" x="-33.02" y="7.62" length="middle"/>
+<pin name="B" x="-33.02" y="5.08" length="middle"/>
+<pin name="C" x="-33.02" y="2.54" length="middle"/>
+<pin name="D" x="-33.02" y="0" length="middle"/>
+<pin name="E" x="-33.02" y="-2.54" length="middle"/>
+<pin name="F" x="-33.02" y="-5.08" length="middle"/>
+<pin name="G1" x="-33.02" y="-7.62" length="middle"/>
 <polygon width="0.1524" layer="94">
 <vertex x="-17.526" y="7.62"/>
 <vertex x="-16.256" y="8.89"/>
@@ -6445,10 +6500,13 @@ Source: https://www.analog.com/media/en/package-pcb-resources/package/3805236552
 <vertex x="-4.826" y="-7.62"/>
 <vertex x="-4.826" y="-15.24"/>
 </polygon>
-<wire x1="-25.4" y1="-20.32" x2="-25.4" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-25.4" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="0" y1="-20.32" x2="-25.4" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-27.94" y1="-20.32" x2="-27.94" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-27.94" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-27.94" y2="-20.32" width="0.1524" layer="94"/>
 <wire x1="0" y1="-20.32" x2="0" y2="10.16" width="0.1524" layer="94"/>
+<pin name="G2" x="-33.02" y="-10.16" length="middle"/>
+<pin name="VDD1" x="-33.02" y="-15.24" length="middle"/>
+<pin name="VDD2" x="-33.02" y="-17.78" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9911,6 +9969,33 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ACSA56-51CGKWA">
+<description>Green, Low-Profile 7-Segment Display
+ &lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51CGKWA.pdf&gt;ACSA56-51CGKWA Datasheet&lt;/a&gt;&lt;p&gt;
+ &lt;&gt;</description>
+<gates>
+<gate name="G$1" symbol="ACSA56-51CGKWA" x="10.16" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="ACSA56-51CGKWA">
+<connects>
+<connect gate="G$1" pin="A" pad="P$7"/>
+<connect gate="G$1" pin="B" pad="P$6"/>
+<connect gate="G$1" pin="C" pad="P$4"/>
+<connect gate="G$1" pin="D" pad="P$2"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="F" pad="P$9"/>
+<connect gate="G$1" pin="G1" pad="P$5"/>
+<connect gate="G$1" pin="G2" pad="P$10"/>
+<connect gate="G$1" pin="VDD1" pad="P$3"/>
+<connect gate="G$1" pin="VDD2" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
